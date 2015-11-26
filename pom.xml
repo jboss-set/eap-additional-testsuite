@@ -591,6 +591,7 @@
             <modules>
 		<module>basic/jdkAll/Wildfly</module>
 		<module>web/jdkAll/Wildfly</module>
+                <module>jboss-automated-metrics/jdkAll/Wildfly</module>
 	    </modules>
 
             <build>
