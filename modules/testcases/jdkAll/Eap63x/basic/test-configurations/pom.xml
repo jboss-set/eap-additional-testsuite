@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-eap63x-ts-integ-basic</artifactId>
+        <version>1.0.1.Final-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jboss-eap63x-ts-integ-basic-configuration</artifactId>
+    <name>jboss eap63x additional testsuite: basic : configuration</name>
+            
+    <properties>
+	<standalone.conf>${basedir}/../src/test/config/standaloneEap63x/standalone.xml</standalone.conf>
+        <jbossas.ts.integ.dir>${basedir}/../../../../..</jbossas.ts.integ.dir>
+        <server>eap63x</server>
+    </properties>
+        
+    <build>
+
+        <!--
+	    Surefire test executions
+	 -->
+	 <plugins>  
+		            
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+
+		<executions>
+	            <execution>
+		        <id>default-test</id>
+		        <phase>test</phase>
+		        <goals>
+		            <goal>test</goal>
+		        </goals>
+		        <configuration>         
+		            <!-- Tests to execute. -->
+		            <includes>
+		                <include>org/jboss/test/basic/**/BasicTest.java</include>
+		            </includes> 
+		        </configuration>
+		    </execution>
+		</executions>
+	    </plugin>
+		            
+            <!-- Build the server configuration -->
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-antrun-plugin</artifactId>
+	        <executions combine.children="append">
+	            <execution>
+	                <id>build-basic-config</id>
+	                <phase>process-test-resources</phase>
+	                <goals>
+	                    <goal>run</goal>
+	                </goals>
+	                <configuration>
+	                    <target>
+	                        <ant antfile="${jbossas.ts.integ.dir}/src/test/scripts/basic-build.xml">
+	                            <property name="workspace" value="/${jbossas.ts.integ.dir}" />
+                                    <property name="server" value="${server}" />
+	                            <property name="standaloneConfiguration" value="${standalone.conf}" />
+	                            <target name="build-basic"/>
+	                        </ant>
+	                    </target>
+	                </configuration>
+	            </execution>
+	        </executions>
+	    </plugin>
+
+        </plugins>
+    </build>
+
+</project>

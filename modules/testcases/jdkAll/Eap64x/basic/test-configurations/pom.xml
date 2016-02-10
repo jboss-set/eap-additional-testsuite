@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>org.jboss.as</groupId>
-        <artifactId>jboss-eap-ts-integ-basic</artifactId>
+        <artifactId>jboss-eap64x-ts-integ-basic</artifactId>
         <version>1.0.1.Final-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jboss-eap-ts-integ-basic-configuration</artifactId>
-    <name>jboss eap additional testsuite: basic : configuration</name>
+    <artifactId>jboss-eap64x-ts-integ-basic-configuration</artifactId>
+    <name>jboss eap64x additional testsuite: basic : configuration</name>
             
     <properties>
-	<standalone.conf>${basedir}/../src/test/config/standaloneEap/standalone.xml</standalone.conf>
+	<standalone.conf>${basedir}/../src/test/config/standaloneEap64x/standalone.xml</standalone.conf>
         <jbossas.ts.integ.dir>${basedir}/../../../../..</jbossas.ts.integ.dir>
-        <server>eap</server>
+        <server>eap64x</server>
     </properties>
         
     <build>
