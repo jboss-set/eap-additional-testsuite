@@ -32,11 +32,55 @@
     </dependencies>
 
     <profiles>
+
         <profile>
-            <id>eap.debug</id>
+            <id>eap63x.debug</id>
             <activation>
                 <property>
-                    <name>eap-debug</name>
+                    <name>eap63x-debug</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+            </properties>
+    
+            <dependencies>
+                <dependency>
+                    <groupId>org.jboss.as</groupId>
+                    <artifactId>jboss-as-arquillian-container-managed</artifactId>
+                    <version>7.1.3.Final</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.as</groupId>
+                    <artifactId>jboss-as-testsuite-shared</artifactId>
+                    <version>7.2.0.Final</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.arquillian.junit</groupId>
+                    <artifactId>arquillian-junit-container</artifactId>
+                    <version>1.0.0.Final</version>
+                </dependency> 
+                <dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.3.6.redhat-1</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.glassfish</groupId>
+		    <artifactId>javax.enterprise.concurrent</artifactId>
+		    <version>1.0</version>
+		</dependency>  
+            </dependencies>
+        </profile>
+
+        <profile>
+            <id>eap64x.debug</id>
+            <activation>
+                <property>
+                    <name>eap64x-debug</name>
                     <value>true</value>
                 </property>
             </activation>
@@ -167,10 +211,10 @@
         </profile>
         
         <profile>
-            <id>eap.jdk8.testsuite</id>
+            <id>eap63x.jdk8.testsuite</id>
             <activation>
                 <property>
-                    <name>eap-jdk8</name>
+                    <name>eap63x-jdk8</name>
                     <value>true</value>
                 </property>
             </activation>
@@ -191,7 +235,7 @@
                                 <configuration>
                                     <target>
                                         <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
-                                            <property name="todir" value="${basedir}/eap/build/target/jbossas" />
+                                            <property name="todir" value="${basedir}/eap63x/build/target/jbossas" />
                                             <property name="jboss.folder" value="${JBOSS_FOLDER}" />
                                             <target name="copy-server-dir"/>
                                         </ant>
@@ -204,16 +248,16 @@
             </build>
 
             <modules>
-                <module>testcases/jdk8/Eap</module>
+                <module>testcases/jdk8/Eap63x</module>
             </modules>
 
         </profile>
 
         <profile>
-            <id>eap.testsuite</id>
+            <id>eap63x.testsuite</id>
             <activation>
                 <property>
-                    <name>eap</name>
+                    <name>eap63x</name>
                     <value>true</value>
                 </property>
             </activation>
@@ -234,7 +278,7 @@
                                 <configuration>
                                     <target>
                                         <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
-                                            <property name="todir" value="${basedir}/eap/build/target/jbossas" />
+                                            <property name="todir" value="${basedir}/eap63x/build/target/jbossas" />
                                             <property name="jboss.folder" value="${JBOSS_FOLDER}" />
                                             <target name="copy-server-dir"/>
                                         </ant>
@@ -247,7 +291,93 @@
             </build>
 
             <modules>
-                <module>testcases/jdkAll/Eap</module>
+                <module>testcases/jdkAll/Eap63x</module>
+            </modules>
+            
+        </profile>
+
+        <profile>
+            <id>eap64x.jdk8.testsuite</id>
+            <activation>
+                <property>
+                    <name>eap64x-jdk8</name>
+                    <value>true</value>
+                </property>
+            </activation>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare</id>
+                                <inherited>false</inherited>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
+                                            <property name="todir" value="${basedir}/eap64x/build/target/jbossas" />
+                                            <property name="jboss.folder" value="${JBOSS_FOLDER}" />
+                                            <target name="copy-server-dir"/>
+                                        </ant>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+            <modules>
+                <module>testcases/jdk8/Eap64x</module>
+            </modules>
+
+        </profile>
+
+        <profile>
+            <id>eap64x.testsuite</id>
+            <activation>
+                <property>
+                    <name>eap64x</name>
+                    <value>true</value>
+                </property>
+            </activation>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare</id>
+                                <inherited>false</inherited>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
+                                            <property name="todir" value="${basedir}/eap64x/build/target/jbossas" />
+                                            <property name="jboss.folder" value="${JBOSS_FOLDER}" />
+                                            <target name="copy-server-dir"/>
+                                        </ant>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+            <modules>
+                <module>testcases/jdkAll/Eap64x</module>
             </modules>
             
         </profile>
@@ -427,15 +557,15 @@
         <!-- Replicating the profiles in order to be activated via file existence. This section should be removed when multiple profile activation is supported by maven.-->
         
         <profile>
-            <id>eap.jdk8.testsuite.onserver</id>
+            <id>eap63x.jdk8.testsuite.onserver</id>
             <activation>
                 <file>
-                    <exists>../../eap-jdk8-testsuite</exists>
+                    <exists>../../eap63x-jdk8-testsuite</exists>
                 </file>
             </activation>
 
             <properties>
-                <JBOSS_FOLDER>../../../build/target/jboss-as-7.5.6.Final-redhat-SNAPSHOT/</JBOSS_FOLDER>
+                <JBOSS_FOLDER>../../../build/target/jboss-as-7.4.3.Final-redhat-SNAPSHOT/</JBOSS_FOLDER>
             </properties>
 
             <build>
@@ -454,7 +584,7 @@
                                 <configuration>
                                     <target>
                                         <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
-                                            <property name="todir" value="${basedir}/eap/build/target/jbossas" />
+                                            <property name="todir" value="${basedir}/eap63x/build/target/jbossas" />
                                             <property name="jboss.folder" value="${JBOSS_FOLDER}" />
                                             <target name="copy-server-dir"/>
                                         </ant>
@@ -467,16 +597,63 @@
             </build>
 
             <modules>
-                <module>testcases/jdk8/Eap</module>
+                <module>testcases/jdk8/Eap63x</module>
             </modules>
 
         </profile>
 
         <profile>
-            <id>eap.testsuite.onserver</id>
+            <id>eap63x.testsuite.onserver</id>
             <activation>
                 <file>
-                    <exists>../../eap-testsuite</exists>
+                    <exists>../../eap63x-testsuite</exists>
+                </file>
+            </activation>
+
+            <properties>
+                <JBOSS_FOLDER>../../../build/target/jboss-as-7.4.3.Final-redhat-SNAPSHOT/</JBOSS_FOLDER>
+            </properties>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare</id>
+                                <inherited>false</inherited>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
+                                            <property name="todir" value="${basedir}/eap63x/build/target/jbossas" />
+                                            <property name="jboss.folder" value="${JBOSS_FOLDER}" />
+                                            <target name="copy-server-dir"/>
+                                        </ant>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+            <modules>
+                <module>testcases/jdkAll/Eap63x</module>
+            </modules>
+            
+        </profile>
+
+
+        <profile>
+            <id>eap64x.jdk8.testsuite.onserver</id>
+            <activation>
+                <file>
+                    <exists>../../eap64x-jdk8-testsuite</exists>
                 </file>
             </activation>
 
@@ -500,7 +677,7 @@
                                 <configuration>
                                     <target>
                                         <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
-                                            <property name="todir" value="${basedir}/eap/build/target/jbossas" />
+                                            <property name="todir" value="${basedir}/eap64x/build/target/jbossas" />
                                             <property name="jboss.folder" value="${JBOSS_FOLDER}" />
                                             <target name="copy-server-dir"/>
                                         </ant>
@@ -513,7 +690,53 @@
             </build>
 
             <modules>
-                <module>testcases/jdkAll/Eap</module>
+                <module>testcases/jdk8/Eap64x</module>
+            </modules>
+
+        </profile>
+
+        <profile>
+            <id>eap64x.testsuite.onserver</id>
+            <activation>
+                <file>
+                    <exists>../../eap64x-testsuite</exists>
+                </file>
+            </activation>
+
+            <properties>
+                <JBOSS_FOLDER>../../../build/target/jboss-as-7.5.6.Final-redhat-SNAPSHOT/</JBOSS_FOLDER>
+            </properties>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare</id>
+                                <inherited>false</inherited>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
+                                            <property name="todir" value="${basedir}/eap64x/build/target/jbossas" />
+                                            <property name="jboss.folder" value="${JBOSS_FOLDER}" />
+                                            <target name="copy-server-dir"/>
+                                        </ant>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+            <modules>
+                <module>testcases/jdkAll/Eap64x</module>
             </modules>
             
         </profile>

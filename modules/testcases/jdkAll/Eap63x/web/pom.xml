@@ -6,21 +6,21 @@
 
     <parent>
         <groupId>org.jboss.as</groupId>
-        <artifactId>jboss-as-additional-testsuite-eap</artifactId>
+        <artifactId>jboss-as-additional-testsuite-eap63x</artifactId>
         <version>1.0.1.Final-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jboss-eap-ts-integ-web</artifactId>
+    <artifactId>jboss-eap63x-ts-integ-web</artifactId>
     <packaging>pom</packaging>
-    <name>jboss eap additional testsuite: web</name>
+    <name>jboss eap63x additional testsuite: web</name>
 
     <profiles>
         
         <profile>
-            <id>eap.web</id>
+            <id>eap63x.web</id>
             <activation>
                 <property>
-                    <name>eap</name>
+                    <name>eap63x</name>
                     <value>true</value>
                 </property>
             </activation>
@@ -32,10 +32,10 @@
         </profile>
 
         <profile>
-            <id>eap.web.onserver</id>
+            <id>eap63x.web.onserver</id>
             <activation>
                 <file>
-                    <exists>../../../../../../eap-testsuite</exists>
+                    <exists>../../../../../../eap63x-testsuite</exists>
                 </file>
             </activation>
             

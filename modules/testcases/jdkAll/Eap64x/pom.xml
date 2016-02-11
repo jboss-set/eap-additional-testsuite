@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-as-additional-testsuite-modules</artifactId>
+        <version>1.0.1.Final-SNAPSHOT</version>
+        <relativePath>../../../pom.xml</relativePath>
+    </parent>
+
+    <groupId>org.jboss.as</groupId>
+    <artifactId>jboss-as-additional-testsuite-eap64x</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.1.Final-SNAPSHOT</version>
+
+    <name>jboss application server test suite: additional testsuite for eap64x</name>
+    
+    <properties>
+        <surefire.memory.args>-Xmx512m -XX:MaxPermSize=256m</surefire.memory.args>
+        <surefire.system.args>${surefire.memory.args} -Djboss.dist=${project.basedir}/../../../../../eap64x/build/target/jbossas -DjbossHome=${project.basedir}/../../../../../eap64x/build/target/jbossas</surefire.system.args>
+        <version.org.jboss.arquillian.container.managed>7.1.3.Final</version.org.jboss.arquillian.container.managed>
+        <jboss.home.env>${project.basedir}/../../../eap64x/build/target/jbossas</jboss.home.env>
+    </properties>
+            
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-arquillian-container-managed</artifactId>
+            <version>${version.org.jboss.arquillian.container.managed}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-testsuite-shared</artifactId>
+            <version>7.2.0.Final</version>
+            <exclusions>
+		<exclusion>
+		  <groupId>com.github.relaxng</groupId>
+		  <artifactId>relaxngDatatype</artifactId>
+		</exclusion>
+	    </exclusions> 
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.6.redhat-1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_2.5_spec</artifactId>
+            <version>1.0.1.Final-redhat-3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.enterprise.concurrent</artifactId>
+            <version>1.0</version>
+        </dependency>   
+    </dependencies>
+            
+    <modules>
+        <module>basic</module>
+        <module>web</module>
+    </modules>
+
+    <build>
+        <plugins>
+
+            <!-- General surefire configuration. Applies to submodules too. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- Prevent test and server output appearing in console. -->
+                    <redirectTestOutputToFile>${testLogToFile}</redirectTestOutputToFile>
+
+                    <systemPropertyVariables>
+                        <jboss.options>${surefire.system.args}</jboss.options>
+                        <jboss.home>${project.basedir}/../../../../../eap64x/build/target/jbossas</jboss.home>
+                        <module.path>${project.basedir}/../../../../../eap64x/build/target/jbossas/modules</module.path>
+                    </systemPropertyVariables>
+
+                    <!-- Arquillian's config files. -->
+                    <additionalClasspathElements combine.children="append">
+                        <additionalClasspathElement>${basedir}/../../../../../src/config/arqEap64x</additionalClasspathElement>
+                    </additionalClasspathElements>
+
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.10</version>
+                <executions>
+                    <execution>
+                        <id>add-test-source</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${basedir}/../../../../../src/main/java/jdkAll</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

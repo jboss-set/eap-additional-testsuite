@@ -84,10 +84,138 @@
 
     <profiles>
         <profile>
-            <id>eap.jdk8.testsuite</id>
+            <id>eap63x.jdk8.testsuite</id>
             <activation>
                 <property>
-                    <name>eap-jdk8</name>
+                    <name>eap63x-jdk8</name>
+                    <value>true</value>
+                </property>
+            </activation>
+	    <repositories>
+		<repository>
+		    <id>jboss-product-repository-eap6</id>
+		    <name>JBoss Internal Product Repository</name>
+		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>false</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</repository>
+	    </repositories>
+
+	    <pluginRepositories>
+		<pluginRepository>
+		    <id>jboss-product-repository-eap6</id>
+		    <name>JBoss Internal Product Repository</name>
+		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>false</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</pluginRepository>
+	    </pluginRepositories>
+        </profile>
+
+        <profile>
+            <id>eap63x.testsuite.onserver</id>
+            <activation>
+                <file>
+                    <exists>../../eap63x-testsuite</exists>
+                </file>
+            </activation>
+	    <repositories>
+		<repository>
+		    <id>jboss-product-repository-eap6</id>
+		    <name>JBoss Internal Product Repository</name>
+		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>false</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</repository>
+	    </repositories>
+
+	    <pluginRepositories>
+		<pluginRepository>
+		    <id>jboss-product-repository-eap6</id>
+		    <name>JBoss Internal Product Repository</name>
+		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>false</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</pluginRepository>
+	    </pluginRepositories>
+        </profile>
+
+        <profile>
+            <id>eap63x.testsuite</id>
+            <activation>
+                <property>
+                    <name>eap63x</name>
+                    <value>true</value>
+                </property>
+            </activation>
+	    <repositories>
+		<repository>
+		    <id>jboss-product-repository-eap6</id>
+		    <name>JBoss Internal Product Repository</name>
+		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>false</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</repository>
+	    </repositories>
+
+	    <pluginRepositories>
+		<pluginRepository>
+		    <id>jboss-product-repository-eap6</id>
+		    <name>JBoss Internal Product Repository</name>
+		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>false</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</pluginRepository>
+	    </pluginRepositories>
+        </profile>
+
+        <profile>
+            <id>eap64x.jdk8.testsuite</id>
+            <activation>
+                <property>
+                    <name>eap64x-jdk8</name>
                     <value>true</value>
                 </property>
             </activation>
@@ -127,10 +255,10 @@
         </profile>
 
         <profile>
-            <id>eap.testsuite.onserver</id>
+            <id>eap64x.testsuite.onserver</id>
             <activation>
                 <file>
-                    <exists>../../eap-testsuite</exists>
+                    <exists>../../eap64x-testsuite</exists>
                 </file>
             </activation>
 	    <repositories>
@@ -169,10 +297,10 @@
         </profile>
 
         <profile>
-            <id>eap.testsuite</id>
+            <id>eap64x.testsuite</id>
             <activation>
                 <property>
-                    <name>eap</name>
+                    <name>eap64x</name>
                     <value>true</value>
                 </property>
             </activation>

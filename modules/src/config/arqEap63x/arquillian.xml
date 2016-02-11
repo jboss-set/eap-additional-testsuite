@@ -4,8 +4,8 @@
 
     <container qualifier="jboss" default="true">
         <configuration>
-            <property name="jbossHome">${basedir}/../../../../../eap/build/target/jbossas</property>
-            <property name="javaVmArguments">-Djboss.inst=${basedir}/../../../../../eap/build/target/jbossas -Djboss.bind.address=${node0:127.0.0.1} -Dtest.bind.address=${node0:127.0.0.1}</property>
+            <property name="jbossHome">${basedir}/../../../../../eap63x/build/target/jbossas</property>
+            <property name="javaVmArguments">-Djboss.inst=${basedir}/../../../../../eap63x/build/target/jbossas -Djboss.bind.address=${node0:127.0.0.1} -Dtest.bind.address=${node0:127.0.0.1}</property>
             <property name="serverConfig">${jboss.server.config.file.name:standalone.xml}</property>
             <property name="allowConnectingToRunningServer">true</property>
             <property name="managementAddress">${node0:127.0.0.1}</property>

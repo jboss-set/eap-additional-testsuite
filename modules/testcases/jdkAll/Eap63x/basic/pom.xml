@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-as-additional-testsuite-eap63x</artifactId>
+        <version>1.0.1.Final-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jboss-eap63x-ts-integ-basic</artifactId>
+    <packaging>pom</packaging>
+    <name>jboss eap additional testsuite: basic</name>
+
+    <profiles>
+        
+        <profile>
+            <id>eap63x.basic</id>
+            <activation>
+                <property>
+                    <name>eap63x</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            
+            <modules>
+                <module>test-configurations</module>
+            </modules>
+
+	</profile>
+
+        <profile>
+            <id>eap63x.basic.onserver</id>
+            <activation>
+                <file>
+                    <exists>../../../../../../eap63x-testsuite</exists>
+                </file>
+            </activation>
+            
+            <modules>
+                <module>test-configurations</module>
+            </modules>
+
+	</profile>
+
+     </profiles>
+
+</project>

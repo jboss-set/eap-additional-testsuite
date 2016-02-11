@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-as-additional-testsuite-modules</artifactId>
+        <version>1.0.1.Final-SNAPSHOT</version>
+        <relativePath>../../../pom.xml</relativePath>
+    </parent>
+
+    <groupId>org.jboss.as</groupId>
+    <artifactId>jboss-as-additional-jdk8-testsuite-eap63x</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.1.Final-SNAPSHOT</version>
+
+    <name>jboss application server test suite: additional jdk8 testsuite for eap63x</name>
+    
+    <properties>
+        <version.org.jboss.arquillian.container.managed>7.1.3.Final</version.org.jboss.arquillian.container.managed>
+        <surefire.memory.args>-Xmx512m -XX:MaxPermSize=256m</surefire.memory.args>
+        <surefire.system.args>${surefire.memory.args} -Djboss.dist=${project.basedir}/../../../../../eap63x/build/target/jbossas -DjbossHome=${project.basedir}/../../../../../eap63x/build/target/jbossas</surefire.system.args>
+        <jboss.home.env>${project.basedir}/../../../eap63x/build/target/jbossas</jboss.home.env>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-arquillian-container-managed</artifactId>
+            <version>${version.org.jboss.arquillian.container.managed}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.as</groupId>
+            <artifactId>jboss-as-testsuite-shared</artifactId>
+            <version>7.2.0.Final</version>
+            <exclusions>
+		<exclusion>
+		  <groupId>com.github.relaxng</groupId>
+		  <artifactId>relaxngDatatype</artifactId>
+		</exclusion>
+                <exclusion>
+		  <groupId>xalan</groupId>
+		  <artifactId>serializer</artifactId>
+		</exclusion>
+	    </exclusions> 
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>  
+    </dependencies>
+
+    <build>
+        <plugins>
+            
+            <!-- General surefire configuration. Applies to submodules too. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- Prevent test and server output appearing in console. -->
+                    <redirectTestOutputToFile>${testLogToFile}</redirectTestOutputToFile>
+
+                    <!-- Arquillian's config files. -->
+                    <additionalClasspathElements combine.children="append">
+                        <additionalClasspathElement>${basedir}/../../../../../src/config/arqEap63x</additionalClasspathElement>
+                    </additionalClasspathElements>
+
+                    <systemPropertyVariables>
+                        <jboss.options>${surefire.system.args}</jboss.options>
+                        <jboss.home>${project.basedir}/../../../../../eap63x/build/target/jbossas</jboss.home>
+                        <module.path>${project.basedir}/../../../../../eap63x/build/target/jbossas/modules</module.path>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.10</version>
+                <executions>
+                    <execution>
+                        <id>add-test-source</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${basedir}/../../../../../src/main/java/jdkAll</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
+
+</project>
