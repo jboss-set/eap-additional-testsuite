@@ -14,6 +14,10 @@
     <packaging>pom</packaging>
     <name>jboss wildfly additional testsuite: basic</name>
 
+    <properties>
+        <jbossas.ts.integ.dir>${basedir}/../../../..</jbossas.ts.integ.dir>
+    </properties>
+
     <profiles>
         
         <profile>

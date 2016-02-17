@@ -15,6 +15,7 @@
             
     <properties>
 	<standalone.conf>${basedir}/../src/test/config/standaloneEap7/standalone.xml</standalone.conf>
+        <jbossas.ts.integ.dir.parent>${jbossas.ts.integ.dir}</jbossas.ts.integ.dir.parent>
         <jbossas.ts.integ.dir>${basedir}/../../../../..</jbossas.ts.integ.dir>
         <server>eap7</server>
     </properties>

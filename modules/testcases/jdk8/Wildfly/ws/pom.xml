@@ -20,6 +20,10 @@
     <name>jboss wildfly application server additional testsuite: ws</name>
     <packaging>pom</packaging>
 
+    <properties>
+        <jbossas.ts.integ.dir>${basedir}/../../../..</jbossas.ts.integ.dir>
+    </properties>
+
     <profiles>
         
         <profile>
