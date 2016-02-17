@@ -22,6 +22,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <jbossas.ts.integ.dir>${basedir}/../../../../..</jbossas.ts.integ.dir>
     </properties>
 
     <build>

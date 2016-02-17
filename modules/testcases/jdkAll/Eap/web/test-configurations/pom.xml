@@ -14,7 +14,6 @@
     <name>jboss eap additional testsuite: web : configuration</name>
             
     <properties>
-        <standalone.conf>../src/test/config/standaloneEap/standalone.xml</standalone.conf>
         <jbossas.ts.integ.dir>${basedir}/../../../../..</jbossas.ts.integ.dir>
     </properties>
         

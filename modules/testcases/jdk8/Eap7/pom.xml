@@ -22,6 +22,8 @@
         <surefire.memory.args>-Xmx512m -XX:MaxPermSize=256m</surefire.memory.args>
         <surefire.system.args>${surefire.memory.args} -Djboss.dist=${project.basedir}/../../../../../eap7/build/target/jbossas -DjbossHome=${project.basedir}/../../../../../eap7/build/target/jbossas</surefire.system.args>
         <jboss.home.env>${project.basedir}/../../../eap7/build/target/jbossas</jboss.home.env>
+        <jbossas.ts.integ.dir>${basedir}/../../..</jbossas.ts.integ.dir>
+        <defaultStandalone.conf>${jbossas.ts.integ.dir}/src/test/config/standaloneEap7/standalone.xml</defaultStandalone.conf>
     </properties>
             
     <dependencies>
@@ -99,6 +101,30 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
+
+            <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-antrun-plugin</artifactId>
+	        <executions combine.children="append">
+	            <execution>
+	                <id>default-standalone-file</id>
+	                <phase>process-resources</phase>
+	                <goals>
+	                    <goal>run</goal>
+	                </goals>
+	                <configuration>
+	                    <target>
+	                        <ant antfile="${jbossas.ts.integ.dir}/src/test/scripts/basic-build.xml">
+	                            <property name="workspace" value="/${jbossas.ts.integ.dir}" />
+                                    <property name="server" value="wildfly" />
+	                            <property name="standaloneConfiguration" value="${defaultStandalone.conf}" />
+	                            <target name="build-basic"/>
+	                        </ant>
+	                    </target>
+	                </configuration>
+	            </execution>
+	        </executions>
+	    </plugin>
 
         </plugins>
     </build>
