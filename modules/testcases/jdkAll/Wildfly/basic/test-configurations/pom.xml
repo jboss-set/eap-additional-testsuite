@@ -59,7 +59,7 @@
 		        <configuration>         
 		            <!-- Tests to execute. -->
 		            <includes>
-		                <include>org/jboss/additional/testsuite/jdkall/basic/**/BasicTest.java</include>
+		                <include>org/jboss/additional/testsuite/jdkall/basic/**/*Test.java</include>
 		            </includes> 
 		        </configuration>
 		    </execution>
