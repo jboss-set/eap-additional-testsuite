@@ -184,7 +184,8 @@
     </build>
 
     <modules>
-        <module>web</module> 
+        <!--module>web</module-->
+        <module>security</module>
     </modules>
 
 

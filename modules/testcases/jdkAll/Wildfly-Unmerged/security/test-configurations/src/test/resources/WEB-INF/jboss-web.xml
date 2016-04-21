@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+​    <security-role>
+​      <role-name>Employee</role-name>
+​      <principal-name>Support</principal-name>
+​      <principal-name>Sales</principal-name>
+    </security-role>
+</jboss-web>
