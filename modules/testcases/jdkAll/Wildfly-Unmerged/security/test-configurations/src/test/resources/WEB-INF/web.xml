@@ -1,0 +1,6 @@
+<web-app>
+    <security-role>
+        <description>The single application role</description>
+        <role-name>Support</role-name>
+    </security-role>
+</web-app>
