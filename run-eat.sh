@@ -42,6 +42,9 @@ if [ ! -d "${MAVEN_HOME}" ]; then
   exit 5
 fi
 
+# printing time, to help measure duration of the process
+date
+
 #
 # Setting up maven
 #
@@ -83,3 +86,7 @@ export JBOSS_FOLDER=${WILDFLY_CHECKOUT_FOLDER}/dist/target/${SERVER_CODENAME}-${
 rm -r -f eap*  # remove previous build
 export MAVEN_OPTS="-Xmx1024m -Xms512m -XX:MaxPermSize=256m"
 mvn clean install -D${JBOSS_VERSION_CODE} -Dstandalone -Dmaven.repo.local=${LOCAL_REPO_DIR} -s settings.xml
+status="${?}"
+date
+
+exit "${status}"
