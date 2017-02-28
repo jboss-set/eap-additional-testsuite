@@ -71,7 +71,7 @@ git clone "${WILDFLY_GIT_REPO}" --branch "${WILDFLY_BRANCH}" "${WILDFLY_CHECKOUT
 
 cd "${WILDFLY_CHECKOUT_FOLDER}"
 export JBOSS_VERSION="$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')"
-mvn clean install -DskipTests -Dmaven.repo.local=../${LOCAL_REPO_DIR}
+mvn clean install -DskipTests -Dmaven.repo.local=../${LOCAL_REPO_DIR} -s ../settings.xml
 cd ..
 
 export JBOSS_FOLDER=${WILDFLY_CHECKOUT_FOLDER}/dist/target/${SERVER_CODENAME}-${JBOSS_VERSION}
@@ -82,4 +82,4 @@ export JBOSS_FOLDER=${WILDFLY_CHECKOUT_FOLDER}/dist/target/${SERVER_CODENAME}-${
 
 rm -r -f eap*  # remove previous build
 export MAVEN_OPTS="-Xmx1024m -Xms512m -XX:MaxPermSize=256m"
-mvn clean install -D${JBOSS_VERSION_CODE} -Dstandalone -Dmaven.repo.local=${LOCAL_REPO_DIR}
+mvn clean install -D${JBOSS_VERSION_CODE} -Dstandalone -Dmaven.repo.local=${LOCAL_REPO_DIR} -s settings.xml
