@@ -54,7 +54,7 @@ mkdir -p "${LOCAL_REPO_DIR}"
 export MAVEN_HOME
 export PATH="${MAVEN_HOME}/bin:${PATH}"
 
-export MAVEN_OPTS="${MAVEN_OPTS} -Dmaven.wagon.http.pool=false"
+export MAVEN_OPTS="${MAVEN_OPTS} -Dmaven.wagon.http.pool=true"
 export MAVEN_OPTS="${MAVEN_OPTS} -Dmaven.wagon.httpconnectionManager.maxPerRoute=3"
 
 #
