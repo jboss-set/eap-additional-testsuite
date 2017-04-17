@@ -36,6 +36,7 @@ Testing Wildfly
 3. Build and run the additional testsuite activating the WILDFLY profile (-Dwildfly).
 
 
+
 Testing EAP or Wildfly with specific JDK version
 ------------------------------------------------
 1. Make sure that JBOSS_FOLDER is set with the path to your EAP OR WILDFLY directory.
