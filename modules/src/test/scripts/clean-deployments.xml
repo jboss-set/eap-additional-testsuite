@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <target name="clean-deployments" description="deletes the deployments of the servers">
+        <echo message="Deleting existing deployments..."/>
+        <antcall target="clean-1"/>
+        <antcall target="clean-2"/>
+        <antcall target="clean-3"/>
+        <antcall target="clean-4"/>
+        <antcall target="clean-5"/>
+        <antcall target="clean-6"/>
+        <antcall target="clean-7"/>
+        <antcall target="clean-8"/>
+        <antcall target="clean-9"/>
+        <antcall target="clean-10"/>
+    </target>
+
+     <target name="check-1">
+          <fileset id="fs" dir="${serverDir}/eap7/build/target/jbossas/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-1">
+              <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-1" depends="check-1" if="delbuild-1">
+	 <delete failonerror="false">
+             <fileset dir="${serverDir}/eap7/build/target/jbossas/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-2">
+          <fileset id="fs" dir="${serverDir}/eap7/build/target/eap7-SYNC-tcp-0/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-2">
+              <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-2" depends="check-2" if="delbuild-2">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/eap7/build/target/eap7-SYNC-tcp-0/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-3">
+          <fileset id="fs" dir="${serverDir}/eap7/build/target/eap7-SYNC-tcp-1/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-3">
+              <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-3" depends="check-3" if="delbuild-3">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/eap7/build/target/eap7-SYNC-tcp-1/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-4">
+          <fileset id="fs" dir="${serverDir}/eap7/build/target/jbossas1/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-4">
+	      <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-4" depends="check-4" if="delbuild-4">
+	 <delete failonerror="false">
+             <fileset dir="${serverDir}/eap7/build/target/jbossas1/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-5">
+          <fileset id="fs" dir="${serverDir}/eap7/build/target/jbossas2/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-5">
+	      <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-5" depends="check-5" if="delbuild-5">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/eap7/build/target/jbossas2/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-6">
+          <fileset id="fs" dir="${serverDir}/wildfly/build/target/jbossas/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-6">
+              <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-6" depends="check-6" if="delbuild-6">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/wildfly/build/target/jbossas/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-7">
+          <fileset id="fs" dir="${serverDir}/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-7">
+	      <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-7" depends="check-7" if="delbuild-7">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-8">
+          <fileset id="fs" dir="${serverDir}/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-8">
+	      <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-8" depends="check-8" if="delbuild-8">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-9">
+          <fileset id="fs" dir="${serverDir}/wildfly/build/target/jbossas1/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-9">
+	      <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-9" depends="check-9" if="delbuild-9">
+         <delete failonerror="false">
+             <fileset dir="${serverDir}/wildfly/build/target/jbossas1/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+     <target name="check-10">
+          <fileset id="fs" dir="${serverDir}/wildfly/build/target/jbossas2/standalone/deployments" erroronmissingdir="false" />
+	  <condition property="delbuild-10">
+	      <not>
+	          <length length="0">
+		      <fileset refid="fs"/>
+	          </length>
+              </not>
+	  </condition>
+     </target>
+
+     <target name="clean-10" depends="check-10" if="delbuild-10">
+	 <delete failonerror="false">
+             <fileset dir="${serverDir}/wildfly/build/target/jbossas2/standalone/deployments" includes="*" />
+         </delete>
+     </target>
+
+</project>

@@ -36,11 +36,13 @@ import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
+import org.jboss.eap.additional.testsuite.annotations.ATTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.net.URL;
+import org.apache.http.HttpVersion;
 import org.apache.http.impl.client.HttpClients;
 import org.junit.Ignore;
 
@@ -77,6 +79,24 @@ public class CookieHeaderServletTestCase {
 
         response = httpClient.execute(request);
         Assert.assertTrue("Wrong Set-Cookie header format.", response.getFirstHeader("Set-Cookie").getValue().contains("\"example cookie\""));
+        IOUtils.closeQuietly(response);
+        httpClient.close();
+
+    }
+
+    @ATTest({"modules/testcases/jdkAll/Wildfly/web/src/main/java#13.0.0"})
+    @OperateOnDeployment(DEPLOYMENT)
+    public void headerProtocolTest(@ArquillianResource URL url) throws Exception {
+        URL testURL = new URL(url.toString() + "cookieHeaderServlet");
+
+        final HttpGet request = new HttpGet(testURL.toString());
+        request.setProtocolVersion(HttpVersion.HTTP_1_0);
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        CloseableHttpResponse response = null;
+
+        response = httpClient.execute(request);
+        System.out.println("Protocol Version : " + response.getProtocolVersion());
+        Assert.assertTrue("Protocol Version should be HTTP/1.1.", response.getProtocolVersion().toString().contains("HTTP/1.1"));
         IOUtils.closeQuietly(response);
         httpClient.close();
 

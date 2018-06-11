@@ -78,6 +78,10 @@
 	                </goals>
 	                <configuration>
 	                    <target>
+                                <ant antfile="${jboss.modules.dir}/src/test/scripts/clean-deployments.xml">
+	                            <property name="serverDir" value="/${jboss.modules.dir}/servers" />
+	                            <target name="clean-deployments"/>
+	                        </ant>
                                 <ant antfile="${jboss.modules.dir}/src/test/scripts/copy-file.xml">
                                     <property name="filePath" value="${jboss.modules.dir}/servers/${server}/build/target/jbossas/standalone/deployments" />
                                     <property name="fileName" value="server.jar" />

@@ -68,7 +68,7 @@ import org.jboss.eap.additional.testsuite.annotations.ATTest;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.2"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.2", "modules/testcases/jdkAll/Eap7/jaxrs/src/main/java#7.1.2"})
 //@ATDPM(config="standalone.xml", features={"org.wildfly:wildfly-feature-pack-new#jaxrs:subsystem=jaxrs"}, minVersions={"13.0.0"}, maxVersions={"null"}, isClassAnnotation="true")
 //@ATDPM(config="standalone.xml", features={"org.wildfly:wildfly-feature-pack-new#subsystem.jaxrs:subsystem=jaxrs"}, minVersions={"13.0.0"}, maxVersions={"null"}, isClassAnnotation="true")
 public class JaxbProviderDeserializationSecurityCheckTestCase {
@@ -122,7 +122,7 @@ public class JaxbProviderDeserializationSecurityCheckTestCase {
 
     }
     
-    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0.Alpha1","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.33"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0.Alpha1","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.3", "modules/testcases/jdkAll/Eap7/jaxrs/src/main/java#7.1.2"})
     public void testMChangeV2C3p0() throws Exception {
         String result = performCall("rest/jaxb/mchange");
 
@@ -135,12 +135,12 @@ public class JaxbProviderDeserializationSecurityCheckTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.2"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.2", "modules/testcases/jdkAll/Eap7/jaxrs/src/main/java#7.1.2"})
     public void testStatisticsService(){
         doRequestAndExpectIllegalTypeMessage(getStatisticsService());
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.2"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#13.0.0","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.2", "modules/testcases/jdkAll/Eap7/jaxrs/src/main/java#7.1.2"})
     public void testMyBatisJndiDataSourceFactory(){
         doRequestAndExpectIllegalTypeMessage(getMyBatisJndiDataSourceFactory());
     }
