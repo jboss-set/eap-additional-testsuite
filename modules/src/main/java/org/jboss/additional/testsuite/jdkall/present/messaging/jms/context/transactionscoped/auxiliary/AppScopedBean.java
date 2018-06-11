@@ -31,6 +31,7 @@ import javax.jms.JMSContext;
 import javax.jms.JMSProducer;
 import javax.jms.Queue;
 import javax.transaction.Transactional;
+import static org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.transactionscoped.TransactionScopedJMSContextTestCase.QUEUE_NAME;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
 
@@ -38,8 +39,6 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 @Transactional
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/messaging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/messaging/src/main/java","modules/testcases/jdkAll/Eap71x/messaging/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/messaging/src/main/java","modules/testcases/jdkAll/Eap70x/messaging/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/messaging/src/main/java","modules/testcases/jdkAll/WildflyRelease/messaging/src/main/java","modules/testcases/jdkAll/Wildfly/messaging/src/main/java"})
 public class AppScopedBean {
-
-    public static final String QUEUE_NAME = "java:app/AppScopedBeanQueue";
 
     @Inject
     private JMSContext context;

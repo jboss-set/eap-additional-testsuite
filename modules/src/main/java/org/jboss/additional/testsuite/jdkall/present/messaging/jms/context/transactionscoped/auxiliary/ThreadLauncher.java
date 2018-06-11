@@ -22,7 +22,7 @@
 
 package org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.transactionscoped.auxiliary;
 
-import static org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.transactionscoped.auxiliary.AppScopedBean.QUEUE_NAME;
+import static org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.transactionscoped.TransactionScopedJMSContextTestCase.QUEUE_NAME;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
@@ -40,7 +40,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 @JMSDestinationDefinition(
         name = QUEUE_NAME,
         interfaceName = "javax.jms.Queue",
-        destinationName = "AppScopedBeanQueue"
+        destinationName = "InjectedJMSContextTestCaseQueue"
 )
 @Stateful(passivationCapable = false)
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/messaging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/messaging/src/main/java","modules/testcases/jdkAll/Eap71x/messaging/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/messaging/src/main/java","modules/testcases/jdkAll/Eap70x/messaging/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/messaging/src/main/java","modules/testcases/jdkAll/WildflyRelease/messaging/src/main/java","modules/testcases/jdkAll/Wildfly/messaging/src/main/java"})
