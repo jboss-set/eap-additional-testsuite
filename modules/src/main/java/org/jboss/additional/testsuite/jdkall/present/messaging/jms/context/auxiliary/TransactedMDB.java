@@ -24,7 +24,7 @@ package org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.auxi
 
 import static javax.ejb.TransactionAttributeType.REQUIRED;
 import static javax.ejb.TransactionManagementType.CONTAINER;
-import static org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.transactionscoped.auxiliary.AppScopedBean.QUEUE_NAME;
+import static org.jboss.additional.testsuite.jdkall.present.messaging.jms.context.InjectedJMSContextTestCase.QUEUE_NAME;
 
 import javax.annotation.Resource;
 import javax.ejb.ActivationConfigProperty;
@@ -47,7 +47,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 @JMSDestinationDefinition(
         name = QUEUE_NAME,
         interfaceName = "javax.jms.Queue",
-        destinationName = "AppScopedBeanQueue"
+        destinationName = "InjectedJMSContextTestCaseQueue"
 )
 @MessageDriven(
         name = "TransactedMDB",
