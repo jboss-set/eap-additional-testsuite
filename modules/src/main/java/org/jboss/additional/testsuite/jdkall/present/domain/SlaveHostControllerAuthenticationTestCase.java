@@ -69,7 +69,7 @@ import org.junit.Test;
  *
  * @author Brian Stansberry (c) 2013 Red Hat Inc.
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/domain/src/main/java","modules/testcases/jdkAll/Eap7/domain/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/domain/src/main/java","modules/testcases/jdkAll/Eap71x/domain/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/domain/src/main/java","modules/testcases/jdkAll/Wildfly/domain/src/main/java","modules/testcases/jdkAll/Eap7/domain/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/domain/src/main/java","modules/testcases/jdkAll/Eap71x/domain/src/main/java"})
 public class SlaveHostControllerAuthenticationTestCase {
 
     private static final String VAULT_BLOCK = "ds_TestDS";
