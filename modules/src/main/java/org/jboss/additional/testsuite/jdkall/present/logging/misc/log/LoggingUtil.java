@@ -24,7 +24,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 /**
  * @author <a href="mailto:jperkins@redhat.com">James R. Perkins</a>
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/logging/src/main/java","modules/testcases/jdkAll/Eap7/logging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/logging/src/main/java","modules/testcases/jdkAll/Eap71x/logging/src/main/java","modules/testcases/jdkAll/Eap70x/logging/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/logging/src/main/java","modules/testcases/jdkAll/Wildfly/logging/src/main/java","modules/testcases/jdkAll/Eap7/logging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/logging/src/main/java","modules/testcases/jdkAll/Eap71x/logging/src/main/java","modules/testcases/jdkAll/Eap70x/logging/src/main/java"})
 public class LoggingUtil {
     private static final org.jboss.logging.Logger JBOSS_LOGGER = org.jboss.logging.Logger.getLogger(LoggingUtil.class);
     private static final org.apache.commons.logging.Log JCL_LOGGER = org.apache.commons.logging.LogFactory.getLog(LoggingUtil.class);
