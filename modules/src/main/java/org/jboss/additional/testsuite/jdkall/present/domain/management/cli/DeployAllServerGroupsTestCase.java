@@ -48,7 +48,7 @@ import org.junit.Test;
  *
  * @author Dominik Pospisil <dpospisi@redhat.com>
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/domain/src/main/java","modules/testcases/jdkAll/Eap7/domain/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/domain/src/main/java","modules/testcases/jdkAll/Eap71x/domain/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/domain/src/main/java","modules/testcases/jdkAll/Wildfly/domain/src/main/java","modules/testcases/jdkAll/Eap7/domain/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/domain/src/main/java","modules/testcases/jdkAll/Eap71x/domain/src/main/java"})
 public class DeployAllServerGroupsTestCase extends AbstractCliTestBase {
 
     private static WebArchive war;

@@ -33,7 +33,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  * See https://issues.jboss.org/browse/JBEAP-8702 discussion for more context.
  * @author Jan Martiska
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/elytron/src/main/java","modules/testcases/jdkAll/Eap7/elytron/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/elytron/src/main/java","modules/testcases/jdkAll/Eap71x/elytron/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/src/main/java","modules/testcases/jdkAll/Wildfly/elytron/src/main/java","modules/testcases/jdkAll/Eap7/elytron/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/elytron/src/main/java","modules/testcases/jdkAll/Eap71x/elytron/src/main/java"})
 @Stateless
 @SecurityDomain("BatchDomain2")
 @LocalBean

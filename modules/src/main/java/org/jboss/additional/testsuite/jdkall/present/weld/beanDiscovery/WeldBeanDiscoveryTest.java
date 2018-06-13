@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/weld/src/main/java#14.0.0.Final","modules/testcases/jdkAll/Eap71x-Proposed/weld/src/main/java#7.1.33","modules/testcases/jdkAll/Eap71x/weld/src/main/java#7.1.33"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/weld/src/main/java","modules/testcases/jdkAll/Wildfly/weld/src/main/java#14.0.0.Final","modules/testcases/jdkAll/Eap71x-Proposed/weld/src/main/java#7.1.33","modules/testcases/jdkAll/Eap71x/weld/src/main/java#7.1.33"})
 public class WeldBeanDiscoveryTest {
 
     private final String serverLogPath = "target/surefire-reports/org.jboss.additional.testsuite.jdkall.present.weld.beanDiscovery.WeldBeanDiscoveryTest-output.txt";
