@@ -10,12 +10,12 @@
 
     <parent>
         <groupId>org.jboss</groupId>
-        <artifactId>wildfly-additional-testsuite-weld</artifactId>
+        <artifactId>wildfly-release-13.0.0.Final-additional-testsuite-weld</artifactId>
         <version>1.0.3.Final</version>
     </parent>
 
-    <artifactId>wildfly-additional-testsuite-weld-configuration</artifactId>
-    <name>wildfly additional testsuite: weld : configuration</name>
+    <artifactId>wildfly-release-13.0.0.Final-additional-testsuite-weld-configuration</artifactId>
+    <name>wildfly release-13.0.0.Final additional testsuite: weld : configuration</name>
             
     <properties>
         <jboss.modules.dir>${basedir}/../../../../..</jboss.modules.dir>
