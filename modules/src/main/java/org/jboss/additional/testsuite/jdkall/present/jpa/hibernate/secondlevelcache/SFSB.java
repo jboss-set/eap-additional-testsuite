@@ -45,7 +45,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  */
 @Stateful
 @TransactionManagement(TransactionManagementType.CONTAINER)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jpa/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Wildfly/jpa/src/main/java"})
 public class SFSB {
 
     private static SessionFactory sessionFactory;

@@ -33,7 +33,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  *
  * @author Madhumita Sadhukhan
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jpa/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Wildfly/jpa/src/main/java"})
 @Entity
 @Cache(usage=TRANSACTIONAL)
 public class Student {
