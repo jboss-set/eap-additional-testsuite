@@ -1,0 +1,1 @@
+<module-alias xmlns="urn:jboss:module:1.1" name="mycompany.test.CDIJarMaven" slot="moduloAliasError" target-name="mycompany.test.CDIJarMaven" target-slot="moduloNivel2"/>
