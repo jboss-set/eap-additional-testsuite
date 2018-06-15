@@ -136,7 +136,7 @@
             </activation>
 
             <properties>
-		<serverDir>WildflyRelease-13.0.0.Final</serverDir>
+		<serverDir2>WildflyRelease-13.0.0.Final</serverDir2>
 	    </properties>
         </profile>
 
@@ -150,7 +150,7 @@
             </activation>
 
             <properties>
-		<serverDir>WildflyRelease-13.0.0.Final</serverDir>
+		<serverDir2>WildflyRelease-13.0.0.Final</serverDir2>
 	    </properties>
         </profile>
 
@@ -164,7 +164,7 @@
             </activation>
 
             <properties>
-		<serverDir>Wildfly</serverDir>
+		<serverDir2>Wildfly</serverDir2>
 	    </properties>
         </profile>
 
@@ -178,7 +178,7 @@
             </activation>
 
             <properties>
-		<serverDir>Wildfly</serverDir>
+		<serverDir2>Wildfly</serverDir2>
 	    </properties>
         </profile>
 
@@ -192,7 +192,7 @@
             </activation>
 
             <properties>
-		<serverDir>Wildfly-Unmerged</serverDir>
+		<serverDir2>Wildfly-Unmerged</serverDir2>
 	    </properties>
         </profile>
 
@@ -206,7 +206,7 @@
             </activation>
 
             <properties>
-		<serverDir>WildflyRelease-10.1.0.Final</serverDir>
+		<serverDir2>WildflyRelease-10.1.0.Final</serverDir2>
 	    </properties>
         </profile>
 
@@ -220,7 +220,7 @@
             </activation>
 
             <properties>
-		<serverDir>WildflyRelease-10.1.0.Final</serverDir>
+		<serverDir2>WildflyRelease-10.1.0.Final</serverDir2>
 	    </properties>
         </profile>
 
@@ -267,7 +267,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap64x</serverDir>
+		<serverDir2>Eap64x</serverDir2>
 	    </properties>
         </profile>
 
@@ -314,7 +314,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap64x</serverDir>
+		<serverDir2>Eap64x</serverDir2>
 	    </properties>
         </profile>
 
@@ -361,7 +361,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap64x-Proposed</serverDir>
+		<serverDir2>Eap64x-Proposed</serverDir2>
 	    </properties>
         </profile>
 
@@ -408,7 +408,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap64x-Proposed</serverDir>
+		<serverDir2>Eap64x-Proposed</serverDir2>
 	    </properties>
         </profile>
 
@@ -455,7 +455,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap63x</serverDir>
+		<serverDir2>Eap63x</serverDir2>
 	    </properties>
         </profile>
 
@@ -502,7 +502,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap63x</serverDir>
+		<serverDir2>Eap63x</serverDir2>
 	    </properties>
         </profile>
 
@@ -549,7 +549,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap62x</serverDir>
+		<serverDir2>Eap62x</serverDir2>
 	    </properties>
         </profile>
 
@@ -596,7 +596,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap62x</serverDir>
+		<serverDir2>Eap62x</serverDir2>
 	    </properties>
         </profile>
 
@@ -643,7 +643,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap61x</serverDir>
+		<serverDir2>Eap61x</serverDir2>
 	    </properties>
         </profile>
 
@@ -690,7 +690,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap7</serverDir>
+		<serverDir2>Eap7</serverDir2>
 	    </properties>
         </profile>
 
@@ -737,7 +737,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap7</serverDir>
+		<serverDir2>Eap7</serverDir2>
 	    </properties>
         </profile>
 
@@ -784,7 +784,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap71x</serverDir>
+		<serverDir2>Eap71x</serverDir2>
 	    </properties>
         </profile>
 
@@ -831,7 +831,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap71x</serverDir>
+		<serverDir2>Eap71x</serverDir2>
 	    </properties>
         </profile>
 
@@ -878,7 +878,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap71x-Proposed</serverDir>
+		<serverDir2>Eap71x-Proposed</serverDir2>
 	    </properties>
         </profile>
 
@@ -925,7 +925,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap71x-Proposed</serverDir>
+		<serverDir2>Eap71x-Proposed</serverDir2>
 	    </properties>
         </profile>
 
@@ -972,7 +972,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap7.1.0.Beta</serverDir>
+		<serverDir2>Eap7.1.0.Beta</serverDir2>
 	    </properties>
         </profile>
 
@@ -1019,7 +1019,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap70x</serverDir>
+		<serverDir2>Eap70x</serverDir2>
 	    </properties>
         </profile>
 
@@ -1066,7 +1066,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap70x</serverDir>
+		<serverDir2>Eap70x</serverDir2>
 	    </properties>
         </profile>
 
@@ -1113,7 +1113,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap70x-Proposed</serverDir>
+		<serverDir2>Eap70x-Proposed</serverDir2>
 	    </properties>
         </profile>
 
@@ -1160,7 +1160,7 @@
 	    </pluginRepositories>
 
             <properties>
-		<serverDir>Eap70x-Proposed</serverDir>
+		<serverDir2>Eap70x-Proposed</serverDir2>
 	    </properties>
         </profile>
 
@@ -1181,7 +1181,7 @@
 	                <configuration>
 	                    <target name="clean" description="clean">
 				<delete includeEmptyDirs="true" failonerror="false">
-				    <fileset dir="${basedir}/modules/testcases" includes="**/${serverDir}/**/src/main/java/"/>
+				    <fileset dir="${basedir}/modules/testcases" includes="**/${serverDir2}/**/src/main/java/"/>
 				</delete>
 			    </target>
 	                </configuration>
@@ -1243,7 +1243,7 @@
 			   <arguments>
 			       <argument>${basedir}</argument>
 			       <argument>${basedir}/modules/srcPool/main/java</argument>
-		               <argument>${serverDir}</argument>
+		               <argument>${serverDir2}</argument>
 		               <argument>${JBOSS_VERSION}</argument>
 		               <argument>versionOrder</argument>
                                <argument>${DISABLE_TESTS}</argument>
@@ -1263,7 +1263,7 @@
 			   <arguments>
 			       <argument>${basedir}</argument>
 			       <argument>${basedir}/modules/srcPool/config</argument>
-		               <argument>${serverDir}</argument>
+		               <argument>${serverDir2}</argument>
 		               <argument>${JBOSS_VERSION}</argument>
 		               <argument>versionOrder</argument>
                                <argument></argument>
