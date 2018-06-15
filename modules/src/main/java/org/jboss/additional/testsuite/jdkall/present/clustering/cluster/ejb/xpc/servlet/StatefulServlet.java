@@ -47,7 +47,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 /**
  * @author Paul Ferraro
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/clustering/src/main/java","modules/testcases/jdkAll/Eap7/clustering/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/clustering/src/main/java","modules/testcases/jdkAll/Eap71x/clustering/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/clustering/src/main/java","modules/testcases/jdkAll/Wildfly/clustering/src/main/java","modules/testcases/jdkAll/Eap7/clustering/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/clustering/src/main/java","modules/testcases/jdkAll/Eap71x/clustering/src/main/java"})
 @WebServlet(urlPatterns = { StatefulServlet.SERVLET_PATH })
 public class StatefulServlet extends HttpServlet {
     private static final long serialVersionUID = -592774116315946908L;
