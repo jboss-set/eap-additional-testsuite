@@ -43,7 +43,7 @@ import static org.junit.Assert.assertThat;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/domain_management/src/main/java#7.0.2-GA","modules/testcases/jdkAll/Wildfly/domain_management/src/main/java#11.0.0-Alpha1"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/domain_management/src/main/java","modules/testcases/jdkAll/Eap7/domain_management/src/main/java#7.0.2-GA","modules/testcases/jdkAll/Wildfly/domain_management/src/main/java#11.0.0-Alpha1"})
 public class AuditLoggerTestCase extends AbstractCliTestBase {
 
     @Deployment
