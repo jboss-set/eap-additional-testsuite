@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <target name="copy-dir" description="Copies a directory">
+        <echo message="Copying directory : ${folderToCopy}"/>
+        <copy todir="${todir}" preservelastmodified="false" overwrite="true" >
+            <fileset dir="${folderToCopy}">
+                <include name="**/**"/>
+            </fileset>
+        </copy>    
+    </target>
+
+</project>
