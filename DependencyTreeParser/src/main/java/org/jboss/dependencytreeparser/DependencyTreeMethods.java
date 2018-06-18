@@ -10,6 +10,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
@@ -146,6 +147,23 @@ public class DependencyTreeMethods {
         } finally {
             return jarClasses;
         }
+    }
+    
+    public static HashSet<String> listPackages(){
+        HashSet<String> packages = new HashSet<String>();
+        
+        ArrayList<String> jarClasses = DependencyTreeMethods.listClasses();
+        
+        for(String jc : jarClasses){
+            if(jc.contains(".class") && jc.lastIndexOf("/")!=-1) {
+                String packageName = jc.substring(0, jc.lastIndexOf("/")).replaceAll("/", ".");
+           //     System.out.println("packageName : " + packageName);
+                    if(!packages.contains(packageName))
+                        packages.add(packageName);
+            }
+        }
+        
+        return packages;
     }
     
     private static ArrayList<String> listJars(String path) {

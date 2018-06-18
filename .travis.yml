@@ -21,5 +21,9 @@ script:
   - export JBOSS_FOLDER=$PWD
   - export JBOSS_VERSION=13.0.0.Final
   - cd ../..
+<<<<<<< newWildflyRelease
   - travis_wait mvn -q clean install -Dwildfly-release-13.0.0.Final -Dwildfly-release-13.0.0.Final-jdk8 -Dstandalone
+=======
+  - travis_wait mvn clean install -q -Dwildfly-release-10.1.0.Final -Dwildfly-release-10.1.0.Final-jdk8 -Dstandalone
+>>>>>>> master
 
