@@ -32,7 +32,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  *
  * @author <a href="mailto:darran.lofthouse@jboss.com">Darran Lofthouse</a>
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/elytron/src/main/java","modules/testcases/jdkAll/Eap7/elytron/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/elytron/src/main/java","modules/testcases/jdkAll/Eap71x/elytron/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/src/main/java","modules/testcases/jdkAll/Wildfly/elytron/src/main/java","modules/testcases/jdkAll/Eap7/elytron/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/elytron/src/main/java","modules/testcases/jdkAll/Eap71x/elytron/src/main/java"})
 @Stateless
 @SecurityDomain("ejb3-tests")
 public class EntryBean extends org.jboss.additional.testsuite.jdkall.present.elytron.ejb.base.EntryBean implements Entry {

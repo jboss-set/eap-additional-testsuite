@@ -42,7 +42,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/security/src/main/java", "modules/testcases/jdkAll/Eap7/security/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java","modules/testcases/jdkAll/Eap71x/security/src/main/java", "modules/testcases/jdkAll/Eap70x/security/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Wildfly/security/src/main/java", "modules/testcases/jdkAll/Eap7/security/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java","modules/testcases/jdkAll/Eap71x/security/src/main/java", "modules/testcases/jdkAll/Eap70x/security/src/main/java"})
 public class SecurityDeserializationTestCase {
 
     private static final String ARCHIVE_NAME = "SecurityDeserializationTestCase";

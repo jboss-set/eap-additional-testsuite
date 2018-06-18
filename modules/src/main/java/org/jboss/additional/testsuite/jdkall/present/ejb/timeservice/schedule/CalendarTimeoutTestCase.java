@@ -33,7 +33,7 @@ import org.jboss.eap.additional.testsuite.annotations.ATFeature;
 import org.junit.Assert;
 import org.junit.Test;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#12.0.0.Alpha1"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jaxrs/src/main/java","modules/testcases/jdkAll/Wildfly/ejb/src/main/java#12.0.0.Alpha1"})
 public class CalendarTimeoutTestCase {
         /**
      * Change CET winter time to CEST summer time.

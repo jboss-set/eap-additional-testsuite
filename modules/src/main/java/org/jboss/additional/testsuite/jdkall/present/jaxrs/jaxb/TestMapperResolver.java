@@ -32,7 +32,7 @@ import javax.ws.rs.ext.Provider;
 
 @Provider
 @Produces(MediaType.APPLICATION_JSON)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java","modules/testcases/jdkAll/Eap7/jaxrs/src/main/java","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java","modules/testcases/jdkAll/Eap70x/jaxrs/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jaxrs/src/main/java","modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java","modules/testcases/jdkAll/Eap7/jaxrs/src/main/java","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java","modules/testcases/jdkAll/Eap70x/jaxrs/src/main/java"})
 public class TestMapperResolver implements ContextResolver<ObjectMapper> {
 
     private ObjectMapper objectMapper;
