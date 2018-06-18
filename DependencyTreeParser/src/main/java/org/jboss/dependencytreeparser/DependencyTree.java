@@ -1,6 +1,7 @@
 package org.jboss.dependencytreeparser;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  *
@@ -9,9 +10,9 @@ import java.util.ArrayList;
 public class DependencyTree {
 
     public static void main(String[] args) throws Exception {
-        ArrayList<String> jarClasses = DependencyTreeMethods.listClasses();
+        HashSet<String> packages = DependencyTreeMethods.listPackages();
         
-        for(String s : jarClasses){
+        for(String s : packages){
             System.out.println(s);
         }
     }
