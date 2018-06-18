@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="server-copy scripts">
+
+    <!-- Shared clustering config target -->
+    <target name="server-copy" description="Copying the Server Directory">
+
+        <echo message="  =========  Copying Server Directory  =========  "/>
+        <copy todir="${workspace}/servers/${server}/build/target/${serverDir}" overwrite="true">
+            <fileset dir="${workspace}/servers/${server}/build/target/jbossas"/>
+        </copy>
+
+    </target>
+
+</project>

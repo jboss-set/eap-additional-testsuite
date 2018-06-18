@@ -1,0 +1,14 @@
+<module xmlns="urn:jboss:module:1.1" name="mycompany.test.CDIJarMaven" slot="moduloNivel2">
+
+    <dependencies>
+		<module name="mycompany.test.CDIJarMaven" slot="main" export="true">
+ 			<imports>
+                <include path="META-INF**" />
+            </imports>
+            <exports>  
+                <include path="META-INF**" />
+            </exports>  
+        </module>
+    </dependencies>
+
+</module>

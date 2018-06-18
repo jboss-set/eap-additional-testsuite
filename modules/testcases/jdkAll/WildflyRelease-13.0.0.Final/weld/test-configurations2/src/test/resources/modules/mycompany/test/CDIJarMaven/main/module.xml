@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module xmlns="urn:jboss:module:1.5" name="mycompany.test.CDIJarMaven">
+    <resources>
+        <resource-root path="CDIJarMaven.jar"/>
+    </resources>
+
+    <dependencies>
+		<module name="javax.faces.api" export="true"/>
+		
+		<!-- Timer de ejbs para el log de acceso-->
+		<module name="javax.ejb.api"/>
+		<module name="javax.enterprise.api" />
+    </dependencies>
+</module>
