@@ -63,7 +63,7 @@ import org.jboss.marshalling.river.RiverUnmarshaller;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/core/src/main/java","modules/testcases/jdkAll/Eap7/core/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/core/src/main/java","modules/testcases/jdkAll/Eap71x/core/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/core/src/main/java","modules/testcases/jdkAll/Eap70x/core/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/core/src/main/java","modules/testcases/jdkAll/Wildfly/core/src/main/java","modules/testcases/jdkAll/Eap7/core/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/core/src/main/java","modules/testcases/jdkAll/Eap71x/core/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/core/src/main/java","modules/testcases/jdkAll/Eap70x/core/src/main/java"})
 public class MarshallingTestCase {
 
     public static final String DEPLOYMENT = "marshallingTestCase.war";

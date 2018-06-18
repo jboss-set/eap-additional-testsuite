@@ -12,7 +12,7 @@ import org.jboss.as.server.suspend.SuspendController;
 import org.jboss.as.server.suspend.ServerActivity;
 import org.jboss.as.server.suspend.ServerActivityCallback;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/server/src/main/java", "modules/testcases/jdkAll/Eap71x/server/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/server/src/main/java","modules/testcases/jdkAll/Wildfly/server/src/main/java", "modules/testcases/jdkAll/Eap71x/server/src/main/java"})
 public class SuspendControllerTestCase {
 
     private static final String FAIL_MESSAGE = "test failure";
