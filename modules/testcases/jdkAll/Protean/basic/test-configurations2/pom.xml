@@ -120,6 +120,11 @@
 		    <artifactId>quarkus-arc</artifactId>
 		    <scope>provided</scope>
 		</dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-undertow-websockets</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
 		<!-- EL implementation -->
 		<dependency>
@@ -174,6 +179,11 @@
 		    <artifactId>quarkus-arc-deployment</artifactId>
                     <scope>provided</scope>
 		</dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-undertow-websockets-deployment</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
 		<!-- EL implementation -->
 		<dependency>
