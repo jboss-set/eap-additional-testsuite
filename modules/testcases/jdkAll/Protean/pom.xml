@@ -23,7 +23,7 @@
     <name>protean additional testsuite: additional testsuite for protean</name>
 
     <properties>
-        <protean.version>${PROTEAN_VERSION}</protean.version>
+        <protean.version>${QUARKUS_VERSION}</protean.version>
     </properties>
 
     <profiles>
@@ -32,7 +32,7 @@
             <id>quarkus-master</id>
             <activation>
                 <property>
-                    <name>PROTEAN_VERSION</name>
+                    <name>QUARKUS_VERSION</name>
                     <value>999-SNAPSHOT</value>
                 </property>
             </activation>
