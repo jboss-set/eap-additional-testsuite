@@ -1529,7 +1529,7 @@
             <id>protean.testsuite</id>
             <activation>
                 <property>
-                    <name>protean</name>
+                    <name>quarkus</name>
                     <value>true</value>
                 </property>
             </activation>
