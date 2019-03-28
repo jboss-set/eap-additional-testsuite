@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>
-                <version>999-SNAPSHOT</version>
+                <version>${protean.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -92,7 +92,7 @@
                         <groupId>io.quarkus</groupId>
                         <artifactId>quarkus-build-parent</artifactId>
                         <type>pom</type>
-                        <version>999-SNAPSHOT</version>
+                        <version>${protean.version}</version>
                         <scope>import</scope>
                     </dependency>
                 </dependencies>
