@@ -25,8 +25,8 @@
             <id>upstream</id>
             <activation>
                 <property>
-                    <name>QUARKUS_VERSION</name>
-                    <value>999-SNAPSHOT</value>
+                    <name>JBOSS_VERSION</name>
+                    <value>999.0.0-SNAPSHOT</value>
                 </property>
             </activation>
     
@@ -39,8 +39,8 @@
             <id>releases</id>
             <activation>
                 <property>
-                    <name>QUARKUS_VERSION</name>
-                    <value>!999-SNAPSHOT</value>
+                    <name>JBOSS_VERSION</name>
+                    <value>!999.0.0-SNAPSHOT</value>
                 </property>
             </activation>
     
