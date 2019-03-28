@@ -26,7 +26,7 @@ package org.jboss.additional.testsuite.jdkall.present.basic.websockets;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 import io.quarkus.test.junit.SubstrateTest;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/test/java#0.10.0*0.12.0","modules/testcases/jdkAll/Protean/basic/upstream/test-configurations/src/test/java#999.0.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/test/java#0.10.0*0.12.0"})
 @SubstrateTest
 public class WebsocketApplicationScopedTestCaseInGraalITCase extends WebsocketApplicationScopedTestCase{
 
