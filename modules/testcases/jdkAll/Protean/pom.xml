@@ -43,7 +43,7 @@
                         <groupId>io.quarkus</groupId>
                         <artifactId>quarkus-build-parent</artifactId>
                         <type>pom</type>
-                        <version>${protean.version}</version>
+                        <version>999-SNAPSHOT</version>
                         <scope>import</scope>
                     </dependency>
                 </dependencies>

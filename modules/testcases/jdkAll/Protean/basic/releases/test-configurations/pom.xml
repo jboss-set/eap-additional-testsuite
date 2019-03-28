@@ -10,7 +10,7 @@
 
     <parent>
         <groupId>org.jboss</groupId>
-        <artifactId>protean-additional-testsuite-basic</artifactId>
+        <artifactId>protean-additional-testsuite-basic-releases</artifactId>
         <version>1.0.3.Final</version>
     </parent>
 

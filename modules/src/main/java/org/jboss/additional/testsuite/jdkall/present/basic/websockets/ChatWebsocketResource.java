@@ -37,7 +37,7 @@ import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/test-configurations2/src/main/java#0.10.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/main/java#0.10.0*0.12.0"})
 @ServerEndpoint("/chat/{username}")
 @ApplicationScoped
 public class ChatWebsocketResource {

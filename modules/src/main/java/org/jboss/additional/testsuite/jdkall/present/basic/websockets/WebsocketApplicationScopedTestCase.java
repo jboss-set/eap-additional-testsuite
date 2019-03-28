@@ -42,7 +42,7 @@ import io.quarkus.test.common.http.TestHTTPResource;
 import io.quarkus.test.junit.QuarkusTest;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/test-configurations2/src/test/java#0.10.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/test/java#0.10.0*0.12.0"})
 @QuarkusTest
 public class WebsocketApplicationScopedTestCase {
     private static final HashMap<String, LinkedBlockingDeque<String>> queues = new HashMap<>();

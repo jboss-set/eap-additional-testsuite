@@ -25,7 +25,7 @@ import org.hibernate.validator.constraints.Length;
 import org.jboss.additional.testsuite.jdkall.present.basic.beanvalidation.custom.MyOtherBean;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java","modules/testcases/jdkAll/Protean/basic/test-configurations/src/main/java#0.9.1**0.9.1","modules/testcases/jdkAll/Protean/basic/test-configurations2/src/main/java#1.0.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java","modules/testcases/jdkAll/Protean/basic/releases/test-configurations/src/main/java#0.9.1**0.9.1","modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/main/java#0.10.0"})
 @Path("/test")
 public class BeanValidationTestResource {
 

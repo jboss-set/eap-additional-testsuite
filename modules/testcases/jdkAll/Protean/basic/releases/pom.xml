@@ -10,42 +10,42 @@
 
     <parent>
         <groupId>org.jboss</groupId>
-        <artifactId>protean-additional-testsuite</artifactId>
+        <artifactId>protean-additional-testsuite-dispatcher</artifactId>
         <version>1.0.3.Final</version>
     </parent>
 
-    <artifactId>protean-additional-testsuite-dispatcher</artifactId>
+    <artifactId>protean-additional-testsuite-basic-releases</artifactId>
     <packaging>pom</packaging>
-    <name>protean additional testsuite: dispatcher</name>
+    <name>protean additional testsuite: basic</name>
 
              
     <profiles>
 
         <profile>
-            <id>upstream</id>
+            <id>quarkus</id>
             <activation>
                 <property>
-                    <name>QUARKUS_VERSION</name>
-                    <value>999-SNAPSHOT</value>
+                    <name>JBOSS_VERSION</name>
+                    <value>!0.9.1</value>
                 </property>
             </activation>
     
             <modules>
-                <module>upstream</module>
+                <module>test-configurations2</module>
             </modules>
         </profile>
 
         <profile>
-            <id>releases</id>
+            <id>shamrock</id>
             <activation>
                 <property>
-                    <name>QUARKUS_VERSION</name>
-                    <value>!999-SNAPSHOT</value>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.9.1</value>
                 </property>
             </activation>
     
             <modules>
-                <module>releases</module>
+                <module>test-configurations</module>
             </modules>
         </profile>
 
