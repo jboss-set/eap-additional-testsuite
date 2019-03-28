@@ -11,7 +11,7 @@ import javax.validation.ConstraintValidatorContext;
 import javax.validation.Payload;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java","modules/testcases/jdkAll/Protean/basic/releases/test-configurations/src/main/java#0.9.1*0.9.1","modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/main/java#0.10.0*0.12.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java","modules/testcases/jdkAll/Protean/basic/releases/test-configurations/src/main/java#0.9.1*0.9.1","modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/main/java#0.10.0*0.12.0","modules/testcases/jdkAll/Protean/basic/upstream/test-configurations/src/main/java#999.0.0"})
 @Target({ ElementType.TYPE_USE })
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = MyCustomConstraint.Validator.class)

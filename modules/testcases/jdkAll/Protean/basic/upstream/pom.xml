@@ -16,16 +16,14 @@
 
     <artifactId>protean-additional-testsuite-basic-upstream</artifactId>
     <packaging>pom</packaging>
-    <name>protean additional testsuite: basic</name>
+    <name>protean additional testsuite: basic-upstream</name>
 
              
-    <profiles>
     
-            <!--modules>
+            <modules>
                 <module>test-configurations</module>
-            </modules-->
+            </modules>
 
 
-    </profiles>
 
 </project>
