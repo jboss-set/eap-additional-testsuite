@@ -16,7 +16,7 @@ How to test EAT with Quarkus
 -------------------------------------
  
 1. Build Quarkus in order to produce the products of the built in the maven repo.
-2. export GRAALVM_HOME=.../graalvm-ce-1.0.0-rc12-linux-amd64/graalvm-ce-1.0.0-rc12 (path to GraalVM)
+2. export GRAALVM_HOME=.../graalvm-ce-1.0.0-rcX-linux-amd64/graalvm-ce-1.0.0-rcX (path to GraalVM)
 3. export JBOSS_VERSION = the quarkus version
 4. export QUARKUS_VERSION = the version of Quarkus that we have built at step 1
 5. ./run-quarkus-non-native.sh (for the non-native mode) or ./run-quarkus-native.sh (for the native mode)
