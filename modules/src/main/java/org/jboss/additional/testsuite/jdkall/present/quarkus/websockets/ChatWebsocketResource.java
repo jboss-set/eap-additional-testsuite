@@ -20,7 +20,7 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-package org.jboss.additional.testsuite.jdkall.present.basic.websockets;
+package org.jboss.additional.testsuite.jdkall.present.quarkus.websockets;
 
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
@@ -37,7 +37,7 @@ import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/main/java#0.10.0*0.12.0","modules/testcases/jdkAll/Protean/basic/upstream/test-configurations/src/main/java#999.0.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/main/java#0.10.0*0.12.0"})
 @ServerEndpoint("/chat/{username}")
 @ApplicationScoped
 public class ChatWebsocketResource {

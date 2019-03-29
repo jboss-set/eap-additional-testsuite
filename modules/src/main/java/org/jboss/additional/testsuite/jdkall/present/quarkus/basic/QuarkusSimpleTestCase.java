@@ -20,14 +20,23 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-package org.jboss.additional.testsuite.jdkall.present.basic.websockets;
-
+package org.jboss.additional.testsuite.jdkall.present.quarkus.basic;
 
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
-import io.quarkus.test.junit.SubstrateTest;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/test/java#0.10.0*0.12.0"})
-@SubstrateTest
-public class WebsocketApplicationScopedTestCaseInGraalITCase extends WebsocketApplicationScopedTestCase{
+import org.junit.jupiter.api.Test;
+
+import io.quarkus.test.junit.QuarkusTest;
+
+
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.0","modules/testcases/jdkAll/Protean/quarkus/quark/test-configurations/src/test/java#999.0.0"})
+@QuarkusTest
+public class QuarkusSimpleTestCase {
+
+
+    @Test
+    public void testQuarkus() throws Exception {
+        System.out.println("Testing ...");
+    }
 
 }

@@ -1,4 +1,4 @@
-package org.jboss.additional.testsuite.jdkall.present.basic.testBeanValidation;
+package org.jboss.additional.testsuite.jdkall.present.quarkus.testBeanValidation;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
@@ -13,7 +13,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  * Test various Bean Validation operations running in Shamrock
  */
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations/src/test/java#0.9.1*0.9.1"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations/src/test/java#0.9.1*0.9.2"})
 @ShamrockTest
 public class BeanValidationFunctionalityTest {
 

@@ -20,7 +20,7 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-package org.jboss.additional.testsuite.jdkall.present.basic.websockets;
+package org.jboss.additional.testsuite.jdkall.present.quarkus.websockets;
 
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
@@ -42,7 +42,7 @@ import io.quarkus.test.common.http.TestHTTPResource;
 import io.quarkus.test.junit.QuarkusTest;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/basic/releases/test-configurations2/src/test/java#0.10.0*0.12.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.0"})
 @QuarkusTest
 public class WebsocketApplicationScopedTestCase {
     private static final HashMap<String, LinkedBlockingDeque<String>> queues = new HashMap<>();
