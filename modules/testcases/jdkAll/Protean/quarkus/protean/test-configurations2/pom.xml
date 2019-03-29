@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     *  ΙΔΕΑ : THE JBOSS TESTSUITE TO DEVELOP TESTS AGAINST INFINITE NUMBER OF JBOSS SERVERS
+    -->
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>protean-additional-testsuite-protean</artifactId>
+        <version>1.0.3.Final</version>
+    </parent>
+
+    <artifactId>protean-additional-testsuite-protean-configuration2</artifactId>
+    <name>protean additional testsuite: protean : configuration2</name>
+            
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        
+    </properties>
+    
+
+    <build>
+         <resources>
+             <resource>
+                 <directory>src/test/resources</directory>
+             </resource>
+         </resources>
+         <!--sourceDirectory>${basedir}/../src/main/java,${basedir}/../src/test/java</sourceDirectory-->
+	 <plugins>  
+		      
+            <plugin>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-maven-plugin</artifactId>
+                <version>${protean.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>  
+    
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+
+                <configuration>
+                    <!-- Prevent test and server output appearing in console. -->
+                    <redirectTestOutputToFile>${testLogToFile}</redirectTestOutputToFile>
+                    <failIfNoTests>false</failIfNoTests>
+                </configuration>
+
+		<executions>
+	            <execution>
+		        <id>default-test</id>
+		        <phase>test</phase>
+		        <goals>
+		            <goal>test</goal>
+		        </goals>
+		        <configuration>         
+		            <!-- Tests to execute. -->
+		            <includes>
+		                <include>org/jboss/additional/testsuite/jdkall/present/quarkus/**/*Test.java</include>
+		                <include>org/jboss/additional/testsuite/jdkall/present/quarkus/**/*TestCase.java</include>
+		            </includes> 
+                            <argLine>-Duser.language=en</argLine>
+		        </configuration>
+                        
+		    </execution>
+		</executions>
+	    </plugin>
+
+            
+
+        </plugins>
+	
+    </build>
+
+    <profiles>
+        <profile>
+            <id>quarkus-release</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>!0.10.0</value>
+                </property>
+            </activation>
+
+            <dependencyManagement>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.quarkus</groupId>
+                        <artifactId>quarkus-build-parent</artifactId>
+                        <type>pom</type>
+                        <version>${protean.version}</version>
+                        <scope>import</scope>
+                    </dependency>
+                </dependencies>
+            </dependencyManagement>
+
+            <dependencies>
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-resteasy</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-hibernate-validator</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-arc</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+                <dependency>
+                    <groupId>io.quarkus</groupId>
+                    <artifactId>quarkus-undertow-websockets</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
+		<!-- EL implementation -->
+		<dependency>
+		   <groupId>org.glassfish</groupId>
+		   <artifactId>javax.el</artifactId>
+		</dependency>
+
+		<!-- test dependencies -->
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-junit5</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>rest-assured</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+            </dependencies>
+
+        </profile>
+
+        <profile>
+            <id>quarkus</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.10.0</value>
+                </property>
+            </activation>
+
+            <dependencyManagement>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.quarkus</groupId>
+                        <artifactId>quarkus-build-parent</artifactId>
+                        <type>pom</type>
+                        <version>${protean.version}</version>
+                        <scope>import</scope>
+                    </dependency>
+                </dependencies>
+            </dependencyManagement>
+
+            <dependencies>
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-hibernate-validator-deployment</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-arc-deployment</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+                <dependency>
+                    <groupId>io.quarkus</groupId>
+                    <artifactId>quarkus-undertow-websockets-deployment</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
+		<!-- EL implementation -->
+		<dependency>
+		   <groupId>org.glassfish</groupId>
+		   <artifactId>javax.el</artifactId>
+                   <version>3.0.1-b09</version>
+		</dependency>
+
+		<!-- test dependencies -->
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-junit5</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>rest-assured</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+
+                <dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-resteasy-deployment</artifactId>
+                    <scope>provided</scope>
+		</dependency>
+            </dependencies>
+
+        </profile>
+
+        <profile>
+            <id>native-image</id>
+            <activation>
+                <property>
+                    <name>native</name>
+                </property>
+            </activation>
+            <build>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                                <configuration>
+                                  
+                                    <argLine>-Duser.language=en</argLine>
+                                    <systemProperties>
+                                        <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                                    </systemProperties>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>io.quarkus</groupId>
+                        <artifactId>quarkus-maven-plugin</artifactId>
+                        <version>${protean.version}</version>
+                        <executions>
+                            <execution>
+                                <id>native-image</id>
+                                <goals>
+                                    <goal>native-image</goal>
+                                </goals>
+                                <configuration>
+                                    <enableHttpUrlHandler>true</enableHttpUrlHandler>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     *  ΙΔΕΑ : THE JBOSS TESTSUITE TO DEVELOP TESTS AGAINST INFINITE NUMBER OF JBOSS SERVERS
+    -->
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>protean-additional-testsuite</artifactId>
+        <version>1.0.3.Final</version>
+    </parent>
+
+    <artifactId>protean-additional-testsuite-quarkus</artifactId>
+    <packaging>pom</packaging>
+    <name>protean additional testsuite: quarkus</name>
+
+             
+    <profiles>
+
+        <profile>
+            <id>upstream</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>999.0.0-SNAPSHOT</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>!999.0.0-SNAPSHOT</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>protean</module>
+            </modules>
+        </profile>
+
+    </profiles>
+
+</project>
