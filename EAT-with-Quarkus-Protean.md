@@ -23,8 +23,6 @@ How to test EAT with Protean/Quarkus
 
 Note : In general JBOSS_VERSION = QUARKUS_VERSION . In case of the master branch, where the version in not in the format x.y.z (999-SNAPSHOT), QUARKUS_VERSION should be set to 999-SNAPSHOT (the branch version) and JBOSS_VERSION to 999.0.0-SNAPSHOT version (in format x.y.z) .
 
-
-Another note : In upstream (or version > 0.12.0) before building Protean/Quarkus at doJavaStart method of quarkus/test-framework/junit5/src/main/java/io/quarkus/test/junit/QuarkusTestExtension.java set BootstrapClassLoaderFactory.PROP_PROJECT_DISCOVERY and BootstrapClassLoaderFactory.PROP_CP_CACHE to false.
  
 
 Testing with the master version :
