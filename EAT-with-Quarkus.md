@@ -4,21 +4,21 @@
 --------------------------------------------------------------------------------
 ## A PROJECT UNDER THE ΙΔΕΑ STATEMENT
 --------------------------------------
-## EAT with PROTEAN and QUARKUS
+## EAT with QUARKUS
 --------------------------------
 
 EAT can, now, be used to distribute the tests not only to the appropriate version of the server to be tested with,
-but it can test the microprofile applications. It can also be used with Protean/Quarkus in both native and no-native mode, while the code (or part of the code of the tests) can be distributed for both server and Protean app testing.
+but it can test the microprofile applications. It can also be used with Quarkus in both native and no-native mode, while the code (or part of the code of the tests) can be distributed for both server and Quarkus app testing.
 
  
 
-How to test EAT with Protean/Quarkus 
+How to test EAT with Quarkus 
 -------------------------------------
  
-1. Build Protean/Quarkus in order to produce the products of the built in the maven repo.
+1. Build Quarkus in order to produce the products of the built in the maven repo.
 2. export GRAALVM_HOME=.../graalvm-ce-1.0.0-rc11-linux-amd64/graalvm-ce-1.0.0-rc11 (path to GraalVM)
 3. export JBOSS_VERSION = the quarkus/protean version
-4. export QUARKUS_VERSION = the version of Protean/Quarkus that we have built at step 1
+4. export QUARKUS_VERSION = the version of Quarkus that we have built at step 1
 5. ./run-quarkus-protean-non-native.sh (for the non-native mode) or ./run-quarkus-protean-native.sh (for the native mode)
 
 Note : In general JBOSS_VERSION = QUARKUS_VERSION . In case of the master branch, where the version in not in the format x.y.z (999-SNAPSHOT), QUARKUS_VERSION should be set to 999-SNAPSHOT (the branch version) and JBOSS_VERSION to 999.0.0-SNAPSHOT version (in format x.y.z) .
