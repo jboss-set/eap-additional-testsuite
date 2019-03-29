@@ -17,7 +17,7 @@
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-integration-test-hibernate-validator</artifactId>
     <name>qurkus upstream : configuration</name>
-    <version>999-SNAPSHOT</version>    
+    <version>${QUARKUS_VERSION}</version>    
         
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

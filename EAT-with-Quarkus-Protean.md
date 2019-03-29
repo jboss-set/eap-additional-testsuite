@@ -17,8 +17,9 @@ How to test EAT with Protean/Quarkus
  
 1. Build Protean/Quarkus in order to produce the products of the built in the maven repo.
 2. export GRAALVM_HOME=.../graalvm-ce-1.0.0-rc11-linux-amd64/graalvm-ce-1.0.0-rc11 (path to GraalVM)
-3. export QUARKUS_VERSION = the version of Protean/Quarkus that we have built at step 1
-4. ./Maven/apache-maven-3.5.3/bin/mvn clean install -Dquarkus -Dmodule=basic -Dno-native -DJBOSS_VERSION=branch-version (for the non-native mode) or ./Maven/apache-maven-3.5.3/bin/mvn clean install -Dquarkus -Dmodule=basic -Dnative -DJBOSS_VERSION=branch-version (for the native mode)
+3. export JBOSS_VERSION = the quarkus/protean version
+4. export QUARKUS_VERSION = the version of Protean/Quarkus that we have built at step 1
+5. ./run-quarkus-protean-non-native.sh (for the non-native mode) or ./run-quarkus-protean-native.sh (for the native mode)
 
 Note : In general JBOSS_VERSION = QUARKUS_VERSION . In case of the master branch, where the version in not in the format x.y.z (999-SNAPSHOT), QUARKUS_VERSION should be set to 999-SNAPSHOT (the branch version) and JBOSS_VERSION to 999.0.0-SNAPSHOT version (in format x.y.z) .
 
@@ -28,32 +29,36 @@ Another note : In upstream (or version > 0.12.0) before building Protean/Quarkus
 
 Testing with the master version :
 ---------------------------------
+export JBOSS_VERSION = 999.0.0-SNAPSHOT
 export QUARKUS_VERSION = 999-SNAPSHOT
 
-./Maven/apache-maven-3.5.3/bin/mvn clean install -Dquarkus -Dmodule=basic -Dnative -DJBOSS_VERSION=999.0.0-SNAPSHOT
+./run-quarkus-protean-native.sh
 
  
 
 Testing with 0.11.0 version :
 -----------------------------
+export JBOSS_VERSION = 0.11.0
 export QUARKUS_VERSION = 0.11.0
 
-./Maven/apache-maven-3.5.3/bin/mvn clean install -Dquarkus -Dmodule=basic -Dnative -DJBOSS_VERSION=0.11.0
+./run-quarkus-protean-native.sh
 
  
 
 Testing with 0.10.0 version :
 -----------------------------
+export JBOSS_VERSION = 0.10.0
 export QUARKUS_VERSION = 0.10.0
 
-./Maven/apache-maven-3.5.3/bin/mvn clean install -Dquarkus -Dmodule=basic -Dnative -DJBOSS_VERSION=0.10.0
+./run-quarkus-protean-native.sh
 
  
 
 Testing with 0.9.1 version :
 ----------------------------
+export JBOSS_VERSION = 0.9.1
 export QUARKUS_VERSION = 0.9.1
 
-./Maven/apache-maven-3.5.3/bin/mvn clean install -Dquarkus -Dmodule=basic -Dnative -DJBOSS_VERSION=0.9.1
+./run-quarkus-protean-native.sh
 
 
