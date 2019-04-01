@@ -42,7 +42,7 @@ import io.quarkus.test.common.http.TestHTTPResource;
 import io.quarkus.test.junit.QuarkusTest;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.0", "modules/testcases/jdkAll/Protean/quarkus/quark/test-configurations/src/test/java#999.0.0"})
 @QuarkusTest
 public class WebsocketApplicationScopedTestCase {
     private static final HashMap<String, LinkedBlockingDeque<String>> queues = new HashMap<>();
@@ -55,6 +55,8 @@ public class WebsocketApplicationScopedTestCase {
 
     @Test
     public void testWebsocketChat() throws Exception {
+        //Give the quarkus time to deploy the app
+        Thread.sleep(1000);
         try (Session session = ContainerProvider.getWebSocketContainer().connectToServer(Client.class, uriUser1)) {
             //Wait until the client is initialized e.q. the OnOpen is executed
             Thread.sleep(10);
