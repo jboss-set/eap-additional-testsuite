@@ -1708,6 +1708,7 @@
 			            <target name="clean" description="clean">
 					<delete includeEmptyDirs="true" failonerror="false">
 					    <fileset dir="${basedir}/modules/testcases" includes="**/**/${serverDir2}/**/src/main/java/"/>
+                                            <fileset dir="${basedir}/modules/testcases" includes="**/**/Protean/**/src/test/"/>
                                             <fileset dir="${basedir}/modules/srcPool/main/java"/>
 					</delete>
 				    </target>
