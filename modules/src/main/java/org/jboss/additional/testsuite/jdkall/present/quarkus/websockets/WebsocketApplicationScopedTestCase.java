@@ -42,7 +42,7 @@ import io.quarkus.test.common.http.TestHTTPResource;
 import io.quarkus.test.junit.QuarkusTest;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.1"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.1","modules/testcases/jdkAll/Protean/quarkus/quark/test-configurations/src/test/java#999.0.0"})
 @QuarkusTest
 public class WebsocketApplicationScopedTestCase {
     private static final HashMap<String, LinkedBlockingDeque<String>> queues = new HashMap<>();
@@ -56,7 +56,16 @@ public class WebsocketApplicationScopedTestCase {
     @Test
     public void testWebsocketChat() throws Exception {
         try (Session session = ContainerProvider.getWebSocketContainer().connectToServer(Client.class, uriUser1)) {
-            //Wait until the client is initialized e.q. the OnOpen is executed
+            testWebSocket(session);
+        }catch(Exception e) {
+            try (Session session = ContainerProvider.getWebSocketContainer().connectToServer(Client.class, uriUser1)) {
+                testWebSocket(session);
+            }
+        }
+    }
+
+    private void testWebSocket(Session session) throws Exception {
+        //Wait until the client is initialized e.q. the OnOpen is executed
             Thread.sleep(10);
             Assertions.assertTrue(queues.size() > 0);
 
@@ -81,7 +90,6 @@ public class WebsocketApplicationScopedTestCase {
                 Assertions.assertEquals("User user2 joined", queues.get(session.getId()).poll(10, TimeUnit.SECONDS));
                 Assertions.assertEquals(">> user2: hello world", queues.get(session.getId()).poll(10, TimeUnit.SECONDS));
             }
-        }
     }
 
     @ClientEndpoint
