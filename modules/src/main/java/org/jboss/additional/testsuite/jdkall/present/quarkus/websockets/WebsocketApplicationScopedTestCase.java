@@ -41,6 +41,7 @@ import org.junit.jupiter.api.Test;
 import io.quarkus.test.common.http.TestHTTPResource;
 import io.quarkus.test.junit.QuarkusTest;
 
+/** This test needs to be checked as it fails intermittently **/
 
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.1","modules/testcases/jdkAll/Protean/quarkus/quark/test-configurations/src/test/java#999.0.0"})
 @QuarkusTest
