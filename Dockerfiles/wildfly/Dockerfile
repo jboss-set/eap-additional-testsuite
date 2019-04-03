@@ -14,9 +14,8 @@ RUN dnf -y install wget
 RUN dnf install -y git
 
 # Downloading Java
-RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/$JAVA_VERSION-$BUILD_VERSION/$UUID/jdk-$JAVA_VERSION-linux-x64.rpm" -O /tmp/jdk-8-linux-x64.rpm
+RUN wget --no-check-certificate "https://www.dropbox.com/s/vm819mraxwidxqh/jdk-8u191-linux-x64.rpm?dl=0" -O /tmp/jdk-8-linux-x64.rpm && cd /tmp && dnf -y --allowerasing install findutils && rpm -Uhv jdk-8-linux-x64.rpm
 
-RUN dnf -y --allowerasing install /tmp/jdk-8-linux-x64.rpm
 RUN rm /tmp/jdk-8-linux-x64.rpm 
 
 RUN alternatives --install /usr/bin/java jar /usr/java/latest/bin/java 200000
