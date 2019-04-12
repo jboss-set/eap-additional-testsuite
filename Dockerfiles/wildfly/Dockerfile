@@ -45,11 +45,11 @@ RUN mkdir -p /home/user/.m2/repository
 
 RUN mkdir wildfly && cd wildfly && git clone https://github.com/wildfly/wildfly.git master && cd master && ls -la && mvn clean install -DskipTests -s "/usr/share/settings-eatwildfly.xml" && tmp=$(ls -d $(pwd)/dist/target/wildfly-* | sed -e '/.jar/d') && JBOSS_VERSION=$(basename "${tmp}" | sed -e 's/wildfly-//' | sed -e 's/-for-validation//') && echo "export JBOSS_VERSION=$JBOSS_VERSION" && JBOSS_FOLDER="$(pwd)/dist/target/wildfly-${JBOSS_VERSION}"  && echo "export JBOSS_FOLDER=$JBOSS_FOLDER"
 
-RUN mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git master
+RUN mkdir eat && cd eat && git clone https://github.com/jboss-set/eap-additional-testsuite.git master
 
-RUN chmod -R 777 /home/user/.m2 && chmod -R 777 /wildfly/master/dist
+RUN chmod -R 777 /home/user/.m2 && chmod -R 777 /wildfly/master/dist && chmod -R 777 /eat/master
 
-WORKDIR "/EAT/master"
+WORKDIR "/eat/master"
 
 ENV JBOSS_VERSION=$JBOSS_VERSION
 ENV JBOSS_FOLDER=$JBOSS_FOLDER
