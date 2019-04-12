@@ -47,6 +47,8 @@ RUN mkdir wildfly && cd wildfly && git clone https://github.com/wildfly/wildfly.
 
 RUN mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git master
 
+RUN chmod -R 777 /home/user/.m2 && chmod -R 777 /wildfly/master/dist
+
 WORKDIR "/EAT/master"
 
 ENV JBOSS_VERSION=$JBOSS_VERSION
