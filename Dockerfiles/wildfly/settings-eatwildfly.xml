@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>/home/user/.m2/repository</localRepository>
+  <profiles>
+      <profile>
+	    <id>defaultprofile</id>
+	    <repositories>
+		<repository>
+		  <id>jboss-releases</id>
+	    	  <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+		</repository>
+		<repository>
+		  <id>public-jboss</id>
+	    	  <url>https://repository.jboss.org/nexus/content/repositories/public-jboss/</url>
+		</repository>
+		<repository>
+		  <id>central</id>
+	    	  <url>http://repo1.maven.org/maven2/</url>
+		</repository>
+		<repository>
+		    <id>central2</id>
+		    <name>Main Apache Maven Repository</name>
+		    <url>http://repo.maven.apache.org/maven2/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</repository>
+		<repository>
+		    <id>jboss-public-repository-group</id>
+		    <name>JBoss Public Repository Group</name>
+		    <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		    <layout>default</layout>
+		    <releases>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </releases>
+		    <snapshots>
+		        <enabled>true</enabled>
+		        <updatePolicy>never</updatePolicy>
+		    </snapshots>
+		</repository>
+		<repository>
+		    <id>spring-snapshots</id>
+		    <name>Spring Snapshots</name>
+		    <url>https://repo.spring.io/snapshot</url>
+		    <snapshots>
+		        <enabled>true</enabled>
+		    </snapshots>
+		</repository>
+		<repository>
+		    <id>spring-milestones</id>
+		    <name>Spring Milestones</name>
+		    <url>https://repo.spring.io/milestone</url>
+		    <snapshots>
+		        <enabled>true</enabled>
+		    </snapshots>
+		</repository>
+		<repository>
+		    <id>egit</id>
+		    <name>Eclipse egit</name>
+		    <url>https://repo.eclipse.org/content/repositories/egit-releases/</url>
+		</repository>  
+	    </repositories>
+
+        </profile>
+
+    </profiles>
+
+
+
+
+
+  <activeProfiles>
+    <activeProfile>defaultprofile</activeProfile>
+  </activeProfiles>
+</settings>

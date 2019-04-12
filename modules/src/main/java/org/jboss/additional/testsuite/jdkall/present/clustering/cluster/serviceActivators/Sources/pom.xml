@@ -7,9 +7,9 @@
   <packaging>pom</packaging>
   <name>testClusterDublicateServiceException</name>
   <modules>
-    <module>testClusterDublicateServiceException-ear</module>
-    <module>testClusterDublicateServiceException-web</module>
-    <module>testClusterDublicateServiceException-ejb</module>
-    <module>testClusterDublicateServiceException2-ejb</module>
+    <module>testCluster-ear</module>
+    <module>testCluster-web</module>
+    <module>testCluster-ejb</module>
+    <module>testCluster2-ejb</module>
   </modules>
 </project>
