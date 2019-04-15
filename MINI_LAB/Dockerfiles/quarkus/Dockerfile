@@ -50,7 +50,7 @@ RUN tar xzf $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar.gz -C $GRAAL_H
 
 ENV GRAALVM_HOME $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION
 
-RUN mkdir protean && cd protean && git clone https://github.com/quarkusio/quarkus.git master && cd master && ls -la && mvn clean install -DskipTests --fail-never && export PROTEAN_VERSION=999-SNAPSHOT &&  JBOSS_VERSION=999.0.0-SNAPSHOT && export JBOSS_VERSION=$JBOSS_VERSION && mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git && cd eap-additional-testsuite && ./Maven/apache-maven-3.5.3/bin/mvn clean install -Dprotean -Dmodule=basic -Dnative -DJBOSS_VERSION=$JBOSS_VERSION
+RUN mkdir protean && cd protean && git clone https://github.com/quarkusio/quarkus.git master && cd master && ls -la && mvn clean install -DskipTests --fail-never && export QUARKUS_VERSION=999-SNAPSHOT &&  JBOSS_VERSION=999.0.0-SNAPSHOT && export JBOSS_VERSION=$JBOSS_VERSION && mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git && cd eap-additional-testsuite && ./run-quarkus-native.sh
 
 
 
