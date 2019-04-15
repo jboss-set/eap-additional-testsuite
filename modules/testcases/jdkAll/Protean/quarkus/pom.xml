@@ -35,17 +35,88 @@
             </modules>
         </profile>
 
+
         <profile>
-            <id>releases</id>
+            <id>releases2</id>
             <activation>
                 <property>
                     <name>JBOSS_VERSION</name>
-                    <value>!999.0.0-SNAPSHOT</value>
+                    <value>0.9.1</value>
                 </property>
             </activation>
     
             <modules>
                 <module>protean</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases3</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.10.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>protean</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases4</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.11.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>protean</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases5</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.12.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>protean</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases6</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.13.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
+         <profile>
+            <id>releases7</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.13.1</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
             </modules>
         </profile>
 

@@ -29,7 +29,7 @@ import org.junit.jupiter.api.Test;
 import io.quarkus.test.junit.QuarkusTest;
 
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.0","modules/testcases/jdkAll/Protean/quarkus/quark/test-configurations/src/test/java#999.0.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Protean/quarkus/protean/test-configurations2/src/test/java#0.10.0*0.12.0","modules/testcases/jdkAll/Protean/quarkus/quark/test-configurations/src/test/java#0.13.0*999.0.1"})
 @QuarkusTest
 public class QuarkusSimpleTestCase {
 
