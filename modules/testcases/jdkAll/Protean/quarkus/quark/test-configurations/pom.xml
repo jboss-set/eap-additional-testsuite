@@ -177,7 +177,6 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-			            <enableFallbackImages>true</enableFallbackImages>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
                                 </configuration>
                             </execution>
