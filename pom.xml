@@ -27,7 +27,7 @@
     <licenses>
         <license>
             <name>GNU LESSER GENERAL PUBLIC LICENSE</name>
-            <url>http://www.gnu.org/licenses/lgpl-2.1-standalone.html</url>
+            <url>https://www.gnu.org/licenses/lgpl-2.1-standalone.html</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -37,7 +37,7 @@
             <name>Panagiotis Sotiropoulos</name>
             <email>psotirop@redhat.com</email>
             <organization>Red Hat</organization>
-            <organizationUrl>http://www.redhat.com</organizationUrl>
+            <organizationUrl>https://www.redhat.com</organizationUrl>
         </developer>
     </developers>
 
@@ -68,7 +68,7 @@
         <repository>
             <id>central</id>
             <name>Main Apache Maven Repository</name>
-            <url>http://repo.maven.apache.org/maven2/</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -82,7 +82,7 @@
         <repository>
             <id>jboss-public-repository-group</id>
             <name>JBoss Public Repository Group</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -96,7 +96,7 @@
 	<repository>
 		<id>repository.spring.maven.libs</id>
 		<name>Spring Framework Maven  Repository</name>
-		<url>http://repo.spring.io/libs-milestone/</url>
+		<url>https://repo.spring.io/libs-milestone/</url>
 	</repository>
     </repositories>
 
@@ -104,7 +104,7 @@
         <pluginRepository>
             <id>central</id>
             <name>Main Apache Maven Repository</name>
-            <url>http://repo.maven.apache.org/maven2/</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -117,7 +117,7 @@
         <pluginRepository>
             <id>jboss-public-repository-group</id>
             <name>JBoss Public Repository Group</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -429,7 +429,7 @@
 		<repository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -446,7 +446,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -476,7 +476,7 @@
 		<repository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -493,7 +493,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.3-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -523,7 +523,7 @@
 		<repository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -540,7 +540,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -570,7 +570,7 @@
 		<repository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -587,7 +587,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.2.0-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -617,7 +617,7 @@
 		<repository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.1-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.1-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -634,7 +634,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository-eap6</id>
 		    <name>JBoss Internal Product Repository</name>
-		    <url>http://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.1-rhel-6-build/latest/maven/</url>
+		    <url>https://download.lab.bos.redhat.com/brewroot/repos/jb-eap-6.1-rhel-6-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -664,7 +664,7 @@
 		<repository>
 		    <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -681,7 +681,7 @@
 		<pluginRepository>
 		    <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -711,7 +711,7 @@
 		<repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -728,7 +728,7 @@
 		<pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -758,7 +758,7 @@
 		<repository>
 		    <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -775,7 +775,7 @@
 		<pluginRepository>
 		    <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -805,7 +805,7 @@
 		<repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -836,7 +836,7 @@
 		<pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -894,7 +894,7 @@
                 <repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -925,7 +925,7 @@
                 <pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -969,7 +969,7 @@
                 <repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1000,7 +1000,7 @@
                 <pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1030,7 +1030,7 @@
 		<repository>
 		    <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1047,7 +1047,7 @@
 		<pluginRepository>
 		    <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1077,7 +1077,7 @@
 		<repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1108,7 +1108,7 @@
 		<pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1166,7 +1166,7 @@
                 <repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1197,7 +1197,7 @@
                 <pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1241,7 +1241,7 @@
                 <repository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1272,7 +1272,7 @@
                 <pluginRepository>
             <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1302,7 +1302,7 @@
 		<repository>
                     <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1319,7 +1319,7 @@
 		<pluginRepository>
                     <id>jboss-eap-7.1-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1349,7 +1349,7 @@
 		<repository>
 		    <id>jboss-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1366,7 +1366,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1396,7 +1396,7 @@
 		<repository>
 		    <id>jboss-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1413,7 +1413,7 @@
 		<pluginRepository>
             <id>jboss-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1443,7 +1443,7 @@
 		<repository>
 		    <id>jboss-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1460,7 +1460,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1490,7 +1490,7 @@
 		<repository>
 		    <id>jboss-product-repository-eap7</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1507,7 +1507,7 @@
 		<pluginRepository>
 		    <id>jboss-product-repository-eap7</id>
 		    <name>JBoss Product Repository</name>
-		    <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
+		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1538,11 +1538,11 @@
 		<repository>
 		    <id>central</id>
 		    <name>Maven Repository Switchboard</name>
-		    <url>http://repo.maven.apache.org/maven2</url>
+		    <url>https://repo.maven.apache.org/maven2</url>
 		</repository>
 		<repository>
 		    <id>jboss</id>
-		    <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		    <url>https://repository.jboss.org/nexus/content/groups/public/</url>
 		    <releases>
 		        <enabled>true</enabled>
 		    </releases>
@@ -1553,7 +1553,7 @@
 		<repository>
 		    <id>redhat-ga-repository</id>
 		    <name>Red Hat GA repository</name>
-		    <url>http://maven.repository.redhat.com/ga/</url>
+		    <url>https://maven.repository.redhat.com/ga/</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
