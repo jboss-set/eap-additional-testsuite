@@ -58,6 +58,10 @@
                             <groupId>com.github.relaxng</groupId>
                             <artifactId>relaxngDatatype</artifactId>
                         </exclusion>
+                        <exclusion>
+		            <groupId>org.apache.cxf</groupId>
+		            <artifactId>cxf-rt-management</artifactId>
+		        </exclusion>
                     </exclusions> 
                 </dependency>
                 <dependency>
@@ -125,6 +129,10 @@
                             <groupId>com.github.relaxng</groupId>
                             <artifactId>relaxngDatatype</artifactId>
                         </exclusion>
+                        <exclusion>
+		            <groupId>org.apache.cxf</groupId>
+		            <artifactId>cxf-rt-management</artifactId>
+		        </exclusion>
                     </exclusions> 
                 </dependency>
                 <dependency>

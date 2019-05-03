@@ -62,6 +62,12 @@
                     <groupId>org.jboss.eap</groupId>
                     <artifactId>wildfly-testsuite-shared</artifactId>
                     <scope>compile</scope>
+                    <exclusions>
+		        <exclusion>
+		            <groupId>org.apache.cxf</groupId>
+		            <artifactId>cxf-rt-management</artifactId>
+		        </exclusion>
+		    </exclusions>
                 </dependency>
                 <dependency>
                     <groupId>org.jboss.arquillian.junit</groupId>
@@ -133,6 +139,12 @@
                     <groupId>org.jboss.eap</groupId>
                     <artifactId>wildfly-testsuite-shared</artifactId>
                     <scope>compile</scope>
+                    <exclusions>
+		        <exclusion>
+		            <groupId>org.apache.cxf</groupId>
+		            <artifactId>cxf-rt-management</artifactId>
+		        </exclusion>
+		    </exclusions>
                 </dependency>
                 <dependency>
                     <groupId>org.jboss.arquillian.junit</groupId>
