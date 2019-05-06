@@ -1382,7 +1382,7 @@
     </profiles>
     
 
-    <build>
+    <!--build>
          <plugins>
              <plugin>
  		<groupId>org.apache.felix</groupId>
@@ -1391,6 +1391,6 @@
          	<extensions>true</extensions>
             </plugin>
         </plugins>
-    </build>
+    </build-->
 
 </project>
