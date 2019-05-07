@@ -63,6 +63,12 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
+                    </plugin>
                 </plugins>
             </build>
 
@@ -193,6 +199,12 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
+                    </plugin>
                 </plugins>
             </build>
 
@@ -235,6 +247,12 @@
                                 </configuration>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
                     </plugin>
                 </plugins>
             </build>
@@ -279,6 +297,12 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
+                    </plugin>
                 </plugins>
             </build>
 
@@ -321,6 +345,12 @@
                                 </configuration>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
                     </plugin>
                 </plugins>
             </build>
@@ -365,6 +395,12 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
+                    </plugin>
                 </plugins>
             </build>
 
@@ -408,6 +444,12 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
+                    </plugin>
                 </plugins>
             </build>
 
@@ -450,6 +492,12 @@
                                 </configuration>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                          <groupId>org.apache.felix</groupId>
+                          <artifactId>maven-bundle-plugin</artifactId>
+                          <inherited>true</inherited>
+                          <extensions>true</extensions>
                     </plugin>
                 </plugins>
             </build>
@@ -1380,17 +1428,6 @@
         </profile>
 
     </profiles>
-    
 
-    <!--build>
-         <plugins>
-             <plugin>
- 		<groupId>org.apache.felix</groupId>
- 		<artifactId>maven-bundle-plugin</artifactId>
- 		<inherited>true</inherited>
-         	<extensions>true</extensions>
-            </plugin>
-        </plugins>
-    </build-->
 
 </project>
