@@ -148,6 +148,20 @@
             </modules>
         </profile>
 
+        <profile>
+            <id>releases10</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.14.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
     </profiles>
 
 </project>
