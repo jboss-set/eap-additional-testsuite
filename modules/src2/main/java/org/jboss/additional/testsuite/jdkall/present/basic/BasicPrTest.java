@@ -32,7 +32,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.assertFalse;
 
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java@c25e0614dd376be56e862774f5b128f959b58d18","modules/testcases/jdkAll/Eap72x/basic/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java@0cc0989a56f4e5d469d944fb8b35e50f728551ac","modules/testcases/jdkAll/Eap72x/basic/src/main/java"})
 public class BasicPrTest {
 
     @Test
