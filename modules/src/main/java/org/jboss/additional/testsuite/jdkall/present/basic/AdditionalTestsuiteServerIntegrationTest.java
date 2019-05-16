@@ -26,7 +26,6 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import static org.jboss.as.weld.util.Utils.printDefaultMessage;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,16 +39,13 @@ public class AdditionalTestsuiteServerIntegrationTest {
     public static Archive<?> getDeployment() {
         JavaArchive archive = ShrinkWrap.create(JavaArchive.class);
         archive.addClass(AdditionalTestsuiteServerIntegrationTest.class);
-        archive.addPackage("org.jboss.as.weld.util");
-        archive.addPackage("org.jboss.as.ee.component");
-        archive.addPackage("org.jboss.as.web.common");
         return archive;
     }
 
     @Test
     public void testServerStart() {
         try {
-            printDefaultMessage();
+            System.out.println("PR tested ... ");
         } catch(Exception ex) {
             fail("Eap additional testsuite server integration has failed ... ");
         }
