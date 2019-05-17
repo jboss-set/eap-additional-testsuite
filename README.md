@@ -245,7 +245,7 @@ EAP-ADDITIONAL-TESTSUITE PRESENTATION
 
 EAP-ADDITIONAL-TESTSUITE VIDEO PRESENTATION
 -------------------------------------------
-[Eap Additional Testsuite Video](https://bluejeans.com/s/9qrr/)
+[Eap Additional Testsuite Video](https://bluejeans.com/s/A_Ih7)
 
 
 EAP-ADDITIONAL-TESTSUITE WORKSHOP
