@@ -32,7 +32,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.fail;
 
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java@bb6e4cb83019154e512bb25cbecdaa12907f14b9"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java@dd157d5dfb3322a113f1b01ccccc98ae19f7e458"})
 public class AdditionalTestsuiteServerIntegrationTest {
 
     @Deployment
