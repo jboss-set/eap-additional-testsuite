@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     *  ΙΔΕΑ : THE JBOSS TESTSUITE TO DEVELOP TESTS AGAINST INFINITE NUMBER OF JBOSS SERVERS
+    -->
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>wildfly-release-17.0.0.Alpha1-additional-testsuite</artifactId>
+        <version>1.0.3.Final</version>
+    </parent>
+
+    <artifactId>wildfly-release-17.0.0.Alpha1-additional-testsuite-jaxrs</artifactId>
+    <packaging>pom</packaging>
+    <name>wildfly release-17.0.0.Alpha1 additional testsuite: jaxrs</name>
+
+            
+    <modules>
+        <module>test-configurations</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <activation>
+                <property>
+                    <name>env.JBOSS_VERSION</name>
+                    <value>11.0.0.Beta1</value>
+                </property>
+            </activation>
+
+            <properties>
+		<version.org.jboss.resteasy>3.0.23.Final</version.org.jboss.resteasy>
+                <artifactdir>${settings.localRepository}</artifactdir>
+                <moduledir>${basedir}/../../../../servers/wildfly/build/target/jbossas/modules</moduledir>
+                <resteasy.module>${basedir}/../../../../src/resources/updatedModulesJaxrs</resteasy.module>
+                <resteasy.artifact>${basedir}/../../../../src/resources/updatedArtifactsJaxrs</resteasy.artifact>
+	    </properties>
+
+            <dependencies>
+                <dependency>
+                    <groupId>org.jboss.resteasy</groupId>
+                    <artifactId>resteasy-jaxrs</artifactId>
+                    <version>${version.org.jboss.resteasy}</version>
+                </dependency>
+            </dependencies>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>copy-modules</id>
+                                <inherited>false</inherited>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <copy todir="${moduledir}" preservelastmodified="false" overwrite="true" >
+					    <fileset dir="${resteasy.module}">
+						<include name="**/**"/>
+					    </fileset>
+					</copy>  
+                                        <copy todir="${artifactdir}" preservelastmodified="false" overwrite="true" >
+					    <fileset dir="${resteasy.artifact}">
+						<include name="**/**"/>
+					    </fileset>
+					</copy>   
+                                    </target> 
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>  
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.10</version>
+                <executions>
+                    <execution>
+                        <id>add-test-source</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${basedir}/../src/main/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
