@@ -44,7 +44,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java"})
 public class JaxbBeanValidationTestCase {
 
     @Deployment(testable = false)

@@ -78,6 +78,92 @@
 
         </profile>
        
+	<profile>
+            <id>wildfly.release-17.0.0.Alpha1.testsuite</id>
+            <activation>
+                <property>
+                    <name>wildfly-release-17.0.0.Alpha1</name>
+                    <value>true</value>
+                </property>
+            </activation>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare</id>
+                                <inherited>false</inherited>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
+                                            <property name="todir" value="${basedir}/servers/wildfly/build/target/jbossas" />
+                                            <property name="jboss.folder" value="${JBOSS_FOLDER}" />
+                                            <target name="copy-server-dir"/>
+                                        </ant>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+
+            <modules>
+                <module>testcases/jdkAll/WildflyRelease-17.0.0.Alpha1</module>
+            </modules>
+
+        </profile>
+
+        <profile>
+            <id>wildfly.release-17.0.0.Alpha1.jdk8.testsuite</id>
+            <activation>
+                <property>
+                    <name>wildfly-release-17.0.0.Alpha1-jdk8</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare</id>
+                                <inherited>false</inherited>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <ant antfile="${basedir}/src/test/scripts/copy-server-dir.xml">
+                                            <property name="todir" value="${basedir}/servers/wildfly/build/target/jbossas" />
+                                            <property name="jboss.folder" value="${JBOSS_FOLDER}" />
+                                            <target name="copy-server-dir"/>
+                                        </ant>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+                     
+            <modules>
+                <module>testcases/jdk8/WildflyRelease-17.0.0.Alpha1</module>
+            </modules>
+
+        </profile>
+
         <profile>
             <id>wildfly.release-13.0.0.Final.testsuite</id>
             <activation>
