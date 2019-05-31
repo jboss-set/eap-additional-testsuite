@@ -53,6 +53,72 @@
 		    <groupId>org.hibernate.validator</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-jackson-provider</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-jaxrs</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-multipart-provider</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-envers</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-search-engine</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-search-orm</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate.validator</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.ejb3</groupId>
+		    <artifactId>jboss-ejb3-ext-api</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.wildfly.core</groupId>
+		    <artifactId>wildfly-logging</artifactId>
+		</dependency>
+		<!-- This is not desired, however the UncheckedStatelessBean requires this -->
+		<dependency>
+		    <groupId>org.wildfly</groupId>
+		    <artifactId>wildfly-ejb3</artifactId>
+		</dependency>
+		<dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-ext</artifactId>
+                </dependency>
+		<dependency>
+		    <groupId>javax.jws</groupId>
+		    <artifactId>jsr181-api</artifactId>
+		</dependency>
+		<!-- Required for Java 11 -->
+		<dependency>
+		    <groupId>org.jboss.spec.javax.xml.ws</groupId>
+		    <artifactId>jboss-jaxws-api_2.3_spec</artifactId>
+		</dependency>
 
 
                 <dependency>
@@ -205,6 +271,73 @@
 		    <groupId>org.hibernate.validator</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-jackson-provider</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-jaxrs</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-multipart-provider</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-envers</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-search-engine</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-search-orm</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate.validator</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.ejb3</groupId>
+		    <artifactId>jboss-ejb3-ext-api</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.wildfly.core</groupId>
+		    <artifactId>wildfly-logging</artifactId>
+		</dependency>
+		<!-- This is not desired, however the UncheckedStatelessBean requires this -->
+		<dependency>
+		    <groupId>org.wildfly</groupId>
+		    <artifactId>wildfly-ejb3</artifactId>
+		</dependency>
+		<dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-ext</artifactId>
+                </dependency>
+		<dependency>
+		    <groupId>javax.jws</groupId>
+		    <artifactId>jsr181-api</artifactId>
+		</dependency>
+		<!-- Required for Java 11 -->
+		<dependency>
+		    <groupId>org.jboss.spec.javax.xml.ws</groupId>
+		    <artifactId>jboss-jaxws-api_2.3_spec</artifactId>
+		</dependency>
+
 
                 <dependency>
                     <groupId>org.wildfly.arquillian</groupId>
@@ -546,31 +679,32 @@
             </modules>
         </profile>
 
-        <profile>
+	<profile>
 	    <id>all</id>
 	    <activation>
 	        <property>
 		    <name>!module</name>
 	        </property>
 	    </activation>
+	    <!--modules with extra tab occur problem-->
             <modules>
-                <module>basic</module>
+        	<module>basic</module>
 		<module>core</module>
-		<module>elytron</module>
-		<module>jaxrs</module>
-                <module>jpa</module>
-		<module>clustering</module>
-		<module>domain</module>
+			<module>elytron</module>
+			<module>jaxrs</module>
+        	<module>jpa</module>
+			<module>clustering</module>
+			<module>domain</module>
 		<module>domain_management</module>
-		<module>logging</module>
-		<module>management</module>
-        <module>manualmode</module>
-		<module>messaging</module>
-		<module>security</module>
-		<module>server</module>
+			<module>logging</module>
+			<module>management</module>
+		<module>manualmode</module>
+			<module>messaging</module>
+			<module>security</module>
+			<module>server</module>
 		<module>web</module>
 		<module>weld</module>
-                <module>ejb</module>
+        		<module>ejb</module>
             </modules>
         </profile>
 

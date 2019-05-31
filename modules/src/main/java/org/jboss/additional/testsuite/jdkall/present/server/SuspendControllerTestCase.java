@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/server/src/main/java","modules/testcases/jdkAll/Wildfly/server/src/main/java","modules/testcases/jdkAll/Eap71x/server/src/main/java","modules/testcases/jdkAll/Eap72x/server/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/server/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/server/src/main/java","modules/testcases/jdkAll/Wildfly/server/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/server/src/main/java","modules/testcases/jdkAll/Eap71x/server/src/main/java","modules/testcases/jdkAll/Eap72x/server/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/server/src/main/java"})
 public class SuspendControllerTestCase {
 
     private static final String FAIL_MESSAGE = "test failure";

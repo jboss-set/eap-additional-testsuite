@@ -25,7 +25,7 @@ package org.jboss.additional.testsuite.jdkall.present.core.marshalling;
 import java.io.Serializable;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/core/src/main/java","modules/testcases/jdkAll/Wildfly/core/src/main/java","modules/testcases/jdkAll/Eap72x/core/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/core/src/main/java","modules/testcases/jdkAll/Eap7/core/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/core/src/main/java","modules/testcases/jdkAll/Eap71x/core/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/core/src/main/java","modules/testcases/jdkAll/Eap70x/core/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/core/src/main/java","modules/testcases/jdkAll/Wildfly/core/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/core/src/main/java","modules/testcases/jdkAll/Eap72x/core/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/core/src/main/java","modules/testcases/jdkAll/Eap7/core/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/core/src/main/java","modules/testcases/jdkAll/Eap71x/core/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/core/src/main/java","modules/testcases/jdkAll/Eap70x/core/src/main/java"})
 public class Bar implements Serializable {
     private static final long serialVersionUID = 1L;
     public String aString = "bar";

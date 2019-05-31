@@ -59,7 +59,7 @@ import org.junit.runner.RunWith;
  * @author Scott Marlow (based on Madhumita's Hibernate test)
  */
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Wildfly/jpa/src/main/java","modules/testcases/jdkAll/Eap72x/jpa/src/main/java#7.2.0.CD13"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Wildfly/jpa/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/jpa/src/main/java","modules/testcases/jdkAll/Eap72x/jpa/src/main/java#7.2.0.CD13"})
 public class HibernateSecondLevelCacheTestCase {
 
     private static final String FACTORY_CLASS = "<property name=\"hibernate.cache.region.factory_class\">org.infinispan.hibernate.cache.v51.InfinispanRegionFactory</property>";
