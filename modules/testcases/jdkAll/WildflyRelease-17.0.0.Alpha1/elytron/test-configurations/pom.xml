@@ -17,7 +17,7 @@
     <artifactId>wildfly-release-17.0.0.Alpha1-additional-testsuite-elytron-configuration</artifactId>
     <name>wildfly release-17.0.0.Alpha1 additional testsuite: elytron : configuration</name>
             
-    <properties>
+        <properties>
         <standalone.conf>../src/test/config/standaloneWildfly/standalone-full.xml</standalone.conf>
         <jboss.modules.dir>${basedir}/../../../../..</jboss.modules.dir>
         <maven.compiler.source>1.8</maven.compiler.source>
