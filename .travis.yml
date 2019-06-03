@@ -21,4 +21,4 @@ script:
   - export JBOSS_FOLDER=$PWD
   - export JBOSS_VERSION=17.0.0.Alpha1
   - cd ../..
-  - mvn -q clean install -Dwildfly-release-17.0.0.Alpha1 -Dwildfly-release-17.0.0.Alpha1-jdk8 -Dstandalone
+  - mvn clean install -Dwildfly-release-17.0.0.Alpha1 -Dwildfly-release-17.0.0.Alpha1-jdk8 -Dstandalone
