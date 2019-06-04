@@ -43,7 +43,7 @@ import java.net.URL;
  * @author Peter Mackay
  */
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#14.0.0","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.5","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.5"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#14.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/basic/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.5","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.5"})
 public class GetContentTestCase {
 
     private static final String ERROR_MSG = "URL.getContent call returned an object of incorrect class. " +
