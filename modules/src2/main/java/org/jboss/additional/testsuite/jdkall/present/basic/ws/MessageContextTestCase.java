@@ -49,9 +49,7 @@ import java.util.Map;
  *
  * @author <a href="mailto:pmackay@redhat.com">Peter Mackay</a>
  */
-// TODO: Enable once https://issues.jboss.org/browse/WFLY-11204 gets resolved
-//@apAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#15.0.0","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#16.0.0.Final","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
 @RunWith(Arquillian.class)
 @RunAsClient
 public class MessageContextTestCase {
@@ -82,7 +80,7 @@ public class MessageContextTestCase {
         headers.put("header", Arrays.asList("value"));
         requestContext.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
 
-        Assert.assertTrue("The containsKey method returned false. See https://issues.jboss.org/browse/JBEAP-15389",
+        Assert.assertTrue("The containsKey method returned false.",
             containsKeyService.testContainsKey());
     }
 

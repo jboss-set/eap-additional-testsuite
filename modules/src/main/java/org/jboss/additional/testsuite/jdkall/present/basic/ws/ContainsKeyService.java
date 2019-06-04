@@ -27,9 +27,8 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
-// TODO: Enable once https://issues.jboss.org/browse/WFLY-11204 gets resolved
-//@apAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#15.0.0","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
+
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#16.0.0.Final","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
 @WebService(targetNamespace = "http://www.jboss.org/eap/additional/ts/ContainsKey")
 public interface ContainsKeyService {
 
