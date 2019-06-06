@@ -58,6 +58,9 @@
 		            <includes>
 		                <include>org/jboss/additional/testsuite/jdkall/present/web/**/*TestCase.java</include>
 		            </includes> 
+                            <excludes>
+                                <exclude>org/jboss/additional/testsuite/jdkall/present/web/**/IdentityPropagationAuthenticationTestCase.java</exclude>
+                            </excludes>
 		        </configuration>
 		    </execution>
 		</executions>

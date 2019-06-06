@@ -60,7 +60,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#13.0.0","modules/testcases/jdkAll/Eap72x/ejb/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/ejb/src/main/java","modules/testcases/jdkAll/Eap71x/ejb/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/ejb/src/main/java","modules/testcases/jdkAll/Eap72x/ejb/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/ejb/src/main/java","modules/testcases/jdkAll/Eap71x/ejb/src/main/java"})
 public class RemoteOutboundConnectionReconnectTestCase {
 
     private static final Logger logger = Logger.getLogger(RemoteOutboundConnectionReconnectTestCase.class);

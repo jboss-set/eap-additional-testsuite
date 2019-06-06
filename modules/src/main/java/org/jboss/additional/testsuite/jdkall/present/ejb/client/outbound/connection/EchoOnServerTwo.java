@@ -31,7 +31,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  */
 @Stateless
 @Remote(RemoteEcho.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#13.0.0","modules/testcases/jdkAll/Eap72x/ejb/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/ejb/src/main/java","modules/testcases/jdkAll/Eap71x/ejb/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/ejb/src/main/java","modules/testcases/jdkAll/Eap72x/ejb/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/ejb/src/main/java","modules/testcases/jdkAll/Eap71x/ejb/src/main/java"})
 public class EchoOnServerTwo implements RemoteEcho {
     public static final String ECHO_PREFIX = "ServerTwo ";
 
