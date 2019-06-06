@@ -57,7 +57,7 @@ import org.jboss.eap.additional.testsuite.annotations.ATTest;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x-Proposed/jaxrs/src/main/java#7.1.6"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap72x/jaxrs/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x-Proposed/jaxrs/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x-Proposed/jaxrs/src/main/java#7.1.6"})
 public class JaxbProviderDeserializationSecurityCheck5TestCase {
 
     @Deployment(testable = false)

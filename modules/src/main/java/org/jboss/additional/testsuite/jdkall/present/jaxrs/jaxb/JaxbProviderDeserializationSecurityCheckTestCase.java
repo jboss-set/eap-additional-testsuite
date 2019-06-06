@@ -148,7 +148,7 @@ public class JaxbProviderDeserializationSecurityCheckTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x-Proposed/jaxrs/src/main/java#7.1.6"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap72x/jaxrs/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x-Proposed/jaxrs/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x/jaxrs/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x-Proposed/jaxrs/src/main/java#7.1.6"})
     public void testOpenjpaService() throws Exception{
         String result = performCall("rest/jaxb/openjpa");
 
