@@ -52,7 +52,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdk8/Eap7/management/src/main/java","modules/testcases/jdk8/Eap71x-Proposed/management/src/main/java","modules/testcases/jdk8/Eap71x/management/src/main/java","modules/testcases/jdk8/Eap70x/management/src/main/java","modules/testcases/jdk8/Eap70x-Proposed/management/src/main/java","modules/testcases/jdk8/WildflyRelease-10.1.0.Final/management/src/main/java","modules/testcases/jdk8/Wildfly/management/src/main/java","modules/testcases/jdk8/WildflyRelease-17.0.0.Alpha1/management/src/main/java","modules/testcases/jdk8/WildflyRelease-13.0.0.Final/management/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdk8/Eap7/management/src/main/java","modules/testcases/jdk8/Eap71x-Proposed/management/src/main/java","modules/testcases/jdk8/Eap71x/management/src/main/java","modules/testcases/jdk8/Eap70x/management/src/main/java","modules/testcases/jdk8/Eap70x-Proposed/management/src/main/java","modules/testcases/jdk8/WildflyRelease-10.1.0.Final/management/src/main/java","modules/testcases/jdk8/Wildfly/management/src/main/java","modules/testcases/jdk8/WildflyRelease-17.0.0.Final/management/src/main/java","modules/testcases/jdk8/WildflyRelease-13.0.0.Final/management/src/main/java"})
 public class ManagementOnlyModeTestCase extends ContainerResourceMgmtTestBase {
 
     @ArquillianResource

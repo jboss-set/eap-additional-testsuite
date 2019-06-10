@@ -59,7 +59,7 @@ import java.util.zip.ZipOutputStream;
  *
  * @author Peter Mackay
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap72x/core/src/main/java#7.2.0.CD13","modules/testcases/jdkAll/Eap71x-Proposed/core/src/main/java#7.1.4","modules/testcases/jdkAll/Eap71x/core/src/main/java#7.1.4","modules/testcases/jdkAll/Wildfly/core/src/main/java#14.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/core/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap72x/core/src/main/java#7.2.0.CD13","modules/testcases/jdkAll/Eap71x-Proposed/core/src/main/java#7.1.4","modules/testcases/jdkAll/Eap71x/core/src/main/java#7.1.4","modules/testcases/jdkAll/Wildfly/core/src/main/java#14.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/core/src/main/java"})
 @RunWith(Arquillian.class)
 @RunAsClient
 public class ZipSlipTestCase {

@@ -94,7 +94,7 @@ import org.junit.runner.RunWith;
  */
 @ServerSetup(LoggingProfilesTestCase.LoggingProfilesTestCaseSetup.class)
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/logging/src/main/java","modules/testcases/jdkAll/Eap72x/logging/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/logging/src/main/java","modules/testcases/jdkAll/Eap7/logging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/logging/src/main/java","modules/testcases/jdkAll/Eap71x/logging/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/logging/src/main/java","modules/testcases/jdkAll/Eap70x/logging/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/logging/src/main/java","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/logging/src/main/java","modules/testcases/jdkAll/Wildfly/logging/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/logging/src/main/java","modules/testcases/jdkAll/Eap64x/logging/src/main/java","modules/testcases/jdkAll/Eap64x-Proposed/logging/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/logging/src/main/java","modules/testcases/jdkAll/Eap72x/logging/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/logging/src/main/java","modules/testcases/jdkAll/Eap7/logging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/logging/src/main/java","modules/testcases/jdkAll/Eap71x/logging/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/logging/src/main/java","modules/testcases/jdkAll/Eap70x/logging/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/logging/src/main/java","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/logging/src/main/java","modules/testcases/jdkAll/Wildfly/logging/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/src/main/java","modules/testcases/jdkAll/Eap64x/logging/src/main/java","modules/testcases/jdkAll/Eap64x-Proposed/logging/src/main/java"})
 public class LoggingProfilesTestCase extends AbstractLoggingTest {
 	private static Logger log = Logger.getLogger(LoggingProfilesTestCase.class);
         
@@ -515,7 +515,7 @@ public class LoggingProfilesTestCase extends AbstractLoggingTest {
         
     
         @RunAsClient
-	@ATTest({"modules/testcases/jdkAll/Wildfly/logging/src/main/java#12.0.0.Final","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/logging/src/main/java", "modules/testcases/jdkAll/Eap7/logging/src/main/java#7.1.0.GA", "modules/testcases/jdkAll/Eap71x/logging/src/main/java#7.1.1.GA", "modules/testcases/jdkAll/Eap71x-Proposed/logging/src/main/java#7.1.1.GA"})
+	@ATTest({"modules/testcases/jdkAll/Wildfly/logging/src/main/java#12.0.0.Final","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/src/main/java", "modules/testcases/jdkAll/Eap7/logging/src/main/java#7.1.0.GA", "modules/testcases/jdkAll/Eap71x/logging/src/main/java#7.1.1.GA", "modules/testcases/jdkAll/Eap71x-Proposed/logging/src/main/java#7.1.1.GA"})
 	public void separateApplicationLoggingTest() throws Exception {
             URL testURL = new URL("http://" + managementClient.getMgmtAddress() + ":8080/Application1");
 

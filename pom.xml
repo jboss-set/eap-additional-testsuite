@@ -132,30 +132,30 @@
     <profiles>
          
         <profile>
-            <id>wildfly.release-17.0.0.Alpha1.testsuite</id>
+            <id>wildfly.release-17.0.0.Final.testsuite</id>
             <activation>
                 <property>
-                    <name>wildfly-release-17.0.0.Alpha1</name>
+                    <name>wildfly-release-17.0.0.Final</name>
                     <value>true</value>
                 </property>
             </activation>
 
             <properties>
-		<serverDir2>WildflyRelease-17.0.0.Alpha1</serverDir2>
+		<serverDir2>WildflyRelease-17.0.0.Final</serverDir2>
 	    </properties>
         </profile>
 
         <profile>
-            <id>wildfly.release-17.0.0.Alpha1.jdk8.testsuite</id>
+            <id>wildfly.release-17.0.0.Final.jdk8.testsuite</id>
             <activation>
                 <property>
-                    <name>wildfly-release-17.0.0.Alpha1-jdk8</name>
+                    <name>wildfly-release-17.0.0.Final-jdk8</name>
                     <value>true</value>
                 </property>
             </activation>
 
             <properties>
-		<serverDir2>WildflyRelease-17.0.0.Alpha1</serverDir2>
+		<serverDir2>WildflyRelease-17.0.0.Final</serverDir2>
 	    </properties>
         </profile>
 

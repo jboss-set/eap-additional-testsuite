@@ -55,7 +55,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdk8/WildflyRelease-13.0.0.Final/logging/src/main/java","modules/testcases/jdk8/Eap7/logging/src/main/java","modules/testcases/jdk8/Eap71x-Proposed/logging/src/main/java","modules/testcases/jdk8/Eap71x/logging/src/main/java","modules/testcases/jdk8/Eap70x/logging/src/main/java","modules/testcases/jdk8/Eap70x-Proposed/logging/src/main/java","modules/testcases/jdk8/WildflyRelease-10.1.0.Final/logging/src/main/java","modules/testcases/jdk8/Wildfly/logging/src/main/java","modules/testcases/jdk8/WildflyRelease-17.0.0.Alpha1/logging/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdk8/WildflyRelease-13.0.0.Final/logging/src/main/java","modules/testcases/jdk8/Eap7/logging/src/main/java","modules/testcases/jdk8/Eap71x-Proposed/logging/src/main/java","modules/testcases/jdk8/Eap71x/logging/src/main/java","modules/testcases/jdk8/Eap70x/logging/src/main/java","modules/testcases/jdk8/Eap70x-Proposed/logging/src/main/java","modules/testcases/jdk8/WildflyRelease-10.1.0.Final/logging/src/main/java","modules/testcases/jdk8/Wildfly/logging/src/main/java","modules/testcases/jdk8/WildflyRelease-17.0.0.Final/logging/src/main/java"})
 public class LoggingDeploymentResourceTestCase {
 
     private static final String WAR_DEPLOYMENT_NAME = "logging-test-war.war";

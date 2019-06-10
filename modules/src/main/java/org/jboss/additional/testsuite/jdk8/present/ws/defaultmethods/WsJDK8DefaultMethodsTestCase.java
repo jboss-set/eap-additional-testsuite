@@ -45,7 +45,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @Ignore // Ignore the test becaust it can run only on localhost
-@EapAdditionalTestsuite({"modules/testcases/jdk8/WildflyRelease-13.0.0.Final/ws/src/main/java","modules/testcases/jdk8/Wildfly/ws/src/main/java","modules/testcases/jdk8/WildflyRelease-17.0.0.Alpha1/ws/src/main/java","modules/testcases/jdk8/Eap7/ws/src/main/java","modules/testcases/jdk8/Eap71x-Proposed/ws/src/main/java","modules/testcases/jdk8/Eap71x/ws/src/main/java","modules/testcases/jdk8/Eap70x/ws/src/main/java","modules/testcases/jdk8/Eap70x-Proposed/ws/src/main/java","modules/testcases/jdk8/WildflyRelease-10.1.0.Final/ws/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdk8/WildflyRelease-13.0.0.Final/ws/src/main/java","modules/testcases/jdk8/Wildfly/ws/src/main/java","modules/testcases/jdk8/WildflyRelease-17.0.0.Final/ws/src/main/java","modules/testcases/jdk8/Eap7/ws/src/main/java","modules/testcases/jdk8/Eap71x-Proposed/ws/src/main/java","modules/testcases/jdk8/Eap71x/ws/src/main/java","modules/testcases/jdk8/Eap70x/ws/src/main/java","modules/testcases/jdk8/Eap70x-Proposed/ws/src/main/java","modules/testcases/jdk8/WildflyRelease-10.1.0.Final/ws/src/main/java"})
 public class WsJDK8DefaultMethodsTestCase {
 
     private static final String DEPLOYMENT_NAME = "jax-ws-test-pojo";

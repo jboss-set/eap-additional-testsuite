@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/src/test/config/standaloneWildfly#13.0.0.Final","modules/testcases/jdkAll/Wildfly/elytron/src/test/config/standaloneWildfly#11.0.0.Final","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/elytron/src/test/config/standaloneWildfly"}) -->
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/src/test/config/standaloneWildfly#13.0.0.Final","modules/testcases/jdkAll/Wildfly/elytron/src/test/config/standaloneWildfly#11.0.0.Final","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/elytron/src/test/config/standaloneWildfly"}) -->
 <server xmlns="urn:jboss:domain:5.0">
     <extensions>
         <extension module="org.jboss.as.clustering.infinispan"/>

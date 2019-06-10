@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/ejb/src/test/config/standaloneWildfly/outbound/destination#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/ejb/src/test/config/standaloneWildfly/outbound/destination","modules/testcases/jdkAll/Wildfly/ejb/src/test/config/standaloneWildfly/outbound/destination#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Alpha1/ejb/src/test/config/standaloneWildfly/outbound/destination"}) -->
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/ejb/src/test/config/standaloneWildfly/outbound/destination#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/src/test/config/standaloneWildfly/outbound/destination","modules/testcases/jdkAll/Wildfly/ejb/src/test/config/standaloneWildfly/outbound/destination#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/src/test/config/standaloneWildfly/outbound/destination"}) -->
 <server xmlns="urn:jboss:domain:7.0">
     <extensions>
         <extension module="org.jboss.as.clustering.infinispan"/>
