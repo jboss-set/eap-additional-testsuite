@@ -19,7 +19,9 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/ejb/test3-configurations/src/test/resources#13.0.0","modules/testcases/jdkAll/Wildfly/ejb/test3-configurations/src/test/resources#13.0.0","modules/testcases/jdkAll/Eap72x/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/Eap72x-Proposed/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/Eap71x/ejb/test3-configurations/src/test/resources"}) -->
+
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/ejb/test3-configurations/src/test/resources#13.0.0","modules/testcases/jdkAll/Wildfly/ejb/test3-configurations/src/test/resources#13.0.0","modules/testcases/jdkAll/Eap72x/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/Eap72x-Proposed/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/Eap71x/ejb/test3-configurations/src/test/resources","modules/testcases/jdkAll/Eap7/ejb/test3-configurations/src/test/resources"}) -->
+
 
 <jboss-ejb-client xmlns="urn:jboss:ejb-client:1.0">
     <client-context>

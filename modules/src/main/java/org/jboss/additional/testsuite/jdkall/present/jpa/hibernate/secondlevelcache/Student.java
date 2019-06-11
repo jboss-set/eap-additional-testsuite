@@ -33,7 +33,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  *
  * @author Madhumita Sadhukhan
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Wildfly/jpa/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Eap72x/jpa/src/main/java#7.2.0.CD13"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Wildfly/jpa/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/jpa/src/main/java","modules/testcases/jdkAll/Eap72x/jpa/src/main/java#7.2.0.CD13","modules/testcases/jdkAll/Eap7/jpa/src/main/java"})
 @Entity
 @Cache(usage=TRANSACTIONAL)
 public class Student {

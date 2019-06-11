@@ -60,7 +60,7 @@ import static org.jboss.as.controller.descriptions.ModelDescriptionConstants.LEV
  */
 @RunAsClient
 @RunWith(Arquillian.class)
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap72x/manualmode/src/main/java", "modules/testcases/jdkAll/Eap72x-Proposed/manualmode/src/main/java", "modules/testcases/jdkAll/Eap71x/manualmode/src/main/java#7.1.5", "modules/testcases/jdkAll/Eap71x-Proposed/manualmode/src/main/java#7.1.5", "modules/testcases/jdkAll/Wildfly/manualmode/src/main/java#14.0.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/manualmode/src/main/java", "modules/testcases/jdkAll/Eap72x/manualmode/src/main/java", "modules/testcases/jdkAll/Eap72x-Proposed/manualmode/src/main/java", "modules/testcases/jdkAll/Eap71x/manualmode/src/main/java#7.1.5", "modules/testcases/jdkAll/Eap71x-Proposed/manualmode/src/main/java#7.1.5", "modules/testcases/jdkAll/Wildfly/manualmode/src/main/java#14.0.0"})
 public class Log4jEffectiveLevelTestCase {
 
     private static final String LOG_LEVEL = "TRACE";

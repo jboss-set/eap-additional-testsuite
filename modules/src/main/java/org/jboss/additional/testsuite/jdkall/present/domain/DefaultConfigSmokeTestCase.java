@@ -53,7 +53,7 @@ import org.junit.Test;
  *
  * @author Brian Stansberry (c) 2013 Red Hat Inc.
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/domain/src/main/java","modules/testcases/jdkAll/Wildfly/domain/src/main/java#10.0.0.Final*14.0.0.Beta1","modules/testcases/jdkAll/Eap7/domain/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/domain/src/main/java","modules/testcases/jdkAll/Eap71x/domain/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/domain/src/main/java","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/domain/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/domain/src/main/java","modules/testcases/jdkAll/Wildfly/domain/src/main/java#10.0.0.Final*14.0.0.Beta1","modules/testcases/jdkAll/Eap71x-Proposed/domain/src/main/java","modules/testcases/jdkAll/Eap71x/domain/src/main/java","modules/testcases/jdkAll/Eap7.1.0.Beta/domain/src/main/java","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/domain/src/main/java"})
 public class DefaultConfigSmokeTestCase extends BuildConfigurationTestBase {
     private static final Logger LOGGER = Logger.getLogger(DefaultConfigSmokeTestCase.class);
 

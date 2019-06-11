@@ -49,7 +49,7 @@ import java.util.Map;
  *
  * @author <a href="mailto:pmackay@redhat.com">Peter Mackay</a>
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#16.0.0.Final","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/basic/src/main/java#16.0.0.Final","modules/testcases/jdkAll/Eap7/basic/src/main/java","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/basic/src/main/java","modules/testcases/jdkAll/Eap72x/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x-Proposed/basic/src/main/java#7.2.1","modules/testcases/jdkAll/Eap71x-Proposed/basic/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/basic/src/main/java#7.1.6"})
 @RunWith(Arquillian.class)
 @RunAsClient
 public class MessageContextTestCase {

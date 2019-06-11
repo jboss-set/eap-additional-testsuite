@@ -44,8 +44,8 @@
 		        <configuration>         
 		            <!-- Tests to execute. -->
 		            <includes>
-		                <include>org/jboss/additional/testsuite/jdkall/present/basic/**/BasicTest.java</include>
-		                <include>org/jboss/additional/testsuite/jdkall/present/basic/**/AdditionalTestsuiteServerIntegrationTest.java</include>
+		                <include>org/jboss/additional/testsuite/jdkall/present/basic/**/*Test.java</include>
+		                <include>org/jboss/additional/testsuite/jdkall/present/basic/**/*TestCase.java</include>
 		            </includes> 
 		        </configuration>
 		    </execution>
@@ -71,7 +71,7 @@
 	        <executions>
 	            <execution>
 	                <id>build-basic-config</id>
-	                <phase>process-test-resources</phase>
+	                <phase>generate-resources</phase>
 	                <goals>
 	                    <goal>run</goal>
 	                </goals>
@@ -87,6 +87,12 @@
                                     <property name="dist" value="jbossas" />
 	                            <property name="standaloneConfiguration" value="${standalone.conf}" />
 	                            <target name="build-basic-check"/>
+	                        </ant>
+                                <ant antfile="${jboss.modules.dir}/src/test/scripts/copy-file.xml">
+	                            <property name="fileName" value="image.png" />
+                                    <property name="filePath" value="${basedir}/src/test/resources" />
+                                    <property name="fileToCopy" value="${jboss.modules.dir}/src/resources/image.png" />
+	                            <target name="copy-file"/>
 	                        </ant>
 	                    </target>
 	                </configuration>

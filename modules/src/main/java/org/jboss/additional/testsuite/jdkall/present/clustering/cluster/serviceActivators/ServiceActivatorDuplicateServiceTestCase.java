@@ -40,7 +40,7 @@ import static org.junit.Assert.assertFalse;
 
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/clustering/src/main/java#11.0.0-Alpha1*13.0.0","modules/testcases/jdkAll/Eap7/clustering/src/main/java#7.1.0-Alpha1","modules/testcases/jdkAll/Eap71x/clustering/src/main/java#7.1.0-Alpha1"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/clustering/src/main/java#11.0.0-Alpha1*13.0.0","modules/testcases/jdkAll/Eap71x/clustering/src/main/java#7.1.0-Alpha1"})
 public class ServiceActivatorDuplicateServiceTestCase extends ClusterAbstractTestCase {
     
     private final String serverLogPath = "target/surefire-reports/org.jboss.additional.testsuite.jdkall.present.clustering.cluster.serviceActivators.ServiceActivatorDuplicateServiceTestCase-output.txt";

@@ -32,7 +32,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/security/src/main/java#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.5","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.5"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/security/src/main/java#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.0.CD14","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.5","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.5","modules/testcases/jdkAll/Eap7/security/src/main/java"})
 @WebServlet(name = "UnsecuredServlet", urlPatterns = {UnsecuredServlet.URL_PATTERN})
 public class UnsecuredServlet extends HttpServlet {
 

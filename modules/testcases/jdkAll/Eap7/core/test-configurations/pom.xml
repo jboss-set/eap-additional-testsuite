@@ -53,9 +53,16 @@
                     <redirectTestOutputToFile>${testLogToFile}</redirectTestOutputToFile>
                     <failIfNoTests>false</failIfNoTests>
 
+                    <systemPropertyVariables>
+		        <jboss.dist>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.dist>
+		        <jboss.home>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.home>
+		        <module.path>${jboss.modules.dir}/servers/eap7/build/target/jbossas/modules</module.path>
+		        <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
+		    </systemPropertyVariables>
+
                     <!-- Arquillian's config files. -->
                     <additionalClasspathElements combine.children="append">
-                        <additionalClasspathElement>${jboss.modules.dir}/src/config/arqEap7</additionalClasspathElement>
+                        <additionalClasspathElement>${jboss.modules.dir}/src/config/Eap7</additionalClasspathElement>
                     </additionalClasspathElements>
 
                 </configuration>
@@ -65,8 +72,8 @@
 	        <groupId>org.apache.maven.plugins</groupId>
 	        <artifactId>maven-antrun-plugin</artifactId>
 	        <executions>
-	            <execution>
-	                <id>build-core-config</id>
+                    <execution>
+	                <id>build-basic-config-check</id>
 	                <phase>process-test-resources</phase>
 	                <goals>
 	                    <goal>run</goal>
@@ -76,6 +83,12 @@
                                 <ant antfile="${jboss.modules.dir}/src/test/scripts/clean-deployments.xml">
 	                            <property name="serverDir" value="/${jboss.modules.dir}/servers" />
 	                            <target name="clean-deployments"/>
+	                        </ant>
+                                <ant antfile="${jboss.modules.dir}/src/test/scripts/copy-file.xml">
+	                            <property name="fileName" value="zipSlip.war" />
+                                    <property name="filePath" value="${basedir}" />
+                                    <property name="fileToCopy" value="${jboss.modules.dir}/src/resources/zipSlip.war" />
+	                            <target name="copy-file"/>
 	                        </ant>
 	                    </target>
 	                </configuration>

@@ -16,18 +16,18 @@
 
     <artifactId>eap7-additional-testsuite-server-configuration</artifactId>
     <name>eap7 additional testsuite: server : configuration</name>
-            
+
     <properties>
         <jboss.modules.dir>${basedir}/../../../../..</jboss.modules.dir>
     </properties>
-        
+
     <build>
 
         <!--
 	    Surefire test executions
 	 -->
-	 <plugins>  
-		            
+	 <plugins>
+
 	    <plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-surefire-plugin</artifactId>
@@ -42,6 +42,13 @@
                         <additionalClasspathElement>${jboss.modules.dir}/src/config/arqEap7</additionalClasspathElement>
                     </additionalClasspathElements>
 
+					<systemProperties>
+						<property>
+							<name>java.util.logging.manager</name>
+							<value>org.jboss.logmanager.LogManager</value>
+						</property>
+					</systemProperties>
+
                 </configuration>
 
 		<executions>
@@ -51,11 +58,14 @@
 		        <goals>
 		            <goal>test</goal>
 		        </goals>
-		        <configuration>         
+		        <configuration>
 		            <!-- Tests to execute. -->
 		            <includes>
 		                <include>org/jboss/additional/testsuite/jdkall/present/server/**/*TestCase.java</include>
-		            </includes> 
+		            </includes>
+                            <excludes>
+		                <include>org/jboss/additional/testsuite/jdkall/present/server/**/ModuleNotFoundExceptionTestCase.java</include>
+		            </excludes>
 		        </configuration>
 		    </execution>
 		</executions>
@@ -73,29 +83,29 @@
 	                </goals>
 	                <configuration>
 	                    <target>
-                                <ant antfile="${jboss.modules.dir}/src/test/scripts/clean-deployments.xml">
+				<ant antfile="${jboss.modules.dir}/src/test/scripts/clean-deployments.xml">
 	                            <property name="serverDir" value="/${jboss.modules.dir}/servers" />
 	                            <target name="clean-deployments"/>
 	                        </ant>
                                 <ant antfile="${jboss.modules.dir}/src/test/scripts/copy-file.xml">
 	                            <property name="fileName" value="helloWorld.ear" />
-                                    <property name="filePath" value="${jboss.modules.dir}/servers/eap7/build/target/jbossas/standalone/deployments" />
+                                    <property name="filePath" value="${jboss.modules.dir}/servers/Eap7/build/target/jbossas/standalone/deployments" />
                                     <property name="fileToCopy" value="${jboss.modules.dir}/src/resources/helloWorld.ear" />
 	                            <target name="copy-file"/>
 	                        </ant>
                                 <ant antfile="${jboss.modules.dir}/src/test/scripts/copy-file.xml">
 	                            <property name="fileName" value="helloWorld2.ear" />
-                                    <property name="filePath" value="${jboss.modules.dir}/servers/eap7/build/target/jbossas/standalone/deployments" />
+                                    <property name="filePath" value="${jboss.modules.dir}/servers/Eap7/build/target/jbossas/standalone/deployments" />
                                     <property name="fileToCopy" value="${jboss.modules.dir}/src/resources/helloWorld2.ear" />
 	                            <target name="copy-file"/>
 	                        </ant>
-	                    </target>
+			    </target>
 	                </configuration>
 	            </execution>
-	        </executions>
+		</executions>
 	    </plugin>
-        </plugins> 
-		            
+        </plugins>
+
     </build>
 
 </project>

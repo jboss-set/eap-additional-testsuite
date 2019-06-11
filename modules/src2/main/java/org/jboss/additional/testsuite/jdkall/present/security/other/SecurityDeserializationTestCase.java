@@ -119,7 +119,7 @@ public class SecurityDeserializationTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Eap7/security/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
     public void testSecuirtyDatabind4() throws Exception {
 
         final String JSON = aposToQuotes(
@@ -138,7 +138,7 @@ public class SecurityDeserializationTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Eap7/security/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
     public void testSecuirtyDatabind5() throws Exception {
 
         final String JSON = aposToQuotes(
@@ -157,7 +157,7 @@ public class SecurityDeserializationTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Eap7/security/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
     public void testSecuirtyDatabind6() throws Exception {
 
         final String JSON = aposToQuotes(
@@ -176,7 +176,7 @@ public class SecurityDeserializationTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#16.0.0.Beta1","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/security/src/main/java","modules/testcases/jdkAll/Eap7/security/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap71x/security/src/main/java#7.1.6","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
     public void testSecuirtyDatabind7() throws Exception {
 
         final String JSON = aposToQuotes(
@@ -195,7 +195,7 @@ public class SecurityDeserializationTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#17.0.0.Beta1","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#17.0.0.Beta1","modules/testcases/jdkAll/Eap7/security/src/main/java#7.3.0.CD17","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.1","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.1"})
     public void testSecuirtyDatabind8() throws Exception {
 
         final String JSON = aposToQuotes(
@@ -214,6 +214,24 @@ public class SecurityDeserializationTestCase {
 
     }
 
+    @ATTest({"modules/testcases/jdkAll/Eap7/security/src/main/java"})
+    public void testSecuirtyDatabind9() throws Exception {
+
+        final String JSON = aposToQuotes(
+                "{'v':['com.mysql.cj.jdbc.admin.MiniAdmin']}"
+                 );
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enableDefaultTyping();
+
+        try {
+            PolyWrapper sc = mapper.readValue(JSON, PolyWrapper.class);
+            fail("Should not be able to deserialize because of security prevention.");
+        }catch(JsonMappingException e){
+            assertTrue("Fail because of security issues...",e.getMessage().contains("prevented for security reasons"));
+        }
+
+    }
 
     static class SerializedClass {
 

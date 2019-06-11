@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/src/main/java","modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/weld/src/main/java","modules/testcases/jdkAll/Wildfly/weld/src/main/java#14.0.0.Final","modules/testcases/jdkAll/Eap72x/weld/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/weld/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/weld/src/main/java#7.1.3","modules/testcases/jdkAll/Eap71x/weld/src/main/java#7.1.3"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/src/main/java","modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/weld/src/main/java","modules/testcases/jdkAll/Wildfly/weld/src/main/java#14.0.0.Final","modules/testcases/jdkAll/Eap72x/weld/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/weld/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/weld/src/main/java#7.1.3","modules/testcases/jdkAll/Eap71x/weld/src/main/java#7.1.3","modules/testcases/jdkAll/Eap7/weld/src/main/java"})
 public class WeldBeanDiscoveryTest {
 
     private final String serverLogPath = "target/surefire-reports/org.jboss.additional.testsuite.jdkall.present.weld.beanDiscovery.WeldBeanDiscoveryTest-output.txt";

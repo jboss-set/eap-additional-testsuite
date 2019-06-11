@@ -60,7 +60,14 @@
 		            <includes>
 		                <include>org/jboss/additional/testsuite/jdkall/present/ejb/**/*TestCase.java</include>
 		            </includes> 
-		        </configuration>
+                            <excludes>
+		                <exclude>org/jboss/additional/testsuite/jdkall/present/ejb/client/outbound/connection/*TestCase.java</exclude>
+		            </excludes>
+
+                            <systemPropertyVariables>
+				<jboss.home>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.home>
+			    </systemPropertyVariables>
+			</configuration>
 		    </execution>
 		</executions>
 	    </plugin>

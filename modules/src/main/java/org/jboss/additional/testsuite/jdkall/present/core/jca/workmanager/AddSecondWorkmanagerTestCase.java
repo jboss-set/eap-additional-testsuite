@@ -38,7 +38,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/core/src/main/java#15.0.0.Beta1","modules/testcases/jdkAll/Eap72x/core/src/main/java#7.2.1", "modules/testcases/jdkAll/Eap72x-Proposed/core/main/java#7.2.1"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/core/src/main/java#15.0.0.Beta1","modules/testcases/jdkAll/Eap72x/core/src/main/java#7.2.1", "modules/testcases/jdkAll/Eap72x-Proposed/core/main/java#7.2.1","modules/testcases/jdkAll/Eap7/core/src/main/java"})
 public class AddSecondWorkmanagerTestCase extends AbstractCliTestBase {
 
     @BeforeClass

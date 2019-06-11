@@ -50,7 +50,7 @@ import org.jboss.additional.testsuite.jdkall.present.shared.ServerLogPatternList
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap72x/messaging/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/messaging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/messaging/src/main/java#7.1.4","modules/testcases/jdkAll/Eap71x/messaging/src/main/java#7.1.4","modules/testcases/jdkAll/Wildfly/messaging/src/main/java#12.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/messaging/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/messaging/src/main/java","modules/testcases/jdkAll/Eap72x/messaging/src/main/java","modules/testcases/jdkAll/Eap72x-Proposed/messaging/src/main/java","modules/testcases/jdkAll/Eap71x-Proposed/messaging/src/main/java#7.1.4","modules/testcases/jdkAll/Eap71x/messaging/src/main/java#7.1.4","modules/testcases/jdkAll/Wildfly/messaging/src/main/java#12.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/messaging/src/main/java"})
 public class PooledCFAvailableOnStartupTestCase {
 
     private static final String DEPLOYMENT_NAME = "eagerServletMBeanQuery.war";
