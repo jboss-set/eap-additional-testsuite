@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.domain.suites.CLITestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 99.637 s - in org.jboss.additional.testsuite.jdkall.present.domain.suites.CLITestSuite

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.security.other.SecurityDeserializationTestCase
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.303 s - in org.jboss.additional.testsuite.jdkall.present.security.other.SecurityDeserializationTestCase

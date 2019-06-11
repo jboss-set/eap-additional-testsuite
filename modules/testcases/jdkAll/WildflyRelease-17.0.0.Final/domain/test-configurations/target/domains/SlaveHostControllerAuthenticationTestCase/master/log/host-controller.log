@@ -1,0 +1,39 @@
+2019-06-10 12:33:06,198 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-06-10 12:33:06,707 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+2019-06-10 12:33:06,718 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-06-10 12:33:06,801 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+2019-06-10 12:33:07,911 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/host=master/core-service=management/management-interface=native-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-06-10 12:33:07,914 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/host=master/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-06-10 12:33:07,954 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0003: Creating http management service using network interface (management) port (9990) securePort (-1)
+2019-06-10 12:33:07,984 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.7.2.Final
+2019-06-10 12:33:07,993 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.7.2.Final
+2019-06-10 12:33:08,136 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.12.Final
+2019-06-10 12:33:08,181 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-06-10 12:33:08,282 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) WFLYRMT0001: Listening on 127.0.0.1:9999
+2019-06-10 12:33:10,017 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+2019-06-10 12:33:10,022 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+2019-06-10 12:33:10,024 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+2019-06-10 12:33:10,200 WARN  [org.jboss.as.jmx] (Controller Boot Thread) WFLYJMX0006: <jmx-connector/> is no longer supporting. <remoting-connector/> should be used instead to allow remote connections via JBoss Remoting.
+2019-06-10 12:33:10,329 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+2019-06-10 12:33:10,330 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+2019-06-10 12:33:10,330 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+2019-06-10 12:33:10,334 WARN  [org.jboss.as.jmx] (Controller Boot Thread) WFLYJMX0006: <jmx-connector/> is no longer supporting. <remoting-connector/> should be used instead to allow remote connections via JBoss Remoting.
+2019-06-10 12:33:11,093 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/profile=default/subsystem=jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-06-10 12:33:11,099 WARN  [org.jboss.as.clustering.jgroups] (Controller Boot Thread) WFLYCLJG0030: Protocol UNICAST2 is obsolete and will be auto-updated to UNICAST3
+2019-06-10 12:33:11,104 WARN  [org.jboss.as.clustering.jgroups] (Controller Boot Thread) WFLYCLJG0030: Protocol MERGE2 is obsolete and will be auto-updated to MERGE3
+2019-06-10 12:33:11,117 WARN  [org.jboss.as.clustering.jgroups] (Controller Boot Thread) WFLYCLJG0030: Protocol UNICAST2 is obsolete and will be auto-updated to UNICAST3
+2019-06-10 12:33:11,191 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/profile=other/subsystem=jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-06-10 12:33:11,196 WARN  [org.jboss.as.clustering.jgroups] (Controller Boot Thread) WFLYCLJG0030: Protocol UNICAST2 is obsolete and will be auto-updated to UNICAST3
+2019-06-10 12:33:11,200 WARN  [org.jboss.as.clustering.jgroups] (Controller Boot Thread) WFLYCLJG0030: Protocol MERGE2 is obsolete and will be auto-updated to MERGE3
+2019-06-10 12:33:11,202 WARN  [org.jboss.as.clustering.jgroups] (Controller Boot Thread) WFLYCLJG0030: Protocol UNICAST2 is obsolete and will be auto-updated to UNICAST3
+2019-06-10 12:33:11,441 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0062: Http management interface listening on http://127.0.0.1:9990/management and https://127.0.0.1:-1/management
+2019-06-10 12:33:11,441 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0053: Admin console listening on http://127.0.0.1:9990 and https://127.0.0.1:-1
+2019-06-10 12:33:11,441 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) (Host Controller) started in 6070ms - Started 50 of 51 services (13 services are lazy, passive or on-demand)
+2019-06-10 12:33:18,950 INFO  [org.jboss.as.domain.controller] (Host Controller Service Threads - 25) WFLYHC0019: Registered remote slave host "slave", JBoss WildFly Full 17.0.0.Final (WildFly 9.0.1.Final)
+2019-06-10 12:33:20,000 INFO  [org.jboss.as.domain.controller] (management task-2) WFLYHC0026: Unregistered remote slave host "slave"
+2019-06-10 12:33:20,380 INFO  [org.jboss.as.domain.controller] (Host Controller Service Threads - 25) WFLYHC0019: Registered remote slave host "slave", JBoss WildFly Full 17.0.0.Final (WildFly 9.0.1.Final)
+2019-06-10 12:33:21,499 INFO  [org.jboss.as.domain.controller] (management task-2) WFLYHC0026: Unregistered remote slave host "slave"
+2019-06-10 12:33:22,121 INFO  [org.jboss.as.domain.controller] (Host Controller Service Threads - 25) WFLYHC0019: Registered remote slave host "slave", JBoss WildFly Full 17.0.0.Final (WildFly 9.0.1.Final)
+2019-06-10 12:33:22,600 INFO  [org.jboss.as.domain.controller] (management task-2) WFLYHC0026: Unregistered remote slave host "slave"
+2019-06-10 12:33:23,060 INFO  [org.jboss.as.host.controller] (main) WFLYHC0179: ProcessController has signalled to shut down; shutting down
+2019-06-10 12:33:23,126 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 59ms

@@ -1,0 +1,13 @@
+[0m14:05:23,046 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/a9/89c83c87b8d005181901825adf10ed36ebceef/content
+[0m[0m14:05:23,050 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "basicbeanvalidation.war" (runtime-name: "basicbeanvalidation.war")
+[0m[0m14:05:23,202 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment basicbeanvalidation.war
+[0m[0m14:05:23,272 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m14:05:23,635 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 3.1.1 (Final)
+[0m[0m14:05:24,930 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 62) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.jboss.additional.testsuite.jdkall.present.basic.beanvalidation.BeanValidationApplication
+[0m[0m14:05:24,985 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/basicbeanvalidation' for server 'default-server'
+[0m[0m14:05:25,005 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "basicbeanvalidation.war" (runtime-name : "basicbeanvalidation.war")
+[0m[0m14:05:25,464 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0022: Unregistered web context: '/basicbeanvalidation' from server 'default-server'
+[0m[0m14:05:25,520 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment basicbeanvalidation.war (runtime-name: basicbeanvalidation.war) in 58ms
+[0m[0m14:05:25,540 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/a9/89c83c87b8d005181901825adf10ed36ebceef/content
+[0m[0m14:05:25,540 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "basicbeanvalidation.war" (runtime-name: "basicbeanvalidation.war")
+[0m

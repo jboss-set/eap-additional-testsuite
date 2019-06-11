@@ -1,0 +1,10 @@
+[0m12:38:25,858 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e1/11c8cff490e535afc757d0ace8358a33b445e1/content
+[0m[0m12:38:25,862 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "response-buffer-size.war" (runtime-name: "response-buffer-size.war")
+[0m[33m12:38:26,084 WARN  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0013: Deployment response-buffer-size.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:38:26,112 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/response-buffer-size' for server 'default-server'
+[0m[0m12:38:26,128 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "response-buffer-size.war" (runtime-name : "response-buffer-size.war")
+[0m[0m12:38:26,371 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0022: Unregistered web context: '/response-buffer-size' from server 'default-server'
+[0m[0m12:38:26,403 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment response-buffer-size.war (runtime-name: response-buffer-size.war) in 36ms
+[0m[0m12:38:26,425 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e1/11c8cff490e535afc757d0ace8358a33b445e1/content
+[0m[0m12:38:26,425 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "response-buffer-size.war" (runtime-name: "response-buffer-size.war")
+[0m

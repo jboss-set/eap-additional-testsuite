@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/ejb/test-configurations/src/test/resources/META-INF#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Wildfly/ejb/test-configurations/src/test/resources/META-INF#13.0.0","modules/testcases/jdkAll/Eap72x/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap72x-Proposed/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap71x/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap71x-Proposed/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap7/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap7.1.0.Beta/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap70x/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap70x-Proposed/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/ejb/test-configurations/src/test/resources/META-INF#10.1.0"}) -->
+
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+         version="3.1">
+    <enterprise-beans>
+        <session>
+            <ejb-name>AsyncBeanDescriptor</ejb-name>
+            <ejb-class>org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanDescriptor</ejb-class>
+            <session-type>Stateless</session-type>
+            <async-method>
+            	<method-name>futureMethod</method-name>
+            	<method-params>
+            		<method-param>java.util.concurrent.CountDownLatch</method-param>
+            	</method-params>
+            </async-method>
+        </session>
+    </enterprise-beans>
+</ejb-jar>

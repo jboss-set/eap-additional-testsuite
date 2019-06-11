@@ -1,0 +1,16 @@
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/TopicMDB.class
+org/jboss/additional/testsuite/jdkall/present/messaging/security/SecurityTestCase.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/DependentMessagingDeploymentTestCase.class
+org/jboss/additional/testsuite/jdkall/present/shared/ServerLogPatternListener.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/PooledCFAvailableOnStartupTestCase.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/context/transactionscoped/auxiliary/ThreadLauncher$SendRunnable.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/context/auxiliary/VaultedMessageProducer.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/context/transactionscoped/auxiliary/AppScopedBean.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/DependentMessagingDeploymentTestCase$MessagingResourcesSetupTask.class
+org/jboss/additional/testsuite/jdkall/present/messaging/mgmt/CoreQueueManagementTestCase.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/context/auxiliary/TransactedMessageProducer.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/context/auxiliary/TransactedMDB.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/QueueMDB.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/MessagingServlet.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/context/transactionscoped/auxiliary/ThreadLauncher.class
+org/jboss/additional/testsuite/jdkall/present/messaging/jms/deployment/EagerMBeanQueryServlet.class

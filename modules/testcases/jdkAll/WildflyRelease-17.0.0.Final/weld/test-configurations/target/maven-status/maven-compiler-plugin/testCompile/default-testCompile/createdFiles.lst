@@ -1,0 +1,4 @@
+org/jboss/additional/testsuite/jdkall/present/weld/alternative/AlternativeBean.class
+org/jboss/additional/testsuite/jdkall/present/weld/alternative/WeldAlternativeTestCase.class
+org/jboss/additional/testsuite/jdkall/present/weld/alternative/SimpleBean.class
+org/jboss/additional/testsuite/jdkall/present/weld/beanDiscovery/WeldBeanDiscoveryTest.class

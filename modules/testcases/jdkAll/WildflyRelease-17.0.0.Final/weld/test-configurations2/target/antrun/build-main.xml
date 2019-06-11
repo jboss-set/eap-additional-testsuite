@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../src/test/scripts/clean-deployments.xml">
+    <property name="serverDir" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../servers"/>
+    <target name="clean-deployments"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../src/test/scripts/copy-file.xml">
+    <property name="filePath" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/src/test/resources"/>
+    <property name="fileToCopy" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../src/resources/CDIAppMaven.war"/>
+    <target name="copy-file"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../src/test/scripts/copy-dir.xml">
+    <property name="todir" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../servers/wildfly/build/target/jbossas/modules/system/layers/base"/>
+    <property name="folderToCopy" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/weld/test-configurations2/../../../../../src/resources/modules"/>
+    <target name="copy-dir"/>
+  </ant>
+</target>
+</project>

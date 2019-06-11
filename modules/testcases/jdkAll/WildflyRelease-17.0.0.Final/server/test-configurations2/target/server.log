@@ -1,0 +1,444 @@
+12:37:45,931 INFO  (main) [org.jboss.threads] <Version.java:52> JBoss Threads version 2.3.3.Final
+12:37:46,199 INFO  (main) [org.jboss.as.arquillian.container.managed.ManagedDeployableContainer] <ManagedDeployableContainer.java:136> Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/server/test-configurations2/../../../../../servers/wildfly/build/target/jbossas, -Dtest.bind.address=127.0.0.1, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/configuration, -c=standalone.xml]
+12:37:46,250 INFO  (main) [org.jboss.remoting] <EndpointImpl.java:99> JBoss Remoting version 5.0.12.Final
+12:37:46,283 INFO  (main) [org.xnio] <Xnio.java:95> XNIO version 3.7.2.Final
+12:37:46,298 INFO  (main) [org.xnio.nio] <NioXnio.java:59> XNIO NIO Implementation Version 3.7.2.Final
+12:37:46,377 DEBUG (XNIO-1 I/O-1) [org.xnio.nio] <WorkerThread.java:444> Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.EPollSelectorImpl@2f458757
+12:37:46,354 DEBUG (XNIO-1 Accept) [org.xnio.nio] <WorkerThread.java:444> Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.EPollSelectorImpl@3bba2071
+12:37:46,387 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:199> Completed open of endpoint "management-client" <2ca47471>
+12:37:46,389 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 1 of endpoint "management-client" <2ca47471> (opened Connection provider for remote)
+12:37:46,398 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote': Remoting remote connection provider 40bffbca for endpoint "management-client" <2ca47471>
+12:37:46,401 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 2 of endpoint "management-client" <2ca47471> (opened Connection provider for remote+tls)
+12:37:46,403 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote+tls': Remoting remote connection provider 30c31dd7 for endpoint "management-client" <2ca47471>
+12:37:46,404 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 3 of endpoint "management-client" <2ca47471> (opened Connection provider for remoting)
+12:37:46,407 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remoting': Remoting remote connection provider c1fca1e for endpoint "management-client" <2ca47471>
+12:37:46,408 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 4 of endpoint "management-client" <2ca47471> (opened Connection provider for remote+http)
+12:37:46,410 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote+http': Remoting remote connection provider 1827a871 for endpoint "management-client" <2ca47471>
+12:37:46,410 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 5 of endpoint "management-client" <2ca47471> (opened Connection provider for remote+https)
+12:37:46,411 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote+https': Remoting remote connection provider 3e587920 for endpoint "management-client" <2ca47471>
+12:37:46,411 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 6 of endpoint "management-client" <2ca47471> (opened Connection provider for http-remoting)
+12:37:46,412 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'http-remoting': Remoting remote connection provider 63fd4873 for endpoint "management-client" <2ca47471>
+12:37:46,413 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 7 of endpoint "management-client" <2ca47471> (opened Connection provider for https-remoting)
+12:37:46,413 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'https-remoting': Remoting remote connection provider 70e0accd for endpoint "management-client" <2ca47471>
+12:37:46,442 INFO  (main) [org.wildfly.security] <Version.java:55> ELY00001: WildFly Elytron version 1.9.1.Final
+12:37:46,803 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:46,850 TRACE (main) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:46,854 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:47,860 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:47,862 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:47,863 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:48,365 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:48,370 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:48,370 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:48,627 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:48,630 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:48,631 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:48,757 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:48,759 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:48,759 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:48,861 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:48,867 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:48,867 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:48,969 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:48,971 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:48,971 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,076 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,080 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,080 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,183 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,185 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,186 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,290 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,322 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,361 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,466 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,472 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,472 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,574 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,575 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,576 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,680 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,684 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,684 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,805 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,806 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,807 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:49,909 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:49,913 TRACE (main) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:49,914 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,015 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,016 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,017 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,121 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,122 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,123 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,225 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,226 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,226 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,329 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,332 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,367 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,469 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,470 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,472 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,574 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,575 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,575 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,677 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,679 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,679 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,786 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,788 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,788 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,890 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,891 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,891 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:50,993 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:50,994 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:50,995 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,096 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,097 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,098 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,202 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,203 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,204 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,305 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,319 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,319 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,422 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,423 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,424 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,525 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,527 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,528 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,629 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,630 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,631 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,735 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,737 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,738 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,839 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,841 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,841 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:51,943 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:51,944 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:51,944 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,051 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,052 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,053 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,155 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,156 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,156 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,257 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,258 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,259 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,361 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,362 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,362 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,479 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,482 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,483 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,602 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,605 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,606 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,735 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,736 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,737 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,838 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:52,839 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <IoUtils.java:721> Registered exception result: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+
+12:37:52,839 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:606> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed a failed connection (2))
+12:37:52,942 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "management-client" <2ca47471> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:53,276 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:53,297 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:53,387 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:53,391 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:53,436 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:53,439 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <IoUtils.java:725> Registered successful result org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication$$Lambda$180/0x000000084024cc40@e705ff3
+12:37:53,463 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:53,530 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:53,551 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:53,563 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:53,566 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:54,428 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:54,430 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:54,444 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:54,452 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,041 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,047 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,246 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,250 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,257 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,261 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,289 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,293 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,319 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:199> Completed open of endpoint "endpoint" <44c13103>
+12:37:58,319 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 1 of endpoint "endpoint" <44c13103> (opened Connection provider for remote)
+12:37:58,320 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote': Remoting remote connection provider 6c6366cf for endpoint "endpoint" <44c13103>
+12:37:58,320 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 2 of endpoint "endpoint" <44c13103> (opened Connection provider for remote+tls)
+12:37:58,321 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote+tls': Remoting remote connection provider 8a2a6a for endpoint "endpoint" <44c13103>
+12:37:58,321 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 3 of endpoint "endpoint" <44c13103> (opened Connection provider for remoting)
+12:37:58,322 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remoting': Remoting remote connection provider 19962194 for endpoint "endpoint" <44c13103>
+12:37:58,323 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 4 of endpoint "endpoint" <44c13103> (opened Connection provider for remote+http)
+12:37:58,324 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote+http': Remoting remote connection provider 140d1230 for endpoint "endpoint" <44c13103>
+12:37:58,324 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 5 of endpoint "endpoint" <44c13103> (opened Connection provider for remote+https)
+12:37:58,334 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'remote+https': Remoting remote connection provider 7e2c64 for endpoint "endpoint" <44c13103>
+12:37:58,335 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 6 of endpoint "endpoint" <44c13103> (opened Connection provider for http-remoting)
+12:37:58,335 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'http-remoting': Remoting remote connection provider 3dd818e8 for endpoint "endpoint" <44c13103>
+12:37:58,336 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 7 of endpoint "endpoint" <44c13103> (opened Connection provider for https-remoting)
+12:37:58,336 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:692> Adding connection provider registration named 'https-remoting': Remoting remote connection provider 3a543f31 for endpoint "endpoint" <44c13103>
+12:37:58,339 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:375> Allocated tick to 8 of endpoint "endpoint" <44c13103> (opened Connection to remote+http://127.0.0.1:9990)
+12:37:58,467 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:58,468 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:58,471 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:58,473 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:58,503 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:58,504 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <IoUtils.java:725> Registered successful result org.jboss.remoting3.remote.ClientConnectionOpenListener$Authentication$$Lambda$180/0x000000084024cc40@5d5dcbc6
+12:37:58,505 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:58,525 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,531 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,536 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,547 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,564 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,566 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,582 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,583 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:58,632 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,633 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,947 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:58,949 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:59,021 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:59,054 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:59,475 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:59,476 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@4b7e0bee)
+12:37:59,528 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "endpoint" <44c13103> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:59,567 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Resource closed count 00000008 of endpoint "endpoint" <44c13103> (closed Remoting connection <2d763423> on endpoint "endpoint" <44c13103>)
+12:37:59,570 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000007 of endpoint "endpoint" <44c13103> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6e566337)
+12:37:59,750 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 9 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:37:59,752 TRACE (XNIO-1 I/O-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:389> Allocated tick to 10 of endpoint "management-client" <2ca47471> (opened org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:59,759 TRACE (XNIO-1 task-2) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Resource closed count 00000009 of endpoint "management-client" <2ca47471> (closed Remoting connection <4c455b55> on endpoint "management-client" <2ca47471>)
+12:37:59,760 TRACE (XNIO-1 task-2) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000008 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@113acac9)
+12:37:59,763 TRACE (XNIO-1 task-1) [org.jboss.remoting.endpoint] <EndpointImpl.java:990> Resource closed count 00000007 of endpoint "management-client" <2ca47471> (closed org.jboss.remoting3.EndpointImpl$TrackingExecutor@6c2dd7c9)
+12:38:00,972 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000006 of endpoint "management-client" <2ca47471> (closed Remoting remote connection provider 3e587920 for endpoint "management-client" <2ca47471>)
+12:38:00,979 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000005 of endpoint "management-client" <2ca47471> (closed Remoting remote connection provider 30c31dd7 for endpoint "management-client" <2ca47471>)
+12:38:00,980 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000004 of endpoint "management-client" <2ca47471> (closed Remoting remote connection provider 63fd4873 for endpoint "management-client" <2ca47471>)
+12:38:00,980 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000003 of endpoint "management-client" <2ca47471> (closed Remoting remote connection provider 40bffbca for endpoint "management-client" <2ca47471>)
+12:38:00,980 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000002 of endpoint "management-client" <2ca47471> (closed Remoting remote connection provider 70e0accd for endpoint "management-client" <2ca47471>)
+12:38:00,981 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000001 of endpoint "management-client" <2ca47471> (closed Remoting remote connection provider c1fca1e for endpoint "management-client" <2ca47471>)
+12:38:00,981 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:357> Finished phase 1 shutdown of endpoint "management-client" <2ca47471>
+12:38:00,992 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000006 of endpoint "endpoint" <44c13103> (closed Remoting remote connection provider 7e2c64 for endpoint "endpoint" <44c13103>)
+12:38:00,992 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000005 of endpoint "endpoint" <44c13103> (closed Remoting remote connection provider 8a2a6a for endpoint "endpoint" <44c13103>)
+12:38:00,993 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000004 of endpoint "endpoint" <44c13103> (closed Remoting remote connection provider 3dd818e8 for endpoint "endpoint" <44c13103>)
+12:38:00,993 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000003 of endpoint "endpoint" <44c13103> (closed Remoting remote connection provider 6c6366cf for endpoint "endpoint" <44c13103>)
+12:38:00,993 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000002 of endpoint "endpoint" <44c13103> (closed Remoting remote connection provider 3a543f31 for endpoint "endpoint" <44c13103>)
+12:38:00,993 TRACE (main) [org.jboss.remoting.endpoint] <SpiUtils.java:50> Phase 1 shutdown count 00000001 of endpoint "endpoint" <44c13103> (closed Remoting remote connection provider 19962194 for endpoint "endpoint" <44c13103>)
+12:38:00,994 TRACE (main) [org.jboss.remoting.endpoint] <EndpointImpl.java:357> Finished phase 1 shutdown of endpoint "endpoint" <44c13103>

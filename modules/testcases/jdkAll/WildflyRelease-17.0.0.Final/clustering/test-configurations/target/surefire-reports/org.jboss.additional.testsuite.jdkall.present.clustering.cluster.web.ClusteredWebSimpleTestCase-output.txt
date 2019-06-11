@@ -1,0 +1,601 @@
+log4j:WARN No appenders could be found for logger (org.jboss.logging).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jun 10, 2019 12:28:27 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:28:27 PM org.jboss.logmanager.JBossLoggerFinder getLogger
+ERROR: The LogManager accessed before the "java.util.logging.manager" system property was set to "org.jboss.logmanager.LogManager". Results may be unexpected.
+Jun 10, 2019 12:28:27 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../servers/wildfly/build/target/wildfly-SYNC-tcp-0, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-0, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/configuration, -c=standalone-full-ha.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:28:28,945 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:28:29,572 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:28:29,587 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:28:29,786 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:28:31,492 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[33m12:28:31,800 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+[0m[33m12:28:31,801 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+[0m[0m12:28:32,659 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:28:32,732 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=constant-permission-mapper' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:28:32,745 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 35) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:28:32,977 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:28:33,005 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.7.2.Final
+[0m[0m12:28:33,037 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:28:33,144 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.12.Final
+[0m[0m12:28:33,169 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:28:33,210 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 53) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.19
+[0m[0m12:28:33,210 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:28:33,257 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 49) WFLYIIOP0001: Activating IIOP Subsystem
+[0m[0m12:28:33,212 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:28:33,254 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:28:33,332 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 47) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[33m12:28:33,356 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:28:33,318 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 61) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:28:33,263 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m12:28:33,409 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:28:33,452 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:28:33,487 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m12:28:33,515 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[0m12:28:33,521 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:28:33,581 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+[0m[0m12:28:33,648 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[33m12:28:33,697 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 71) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:28:33,797 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:28:33,804 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:28:33,993 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+[0m[0m12:28:33,979 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:28:34,011 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+[0m[0m12:28:34,175 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+[0m[0m12:28:34,177 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m12:28:34,196 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final
+[0m[0m12:28:34,224 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+[0m[0m12:28:34,589 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-8) WFLYIIOP0009: CORBA ORB Service started
+[0m[0m12:28:34,654 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:28:34,718 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m12:28:34,778 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:28:34,829 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/deployments
+[0m[0m12:28:34,976 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:28:35,367 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[33m12:28:35,419 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+[0m[33m12:28:35,420 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 20.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+[0m[33m12:28:35,421 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+[0m[33m12:28:35,424 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 25.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+[0m[0m12:28:35,610 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:28:38,467 INFO  [org.jgroups.protocols.pbcast.GMS] (ServerService Thread Pool -- 74) node-0: no members discovered after 3005 ms: creating cluster as first member
+[0m[0m12:28:38,610 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+[0m[0m12:28:38,669 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=true,journalDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/journal,bindingsDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/bindings,largeMessagesDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/largemessages,pagingDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/paging)
+[0m[0m12:28:38,728 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221013: Using NIO Journal
+[0m[0m12:28:38,872 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:28:38,926 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+[0m[0m12:28:38,927 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+[0m[0m12:28:38,927 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+[0m[0m12:28:38,928 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+[0m[0m12:28:39,001 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 74) AMQ601138: User anonymous is getting notification info on target resource: null []
+[0m[0m12:28:39,031 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221034: Waiting indefinitely to obtain live lock
+[0m[0m12:28:39,032 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221035: Live Server Obtained live lock
+[0m[0m12:28:39,089 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:39,091 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:39,094 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:39,095 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:39,101 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel ee: [node-0|0] (1) [node-0]
+[0m[0m12:28:39,130 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-6) ISPN000094: Received new cluster view for channel ee: [node-0|0] (1) [node-0]
+[0m[0m12:28:39,130 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) ISPN000094: Received new cluster view for channel ee: [node-0|0] (1) [node-0]
+[0m[0m12:28:39,130 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel ee: [node-0|0] (1) [node-0]
+[0m[0m12:28:39,140 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:28:39,164 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:28:39,171 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:28:39,173 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:28:39,590 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m12:28:39,591 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m12:28:39,592 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m12:28:39,593 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m12:28:39,732 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221007: Server is now live
+[0m[0m12:28:39,732 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [default, nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0] 
+[0m[0m12:28:39,745 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 74) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m12:28:39,763 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 77) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+[0m[0m12:28:39,829 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0007: Registered connection factory java:/JmsXA
+[0m[33m12:28:39,837 WARN  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-7) IJ020017: Invalid archive: file://RaActivatoractivemq-ra
+[0m[0m12:28:39,913 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-7) AMQ151007: Resource adaptor started
+[0m[0m12:28:39,914 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-7) IJ020002: Deployed: file://RaActivatoractivemq-ra
+[0m[0m12:28:39,919 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m12:28:39,919 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m12:28:40,071 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:28:40,074 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m12:28:40,074 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m12:28:40,075 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 11877ms - Started 423 of 672 services (439 services are lazy, passive or on-demand)
+[0mJun 10, 2019 12:28:40 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:28:40 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../servers/wildfly/build/target/wildfly-SYNC-tcp-1, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-1, -Djboss.socket.binding.port-offset=100, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/configuration, -c=standalone-full-ha.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:28:40,837 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:28:41,370 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:28:41,379 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:28:41,528 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:28:43,231 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[33m12:28:43,565 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+[0m[33m12:28:43,566 WARN  [org.jboss.as.clustering.infinispan] (Controller Boot Thread) WFLYCLINF0004: The 'strategy' attribute of the 'eviction' element is no longer supported and will be ignored
+[0m[0m12:28:44,461 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:28:44,532 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 31) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:28:44,813 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 17) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=constant-permission-mapper' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:28:45,028 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:28:45,047 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.7.2.Final
+[0m[0m12:28:45,076 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:28:45,202 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.12.Final
+[0m[0m12:28:45,153 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:28:45,259 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 53) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.19
+[0m[0m12:28:45,272 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 49) WFLYIIOP0001: Activating IIOP Subsystem
+[0m[0m12:28:45,317 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 61) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:28:45,270 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:28:45,286 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:28:45,273 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:28:45,424 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:28:45,391 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[33m12:28:45,417 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:28:45,435 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 47) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:28:45,449 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:28:45,487 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m12:28:45,582 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:28:45,609 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[0m12:28:45,608 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+[0m[0m12:28:45,621 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[33m12:28:45,639 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 71) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:28:45,844 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:28:45,845 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:28:45,984 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:28:46,003 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+[0m[0m12:28:46,021 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+[0m[0m12:28:46,202 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8109
+[0m[0m12:28:46,204 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8180
+[0m[0m12:28:46,219 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final
+[0m[0m12:28:46,272 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+[0m[0m12:28:46,499 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-7) WFLYIIOP0009: CORBA ORB Service started
+[0m[0m12:28:46,672 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[0m12:28:46,694 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[33m12:28:46,854 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:28:46,910 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/deployments
+[0m[0m12:28:47,007 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[33m12:28:47,043 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+[0m[33m12:28:47,043 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 20.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+[0m[33m12:28:47,044 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+[0m[33m12:28:47,044 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 25.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+[0m[0m12:28:47,056 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8543
+[0m[0m12:28:47,113 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:47,118 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN100000: Node node-1 joined the cluster
+[0m[0m12:28:47,141 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:47,142 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN100000: Node node-1 joined the cluster
+[0m[0m12:28:47,148 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:47,149 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN100000: Node node-1 joined the cluster
+[0m[0m12:28:47,161 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:47,167 INFO  [org.infinispan.CLUSTER] (thread-9,ee,node-0) ISPN100000: Node node-1 joined the cluster
+[0m[0m12:28:47,439 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:28:47,502 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+[0m[0m12:28:47,706 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=true,journalDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/activemq/journal,bindingsDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/activemq/bindings,largeMessagesDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/activemq/largemessages,pagingDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/activemq/paging)
+[0m[0m12:28:47,791 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221013: Using NIO Journal
+[0m[0m12:28:47,876 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:28:47,979 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+[0m[0m12:28:47,981 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+[0m[0m12:28:47,983 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+[0m[0m12:28:47,985 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+[0m[0m12:28:48,044 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 74) AMQ601138: User anonymous is getting notification info on target resource: null []
+[0m[0m12:28:48,062 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221034: Waiting indefinitely to obtain live lock
+[0m[0m12:28:48,063 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221035: Live Server Obtained live lock
+[0m[0m12:28:48,090 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:48,092 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:48,093 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:48,097 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000078: Starting JGroups channel ee
+[0m[0m12:28:48,099 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:48,099 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-6) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:48,103 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:48,105 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel ee: [node-0|1] (2) [node-0, node-1]
+[0m[0m12:28:48,135 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000079: Channel ee local address is node-1, physical addresses are [127.0.0.1:55300]
+[0m[0m12:28:48,148 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel ee local address is node-1, physical addresses are [127.0.0.1:55300]
+[0m[0m12:28:48,182 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel ee local address is node-1, physical addresses are [127.0.0.1:55300]
+[0m[0m12:28:48,222 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000079: Channel ee local address is node-1, physical addresses are [127.0.0.1:55300]
+[0m[0m12:28:48,512 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m12:28:48,515 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m12:28:48,515 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m12:28:48,512 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[33m12:28:48,586 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[0m12:28:48,692 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221007: Server is now live
+[0m[0m12:28:48,693 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [default, nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0] 
+[0m[0m12:28:48,706 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 75) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m12:28:48,732 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 77) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+[0m[0m12:28:48,778 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0007: Registered connection factory java:/JmsXA
+[0m[33m12:28:48,818 WARN  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-1) IJ020017: Invalid archive: file://RaActivatoractivemq-ra
+[0m[0m12:28:48,927 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-1) AMQ151007: Resource adaptor started
+[0m[0m12:28:48,929 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-1) IJ020002: Deployed: file://RaActivatoractivemq-ra
+[0m[0m12:28:48,939 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m12:28:48,939 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m12:28:49,061 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:28:49,066 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+[0m[0m12:28:49,066 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+[0m[0m12:28:49,066 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 8727ms - Started 423 of 672 services (439 services are lazy, passive or on-demand)
+[0m[0m12:28:49,199 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/21/999d908b9b4cac5663000bb8d31366ea75cb96/content
+[0m[0m12:28:49,251 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:28:49,738 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:28:50,338 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-2) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:28:50,419 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:50,421 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:50,600 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 28) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:28:50,684 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:28:50,685 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 21) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:50,917 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:28:51,011 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0m[0m12:28:51,489 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/a3/805e4a9b8087cb5e40eb8b7445d3d4bb26ed4f/content
+[0m[0m12:28:51,529 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:28:52,279 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-3) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:28:52,328 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:52,345 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:52,475 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t2) [Context=ClusteredWebSimpleTestCase.war] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:52,501 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t2) [Context=default-server] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:52,547 INFO  [org.infinispan.CLUSTER] (remote-thread--p6-t1) [Context=client-mappings] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:52,674 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:52,678 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 20) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:28:52,682 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 74) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:28:52,835 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:52,875 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:52,890 INFO  [org.infinispan.CLUSTER] (remote-thread--p6-t1) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:52,890 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:52,937 INFO  [org.infinispan.CLUSTER] (transport-thread--p13-t24) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:52,944 INFO  [org.infinispan.CLUSTER] (transport-thread--p14-t12) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:52,958 INFO  [org.infinispan.CLUSTER] (transport-thread--p13-t3) [Context=ClusteredWebSimpleTestCase.war] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:52,965 INFO  [org.infinispan.CLUSTER] (transport-thread--p13-t25) [Context=default-server] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:52,982 INFO  [org.infinispan.CLUSTER] (transport-thread--p14-t15) [Context=client-mappings] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:53,208 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 22) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:28:53,277 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:28:53 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:28:53 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:28:53,800 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:28:53,829 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 76) ISPN000029: Passivating all entries to disk
+[0m[0m12:28:53,841 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 76) ISPN000030: Passivated 3 entries in 12 milliseconds
+[0m[0m12:28:53,844 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 76) [Context=ClusteredWebSimpleTestCase.war] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:28:53,858 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:53,903 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 2) [Context=default-server] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:28:53,912 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:28:53,944 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 151ms
+[0m[0m12:28:53,981 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/21/999d908b9b4cac5663000bb8d31366ea75cb96/content
+[0m[0m12:28:53,982 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[0m12:28:54,001 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 22) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:28:54,012 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 22) ISPN000029: Passivating all entries to disk
+[0m[0m12:28:54,018 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 22) ISPN000030: Passivated 3 entries in 6 milliseconds
+[0m[0m12:28:54,023 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:54,044 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:28:54,066 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 72ms
+[0m[0m12:28:54,104 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/a3/805e4a9b8087cb5e40eb8b7445d3d4bb26ed4f/content
+[0m[0m12:28:54,105 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:28:54 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:28:54 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:28:54,174 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/ac/408e2b35add72ae0635afee3ecaa7de3a96918/content
+[0m[0m12:28:54,203 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:28:54,352 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-4) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:28:54,364 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:54,365 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:54,396 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:28:54,411 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:54,420 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 2) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:28:54,441 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0m[0m12:28:54,478 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/ac/408e2b35add72ae0635afee3ecaa7de3a96918/content
+[0m[0m12:28:54,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:28:54,704 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-2) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:28:54,741 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:54,742 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:54,755 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:54,782 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:54,812 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 20) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:54,794 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:28:54,862 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:54,874 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:54,898 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=default-server] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:54,929 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:54,937 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:54,953 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=ClusteredWebSimpleTestCase.war] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:54,986 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:28:55,012 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:28:58 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:28:58 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:28:58,265 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:28:58,293 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 2) ISPN000029: Passivating all entries to disk
+[0m[0m12:28:58,294 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 2) ISPN000030: Passivated 3 entries in 0 milliseconds
+[0m[0m12:28:58,295 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 2) [Context=ClusteredWebSimpleTestCase.war] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[33m12:28:58,302 WARN  [org.infinispan.transaction.impl.TransactionTable] (ServerService Thread Pool -- 2) ISPN000100: Stopping, but there are 0 local transactions and 1 remote transactions that did not finish in time.
+[0m[0m12:28:58,304 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:58,323 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 2) [Context=default-server] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:28:58,326 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:28:58,338 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 77ms
+[0m[0m12:28:58,377 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/ac/408e2b35add72ae0635afee3ecaa7de3a96918/content
+[0m[0m12:28:58,378 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[0m12:28:58,395 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:28:58,400 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 22) ISPN000029: Passivating all entries to disk
+[0m[0m12:28:58,405 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 22) ISPN000030: Passivated 3 entries in 5 milliseconds
+[0m[0m12:28:58,431 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:58,467 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:28:58,478 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 92ms
+[0m[0m12:28:58,502 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/ac/408e2b35add72ae0635afee3ecaa7de3a96918/content
+[0m[0m12:28:58,502 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:28:58 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:28:58 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:28:58,529 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/81/9c10c1792a8ec3cc4590b9cd152a166e6e19f5/content
+[0m[0m12:28:58,538 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:28:58,948 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-3) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:28:59,172 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:59,173 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:59,205 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:28:59,228 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:59,265 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 2) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:28:59,294 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0m[0m12:28:59,319 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/81/9c10c1792a8ec3cc4590b9cd152a166e6e19f5/content
+[0m[0m12:28:59,325 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:28:59,616 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-3) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:28:59,626 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:59,635 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:28:59,647 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:59,653 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=ClusteredWebSimpleTestCase.war] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:28:59,663 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 20) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:28:59,687 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:28:59,781 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:59,786 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:59,793 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t1) [Context=default-server] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:59,792 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:28:59,805 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:28:59,812 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:28:59,833 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:28:59,850 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0m[0m12:29:00,894 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:29:09,933 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 76) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:09,936 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 76) ISPN000030: Passivated 3 entries in 2 milliseconds
+[0m[0m12:29:09,937 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 76) [Context=ClusteredWebSimpleTestCase.war] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:09,946 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:09,973 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 9080ms
+[0m[0m12:29:09,974 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 76) [Context=default-server] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:09,981 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:09,999 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/81/9c10c1792a8ec3cc4590b9cd152a166e6e19f5/content
+[0m[0m12:29:10,000 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:29:10 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:10 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:10,033 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:29:10,052 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 22) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:10,055 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 22) ISPN000030: Passivated 3 entries in 3 milliseconds
+[0m[0m12:29:10,062 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 22) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:10,080 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 20) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:10,109 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 76ms
+[0m[0m12:29:10,130 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/81/9c10c1792a8ec3cc4590b9cd152a166e6e19f5/content
+[0m[0m12:29:10,131 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:29:10 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:10 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:10,163 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/7d/8d06aec0baea8ed613af46ca740409e0b2487e/content
+[0m[0m12:29:10,167 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:29:10,327 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-7) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:29:10,348 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:10,350 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:10,352 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:29:10,368 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:10,386 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:29:10,421 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0m[0m12:29:10,494 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/7d/8d06aec0baea8ed613af46ca740409e0b2487e/content
+[0m[0m12:29:10,528 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[33m12:29:10,690 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-6) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:29:10,712 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:10,713 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:10,720 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:29:10,728 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:29:10,733 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 20) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:29:10,740 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 74) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:10,764 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:29:10,770 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:29:10,774 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=default-server] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:29:10,791 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:29:10,798 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:29:10,803 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:29:10,830 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 74) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:29:10,846 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0mJun 10, 2019 12:29:11 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController stop
+INFO: Manual stopping of a server instance
+[0m12:29:11,883 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:29:11,885 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:29:11,887 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:29:11,996 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:29:11,996 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ee
+[0m[0m12:29:11,996 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000080: Disconnecting JGroups channel ee
+[0m[0m12:29:11,997 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:29:11,998 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+[0m[0m12:29:20,903 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m12:29:20,904 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:29:20,905 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m12:29:20,908 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 21) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:20,914 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+[0m[0m12:29:20,918 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000002: Initiating mod_cluster shutdown
+[0m[0m12:29:20,929 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:29:20,930 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 21) ISPN000030: Passivated 3 entries in 22 milliseconds
+[0m[0m12:29:20,931 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 21) [Context=ClusteredWebSimpleTestCase.war] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:20,958 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 21) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:20,961 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 80) [Context=default-server] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:20,965 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 21) [Context=client-mappings] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:20,972 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 80) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:20,985 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 21) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:29:20,988 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000080: Disconnecting JGroups channel ee
+[0m[0m12:29:20,990 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000080: Disconnecting JGroups channel ee
+[0m[0m12:29:21,023 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:29:21,027 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow AJP listener ajp suspending
+[0m[0m12:29:21,029 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+[0m[0m12:29:21,031 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 9132ms
+[0m[0m12:29:21,031 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:29:21,055 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 81) AMQ151003: resource adaptor stopped
+[0m[0m12:29:21,140 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 21) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [c5c50cb9-8b84-11e9-af56-000c29ee3ea0] stopped, uptime 42.485 seconds
+[0m[0m12:29:21,143 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:29:21,144 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:29:21,147 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:29:21,167 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|2] (1) [node-1]
+[0m[0m12:29:21,190 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 9290ms
+[0m[0m12:29:21,191 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100001: Node node-0 left the cluster
+[0m[0m12:29:21,196 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|2] (1) [node-1]
+[0m[0m12:29:21,198 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100001: Node node-0 left the cluster
+[0m[0m12:29:21,207 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|2] (1) [node-1]
+[0m[0m12:29:21,208 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100001: Node node-0 left the cluster
+[0m[0m12:29:21,219 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|2] (1) [node-1]
+[0m[0m12:29:21,220 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100001: Node node-0 left the cluster
+[0m[0m12:29:21,223 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p19-t46) [Context=default-server] ISPN100007: After merge (or coordinator change), recovered members [node-1] with topology id 7
+[0m[0m12:29:21,224 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p18-t17) [Context=client-mappings] ISPN100007: After merge (or coordinator change), recovered members [node-1] with topology id 7
+[0m[0m12:29:21,225 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p19-t47) [Context=ClusteredWebSimpleTestCase.war] ISPN100007: After merge (or coordinator change), recovered members [node-1] with topology id 7
+[0mJun 10, 2019 12:29:21 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:21 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../servers/wildfly/build/target/wildfly-SYNC-tcp-0, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-0, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/configuration, -c=standalone-full-ha.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:29:22,482 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[33m12:29:22,606 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[0m12:29:23,262 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:29:23,271 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:29:23,521 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:29:25,233 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[0m12:29:26,603 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:29:26,668 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 10) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=constant-permission-mapper' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:29:26,688 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:29:26,890 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:29:26,915 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.2.Final
+[0m[0m12:29:26,958 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:29:27,093 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 48) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:29:27,120 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 53) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.19
+[0m[0m12:29:27,132 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.12.Final
+[0m[0m12:29:27,164 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:29:27,211 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 47) WFLYIIOP0001: Activating IIOP Subsystem
+[0m[0m12:29:27,201 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:29:27,274 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 61) WFLYNAM0001: Activating Naming Subsystem
+[0m[33m12:29:27,303 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:29:27,296 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 49) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:29:27,497 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 67) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:29:27,590 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:29:27,614 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:29:27,642 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+[0m[0m12:29:27,657 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m12:29:27,661 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m12:29:27,672 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m12:29:27,711 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:29:27,834 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[33m12:29:27,941 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 71) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:29:28,075 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:29:28,075 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:29:28,179 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+[0m[0m12:29:28,183 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+[0m[0m12:29:28,168 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:29:28,282 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+[0m[0m12:29:28,283 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m12:29:28,310 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final
+[0m[0m12:29:28,318 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+[0m[0m12:29:28,630 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:29:28,698 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-6) WFLYIIOP0009: CORBA ORB Service started
+[0m[0m12:29:28,732 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:29:28,977 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m12:29:29,038 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:29:29,076 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[0m12:29:29,120 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/deployments
+[0m[0m12:29:29,228 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[33m12:29:29,304 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+[0m[33m12:29:29,304 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 20.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+[0m[33m12:29:29,305 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+[0m[33m12:29:29,305 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 74) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 25.00MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+[0m[0m12:29:29,363 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:29,364 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100000: Node node-0 joined the cluster
+[0m[0m12:29:29,375 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:29,376 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100000: Node node-0 joined the cluster
+[0m[0m12:29:29,377 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:29,378 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100000: Node node-0 joined the cluster
+[0m[0m12:29:29,378 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:29,379 INFO  [org.infinispan.CLUSTER] (thread-13,ee,node-1) ISPN100000: Node node-0 joined the cluster
+[0m[0m12:29:29,409 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:29:29,688 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+[0m[0m12:29:29,982 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=true,journalDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/journal,bindingsDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/bindings,largeMessagesDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/largemessages,pagingDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/activemq/paging)
+[0m[0m12:29:30,140 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221013: Using NIO Journal
+[0m[0m12:29:30,208 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:29:30,523 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel ee
+[0m[0m12:29:30,522 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel ee
+[0m[0m12:29:30,522 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel ee
+[0m[0m12:29:30,526 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000078: Starting JGroups channel ee
+[0m[0m12:29:30,532 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:30,531 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:30,533 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:30,531 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel ee: [node-1|3] (2) [node-1, node-0]
+[0m[0m12:29:30,570 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:29:30,579 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:29:30,597 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+[0m[0m12:29:30,599 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+[0m[0m12:29:30,600 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+[0m[0m12:29:30,601 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+[0m[0m12:29:30,623 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:29:30,651 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel ee local address is node-0, physical addresses are [127.0.0.1:55200]
+[0m[0m12:29:30,699 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 74) AMQ601138: User anonymous is getting notification info on target resource: null []
+[0m[0m12:29:30,761 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221034: Waiting indefinitely to obtain live lock
+[0m[0m12:29:30,761 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221035: Live Server Obtained live lock
+[0m[33m12:29:31,043 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-6) WFLYCLWEBUT0005: No distributable session management provider found for ClusteredWebSimpleTestCase.war; using legacy provider based on <replication-config/>
+[0m[0m12:29:31,154 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:31,190 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:31,871 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-mappings] ISPN100002: Starting rebalance with members [node-1, node-0], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m12:29:31,894 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100002: Starting rebalance with members [node-1, node-0], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m12:29:32,152 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100002: Starting rebalance with members [node-1, node-0], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m12:29:32,308 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:32,599 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m12:29:32,600 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m12:29:32,601 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m12:29:32,609 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m12:29:34,355 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221007: Server is now live
+[0m[0m12:29:34,404 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m12:29:34,444 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 74) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [default, nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0] 
+[0m[33m12:29:34,498 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:29:34,463 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[0m12:29:34,542 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:29:34,540 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 75) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:29:34,635 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m12:29:35,014 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m12:29:35,227 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 74) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+[0m[0m12:29:35,507 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m12:29:35,661 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0007: Registered connection factory java:/JmsXA
+[0m[0m12:29:35,667 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m12:29:35,678 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m12:29:35,681 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 78) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[33m12:29:35,671 WARN  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-4) IJ020017: Invalid archive: file://RaActivatoractivemq-ra
+[0m[0m12:29:35,844 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100010: Finished rebalance with members [node-1, node-0], topology id 11
+[0m[0m12:29:35,859 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100010: Finished rebalance with members [node-1, node-0], topology id 11
+[0m[0m12:29:35,878 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-mappings] ISPN100010: Finished rebalance with members [node-1, node-0], topology id 11
+[0m[0m12:29:36,100 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-4) AMQ151007: Resource adaptor started
+[0m[0m12:29:36,100 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-4) IJ020002: Deployed: file://RaActivatoractivemq-ra
+[0m[0m12:29:36,106 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m12:29:36,113 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m12:29:36,237 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: '/ClusteredWebSimpleTestCase' for server 'default-server'
+[0m[0m12:29:36,254 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "ClusteredWebSimpleTestCase.war" (runtime-name : "ClusteredWebSimpleTestCase.war")
+[0m[0m12:29:36,341 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:29:36,344 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m12:29:36,345 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m12:29:36,345 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 14641ms - Started 556 of 747 services (449 services are lazy, passive or on-demand)
+[0mJun 10, 2019 12:29:36 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:36,569 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 16) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:29:36,646 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 16) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:36,660 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 16) ISPN000030: Passivated 3 entries in 13 milliseconds
+[0m[0m12:29:36,663 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=ClusteredWebSimpleTestCase.war] ISPN100008: Updating cache members list [node-1], topology id 12
+[0m[0m12:29:36,674 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 16) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:36,728 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100008: Updating cache members list [node-1], topology id 12
+[0m[0m12:29:36,733 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 7) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:36,753 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 226ms
+[0m[0m12:29:36,870 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/7d/8d06aec0baea8ed613af46ca740409e0b2487e/content
+[0m[0m12:29:36,873 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m[0m12:29:36,881 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 74) WFLYUT0022: Unregistered web context: '/ClusteredWebSimpleTestCase' from server 'default-server'
+[0m[0m12:29:36,901 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 83) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:36,969 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 83) ISPN000030: Passivated 3 entries in 67 milliseconds
+[0m[0m12:29:36,974 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0003: Stopped ClusteredWebSimpleTestCase.war cache from web container
+[0m[0m12:29:37,009 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:37,030 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment ClusteredWebSimpleTestCase.war (runtime-name: ClusteredWebSimpleTestCase.war) in 150ms
+[0m[0m12:29:37,058 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/7d/8d06aec0baea8ed613af46ca740409e0b2487e/content
+[0m[0m12:29:37,058 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "ClusteredWebSimpleTestCase.war" (runtime-name: "ClusteredWebSimpleTestCase.war")
+[0m

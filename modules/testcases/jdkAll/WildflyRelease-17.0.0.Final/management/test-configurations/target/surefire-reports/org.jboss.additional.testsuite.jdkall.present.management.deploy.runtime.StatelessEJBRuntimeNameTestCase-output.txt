@@ -1,0 +1,21 @@
+[0m12:35:37,722 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/27/c5f0f6a1f53f6db7a7cf46573ba8038ac34d29/content
+[0m[0m12:35:37,724 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test4-stateless-session-bean-test.ear" (runtime-name: "nooma-nooma4-stateless-session-bean.ear")
+[0m[0m12:35:37,727 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "ejb.jar")
+[0m[0m12:35:37,745 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment nooma-nooma4-stateless-session-bean.ear
+[0m[0m12:35:37,761 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment ejb.jar
+[0m[0m12:35:37,762 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'POINT' in deployment unit 'subdeployment "ejb.jar" of deployment "nooma-nooma4-stateless-session-bean.ear"' are as follows:
+
+	java:global/nooma-nooma4-stateless-session-bean/ejb/POINT!org.jboss.additional.testsuite.jdkall.present.management.deploy.runtime.ejb.stateless.PointlessMathInterface
+	java:app/ejb/POINT!org.jboss.additional.testsuite.jdkall.present.management.deploy.runtime.ejb.stateless.PointlessMathInterface
+	java:module/POINT!org.jboss.additional.testsuite.jdkall.present.management.deploy.runtime.ejb.stateless.PointlessMathInterface
+	ejb:nooma-nooma4-stateless-session-bean/ejb/POINT!org.jboss.additional.testsuite.jdkall.present.management.deploy.runtime.ejb.stateless.PointlessMathInterface
+	java:global/nooma-nooma4-stateless-session-bean/ejb/POINT
+	java:app/ejb/POINT
+	java:module/POINT
+
+[0m[0m12:35:38,211 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "test4-stateless-session-bean-test.ear" (runtime-name : "nooma-nooma4-stateless-session-bean.ear")
+[0m[0m12:35:38,323 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0208: Stopped subdeployment (runtime-name: ejb.jar) in 36ms
+[0m[0m12:35:38,327 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test4-stateless-session-bean-test.ear (runtime-name: nooma-nooma4-stateless-session-bean.ear) in 45ms
+[0m[0m12:35:38,368 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/27/c5f0f6a1f53f6db7a7cf46573ba8038ac34d29/content
+[0m[0m12:35:38,368 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "test4-stateless-session-bean-test.ear" (runtime-name: "nooma-nooma4-stateless-session-bean.ear")
+[0m

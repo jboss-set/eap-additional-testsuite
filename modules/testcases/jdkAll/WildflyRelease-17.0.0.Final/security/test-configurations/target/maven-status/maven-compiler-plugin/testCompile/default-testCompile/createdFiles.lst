@@ -1,0 +1,11 @@
+org/jboss/additional/testsuite/jdkall/present/security/roleToRolesMapping/mdb/JMSClientServlet.class
+org/jboss/additional/testsuite/jdkall/present/security/other/SecurityDeserializationTestCase$SerializedClass.class
+org/jboss/additional/testsuite/jdkall/present/security/roleToRolesMapping/mdb/MDBSample.class
+org/jboss/additional/testsuite/jdkall/present/security/web/BearerTokenAuthenticationTestCase.class
+org/jboss/additional/testsuite/jdkall/present/security/web/UnsecuredServlet.class
+org/jboss/additional/testsuite/jdkall/present/security/roleToRolesMapping/RoleToRolesMappingTestCase.class
+org/jboss/additional/testsuite/jdkall/present/security/other/SecurityDeserializationTestCase.class
+org/jboss/additional/testsuite/jdkall/present/security/web/BearerAuthServerSetup.class
+org/jboss/additional/testsuite/jdkall/present/security/other/SecurityDeserializationTestCase$PolyWrapper.class
+org/jboss/additional/testsuite/jdkall/present/security/other/SecuritySlf4jTestCase.class
+org/jboss/additional/testsuite/jdkall/present/security/cli/CliTestCase.class

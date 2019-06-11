@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="clean"  >
+<target name="clean" description="clean">
+  <delete includeEmptyDirs="true" failonerror="false">
+    <fileset includes="**/**/WildflyRelease-17.0.0.Final/**/src/main/java/" dir="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/web/test-configurations2/modules/testcases"/>
+    <fileset includes="**/**/Protean/**/src/test/" dir="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/web/test-configurations2/modules/testcases"/>
+    <fileset dir="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/web/test-configurations2/modules/srcPool/main/java"/>
+  </delete>
+</target>
+</project>

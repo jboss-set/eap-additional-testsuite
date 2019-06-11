@@ -1,0 +1,16 @@
+2019-06-10 12:31:24,428 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-06-10 12:31:24,842 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-06-10 12:31:24,868 INFO  [org.jboss.as.process.Host Controller.status] (main) WFLYPC0018: Starting process 'Host Controller'
+2019-06-10 12:31:30,479 INFO  [org.jboss.as.process.Server:main-one.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:main-one'
+2019-06-10 12:32:13,387 INFO  [org.jboss.as.process.Server:main-two.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:main-two'
+2019-06-10 12:32:26,323 INFO  [org.jboss.as.process.Server:test-one.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:test-one'
+2019-06-10 12:32:52,207 INFO  [org.jboss.as.process.Server:test-one.status] (ProcessController-threads - 3) WFLYPC0019: Stopping process 'Server:test-one'
+2019-06-10 12:32:53,272 INFO  [org.jboss.as.process.Server:test-one.status] (reaper for Server:test-one) WFLYPC0011: Process 'Server:test-one' finished with an exit status of 0
+2019-06-10 12:32:53,427 INFO  [org.jboss.as.process.Server:main-two.status] (ProcessController-threads - 3) WFLYPC0019: Stopping process 'Server:main-two'
+2019-06-10 12:32:54,306 INFO  [org.jboss.as.process.Server:main-two.status] (reaper for Server:main-two) WFLYPC0011: Process 'Server:main-two' finished with an exit status of 0
+2019-06-10 12:33:02,109 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0017: Shutting down process controller
+2019-06-10 12:33:02,110 INFO  [org.jboss.as.process.Host Controller.status] (Shutdown thread) WFLYPC0019: Stopping process 'Host Controller'
+2019-06-10 12:33:02,215 INFO  [org.jboss.as.process.Server:main-one.status] (ProcessController-threads - 3) WFLYPC0019: Stopping process 'Server:main-one'
+2019-06-10 12:33:03,074 INFO  [org.jboss.as.process.Server:main-one.status] (reaper for Server:main-one) WFLYPC0011: Process 'Server:main-one' finished with an exit status of 0
+2019-06-10 12:33:03,163 INFO  [org.jboss.as.process.Host Controller.status] (reaper for Host Controller) WFLYPC0011: Process 'Host Controller' finished with an exit status of 0
+2019-06-10 12:33:03,166 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0016: All processes finished; exiting

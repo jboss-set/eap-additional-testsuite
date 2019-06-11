@@ -1,0 +1,34 @@
+[0m12:38:26,848 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/5c/2abf3106194ea260bdb0d7358fce7c40241341/content
+[0m[0m12:38:26,854 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "cookieHeaderServlet.war" (runtime-name: "cookieHeaderServlet.war")
+[0m[33m12:38:27,105 WARN  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0013: Deployment cookieHeaderServlet.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:38:27,145 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 13) WFLYUT0021: Registered web context: '/cookieHeaderServlet' for server 'default-server'
+[0m[0m12:38:27,166 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "cookieHeaderServlet.war" (runtime-name : "cookieHeaderServlet.war")
+[0m[0m12:38:27,609 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/17/0b1866e22d0ede2ff1ca905db69616fdd5c413/content
+[0m[0m12:38:27,634 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "cookieHeaderServlet2.war" (runtime-name: "cookieHeaderServlet2.war")
+[0m[33m12:38:27,866 WARN  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0013: Deployment cookieHeaderServlet2.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:38:27,898 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 13) WFLYUT0021: Registered web context: '/cookieHeaderServlet2' for server 'default-server'
+[0m[0m12:38:27,912 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "cookieHeaderServlet2.war" (runtime-name : "cookieHeaderServlet2.war")
+[0mProtocol Version : HTTP/1.1
+[0m12:38:27,982 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 11) WFLYUT0022: Unregistered web context: '/cookieHeaderServlet' from server 'default-server'
+[0m[0m12:38:28,016 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment cookieHeaderServlet.war (runtime-name: cookieHeaderServlet.war) in 35ms
+[0m[0m12:38:28,040 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/5c/2abf3106194ea260bdb0d7358fce7c40241341/content
+[0m[0m12:38:28,040 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "cookieHeaderServlet.war" (runtime-name: "cookieHeaderServlet.war")
+[0m[0m12:38:28,051 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 11) WFLYUT0022: Unregistered web context: '/cookieHeaderServlet2' from server 'default-server'
+[0m[0m12:38:28,070 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment cookieHeaderServlet2.war (runtime-name: cookieHeaderServlet2.war) in 22ms
+[0m[0m12:38:28,082 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/17/0b1866e22d0ede2ff1ca905db69616fdd5c413/content
+[0m[0m12:38:28,082 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "cookieHeaderServlet2.war" (runtime-name: "cookieHeaderServlet2.war")
+[0m[0m12:38:28,099 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:38:28,103 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:38:28,102 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:38:28,147 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:38:28,149 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:38:28,154 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+[0m[0m12:38:28,155 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:38:28,181 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:38:28,188 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:38:28,193 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:38:28,209 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:38:28,210 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:38:28,213 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:38:28,245 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 137ms
+[0m

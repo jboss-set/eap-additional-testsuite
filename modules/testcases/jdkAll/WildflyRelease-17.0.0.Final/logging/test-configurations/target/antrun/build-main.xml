@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../src/test/scripts/clean-deployments.xml">
+    <property name="serverDir" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../servers"/>
+    <target name="clean-deployments"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../src/test/scripts/basic-build.xml">
+    <property name="workspace" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../.."/>
+    <property name="server" value="wildfly"/>
+    <property name="dist" value="jbossas"/>
+    <property name="standaloneConfiguration" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../src/test/config/standaloneWildfly/standalone-full.xml"/>
+    <target name="build-basic-check"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../src/test/scripts/copy-file.xml">
+    <property name="fileName" value="Application1-ear-0.0.1-SNAPSHOT.ear"/>
+    <property name="filePath" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../servers/wildfly/build/target/jbossas/standalone/deployments"/>
+    <property name="fileToCopy" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../src/resources/Application1-ear-0.0.1-SNAPSHOT.ear"/>
+    <target name="copy-file"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../src/test/scripts/copy-file.xml">
+    <property name="fileName" value="Application2-ear-0.0.1-SNAPSHOT.ear"/>
+    <property name="filePath" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../servers/wildfly/build/target/jbossas/standalone/deployments"/>
+    <property name="fileToCopy" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/logging/test-configurations/../../../../../src/resources/Application2-ear-0.0.1-SNAPSHOT.ear"/>
+    <target name="copy-file"/>
+  </ant>
+</target>
+</project>

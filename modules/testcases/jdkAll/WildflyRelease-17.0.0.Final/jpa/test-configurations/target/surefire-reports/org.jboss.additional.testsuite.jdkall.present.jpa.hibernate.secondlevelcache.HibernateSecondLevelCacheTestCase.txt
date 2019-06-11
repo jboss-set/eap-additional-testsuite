@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.jpa.hibernate.secondlevelcache.HibernateSecondLevelCacheTestCase
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.559 s - in org.jboss.additional.testsuite.jdkall.present.jpa.hibernate.secondlevelcache.HibernateSecondLevelCacheTestCase

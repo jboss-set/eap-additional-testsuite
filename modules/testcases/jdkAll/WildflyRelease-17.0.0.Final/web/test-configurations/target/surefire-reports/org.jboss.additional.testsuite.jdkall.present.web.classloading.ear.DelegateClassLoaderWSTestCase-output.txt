@@ -1,0 +1,68 @@
+[0m12:38:19,314 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/ff/65fda6ebb087418d8b1805d868e6cbd44c22c7/content
+[0m[0m12:38:19,324 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.ear" (runtime-name: "test.ear")
+[0m[0m12:38:19,445 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0207: Starting subdeployment (runtime-name: "test.war")
+[0m[0m12:38:19,445 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "ejb.jar")
+[0m[0m12:38:19,446 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "service.jar")
+[0m[0m12:38:19,662 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment test.ear
+[0m[0m12:38:19,738 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:38:19,926 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment ejb.jar
+[0m[0m12:38:19,932 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment service.jar
+[0m[0m12:38:19,934 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'GreeterEJBImpl' in deployment unit 'subdeployment "ejb.jar" of deployment "test.ear"' are as follows:
+
+
+[0m[0m12:38:19,936 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment test.war
+[0m[0m12:38:19,944 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'GreeterServiceImpl' in deployment unit 'subdeployment "service.jar" of deployment "test.ear"' are as follows:
+
+
+[0m[0m12:38:20,030 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 3.1.1 (Final)
+[0mWARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jboss.invocation.proxy.AbstractProxyFactory$1 (jar:file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/modules/system/layers/base/org/jboss/invocation/main/jboss-invocation-1.5.2.Final.jar!/) to method java.lang.Object.clone()
+WARNING: Please consider reporting this to the maintainers of org.jboss.invocation.proxy.AbstractProxyFactory$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[0m12:38:20,267 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-7) JBWS024061: Adding service endpoint metadata: id=GreeterEJBImpl
+ address=http://localhost:8080/ejb/GreeterEJBImpl
+ implementor=org.jboss.additional.testsuite.jdkall.present.web.classloading.ear.GreeterEJBImpl
+ serviceName={http://ear.classloading.web.present.jdkall.testsuite.additional.jboss.org/}GreeterEJBImplService
+ portName={http://ear.classloading.web.present.jdkall.testsuite.additional.jboss.org/}GreeterEJBImplPort
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+[0m[0m12:38:20,266 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-3) JBWS024061: Adding service endpoint metadata: id=GreeterServiceImpl
+ address=http://localhost:8080/service/GreeterService/Greeter
+ implementor=org.jboss.additional.testsuite.jdkall.present.web.classloading.ear.GreeterServiceImpl
+ serviceName={http://www.jboss.org/eap/additional/ts/Greeter}GreeterService
+ portName={http://www.jboss.org/eap/additional/ts/Greeter}Greeter
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+[0m[0m12:38:21,223 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-3) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from class org.jboss.additional.testsuite.jdkall.present.web.classloading.ear.GreeterService
+[0m[0m12:38:21,395 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-7) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from WSDL: vfs:/content/test.ear/service.jar/META-INF/GreeterService.wsdl
+[0m[0m12:38:21,641 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-7) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from WSDL: vfs:/content/test.ear/service.jar/META-INF/GreeterService.wsdl
+[0m[0m12:38:21,724 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-3) Setting the server's publish address to be http://localhost:8080/service/GreeterService/Greeter
+[0m[0m12:38:21,725 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-7) Creating Service {http://ear.classloading.web.present.jdkall.testsuite.additional.jboss.org/}GreeterEJBImplService from class org.jboss.additional.testsuite.jdkall.present.web.classloading.ear.GreeterEJB
+[0m[0m12:38:21,775 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-7) Setting the server's publish address to be http://localhost:8080/ejb/GreeterEJBImpl
+[0m[0m12:38:21,799 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-7) JBWS024074: WSDL published to: file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/wsdl/test.ear/ejb.jar/GreeterEJBImplService.wsdl
+[0m[0m12:38:21,825 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-3) JBWS024074: WSDL published to: file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/wsdl/test.ear/service.jar/GreeterService.wsdl
+[0m[0m12:38:21,832 INFO  [org.jboss.as.webservices] (MSC service thread 1-2) WFLYWS0003: Starting service jboss.ws.endpoint."test.ear"."ejb.jar".GreeterEJBImpl
+[0m[0m12:38:21,847 INFO  [org.jboss.as.webservices] (MSC service thread 1-7) WFLYWS0003: Starting service jboss.ws.endpoint."test.ear"."service.jar".GreeterServiceImpl
+[0m[0m12:38:22,602 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/ejb' for server 'default-server'
+[0m[0m12:38:22,608 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/service' for server 'default-server'
+[0m[0m12:38:22,634 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 13) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+[0m[0m12:38:22,709 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.ear" (runtime-name : "test.ear")
+[0m[0m12:38:24,674 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (default task-1) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from WSDL: vfs:/content/test.ear/service.jar/META-INF/GreeterService.wsdl
+[0m[0m12:38:24,678 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (default task-1) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from WSDL: vfs:/content/test.ear/service.jar/META-INF/GreeterService.wsdl
+[0m[0m12:38:24,710 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (default task-1) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from WSDL: vfs:/content/test.ear/service.jar/META-INF/GreeterService.wsdl
+[0m[0m12:38:24,715 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (default task-1) Creating Service {http://www.jboss.org/eap/additional/ts/Greeter}GreeterService from WSDL: vfs:/content/test.ear/service.jar/META-INF/GreeterService.wsdl
+[0m[0m12:38:25,036 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 11) WFLYUT0022: Unregistered web context: '/ejb' from server 'default-server'
+[0m[0m12:38:25,040 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 13) WFLYUT0022: Unregistered web context: '/service' from server 'default-server'
+[0m[0m12:38:25,042 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+[0m[0m12:38:25,042 INFO  [org.jboss.as.webservices] (MSC service thread 1-8) WFLYWS0004: Stopping service jboss.ws.endpoint."test.ear"."ejb.jar".GreeterEJBImpl
+[0m[0m12:38:25,110 INFO  [org.jboss.as.webservices] (MSC service thread 1-2) WFLYWS0004: Stopping service jboss.ws.endpoint."test.ear"."service.jar".GreeterServiceImpl
+[0m[0m12:38:25,311 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: ejb.jar) in 279ms
+[0m[0m12:38:25,312 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: service.jar) in 281ms
+[0m[0m12:38:25,312 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0208: Stopped subdeployment (runtime-name: test.war) in 281ms
+[0m[0m12:38:25,323 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.ear (runtime-name: test.ear) in 292ms
+[0m[0m12:38:25,337 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/ff/65fda6ebb087418d8b1805d868e6cbd44c22c7/content
+[0m[0m12:38:25,337 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.ear" (runtime-name: "test.ear")
+[0m

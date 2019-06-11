@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncMethodTestCase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.334 s - in org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncMethodTestCase

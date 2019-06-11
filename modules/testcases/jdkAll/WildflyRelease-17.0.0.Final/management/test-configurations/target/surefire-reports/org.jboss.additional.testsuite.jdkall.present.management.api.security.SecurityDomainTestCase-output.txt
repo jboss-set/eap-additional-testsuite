@@ -1,0 +1,23 @@
+[0m12:35:00,472 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/41/876de2f0e0d77ce1d9e75b5d1bb05724918014/content
+[0m[0m12:35:00,476 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "SecurityDomainTestCase.war" (runtime-name: "SecurityDomainTestCase.war")
+[0m[33m12:35:00,721 WARN  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0013: Deployment SecurityDomainTestCase.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:35:00,753 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/SecurityDomainTestCase' for server 'default-server'
+[0m[0m12:35:00,768 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "SecurityDomainTestCase.war" (runtime-name : "SecurityDomainTestCase.war")
+[0m[0m12:35:00,947 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/SecurityDomainTestCase' from server 'default-server'
+[0m[0m12:35:00,971 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment SecurityDomainTestCase.war (runtime-name: SecurityDomainTestCase.war) in 25ms
+[0m[0m12:35:00,985 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/41/876de2f0e0d77ce1d9e75b5d1bb05724918014/content
+[0m[0m12:35:00,985 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "SecurityDomainTestCase.war" (runtime-name: "SecurityDomainTestCase.war")
+[0m[0m12:35:01,375 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/41/876de2f0e0d77ce1d9e75b5d1bb05724918014/content
+[0m[0m12:35:01,379 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "SecurityDomainTestCase.war" (runtime-name: "SecurityDomainTestCase.war")
+[0m[33m12:35:01,595 WARN  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0013: Deployment SecurityDomainTestCase.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[31m12:35:01,625 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "SecurityDomainTestCase.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.security.security-domain.test"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => ["jboss.deployment.unit.\"SecurityDomainTestCase.war\".undertow-deployment.UndertowDeploymentInfoService is missing [jboss.security.security-domain.test]"]
+}
+[0m[31m12:35:01,628 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "SecurityDomainTestCase.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.security.security-domain.test"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => ["jboss.deployment.unit.\"SecurityDomainTestCase.war\".undertow-deployment.UndertowDeploymentInfoService is missing [jboss.security.security-domain.test]"]
+}
+[0m[0m12:35:01,657 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment SecurityDomainTestCase.war (runtime-name: SecurityDomainTestCase.war) in 31ms
+[0m

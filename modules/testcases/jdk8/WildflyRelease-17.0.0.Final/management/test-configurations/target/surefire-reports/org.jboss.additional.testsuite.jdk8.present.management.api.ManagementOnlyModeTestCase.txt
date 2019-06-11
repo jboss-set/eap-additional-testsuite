@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.jboss.additional.testsuite.jdk8.present.management.api.ManagementOnlyModeTestCase
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.208 s - in org.jboss.additional.testsuite.jdk8.present.management.api.ManagementOnlyModeTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.431 s - in org.jboss.additional.testsuite.jdk8.present.management.api.ManagementOnlyModeTestCase

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.jaxrs.client.ApacheHttpClient43TestCase
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.414 s - in org.jboss.additional.testsuite.jdkall.present.jaxrs.client.ApacheHttpClient43TestCase

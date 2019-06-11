@@ -1,0 +1,47 @@
+[0m12:34:31,445 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/ca/9ec9f5c4eea5a9b5f7cad764074dedd1c504ac/content
+[0m[0m12:34:31,448 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "LoggingServletTestCase.war" (runtime-name: "LoggingServletTestCase.war")
+[0m[33m12:34:31,706 WARN  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0013: Deployment LoggingServletTestCase.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:34:32,162 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 26) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.jboss.additional.testsuite.jdkall.present.logging.misc.JaxRsActivator
+[0m[0m12:34:32,230 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 26) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:34:32,276 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0021: Registered web context: '/LoggingServletTestCase' for server 'default-server'
+[0m[0m12:34:32,286 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "LoggingServletTestCase.war" (runtime-name : "LoggingServletTestCase.war")
+[0m[0m12:34:32,627 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/67/489eada77d2799981b87804bb4b4a3c1e98e59/content
+[0m[0m12:34:32,631 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "LoggingServletTestCase2.war" (runtime-name: "LoggingServletTestCase2.war")
+[0m[33m12:34:32,812 WARN  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0013: Deployment LoggingServletTestCase2.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:34:32,860 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 30) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.jboss.additional.testsuite.jdkall.present.logging.misc.JaxRsActivator
+[0m[0m12:34:32,869 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0021: Registered web context: '/LoggingServletTestCase2' for server 'default-server'
+[0m[0m12:34:32,881 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "LoggingServletTestCase2.war" (runtime-name : "LoggingServletTestCase2.war")
+[0m[0m12:34:33,454 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 11) WFLYUT0022: Unregistered web context: '/LoggingServletTestCase2' from server 'default-server'
+[0m[0m12:34:33,473 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment LoggingServletTestCase2.war (runtime-name: LoggingServletTestCase2.war) in 20ms
+[0m[0m12:34:33,491 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/67/489eada77d2799981b87804bb4b4a3c1e98e59/content
+[0m[0m12:34:33,491 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "LoggingServletTestCase2.war" (runtime-name: "LoggingServletTestCase2.war")
+[0m[0m12:34:33,499 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0022: Unregistered web context: '/LoggingServletTestCase' from server 'default-server'
+[0m[0m12:34:33,521 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment LoggingServletTestCase.war (runtime-name: LoggingServletTestCase.war) in 22ms
+[0m[0m12:34:33,537 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/ca/9ec9f5c4eea5a9b5f7cad764074dedd1c504ac/content
+[0m[0m12:34:33,538 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "LoggingServletTestCase.war" (runtime-name: "LoggingServletTestCase.war")
+[0m[0m12:34:33,557 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+[0m[0m12:34:33,558 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:34:33,568 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:34:33,594 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0022: Unregistered web context: '/Application2' from server 'default-server'
+[0m[0m12:34:33,597 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0022: Unregistered web context: '/Application1' from server 'default-server'
+[0m[0m12:34:33,643 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:34:33,647 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 11) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m12:34:33,650 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m12:34:33,651 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m12:34:33,651 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:34:33,667 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:34:33,672 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 11) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:34:33,676 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+[0m[0m12:34:33,686 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: Application1-web-0.0.1-SNAPSHOT.war) in 66ms
+[0m[0m12:34:33,700 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:34:33,700 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment Application1-ear-0.0.1-SNAPSHOT.ear (runtime-name: Application1-ear-0.0.1-SNAPSHOT.ear) in 82ms
+[0m[0m12:34:33,707 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:34:33,714 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0208: Stopped subdeployment (runtime-name: Application2-web-0.0.1-SNAPSHOT.war) in 94ms
+[0m[0m12:34:33,730 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment Application2-ear-0.0.1-SNAPSHOT.ear (runtime-name: Application2-ear-0.0.1-SNAPSHOT.ear) in 110ms
+[0m[0m12:34:33,745 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 75) AMQ151003: resource adaptor stopped
+[0m[0m12:34:33,911 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 75) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [c5c50cb9-8b84-11e9-af56-000c29ee3ea0] stopped, uptime 28.598 seconds
+[0m[0m12:34:33,916 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:34:33,918 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:34:33,920 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:34:33,939 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 321ms
+[0m

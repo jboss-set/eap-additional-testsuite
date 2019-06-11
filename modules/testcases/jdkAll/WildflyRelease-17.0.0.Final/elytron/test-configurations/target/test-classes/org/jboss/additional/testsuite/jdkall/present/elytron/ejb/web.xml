@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Wildfly/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap71x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap71x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap72x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap72x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap7/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap7.1.0.Beta/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb"}) -->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>file</realm-name>
+    </login-config>
+
+    <security-role>
+        <role-name>gooduser</role-name>
+    </security-role>
+
+</web-app>

@@ -1,0 +1,10 @@
+[0m14:07:09,779 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/38/4bc80817d035a86248f87733a6d4f9f1a51183/content
+[0m[0m14:07:09,782 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "BasicAuthnTestCase.war" (runtime-name: "BasicAuthnTestCase.war")
+[0m[0m14:07:09,855 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m14:07:09,884 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/BasicAuthnTestCase' for server 'default-server'
+[0m[0m14:07:09,894 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "BasicAuthnTestCase.war" (runtime-name : "BasicAuthnTestCase.war")
+[0m[0m14:07:10,202 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/BasicAuthnTestCase' from server 'default-server'
+[0m[0m14:07:10,212 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment BasicAuthnTestCase.war (runtime-name: BasicAuthnTestCase.war) in 11ms
+[0m[0m14:07:10,221 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/38/4bc80817d035a86248f87733a6d4f9f1a51183/content
+[0m[0m14:07:10,221 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "BasicAuthnTestCase.war" (runtime-name: "BasicAuthnTestCase.war")
+[0m

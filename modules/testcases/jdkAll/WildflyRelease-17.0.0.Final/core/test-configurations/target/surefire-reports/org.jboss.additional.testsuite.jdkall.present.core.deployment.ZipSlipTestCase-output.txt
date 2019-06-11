@@ -1,0 +1,65 @@
+[0m14:05:57,592 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/54/19b8173e7cbbac629b44528a8b3b6f1db32b73/content
+[0m[0m14:05:57,595 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "dummy.war" (runtime-name: "dummy.war")
+[0m[33m14:05:57,853 WARN  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0013: Deployment dummy.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m14:05:57,879 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 41) WFLYUT0021: Registered web context: '/dummy' for server 'default-server'
+[0m[0m14:05:57,892 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "dummy.war" (runtime-name : "dummy.war")
+[0m[0m14:05:57,935 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/de/52066c84db46cc187a58eeb7f836f0d8d293d6/content
+[0m[31m14:05:57,954 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("explode") failed - address: ([("deployment" => "zipSlip.war")]): java.lang.IllegalArgumentException: WFLYDR0013: Access denied to the content at ../../../../../../../../../../testcases/jdkAll/WildflyRelease-17.0.0.Final/core/test-configurations/target/junit15917870364926639276/test.txt in the deployment
+	at org.jboss.as.deployment-repository@9.0.1.Final//org.jboss.as.repository.PathUtil.resolveSecurely(PathUtil.java:151)
+	at org.jboss.as.deployment-repository@9.0.1.Final//org.jboss.as.repository.PathUtil.unzip(PathUtil.java:322)
+	at org.jboss.as.deployment-repository@9.0.1.Final//org.jboss.as.repository.PathUtil.unzip(PathUtil.java:313)
+	at org.jboss.as.deployment-repository@9.0.1.Final//org.jboss.as.repository.ContentRepositoryImpl.explodeContent(ContentRepositoryImpl.java:422)
+	at org.jboss.as.server@9.0.1.Final//org.jboss.as.server.deployment.DeploymentExplodeHandler.execute(DeploymentExplodeHandler.java:87)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:999)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:743)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:467)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1412)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:423)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.ModelControllerImpl.lambda$execute$1(ModelControllerImpl.java:243)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAs(SecurityIdentity.java:289)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAs(SecurityIdentity.java:255)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:243)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:240)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$400(ModelControllerClientOperationHandler.java:138)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:162)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:158)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAs(SecurityIdentity.java:313)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAs(SecurityIdentity.java:270)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:254)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:225)
+	at org.jboss.as.controller@9.0.1.Final//org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:158)
+	at org.jboss.as.protocol@9.0.1.Final//org.jboss.as.protocol.mgmt.ManagementRequestContextImpl$1.doExecute(ManagementRequestContextImpl.java:70)
+	at org.jboss.as.protocol@9.0.1.Final//org.jboss.as.protocol.mgmt.ManagementRequestContextImpl$AsyncTaskRunner.run(ManagementRequestContextImpl.java:160)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+
+[0m[0m14:05:57,972 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/de/52066c84db46cc187a58eeb7f836f0d8d293d6/content
+[0m[0m14:05:57,981 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 40) WFLYUT0022: Unregistered web context: '/dummy' from server 'default-server'
+[0m[0m14:05:58,058 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment dummy.war (runtime-name: dummy.war) in 77ms
+[0m[0m14:05:58,080 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/54/19b8173e7cbbac629b44528a8b3b6f1db32b73/content
+[0m[0m14:05:58,080 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "dummy.war" (runtime-name: "dummy.war")
+[0m[0m14:05:58,095 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m14:05:58,097 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m14:05:58,099 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m14:05:58,130 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m14:05:58,131 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m14:05:58,133 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m14:05:58,134 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 41) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m14:05:58,136 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+[0m[0m14:05:58,137 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m14:05:58,137 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m14:05:58,139 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 39) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+[0m[0m14:05:58,141 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 36) AMQ151003: resource adaptor stopped
+[0m[0m14:05:58,148 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m14:05:58,148 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m14:05:58,174 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m14:05:58,263 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 39) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [c5c50cb9-8b84-11e9-af56-000c29ee3ea0] stopped, uptime 5.072 seconds
+[0m[0m14:05:58,266 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m14:05:58,267 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m14:05:58,267 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m14:05:58,287 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 145ms
+[0m

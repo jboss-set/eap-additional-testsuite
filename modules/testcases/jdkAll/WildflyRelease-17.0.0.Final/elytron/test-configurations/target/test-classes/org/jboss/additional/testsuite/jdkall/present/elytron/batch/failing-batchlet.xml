@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Wildfly/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Eap71x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Eap71x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Eap72x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Eap72x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Eap7/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch","modules/testcases/jdkAll/Eap7.1.0.Beta/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/batch"}) -->
+
+<job id="failing-batchlet" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+
+    <step id="perform">
+        <batchlet ref="failingBatchlet">
+            <properties>
+                <property name="should.fail" value="#{jobParameters['should.fail']}"/>
+            </properties>
+        </batchlet>
+    </step>
+
+</job>

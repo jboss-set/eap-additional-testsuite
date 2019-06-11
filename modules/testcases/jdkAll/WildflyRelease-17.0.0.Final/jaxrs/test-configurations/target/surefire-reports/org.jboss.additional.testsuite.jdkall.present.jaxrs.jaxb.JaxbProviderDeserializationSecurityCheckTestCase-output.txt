@@ -1,0 +1,26 @@
+[0m12:27:53,269 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e6/31fe6f1c4d08a58d3c290ef910ae49c53aefea/content
+[0m[0m12:27:53,275 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "jaxrssecurity.war" (runtime-name: "jaxrssecurity.war")
+[0m[0m12:27:53,563 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 28) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.jboss.additional.testsuite.jdkall.present.jaxrs.jaxb.ExampleApplication
+[0m[0m12:27:53,725 INFO  [stdout] (ServerService Thread Pool -- 28) enabled Default Typing
+[0m[0m12:27:53,733 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0021: Registered web context: '/jaxrssecurity' for server 'default-server'
+[0m[0m12:27:53,747 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "jaxrssecurity.war" (runtime-name : "jaxrssecurity.war")
+[0mAdding a default test for usage of this class with the EAT workshop
+[0m12:27:54,288 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0022: Unregistered web context: '/jaxrssecurity' from server 'default-server'
+[0m[0m12:27:54,321 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment jaxrssecurity.war (runtime-name: jaxrssecurity.war) in 37ms
+[0m[0m12:27:54,350 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e6/31fe6f1c4d08a58d3c290ef910ae49c53aefea/content
+[0m[0m12:27:54,350 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "jaxrssecurity.war" (runtime-name: "jaxrssecurity.war")
+[0m[0m12:27:54,368 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:27:54,370 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:27:54,371 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:27:54,388 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 28) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:27:54,424 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:27:54,424 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:27:54,428 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+[0m[0m12:27:54,432 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:27:54,432 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:27:54,436 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:27:54,438 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:27:54,449 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:27:54,450 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:27:54,518 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 127ms
+[0m

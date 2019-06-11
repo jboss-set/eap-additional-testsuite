@@ -1,0 +1,105 @@
+Jun 10, 2019 12:29:57 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:57 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:57,545 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/7d/0dda01f5125dd332e1074f0b30651512e54e3c/content
+[0m[0m12:29:57,549 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "client-exception-remote-ejb-test.jar" (runtime-name: "client-exception-remote-ejb-test.jar")
+[0m[33m12:29:57,586 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.client-exception-remote-ejb-test.jar" is using a private module ("org.infinispan") which may be changed or removed in future versions without notice.
+[0m[0m12:29:57,594 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment client-exception-remote-ejb-test.jar
+[0m[0m12:29:57,609 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'InfinispanExceptionThrowingIncrementorBean' in deployment unit 'deployment "client-exception-remote-ejb-test.jar"' are as follows:
+
+	java:global/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:app/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:module/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:jboss/exported/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	ejb:/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor?stateful
+	java:global/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean
+	java:app/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean
+	java:module/InfinispanExceptionThrowingIncrementorBean
+
+[0m[0m12:29:57,802 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 36) WFLYCLINF0002: Started client-exception-remote-ejb-test.jar/infinispan cache from ejb container
+[0m[0m12:29:58,010 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "client-exception-remote-ejb-test.jar" (runtime-name : "client-exception-remote-ejb-test.jar")
+[0m[0m12:29:58,024 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/e2/d2a4d20d7ee528744a9bf70fe7918e2be150ca/content
+[0m[0m12:29:58,027 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "client-exception-remote-ejb-test.jar" (runtime-name: "client-exception-remote-ejb-test.jar")
+[0m[33m12:29:58,057 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.client-exception-remote-ejb-test.jar" is using a private module ("org.infinispan") which may be changed or removed in future versions without notice.
+[0m[0m12:29:58,061 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment client-exception-remote-ejb-test.jar
+[0m[0m12:29:58,085 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'InfinispanExceptionThrowingIncrementorBean' in deployment unit 'deployment "client-exception-remote-ejb-test.jar"' are as follows:
+
+	java:global/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:app/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:module/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:jboss/exported/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	ejb:/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor?stateful
+	java:global/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean
+	java:app/client-exception-remote-ejb-test/InfinispanExceptionThrowingIncrementorBean
+	java:module/InfinispanExceptionThrowingIncrementorBean
+
+[0m[0m12:29:58,148 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 91) [Context=client-exception-remote-ejb-test.jar/infinispan] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:29:58,156 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 91) WFLYCLINF0002: Started client-exception-remote-ejb-test.jar/infinispan cache from ejb container
+[0m[0m12:29:58,244 INFO  [org.infinispan.CLUSTER] (transport-thread--p13-t1) [Context=client-exception-remote-ejb-test.jar/infinispan] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:29:58,271 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-exception-remote-ejb-test.jar/infinispan] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:29:58,287 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-exception-remote-ejb-test.jar/infinispan] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:29:58,382 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "client-exception-remote-ejb-test.jar" (runtime-name : "client-exception-remote-ejb-test.jar")
+[0m[0m12:29:58,821 INFO  [org.jboss.ejb.client] (default task-2) JBoss EJB Client version 4.0.18.Final
+[0m[31m12:29:59,175 ERROR [org.jboss.as.ejb3.invocation] (default task-1) WFLYEJB0034: EJB Invocation failed on component InfinispanExceptionThrowingIncrementorBean for method public abstract org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Result org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor.increment(): javax.ejb.EJBException: org.infinispan.statetransfer.OutdatedTopologyException: Remote values are missing because of a topology change
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:246)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:362)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:144)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@3.1.1.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.deployment.processors.EjbSuspendInterceptor.processInvocation(EjbSuspendInterceptor.java:57)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:618)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAsFunctionEx(SecurityIdentity.java:406)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.invokeWithIdentity(AssociationImpl.java:591)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.invokeMethod(AssociationImpl.java:572)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.lambda$receiveInvocationRequest$0(AssociationImpl.java:205)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.infinispan.statetransfer.OutdatedTopologyException: Remote values are missing because of a topology change
+
+[0mJun 10, 2019 12:29:59 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:59 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:59,327 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 36) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:59,328 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 36) ISPN000030: Passivated 0 entries in 0 milliseconds
+[0m[0m12:29:59,331 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=client-exception-remote-ejb-test.jar/infinispan] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:59,342 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 36) WFLYCLINF0003: Stopped client-exception-remote-ejb-test.jar/infinispan cache from ejb container
+[0m[0m12:29:59,379 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment client-exception-remote-ejb-test.jar (runtime-name: client-exception-remote-ejb-test.jar) in 61ms
+[0m[0m12:29:59,395 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/7d/0dda01f5125dd332e1074f0b30651512e54e3c/content
+[0m[0m12:29:59,395 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "client-exception-remote-ejb-test.jar" (runtime-name: "client-exception-remote-ejb-test.jar")
+[0m[0m12:29:59,424 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 90) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:59,424 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 90) ISPN000030: Passivated 0 entries in 0 milliseconds
+[0m[0m12:29:59,437 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0003: Stopped client-exception-remote-ejb-test.jar/infinispan cache from ejb container
+[0m[0m12:29:59,483 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment client-exception-remote-ejb-test.jar (runtime-name: client-exception-remote-ejb-test.jar) in 80ms
+[0m[0m12:29:59,518 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/e2/d2a4d20d7ee528744a9bf70fe7918e2be150ca/content
+[0m[0m12:29:59,520 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "client-exception-remote-ejb-test.jar" (runtime-name: "client-exception-remote-ejb-test.jar")
+[0m

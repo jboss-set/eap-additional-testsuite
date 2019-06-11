@@ -1,0 +1,882 @@
+# Created at 2019-06-10T14:07:55.941
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2019-06-10T14:08:10.977
+Unexpected IOException with stream: org.jboss.as.cli.CommandLineException: The controller is not available at localhost:9990
+
+# Created at 2019-06-10T14:08:10.978
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.979
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1463)
+
+# Created at 2019-06-10T14:08:10.980
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.980
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:1242)
+
+# Created at 2019-06-10T14:08:10.981
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.981
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:1219)
+
+# Created at 2019-06-10T14:08:10.981
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.982
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:1214)
+
+# Created at 2019-06-10T14:08:10.983
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.984
+Unexpected IOException with stream: 	at org.jboss.as.test.integration.management.util.CLIWrapper.sendConnect(CLIWrapper.java:191)
+
+# Created at 2019-06-10T14:08:10.984
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.984
+Unexpected IOException with stream: 	at org.jboss.as.test.integration.management.util.CLIWrapper.<init>(CLIWrapper.java:132)
+
+# Created at 2019-06-10T14:08:10.984
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.985
+Unexpected IOException with stream: 	at org.jboss.as.test.integration.management.util.CLIWrapper.<init>(CLIWrapper.java:109)
+
+# Created at 2019-06-10T14:08:10.985
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.985
+Unexpected IOException with stream: 	at org.jboss.as.test.integration.management.util.CLIWrapper.<init>(CLIWrapper.java:96)
+
+# Created at 2019-06-10T14:08:10.985
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.986
+Unexpected IOException with stream: 	at org.jboss.as.test.integration.management.util.CLIWrapper.<init>(CLIWrapper.java:73)
+
+# Created at 2019-06-10T14:08:10.986
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.986
+Unexpected IOException with stream: 	at org.jboss.additional.testsuite.jdkall.present.elytron.principaltransformers.ChainedPrincipalTransformerTestCase$SetupTask.tearDown(ChainedPrincipalTransformerTestCase.java:182)
+
+# Created at 2019-06-10T14:08:10.987
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.987
+Unexpected IOException with stream: 	at org.jboss.as.arquillian.container.ServerSetupObserver$ServerSetupTaskHolder.tearDown(ServerSetupObserver.java:200)
+
+# Created at 2019-06-10T14:08:10.988
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.988
+Unexpected IOException with stream: 	at org.jboss.as.arquillian.container.ServerSetupObserver.handleAfterUndeploy(ServerSetupObserver.java:160)
+
+# Created at 2019-06-10T14:08:10.988
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.988
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:10.989
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.989
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:10.989
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.989
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:10.990
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.990
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:10.990
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.990
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+
+# Created at 2019-06-10T14:08:10.991
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.991
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+
+# Created at 2019-06-10T14:08:10.991
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.991
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+
+# Created at 2019-06-10T14:08:10.992
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.992
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+
+# Created at 2019-06-10T14:08:10.992
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.992
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+
+# Created at 2019-06-10T14:08:10.992
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.993
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:201)
+
+# Created at 2019-06-10T14:08:10.993
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.993
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:170)
+
+# Created at 2019-06-10T14:08:10.993
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.994
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:239)
+
+# Created at 2019-06-10T14:08:10.994
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.994
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeploy(ContainerDeployController.java:170)
+
+# Created at 2019-06-10T14:08:10.994
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.995
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:10.995
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.995
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:10.996
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.996
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:10.996
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.996
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:10.997
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.997
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+
+# Created at 2019-06-10T14:08:10.997
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.997
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+
+# Created at 2019-06-10T14:08:10.998
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.998
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:71)
+
+# Created at 2019-06-10T14:08:10.998
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.999
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:10.999
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:10.999
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:11.000
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.000
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:11.000
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.000
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:11.001
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.001
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+
+# Created at 2019-06-10T14:08:11.001
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.001
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:54)
+
+# Created at 2019-06-10T14:08:11.002
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.002
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:11.002
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.002
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:11.003
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.003
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:11.003
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.004
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:11.005
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.005
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+
+# Created at 2019-06-10T14:08:11.005
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.005
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+
+# Created at 2019-06-10T14:08:11.006
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.006
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+
+# Created at 2019-06-10T14:08:11.007
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.008
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+
+# Created at 2019-06-10T14:08:11.008
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.008
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:111)
+
+# Created at 2019-06-10T14:08:11.008
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.009
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:104)
+
+# Created at 2019-06-10T14:08:11.009
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.010
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:232)
+
+# Created at 2019-06-10T14:08:11.010
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.010
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployedDeployment(ContainerDeployController.java:220)
+
+# Created at 2019-06-10T14:08:11.010
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.011
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeployManaged(ContainerDeployController.java:104)
+
+# Created at 2019-06-10T14:08:11.011
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.011
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:11.011
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.011
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:11.012
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.012
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:11.012
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.012
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:11.013
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.013
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+
+# Created at 2019-06-10T14:08:11.014
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.014
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+
+# Created at 2019-06-10T14:08:11.015
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.015
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+
+# Created at 2019-06-10T14:08:11.016
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.017
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+
+# Created at 2019-06-10T14:08:11.017
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.017
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+
+# Created at 2019-06-10T14:08:11.018
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.018
+Unexpected IOException with stream: 	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:101)
+
+# Created at 2019-06-10T14:08:11.018
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.018
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:11.018
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.019
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:11.019
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.020
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:11.020
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.020
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:11.020
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.021
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+
+# Created at 2019-06-10T14:08:11.021
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.021
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+
+# Created at 2019-06-10T14:08:11.021
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.022
+Unexpected IOException with stream: 	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+
+# Created at 2019-06-10T14:08:11.022
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.022
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:11.022
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.023
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:11.023
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.023
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:11.023
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.024
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:11.024
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.024
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+
+# Created at 2019-06-10T14:08:11.024
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.025
+Unexpected IOException with stream: 	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+
+# Created at 2019-06-10T14:08:11.025
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.025
+Unexpected IOException with stream: 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+
+# Created at 2019-06-10T14:08:11.025
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.025
+Unexpected IOException with stream: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-06-10T14:08:11.026
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.026
+Unexpected IOException with stream: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+# Created at 2019-06-10T14:08:11.026
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.026
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+
+# Created at 2019-06-10T14:08:11.026
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.027
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+
+# Created at 2019-06-10T14:08:11.027
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.027
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+
+# Created at 2019-06-10T14:08:11.027
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.028
+Unexpected IOException with stream: 	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+
+# Created at 2019-06-10T14:08:11.028
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.028
+Unexpected IOException with stream: 	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.afterClass(EventTestRunnerAdaptor.java:95)
+
+# Created at 2019-06-10T14:08:11.029
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.029
+Unexpected IOException with stream: 	at org.jboss.arquillian.junit.Arquillian$3$1.evaluate(Arquillian.java:183)
+
+# Created at 2019-06-10T14:08:11.029
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.030
+Unexpected IOException with stream: 	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)
+
+# Created at 2019-06-10T14:08:11.030
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.030
+Unexpected IOException with stream: 	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+
+# Created at 2019-06-10T14:08:11.030
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.031
+Unexpected IOException with stream: 	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:177)
+
+# Created at 2019-06-10T14:08:11.031
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.031
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created at 2019-06-10T14:08:11.031
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.031
+Unexpected IOException with stream: 	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:115)
+
+# Created at 2019-06-10T14:08:11.032
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.032
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created at 2019-06-10T14:08:11.032
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.032
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+
+# Created at 2019-06-10T14:08:11.033
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.033
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+
+# Created at 2019-06-10T14:08:11.033
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.033
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created at 2019-06-10T14:08:11.034
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.034
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+
+# Created at 2019-06-10T14:08:11.034
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.034
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+
+# Created at 2019-06-10T14:08:11.034
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.035
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+
+# Created at 2019-06-10T14:08:11.035
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.035
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+
+# Created at 2019-06-10T14:08:11.035
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.036
+Unexpected IOException with stream: Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to remote+http://localhost:9990. The connection failed
+
+# Created at 2019-06-10T14:08:11.036
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.037
+Unexpected IOException with stream: 	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+
+# Created at 2019-06-10T14:08:11.037
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.037
+Unexpected IOException with stream: 	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+
+# Created at 2019-06-10T14:08:11.037
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.038
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1410)
+
+# Created at 2019-06-10T14:08:11.039
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.040
+Unexpected IOException with stream: 	... 95 more
+
+# Created at 2019-06-10T14:08:11.040
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.043
+Unexpected IOException with stream: Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to remote+http://localhost:9990. The connection failed
+
+# Created at 2019-06-10T14:08:11.044
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.044
+Unexpected IOException with stream: 	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:128)
+
+# Created at 2019-06-10T14:08:11.044
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.044
+Unexpected IOException with stream: 	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:259)
+
+# Created at 2019-06-10T14:08:11.045
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.045
+Unexpected IOException with stream: 	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)
+
+# Created at 2019-06-10T14:08:11.045
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.045
+Unexpected IOException with stream: 	at org.jboss.as.protocol.mgmt.ManagementClientChannelStrategy$Establishing.getChannel(ManagementClientChannelStrategy.java:167)
+
+# Created at 2019-06-10T14:08:11.046
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.046
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:192)
+
+# Created at 2019-06-10T14:08:11.046
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.046
+Unexpected IOException with stream: 	at org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:126)
+
+# Created at 2019-06-10T14:08:11.046
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.047
+Unexpected IOException with stream: 	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:135)
+
+# Created at 2019-06-10T14:08:11.047
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.047
+Unexpected IOException with stream: 	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:110)
+
+# Created at 2019-06-10T14:08:11.047
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.047
+Unexpected IOException with stream: 	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+
+# Created at 2019-06-10T14:08:11.048
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.048
+Unexpected IOException with stream: 	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+
+# Created at 2019-06-10T14:08:11.048
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.048
+Unexpected IOException with stream: 	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+
+# Created at 2019-06-10T14:08:11.048
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.049
+Unexpected IOException with stream: 	... 97 more
+
+# Created at 2019-06-10T14:08:11.049
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.050
+Unexpected IOException with stream: Caused by: org.jboss.remoting3.NotOpenException: Endpoint is not open
+
+# Created at 2019-06-10T14:08:11.050
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.050
+Unexpected IOException with stream: 	at org.jboss.remoting3.EndpointImpl.resourceUntick(EndpointImpl.java:371)
+
+# Created at 2019-06-10T14:08:11.050
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.051
+Unexpected IOException with stream: 	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:575)
+
+# Created at 2019-06-10T14:08:11.051
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.051
+Unexpected IOException with stream: 	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:549)
+
+# Created at 2019-06-10T14:08:11.051
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.051
+Unexpected IOException with stream: 	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:537)
+
+# Created at 2019-06-10T14:08:11.051
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.052
+Unexpected IOException with stream: 	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:204)
+
+# Created at 2019-06-10T14:08:11.052
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.052
+Unexpected IOException with stream: 	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:120)
+
+# Created at 2019-06-10T14:08:11.052
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.053
+Unexpected IOException with stream: 	... 107 more
+
+# Created at 2019-06-10T14:08:11.053
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-10T14:08:11.060
+Unexpected IOException: 7,1,org.jboss.additional.testsuite.jdkall.present.elytron.principaltransformers.ChainedPrincipalTransformerTestCase,org.jboss.additional.testsuite.jdkall.present.elytron.principaltransformers.ChainedPrincipalTransformerTestCase,null,Cannot deploy: chained-principal-transformer-transform-transformed.war,null,Cannot deploy: chained-principal-transformer-transform-transformed.war,ChainedPrincipalTransformerTestCase.org.jboss.additional.testsuite.jdkall.present.elytron.principaltransformers.ChainedPrincipalTransformerTestCase \00BB Deployment,org.jboss.arquillian.container.spi.client.container.DeploymentException: Cannot deploy: chained-principal-transformer-transform-transformed.war\000A\0009at org.jboss.as.arquillian.container.ArchiveDeployer.createException(ArchiveDeployer.java:214)\000A\0009at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:179)\000A\0009at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:162)\000A\0009at org.jboss.as.arquillian.container.ArchiveDeployer.deploy(ArchiveDeployer.java:91)\000A\0009at org.jboss.as.arquillian.container.CommonDeployableContainer.deploy(CommonDeployableContainer.java:244)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:151)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:118)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:239)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:118)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)\000A\0009at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:47)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:71)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:54)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)\000A\0009at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:92)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:77)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:232)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:212)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:77)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)\000A\0009at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)\000A\0009at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:96)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)\000A\0009at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)\000A\0009at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:89)\000A\0009at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:163)\000A\0009at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)\000A\0009at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)\000A\0009at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:177)\000A\0009at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\000A\0009at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:115)\000A\0009at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\000A\0009at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\000A\0009at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\000A\0009at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)\000A\0009Suppressed: java.util.concurrent.CancellationException: JBTHR00004: Operation was cancelled\000A\0009\0009at org.jboss.threads.AsyncFutureTask.get(AsyncFutureTask.java:251)\000A\0009\0009at org.jboss.as.controller.client.impl.AbstractDelegatingAsyncFuture.get(AbstractDelegatingAsyncFuture.java:57)\000A\0009\0009at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\000A\0009\0009at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:80)\000A\0009\0009at org.jboss.as.controller.client.helpers.DelegatingModelControllerClient.execute(DelegatingModelControllerClient.java:68)\000A\0009\0009at org.wildfly.plugin.core.DefaultDeploymentManager.execute(DefaultDeploymentManager.java:394)\000A\0009\0009at org.wildfly.plugin.core.DefaultDeploymentManager.deploy(DefaultDeploymentManager.java:67)\000A\0009\0009at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:177)\000A\0009\0009... 84 more\000A\0009[CIRCULAR REFERENCE:java.util.concurrent.CancellationException: JBTHR00004: Operation was cancelled]\000A
+
+
+# Created at 2019-06-10T14:08:11.061
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,org.jboss.additional.testsuite.jdkall.present.elytron.principaltransformers.ChainedPrincipalTransformerTestCase,null,null,null
+
+
+# Created at 2019-06-10T14:08:11.067
+Unexpected IOException: 7,1,Test mechanism,Test mechanism,null,Could not run @AfterSuite,null,Could not run @AfterSuite,Could not run @AfterSuite,java.lang.RuntimeException: Could not run @AfterSuite\000A\0009at org.jboss.arquillian.junit.AdaptorManager.shutdown(AdaptorManager.java:53)\000A\0009at org.jboss.arquillian.junit.AdaptorManagerWithNotifier$1.testRunFinished(AdaptorManagerWithNotifier.java:29)\000A\0009at org.junit.runner.notification.SynchronizedRunListener.testRunFinished(SynchronizedRunListener.java:42)\000A\0009at org.junit.runner.notification.RunNotifier$2.notifyListener(RunNotifier.java:103)\000A\0009at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)\000A\0009at org.junit.runner.notification.RunNotifier.fireTestRunFinished(RunNotifier.java:100)\000A\0009at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:164)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)\000A\0009at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)\000ACaused by: java.lang.IllegalStateException: Shutdown in progress\000A\0009at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)\000A\0009at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:243)\000A\0009at org.jboss.as.arquillian.container.managed.ManagedDeployableContainer.stopInternal(ManagedDeployableContainer.java:254)\000A\0009at org.jboss.as.arquillian.container.CommonDeployableContainer.stop(CommonDeployableContainer.java:135)\000A\0009at org.jboss.arquillian.container.impl.ContainerImpl.stop(ContainerImpl.java:193)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController$9.perform(ContainerLifecycleController.java:148)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController$9.perform(ContainerLifecycleController.java:144)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController.forContainer(ContainerLifecycleController.java:208)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController.stopContainer(ContainerLifecycleController.java:144)\000A\0009at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\000A\0009at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)\000A\0009at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:54)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)\000A\0009at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController$4.perform(ContainerLifecycleController.java:94)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController$4.perform(ContainerLifecycleController.java:88)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController.forEachSuiteContainer(ContainerLifecycleController.java:181)\000A\0009at org.jboss.arquillian.container.impl.client.container.ContainerLifecycleController.stopSuiteContainers(ContainerLifecycleController.java:88)\000A\0009at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\000A\0009at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)\000A\0009at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)\000A\0009at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:87)\000A\0009at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\000A\0009at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)\000A\0009at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)\000A\0009at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)\000A\0009at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\000A\0009at java.base/java.lang.reflect.Method.invoke(Method.java:566)\000A\0009at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)\000A\0009at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)\000A\0009at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)\000A\0009at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.afterSuite(EventTestRunnerAdaptor.java:75)\000A\0009at org.jboss.arquillian.junit.AdaptorManager.shutdown(AdaptorManager.java:44)\000A\0009... 10 more\000A
+
+

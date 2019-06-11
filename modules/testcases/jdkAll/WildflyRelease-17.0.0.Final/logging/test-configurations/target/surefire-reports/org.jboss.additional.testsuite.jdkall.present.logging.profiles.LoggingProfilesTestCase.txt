@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.logging.profiles.LoggingProfilesTestCase
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.786 s - in org.jboss.additional.testsuite.jdkall.present.logging.profiles.LoggingProfilesTestCase

@@ -1,0 +1,225 @@
+[0m14:06:55,877 INFO  [org.jboss.as.controller.management-deprecated] (management-handler-thread - 1) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=all-permission' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m14:06:56,013 INFO  [org.jboss.as.controller.management-deprecated] (management-handler-thread - 1) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=login-permission' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m14:06:56,113 INFO  [org.jboss.as.controller.management-deprecated] (management-handler-thread - 1) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=permissions-in-modules' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m14:06:56,215 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/0e/a31569cfa66eb1e7286ae28c1d99049b4601a8/content
+[0m[0m14:06:56,217 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "no-permission-mapper.war" (runtime-name: "no-permission-mapper.war")
+[0m[33m14:06:56,299 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.no-permission-mapper.war" is using a private module ("org.wildfly.extension.batch.jberet") which may be changed or removed in future versions without notice.
+[0m[0m14:06:56,344 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 33) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m14:06:56,369 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/no-permission-mapper' for server 'default-server'
+[0m[0m14:06:56,389 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "no-permission-mapper.war" (runtime-name : "no-permission-mapper.war")
+[0m[0m14:06:56,403 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/8c/42c49764450830c9cf59f1c560d8d9859d31c0/content
+[0m[0m14:06:56,406 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "other.war" (runtime-name: "other.war")
+[0m[33m14:06:56,486 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) WFLYSRV0018: Deployment "deployment.other.war" is using a private module ("org.wildfly.extension.batch.jberet") which may be changed or removed in future versions without notice.
+[0m[0m14:06:56,569 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/other' for server 'default-server'
+[0m[0m14:06:56,587 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "other.war" (runtime-name : "other.war")
+[0m[0m14:06:56,602 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/df/ef232243953c624abe63c9b2a87c2fa9ee7b8c/content
+[0m[0m14:06:56,605 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "login-permission.war" (runtime-name: "login-permission.war")
+[0m[33m14:06:56,672 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) WFLYSRV0018: Deployment "deployment.login-permission.war" is using a private module ("org.wildfly.extension.batch.jberet") which may be changed or removed in future versions without notice.
+[0m[0m14:06:56,723 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/login-permission' for server 'default-server'
+[0m[0m14:06:56,731 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "login-permission.war" (runtime-name : "login-permission.war")
+[0m[0m14:06:56,756 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/76/15b43a46d2e73601b2b20146b1a9494a4f348a/content
+[0m[0m14:06:56,759 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "all-permission.war" (runtime-name: "all-permission.war")
+[0m[33m14:06:56,815 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) WFLYSRV0018: Deployment "deployment.all-permission.war" is using a private module ("org.wildfly.extension.batch.jberet") which may be changed or removed in future versions without notice.
+[0m[0m14:06:56,872 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/all-permission' for server 'default-server'
+[0m[0m14:06:56,880 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "all-permission.war" (runtime-name : "all-permission.war")
+[0m[0m14:06:56,892 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/42/87fa98c935acbc39eb2cce2fb15e1d49c41315/content
+[0m[0m14:06:56,895 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "permissions-in-modules.war" (runtime-name: "permissions-in-modules.war")
+[0m[33m14:06:56,940 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) WFLYSRV0018: Deployment "deployment.permissions-in-modules.war" is using a private module ("org.wildfly.extension.batch.jberet") which may be changed or removed in future versions without notice.
+[0m[0m14:06:57,015 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/permissions-in-modules' for server 'default-server'
+[0m[0m14:06:57,025 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "permissions-in-modules.war" (runtime-name : "permissions-in-modules.war")
+[0m[31m14:06:57,366 ERROR [stderr] (default task-2) java.lang.SecurityException: ELY01151: Evidence Verification Failed.
+[0m[31m14:06:57,366 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityDomain.authenticate(SecurityDomain.java:328)
+[0m[31m14:06:57,366 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityDomain.authenticate(SecurityDomain.java:285)
+[0m[31m14:06:57,366 ERROR [stderr] (default task-2) 	at deployment.no-permission-mapper.war//org.wildfly.test.security.servlets.CheckIdentityPermissionServlet.doGet(CheckIdentityPermissionServlet.java:86)
+[0m[31m14:06:57,367 ERROR [stderr] (default task-2) 	at deployment.no-permission-mapper.war//org.wildfly.test.security.servlets.CheckIdentityPermissionServlet.doPost(CheckIdentityPermissionServlet.java:72)
+[0m[31m14:06:57,367 ERROR [stderr] (default task-2) 	at javax.servlet.api@1.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:706)
+[0m[31m14:06:57,367 ERROR [stderr] (default task-2) 	at javax.servlet.api@1.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+[0m[31m14:06:57,367 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+[0m[31m14:06:57,367 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+[0m[31m14:06:57,367 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+[0m[31m14:06:57,368 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+[0m[31m14:06:57,368 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-web.undertow-server@1.5.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+[0m[31m14:06:57,368 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+[0m[31m14:06:57,368 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+[0m[31m14:06:57,368 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+[0m[31m14:06:57,368 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-web.undertow-server@1.5.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+[0m[31m14:06:57,369 ERROR [stderr] (default task-2) 	at org.wildfly.security.elytron-web.undertow-server-servlet@1.5.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+[0m[31m14:06:57,370 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,370 ERROR [stderr] (default task-2) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+[0m[31m14:06:57,370 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,370 ERROR [stderr] (default task-2) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+[0m[31m14:06:57,370 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,370 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+[0m[31m14:06:57,371 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+[0m[31m14:06:57,371 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+[0m[31m14:06:57,371 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+[0m[31m14:06:57,371 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+[0m[31m14:06:57,371 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+[0m[31m14:06:57,371 ERROR [stderr] (default task-2) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,372 ERROR [stderr] (default task-2) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,372 ERROR [stderr] (default task-2) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,372 ERROR [stderr] (default task-2) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,372 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at io.undertow.core@2.0.21.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+[0m[31m14:06:57,373 ERROR [stderr] (default task-2) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+[0m[31m14:06:57,374 ERROR [stderr] (default task-2) 	at java.base/java.lang.Thread.run(Thread.java:834)
+[0m[31m14:06:57,381 ERROR [stderr] (default task-1) java.lang.SecurityException: ELY01151: Evidence Verification Failed.
+[0m[31m14:06:57,382 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityDomain.authenticate(SecurityDomain.java:328)
+[0m[31m14:06:57,383 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityDomain.authenticate(SecurityDomain.java:285)
+[0m[31m14:06:57,383 ERROR [stderr] (default task-1) 	at deployment.no-permission-mapper.war//org.wildfly.test.security.servlets.CheckIdentityPermissionServlet.doGet(CheckIdentityPermissionServlet.java:86)
+[0m[31m14:06:57,383 ERROR [stderr] (default task-1) 	at deployment.no-permission-mapper.war//org.wildfly.test.security.servlets.CheckIdentityPermissionServlet.doPost(CheckIdentityPermissionServlet.java:72)
+[0m[31m14:06:57,383 ERROR [stderr] (default task-1) 	at javax.servlet.api@1.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:706)
+[0m[31m14:06:57,383 ERROR [stderr] (default task-1) 	at javax.servlet.api@1.0.0.Final//javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+[0m[31m14:06:57,384 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+[0m[31m14:06:57,384 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+[0m[31m14:06:57,384 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+[0m[31m14:06:57,384 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+[0m[31m14:06:57,384 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@1.5.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+[0m[31m14:06:57,384 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+[0m[31m14:06:57,385 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+[0m[31m14:06:57,385 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+[0m[31m14:06:57,385 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@1.5.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+[0m[31m14:06:57,385 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+[0m[31m14:06:57,385 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server-servlet@1.5.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,386 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+[0m[31m14:06:57,387 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+[0m[31m14:06:57,388 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+[0m[31m14:06:57,388 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+[0m[31m14:06:57,388 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.0.21.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+[0m[31m14:06:57,389 ERROR [stderr] (default task-1) 	at io.undertow.core@2.0.21.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+[0m[31m14:06:57,390 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+[0m[31m14:06:57,390 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+[0m[31m14:06:57,390 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+[0m[31m14:06:57,390 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+[0m[31m14:06:57,390 ERROR [stderr] (default task-1) 	at java.base/java.lang.Thread.run(Thread.java:834)
+[0m[0m14:06:57,398 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/no-permission-mapper' from server 'default-server'
+[0m[0m14:06:57,421 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment no-permission-mapper.war (runtime-name: no-permission-mapper.war) in 23ms
+[0m[0m14:06:57,431 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/0e/a31569cfa66eb1e7286ae28c1d99049b4601a8/content
+[0m[0m14:06:57,432 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "no-permission-mapper.war" (runtime-name: "no-permission-mapper.war")
+[0m[0m14:06:57,437 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/other' from server 'default-server'
+[0m[0m14:06:57,457 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment other.war (runtime-name: other.war) in 21ms
+[0m[0m14:06:57,471 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/8c/42c49764450830c9cf59f1c560d8d9859d31c0/content
+[0m[0m14:06:57,471 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "other.war" (runtime-name: "other.war")
+[0m[0m14:06:57,478 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/login-permission' from server 'default-server'
+[0m[0m14:06:57,493 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment login-permission.war (runtime-name: login-permission.war) in 17ms
+[0m[0m14:06:57,503 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/df/ef232243953c624abe63c9b2a87c2fa9ee7b8c/content
+[0m[0m14:06:57,503 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "login-permission.war" (runtime-name: "login-permission.war")
+[0m[0m14:06:57,509 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/all-permission' from server 'default-server'
+[0m[0m14:06:57,526 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment all-permission.war (runtime-name: all-permission.war) in 18ms
+[0m[0m14:06:57,536 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/76/15b43a46d2e73601b2b20146b1a9494a4f348a/content
+[0m[0m14:06:57,536 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "all-permission.war" (runtime-name: "all-permission.war")
+[0m[0m14:06:57,543 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/permissions-in-modules' from server 'default-server'
+[0m[0m14:06:57,556 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment permissions-in-modules.war (runtime-name: permissions-in-modules.war) in 14ms
+[0m[0m14:06:57,565 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/42/87fa98c935acbc39eb2cce2fb15e1d49c41315/content
+[0m[0m14:06:57,565 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "permissions-in-modules.war" (runtime-name: "permissions-in-modules.war")
+[0m[0m14:06:57,928 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m14:06:57,928 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m14:06:57,929 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m14:06:57,934 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+[0m[0m14:06:57,934 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 34) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+[0m[0m14:06:57,935 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m14:06:57,935 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m14:06:57,936 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m14:06:57,936 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m14:06:57,937 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 32) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m14:06:57,940 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 33) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m14:06:57,954 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 34) AMQ151003: resource adaptor stopped
+[0m[0m14:06:58,041 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 34) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [c5c50cb9-8b84-11e9-af56-000c29ee3ea0] stopped, uptime 2.753 seconds
+[0m[0m14:06:58,043 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m14:06:58,044 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m14:06:58,045 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m14:06:58,068 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 144ms
+[0m[0m14:06:58,071 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m14:06:58,169 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 10) WFLYCTL0028: Attribute 'permissions' in the resource at address '/subsystem=elytron/constant-permission-mapper=constant-permission-mapper' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m14:06:58,281 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m14:06:58,293 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m14:06:58,336 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 39) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m14:06:58,379 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 45) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m14:06:58,386 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 44) WFLYIIOP0001: Activating IIOP Subsystem
+[0m[0m14:06:58,393 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 47) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m14:06:58,400 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 46) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m14:06:58,401 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m14:06:58,403 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m14:06:58,405 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m14:06:58,405 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m14:06:58,410 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 56) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m14:06:58,410 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+[0m[0m14:06:58,411 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m14:06:58,443 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-7) WFLYIIOP0009: CORBA ORB Service started
+[0m[0m14:06:58,534 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 62) WFLYSEC0002: Activating Security Subsystem
+[0m[0m14:06:58,534 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[33m14:06:58,539 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 64) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m14:06:58,554 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 66) WFLYWS0002: Activating WebServices Extension
+[0m[0m14:06:58,564 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[33m14:06:58,565 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 65) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m14:06:58,569 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+[0m[0m14:06:58,570 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m14:06:58,571 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+[0m[0m14:06:58,571 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m14:06:58,575 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m14:06:58,575 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m14:06:58,589 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/deployments
+[0m[0m14:06:58,590 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m14:06:58,591 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[0m14:06:58,593 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+[0m[0m14:06:58,594 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m14:06:58,611 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m14:06:58,623 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/activemq/journal,bindingsDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/activemq/bindings,largeMessagesDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/activemq/largemessages,pagingDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/activemq/paging)
+[0m[0m14:06:58,624 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221013: Using NIO Journal
+[0m[0m14:06:58,625 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+[0m[0m14:06:58,626 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+[0m[0m14:06:58,626 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+[0m[0m14:06:58,627 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+[0m[0m14:06:58,627 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 68) AMQ601138: User anonymous is getting notification info on target resource: null []
+[0m[0m14:06:58,655 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221034: Waiting indefinitely to obtain live lock
+[0m[0m14:06:58,655 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221035: Live Server Obtained live lock
+[0m[0m14:06:58,719 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m14:06:58,719 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m14:06:58,719 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m14:06:58,722 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m14:06:58,749 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221007: Server is now live
+[0m[0m14:06:58,749 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [default, nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0] 
+[0m[0m14:06:58,751 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 69) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+[0m[0m14:06:58,754 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0007: Registered connection factory java:/JmsXA
+[0m[33m14:06:58,756 WARN  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-2) IJ020017: Invalid archive: file://RaActivatoractivemq-ra
+[0m[0m14:06:58,802 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 71) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m14:06:58,812 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-2) AMQ151007: Resource adaptor started
+[0m[0m14:06:58,812 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-2) IJ020002: Deployed: file://RaActivatoractivemq-ra
+[0m[0m14:06:58,816 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m14:06:58,816 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m14:06:58,852 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m14:06:58,856 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m14:06:58,856 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m14:06:58,856 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 784ms - Started 339 of 567 services (341 services are lazy, passive or on-demand)
+[0m

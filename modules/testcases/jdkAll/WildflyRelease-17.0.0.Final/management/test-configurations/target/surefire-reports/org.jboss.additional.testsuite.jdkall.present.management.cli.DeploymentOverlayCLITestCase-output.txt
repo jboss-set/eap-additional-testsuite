@@ -1,0 +1,970 @@
+[0m12:35:19,104 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/77/9e3113e02722c95d2dbb5812d1c80cf8e2ea65/content
+[0m[0m12:35:19,115 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+[0m[33m12:35:19,267 WARN  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0013: Deployment test.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:35:19,293 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+[0m[0m12:35:19,310 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+[0mWarning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:19,411 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:19,414 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:19,503 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:19,513 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:19,528 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:19,534 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:19,631 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:19,640 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:19,653 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:19,739 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:19,750 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "another.war" (runtime-name : "another.war")
+[0mWARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:19,761 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:19,778 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:19,803 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:19,884 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 83ms
+[0m[0m12:35:19,887 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:19,889 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:19,927 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 38ms
+[0m[0m12:35:19,929 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:20,059 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:20,065 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:20,076 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "deployment1.war"
+[0m[0m12:35:20,076 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:20,123 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:20,133 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 10ms
+[0m[0m12:35:20,144 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:20,145 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:20,151 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:20,160 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 10ms
+[0m[0m12:35:20,175 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:20,182 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:20,191 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 11ms
+[0m[0m12:35:20,204 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:20,204 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "another.war" (runtime-name: "another.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:20,243 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:20,264 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:20,332 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:20,336 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:20,438 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:20,460 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:20,472 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:20,476 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:20,576 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:20,586 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:20,601 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:20,606 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:20,617 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 13ms
+[0m[0m12:35:20,620 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:20,726 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:20,743 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:20,763 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:20,773 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 11ms
+[0m[0m12:35:20,782 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:20,782 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:20,787 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:20,800 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 14ms
+[0m[0m12:35:20,812 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:20,812 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:20,845 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:20,922 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:20,928 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:21,112 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:21,125 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "eardeployment1.ear" (runtime-name : "eardeployment1.ear")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:21,139 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:21,144 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:21,169 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:21,192 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:21,231 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 39ms
+[0m[0m12:35:21,233 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 42ms
+[0m[0m12:35:21,238 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:21,244 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:21,420 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:21,430 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0013: Redeployed "eardeployment1.ear"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment0.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment1.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+[0m12:35:21,964 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:22,002 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 38ms
+[0m[0m12:35:22,013 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 49ms
+[0m[0m12:35:22,022 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+Deployment overlay overlay-test does not exist.
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:22,048 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:22,049 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:22,067 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:22,155 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:22,161 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:22,254 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:22,264 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:22,277 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:22,280 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:22,367 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:22,377 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:22,389 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:22,419 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:22,441 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 24ms
+[0m[0m12:35:22,444 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:22,550 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:22,560 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:22,568 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:22,582 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 16ms
+[0m[0m12:35:22,586 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:22,692 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:22,702 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:22,807 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mprocess-state: reload-required 
+[0m12:35:22,816 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:22,842 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 28ms
+[0m[0m12:35:22,844 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:22,932 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:22,943 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:23,006 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:23,020 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 14ms
+[0m[0m12:35:23,029 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:23,029 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:23,033 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:23,047 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 14ms
+[0m[0m12:35:23,059 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:23,060 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+Deployment overlay overlay-test does not exist.
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:23,175 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:23,179 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:23,278 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:23,287 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:23,294 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:23,297 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:23,412 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:23,421 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:23,435 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:23,580 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:23,595 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "another.war" (runtime-name : "another.war")
+[0m[0m12:35:23,604 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:23,607 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:23,617 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 9ms
+[0m[0m12:35:23,618 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:23,627 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:23,657 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 38ms
+[0m[0m12:35:23,661 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:23,772 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:23,815 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:23,825 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment1.war"
+[0m[0m12:35:23,825 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:23,852 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:23,865 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 12ms
+[0m[0m12:35:23,880 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:23,881 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:23,891 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:23,909 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 18ms
+[0m[0m12:35:23,919 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:23,928 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:23,938 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 11ms
+[0m[0m12:35:23,950 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:23,950 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "another.war" (runtime-name: "another.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:23,977 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:24,037 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:24,042 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:24,131 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:24,141 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:24,148 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:24,150 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:24,244 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:24,258 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:24,265 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:24,268 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:24,271 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:24,273 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0m[0m12:35:24,300 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:24,322 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 24ms
+[0m[0m12:35:24,324 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:24,424 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:24,437 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:24,445 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:24,458 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 13ms
+[0m[0m12:35:24,461 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:24,567 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:24,580 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:24,684 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:24,686 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:24,686 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:24,687 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0mprocess-state: reload-required 
+[0m12:35:24,693 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:24,706 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 13ms
+[0m[0m12:35:24,707 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:24,784 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:24,810 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:24,896 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:24,913 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 17ms
+[0m[0m12:35:24,924 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:24,924 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:24,933 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:24,948 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 16ms
+[0m[0m12:35:24,957 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:24,957 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+Deployment overlay overlay-test does not exist.
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:25,071 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:25,076 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:25,207 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:25,217 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "eardeployment1.ear" (runtime-name : "eardeployment1.ear")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:25,226 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:25,233 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:25,235 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:25,260 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:25,300 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 39ms
+[0m[0m12:35:25,301 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 41ms
+[0m[0m12:35:25,305 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:25,309 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:25,426 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:25,436 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "eardeployment1.ear"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment0.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment1.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+[0m12:35:25,535 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:25,560 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 26ms
+[0m[0m12:35:25,563 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 29ms
+[0m[0m12:35:25,574 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:25,608 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:25,609 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:25,609 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:25,681 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/f5/32073474b299ed7be4bc8acdb555f7636f98a5/content
+[0m[0m12:35:25,685 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "eardeployment2.ear" (runtime-name: "eardeployment2.ear")
+[0m[0m12:35:25,690 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:25,781 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:25,790 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "eardeployment2.ear" (runtime-name : "eardeployment2.ear")
+[0mWARNING: redeployment is required on deployment [eardeployment2.ear]
+[0m12:35:25,796 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:25,820 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:25,848 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 29ms
+[0m[0m12:35:25,851 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment eardeployment2.ear (runtime-name: eardeployment2.ear) in 32ms
+[0m[0m12:35:25,853 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "eardeployment2.ear" (runtime-name: "eardeployment2.ear")
+[0m[0m12:35:25,858 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:25,966 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:25,976 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "eardeployment2.ear"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment0.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment1.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+[0m12:35:26,008 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:26,018 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 12ms
+[0m[0m12:35:26,020 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment eardeployment2.ear (runtime-name: eardeployment2.ear) in 14ms
+[0m[0m12:35:26,044 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/f5/32073474b299ed7be4bc8acdb555f7636f98a5/content
+[0m[0m12:35:26,044 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "eardeployment2.ear" (runtime-name: "eardeployment2.ear")
+[0mWARNING: redeployment is required on deployment [eardeployment2.ear]
+[0m12:35:26,063 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:26,132 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:26,253 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:26,262 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:26,269 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:26,370 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:26,379 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:26,385 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:26,388 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:26,402 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:26,422 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0m[0m12:35:26,444 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:26,558 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 114ms
+[0m[0m12:35:26,560 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:26,651 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:26,661 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:26,671 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:26,712 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 44ms
+[0m[0m12:35:26,714 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:26,802 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:26,812 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:26,845 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:26,879 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 34ms
+[0m[0m12:35:26,888 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:26,894 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:26,910 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 17ms
+[0m[0m12:35:26,997 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+Deployment overlay overlay-test does not exist.
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:27,051 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:27,051 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:27,068 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:27,082 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0mprocess-state: reload-required 
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:27,167 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "eardeployment2.ear" (runtime-name: "eardeployment2.ear")
+[0m[0m12:35:27,173 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:27,285 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:27,294 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "eardeployment2.ear" (runtime-name : "eardeployment2.ear")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [eardeployment2.ear]
+[0m12:35:27,302 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:27,320 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:27,348 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 29ms
+[0m[0m12:35:27,349 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment eardeployment2.ear (runtime-name: eardeployment2.ear) in 30ms
+[0m[0m12:35:27,350 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "eardeployment2.ear" (runtime-name: "eardeployment2.ear")
+[0m[0m12:35:27,352 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:27,458 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:27,479 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "eardeployment2.ear"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment0.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment1.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+[0m12:35:27,518 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:27,546 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 29ms
+[0m[0m12:35:27,547 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment eardeployment2.ear (runtime-name: eardeployment2.ear) in 30ms
+[0m[0m12:35:27,556 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "eardeployment2.ear" (runtime-name: "eardeployment2.ear")
+[0mWARNING: redeployment is required on deployment [eardeployment2.ear]
+[0m12:35:27,573 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+[0m12:35:27,586 INFO  [org.jboss.as.protocol] (management task-1) WFLYPRT0057:  cancelled task by interrupting thread Thread[management-handler-thread - 1,5,management-handler-thread]
+[0mWarning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:27,644 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:27,647 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:27,725 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:27,737 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:27,748 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:27,751 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:27,876 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:27,888 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:27,895 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:27,907 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:27,912 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:27,916 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0m[0m12:35:28,000 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:28,011 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 12ms
+[0m[0m12:35:28,013 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:28,093 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:28,102 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:28,119 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:28,130 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 11ms
+[0m[0m12:35:28,133 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:28,205 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:28,213 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:28,303 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:28,318 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 16ms
+[0m[0m12:35:28,328 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:28,328 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:28,334 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:28,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 8ms
+[0m[0m12:35:28,351 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:28,352 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:28,386 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:28,386 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:28,387 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:28,387 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:28,464 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:28,482 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:28,485 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:28,559 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:28,568 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:28,575 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:28,579 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:28,662 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:28,669 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:28,682 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:28,757 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:28,769 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "another.war" (runtime-name : "another.war")
+[0m[0m12:35:28,793 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:28,812 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 19ms
+[0m[0m12:35:28,821 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:28,822 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:28,830 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:28,859 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 29ms
+[0m[0m12:35:28,868 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:28,874 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:28,892 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 17ms
+[0m[0m12:35:28,905 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:28,905 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "another.war" (runtime-name: "another.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:28,945 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:29,043 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mWARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:29,059 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:29,076 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:29,079 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:29,183 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:29,193 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:29,202 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:29,204 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:29,275 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:29,284 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:29,320 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:29,389 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:29,398 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "another.war" (runtime-name : "another.war")
+[0m[0m12:35:29,434 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:29,446 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 12ms
+[0m[0m12:35:29,455 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:29,455 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:29,463 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:29,481 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 20ms
+[0m[0m12:35:29,490 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:29,495 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:29,505 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 11ms
+[0m[0m12:35:29,518 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:29,519 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "another.war" (runtime-name: "another.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:29,539 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment*.war]
+[0m12:35:29,555 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:29,624 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:29,627 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:29,710 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:29,722 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:29,733 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:29,736 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:29,825 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:29,836 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:29,847 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:29,863 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:29,866 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:29,882 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 16ms
+[0m[0m12:35:29,885 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:30,092 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:30,104 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:30,234 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:30,470 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 237ms
+[0m[0m12:35:30,524 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:30,524 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:30,536 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:30,544 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 11ms
+[0m[0m12:35:30,553 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:30,553 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:30,576 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:30,593 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:30,699 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e1/584e69574214b608ccf39c7cce5f48a738d1be/content
+[0m[0m12:35:30,702 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:30,707 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:30,823 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:30,859 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "eardeployment1.ear" (runtime-name : "eardeployment1.ear")
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:30,867 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:30,891 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:30,938 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:31,050 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:31,069 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 15ms
+[0m[0m12:35:31,081 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 33ms
+[0m[0m12:35:31,083 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:31,089 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:31,256 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:31,270 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "eardeployment1.ear"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment0.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment1.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+[0m12:35:31,413 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:31,520 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 107ms
+[0m[0m12:35:31,523 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 112ms
+[0m[0m12:35:31,537 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e1/584e69574214b608ccf39c7cce5f48a738d1be/content
+[0m[0m12:35:31,537 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+Deployment overlay overlay-test does not exist.
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:31,565 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:31,565 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:31,581 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:31,639 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e1/584e69574214b608ccf39c7cce5f48a738d1be/content
+[0m[0m12:35:31,642 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:31,645 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:31,856 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:31,866 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "eardeployment1.ear" (runtime-name : "eardeployment1.ear")
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:31,885 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:31,889 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:31,892 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:31,921 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:31,948 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 27ms
+[0m[0m12:35:31,951 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 33ms
+[0m[0m12:35:31,953 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m[0m12:35:31,957 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "deployment0.war")
+[0m[0m12:35:32,052 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:32,061 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "eardeployment1.ear"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment0.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"deployment1.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+[0m12:35:32,251 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:32,282 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: deployment0.war) in 32ms
+[0m[0m12:35:32,283 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment eardeployment1.ear (runtime-name: eardeployment1.ear) in 33ms
+[0m[0m12:35:32,296 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/e1/584e69574214b608ccf39c7cce5f48a738d1be/content
+[0m[0m12:35:32,297 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "eardeployment1.ear" (runtime-name: "eardeployment1.ear")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:32,345 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:32,346 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:32,346 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:32,543 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:32,713 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:32,722 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:32,737 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:32,860 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:32,870 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:32,886 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:32,890 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:32,893 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:32,897 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0m[0m12:35:32,991 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:33,033 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 42ms
+[0m[0m12:35:33,036 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:33,113 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:33,122 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:33,132 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:33,154 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 23ms
+[0m[0m12:35:33,159 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:33,236 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:33,245 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:33,269 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:33,297 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 29ms
+[0m[0m12:35:33,307 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:33,315 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:33,338 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 25ms
+[0m[0m12:35:33,346 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:33,379 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:33,380 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0m[0m12:35:33,381 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0m[0m12:35:33,381 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:33,431 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:33,449 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:33,451 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:33,530 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:33,538 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:33,549 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:33,551 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:33,626 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:33,650 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:33,658 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:33,724 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:33,732 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "another.war" (runtime-name : "another.war")
+[0mWARNING: redeployment is required on deployment [a*.war]
+process-state: reload-required 
+[0m12:35:33,778 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:33,787 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 9ms
+[0m[0m12:35:33,789 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:33,871 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:33,881 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:33,896 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:33,908 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 12ms
+[0m[0m12:35:33,909 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:33,983 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:33,992 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:34,007 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:34,022 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 16ms
+[0m[0m12:35:34,024 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:34,091 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:34,118 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "another.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:34,134 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:34,152 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 19ms
+[0m[0m12:35:34,154 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:34,217 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:34,238 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment1.war"
+[0mprocess-state: reload-required 
+[0m12:35:34,269 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:34,279 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 10ms
+[0m[0m12:35:34,280 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:34,352 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:34,383 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0013: Redeployed "deployment1.war"
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [a*.war]
+process-state: reload-required 
+[0m12:35:34,427 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:34,437 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 10ms
+[0m[0m12:35:34,438 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:34,519 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:34,529 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:34,535 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:34,542 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 7ms
+[0m[0m12:35:34,545 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:34,612 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:34,620 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:34,626 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:34,647 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 21ms
+[0m[0m12:35:34,649 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:34,720 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:34,732 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "another.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:34,773 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:34,786 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 25ms
+[0m[0m12:35:34,791 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:34,884 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:34,894 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:34,895 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+[0m12:35:34,927 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:34,930 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:34,948 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 19ms
+[0m[0m12:35:34,949 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:35,048 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:35,059 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:35,082 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:35,102 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 21ms
+[0m[0m12:35:35,113 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:35,113 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:35,118 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:35,128 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 10ms
+[0m[0m12:35:35,137 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:35,145 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:35,156 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 11ms
+[0m[0m12:35:35,164 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:35,164 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "another.war" (runtime-name: "another.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:35,187 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:35,247 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:35,250 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:35,324 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:35,331 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:35,338 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:35,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:35,424 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:35,438 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0m[0m12:35:35,451 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:35,554 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:35,562 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "another.war" (runtime-name : "another.war")
+[0m[0m12:35:35,567 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mWARNING: redeployment is required on deployment [deployment0.war, a*.war]
+process-state: reload-required 
+[0m12:35:35,603 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:35,617 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 15ms
+[0m[0m12:35:35,618 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "another.war" (runtime-name: "another.war")
+[0m[0m12:35:35,619 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:35,632 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 13ms
+[0m[0m12:35:35,640 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:35,726 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/another' for server 'default-server'
+[0m[0m12:35:35,768 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:35,776 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m[0m12:35:35,776 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "another.war"
+[0mprocess-state: reload-required 
+[0m12:35:35,806 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:35,817 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 11ms
+[0m[0m12:35:35,831 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:35,832 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:35,836 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:35,852 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 16ms
+[0m[0m12:35:35,865 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:35,871 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/another' from server 'default-server'
+[0m[0m12:35:35,884 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment another.war (runtime-name: another.war) in 15ms
+[0m[0m12:35:35,898 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:35,899 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "another.war" (runtime-name: "another.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+WARNING: redeployment is required on deployment [a*.war, deployment0.war]
+[0m12:35:35,939 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0mprocess-state: reload-required 
+Deployment overlay overlay1 does not exist.
+Deployment overlay overlay2 does not exist.
+Deployment overlay overlay3 does not exist.
+Warning! The CLI is running in a non-modular environment and cannot load commands from management extensions.
+[0m12:35:36,026 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:36,030 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:36,110 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:36,119 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment0.war" (runtime-name : "deployment0.war")
+[0m[0m12:35:36,127 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:36,129 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:36,214 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:36,223 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "deployment1.war" (runtime-name : "deployment1.war")
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:36,240 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:36,243 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:36,256 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mWARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:36,282 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0m[0m12:35:36,305 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:36,331 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 26ms
+[0m[0m12:35:36,333 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:36,404 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/deployment0' for server 'default-server'
+[0m[0m12:35:36,414 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment0.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:36,428 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:36,439 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 13ms
+[0m[0m12:35:36,443 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "deployment1.war" (runtime-name: "deployment1.war")
+[0m[0m12:35:36,522 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/deployment1' for server 'default-server'
+[0m[0m12:35:36,534 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0013: Redeployed "deployment1.war"
+[0m{
+    "outcome" => "success",
+    "response-headers" => {"process-state" => "reload-required"}
+}
+[0m12:35:36,607 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/deployment0' from server 'default-server'
+[0m[0m12:35:36,651 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment deployment0.war (runtime-name: deployment0.war) in 52ms
+[0m[0m12:35:36,665 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/82/739ffc1c9b300ee516ba857ed9448ca7ac17bc/content
+[0m[0m12:35:36,665 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment0.war" (runtime-name: "deployment0.war")
+[0m[0m12:35:36,671 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/deployment1' from server 'default-server'
+[0m[0m12:35:36,695 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment deployment1.war (runtime-name: deployment1.war) in 24ms
+[0m[0m12:35:36,707 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/00/5ad154c8fe00b5b60467923f981c8a2ec14edb/content
+[0m[0m12:35:36,707 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "deployment1.war" (runtime-name: "deployment1.war")
+[0m{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"another.war\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment1.ear\")]' not found"}}
+{"WFLYCTL0062: Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-1" => "WFLYCTL0216: Management resource '[(\"deployment\" => \"eardeployment2.ear\")]' not found"}}
+Deployment overlay overlay-test does not exist.
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:36,738 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/2d/44db7370ebab5a8a342322ca91a15652236613/content
+[0m[0m12:35:36,739 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/21/a574bf6b534eb65debe224387532850772bfde/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:36,761 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/7c0f8d9692983a092fe4b74c0d4ce48b346aa4/content
+[0mprocess-state: reload-required 
+WARNING: redeployment is required on deployment [deployment0.war]
+[0m12:35:36,779 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/7c/c282e1b67c1de210af7adcfee3407afc16bff4/content
+[0mprocess-state: reload-required 
+[0m12:35:36,807 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+[0m[0m12:35:36,823 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 17ms
+[0m[0m12:35:36,836 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/77/9e3113e02722c95d2dbb5812d1c80cf8e2ea65/content
+[0m[0m12:35:36,836 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+[0m

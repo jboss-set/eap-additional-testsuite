@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.elytron.audit.TLSSyslogAuditLogTestCase
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.712 s - in org.jboss.additional.testsuite.jdkall.present.elytron.audit.TLSSyslogAuditLogTestCase

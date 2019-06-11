@@ -1,0 +1,31 @@
+[0m12:35:38,431 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/23/aee07d35867191288b6cf2dc6d2b7c22f98e93/content
+[0m[0m12:35:38,436 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test7-test.ear" (runtime-name: "nooma-nooma7.ear")
+[0m[0m12:35:38,446 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0207: Starting subdeployment (runtime-name: "servlet.war")
+[0m[0m12:35:38,566 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/servlet' for server 'default-server'
+[0m[0m12:35:38,579 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "test7-test.ear" (runtime-name : "nooma-nooma7.ear")
+[0m[0m12:35:38,653 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/servlet' from server 'default-server'
+[0m[0m12:35:38,670 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: servlet.war) in 17ms
+[0m[0m12:35:38,671 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test7-test.ear (runtime-name: nooma-nooma7.ear) in 18ms
+[0m[0m12:35:38,680 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/23/aee07d35867191288b6cf2dc6d2b7c22f98e93/content
+[0m[0m12:35:38,680 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "test7-test.ear" (runtime-name: "nooma-nooma7.ear")
+[0m[0m12:35:38,691 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0272: Suspending server
+[0m[0m12:35:38,693 INFO  [org.jboss.as.ejb3] (management-handler-thread - 3) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:35:38,694 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:35:38,748 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/TestDS2]
+[0m[0m12:35:38,748 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:35:38,749 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+[0m[0m12:35:38,750 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+[0m[0m12:35:38,750 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:35:38,752 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m12:35:38,753 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 15) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m12:35:38,760 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:35:38,762 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:35:38,763 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:35:38,775 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 34) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:35:38,827 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 32) AMQ151003: resource adaptor stopped
+[0m[0m12:35:38,951 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 32) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [c5c50cb9-8b84-11e9-af56-000c29ee3ea0] stopped, uptime 53.887 seconds
+[0m[0m12:35:38,965 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:35:38,967 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:35:38,972 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:35:38,990 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 289ms
+[0m

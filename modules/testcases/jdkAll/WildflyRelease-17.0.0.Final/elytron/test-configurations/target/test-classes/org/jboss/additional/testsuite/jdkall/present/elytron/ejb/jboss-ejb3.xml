@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Wildfly/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap71x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap71x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap72x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap72x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap7/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb","modules/testcases/jdkAll/Eap7.1.0.Beta/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/ejb"}) -->
+
+<jboss:jboss
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:jboss="http://www.jboss.com/xml/ns/javaee"
+        xmlns:s="urn:security:1.1"
+        version="3.1" impl-version="2.0">
+
+    <assembly-descriptor>
+        <s:security>
+            <ejb-name>*</ejb-name>
+            <s:missing-method-permissions-deny-access>false</s:missing-method-permissions-deny-access>
+        </s:security>
+    </assembly-descriptor>
+</jboss:jboss>

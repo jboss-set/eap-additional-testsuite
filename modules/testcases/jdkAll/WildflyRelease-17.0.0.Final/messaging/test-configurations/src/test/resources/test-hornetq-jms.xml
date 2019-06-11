@@ -1,0 +1,15 @@
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/WildflyRelease-17.0.0.A/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Wildfly/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap71x/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap71x-Proposed/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap72x/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap72x-Proposed/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap7/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap70x/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap70x-Proposed/messaging/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap7.1.0.Beta/messaging/test-configurations/src/test/resources"}) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<messaging-deployment xmlns="urn:jboss:messaging-deployment:1.0">
+    <hornetq-server>
+        <jms-destinations>
+            <jms-queue name="queue1">
+                <entry name="java:/queue1"/>
+                <durable>true</durable>
+            </jms-queue>
+            <jms-topic name="topic1">
+                <entry name="java:/topic1"/>
+            </jms-topic>
+        </jms-destinations>
+    </hornetq-server>
+</messaging-deployment>

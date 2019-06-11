@@ -1,0 +1,45 @@
+Jun 10, 2019 12:29:54 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:54 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:54,870 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/81/f59d533990867d9e4ac9dec581850834f0c05c/content
+[0m[0m12:29:54,874 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "secure-remote-stateless-ejb-failover-test.jar" (runtime-name: "secure-remote-stateless-ejb-failover-test.jar")
+[0m[0m12:29:54,931 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment secure-remote-stateless-ejb-failover-test.jar
+[0m[0m12:29:54,984 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'SecureStatelessIncrementorBean' in deployment unit 'deployment "secure-remote-stateless-ejb-failover-test.jar"' are as follows:
+
+	java:global/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:app/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:module/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:jboss/exported/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	ejb:/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:global/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean
+	java:app/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean
+	java:module/SecureStatelessIncrementorBean
+
+[0m[0m12:29:55,391 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "secure-remote-stateless-ejb-failover-test.jar" (runtime-name : "secure-remote-stateless-ejb-failover-test.jar")
+[0m[0m12:29:55,408 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/81/f59d533990867d9e4ac9dec581850834f0c05c/content
+[0m[0m12:29:55,419 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "secure-remote-stateless-ejb-failover-test.jar" (runtime-name: "secure-remote-stateless-ejb-failover-test.jar")
+[0m[0m12:29:55,444 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment secure-remote-stateless-ejb-failover-test.jar
+[0m[0m12:29:55,457 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'SecureStatelessIncrementorBean' in deployment unit 'deployment "secure-remote-stateless-ejb-failover-test.jar"' are as follows:
+
+	java:global/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:app/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:module/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:jboss/exported/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	ejb:/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.bean.Incrementor
+	java:global/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean
+	java:app/secure-remote-stateless-ejb-failover-test/SecureStatelessIncrementorBean
+	java:module/SecureStatelessIncrementorBean
+
+[0m[0m12:29:55,852 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "secure-remote-stateless-ejb-failover-test.jar" (runtime-name : "secure-remote-stateless-ejb-failover-test.jar")
+[0mJun 10, 2019 12:29:55 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:55 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:55,920 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment secure-remote-stateless-ejb-failover-test.jar (runtime-name: secure-remote-stateless-ejb-failover-test.jar) in 56ms
+[0m[0m12:29:55,940 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/81/f59d533990867d9e4ac9dec581850834f0c05c/content
+[0m[0m12:29:55,946 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "secure-remote-stateless-ejb-failover-test.jar" (runtime-name: "secure-remote-stateless-ejb-failover-test.jar")
+[0m[0m12:29:56,046 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment secure-remote-stateless-ejb-failover-test.jar (runtime-name: secure-remote-stateless-ejb-failover-test.jar) in 75ms
+[0m[0m12:29:56,124 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/81/f59d533990867d9e4ac9dec581850834f0c05c/content
+[0m[0m12:29:56,124 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "secure-remote-stateless-ejb-failover-test.jar" (runtime-name: "secure-remote-stateless-ejb-failover-test.jar")
+[0m

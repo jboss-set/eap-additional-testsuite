@@ -1,0 +1,31 @@
+[0m12:35:10,089 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/97/25cce688481438e7d080bb1e217631c19afbf4/content
+[0m[0m12:35:10,092 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+[0m[33m12:35:10,248 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.test.war" is using a private module ("org.jboss.jts") which may be changed or removed in future versions without notice.
+[0m[0m12:35:10,272 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment test.war
+[0m[0m12:35:10,335 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:35:10,485 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'ObjectStoreBrowserService' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/ObjectStoreBrowserService!org.jboss.additional.testsuite.jdkall.present.management.cli.objectstore.ObjectStoreBrowserService
+	java:app/test/ObjectStoreBrowserService!org.jboss.additional.testsuite.jdkall.present.management.cli.objectstore.ObjectStoreBrowserService
+	java:module/ObjectStoreBrowserService!org.jboss.additional.testsuite.jdkall.present.management.cli.objectstore.ObjectStoreBrowserService
+	ejb:/test/ObjectStoreBrowserService!org.jboss.additional.testsuite.jdkall.present.management.cli.objectstore.ObjectStoreBrowserService
+	java:global/test/ObjectStoreBrowserService
+	java:app/test/ObjectStoreBrowserService
+	java:module/ObjectStoreBrowserService
+
+[0mWARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jboss.invocation.proxy.AbstractProxyFactory$1 (jar:file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/modules/system/layers/base/org/jboss/invocation/main/jboss-invocation-1.5.2.Final.jar!/) to method java.lang.Object.clone()
+WARNING: Please consider reporting this to the maintainers of org.jboss.invocation.proxy.AbstractProxyFactory$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[0m12:35:10,653 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 3.1.1 (Final)
+[0m[0m12:35:11,604 INFO  [stdout] (ServerService Thread Pool -- 15) registering bean jboss.jta:type=com.arjuna.ats.arjuna.tools.osb.api.mbeans.RecoveryStoreBean,name=store1
+[0m[0m12:35:11,629 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+[0m[0m12:35:11,711 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+[0mRemove notification listener...
+[0m12:35:12,174 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 34) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+[0m[0m12:35:12,183 INFO  [stdout] (ServerService Thread Pool -- 15) unregistering bean jboss.jta:type=com.arjuna.ats.arjuna.tools.osb.api.mbeans.RecoveryStoreBean,name=store1
+[0m[0m12:35:12,223 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 52ms
+[0m[0m12:35:12,234 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/97/25cce688481438e7d080bb1e217631c19afbf4/content
+[0m[0m12:35:12,235 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+[0m

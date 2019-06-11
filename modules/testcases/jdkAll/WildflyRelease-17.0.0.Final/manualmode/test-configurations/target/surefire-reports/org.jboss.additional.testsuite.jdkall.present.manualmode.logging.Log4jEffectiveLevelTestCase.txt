@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.manualmode.logging.Log4jEffectiveLevelTestCase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.066 s - in org.jboss.additional.testsuite.jdkall.present.manualmode.logging.Log4jEffectiveLevelTestCase

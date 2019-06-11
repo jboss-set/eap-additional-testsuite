@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../src/test/scripts/clean-deployments.xml">
+    <property name="serverDir" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../servers"/>
+    <target name="clean-deployments"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../src/test/scripts/clustering-build.xml">
+    <property name="workspace" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../.."/>
+    <property name="server" value="wildfly"/>
+    <target name="build-clustering"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../src/test/scripts/basic-build.xml">
+    <property name="workspace" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../.."/>
+    <property name="server" value="wildfly"/>
+    <property name="dist" value="wildfly-SYNC-tcp-0"/>
+    <property name="standaloneConfiguration" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../src/test/config/standaloneWildfly/standalone-full-ha.xml"/>
+    <target name="build-basic-check"/>
+  </ant>
+  <ant antfile="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../../src/test/scripts/basic-build.xml">
+    <property name="workspace" value="//home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../../../../.."/>
+    <property name="server" value="wildfly"/>
+    <property name="dist" value="wildfly-SYNC-tcp-1"/>
+    <property name="standaloneConfiguration" value="/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/clustering/test-configurations/../src/test/config/standaloneWildfly/standalone-full-ha.xml"/>
+    <target name="build-basic-check"/>
+  </ant>
+</target>
+</project>

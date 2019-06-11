@@ -1,0 +1,303 @@
+Jun 10, 2019 12:29:37 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:37 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:37,143 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/be/74fb7263bb5af3c89ad366279cbe71d5bfb124/content
+[0m[0m12:29:37,152 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "stateful-failover.war" (runtime-name: "stateful-failover.war")
+[0m[0m12:29:37,388 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for test
+[0m[0m12:29:37,485 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 7) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:37,534 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 7) HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+[0m[0m12:29:37,562 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment stateful-failover.war
+[0m[0m12:29:37,716 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:29:37,720 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 7) HHH000412: Hibernate Core {5.3.10.Final}
+[0m[0m12:29:37,727 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 7) HHH000206: hibernate.properties not found
+[0m[0m12:29:38,007 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 7) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[0m[0m12:29:38,051 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TimeoutIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/TimeoutIncrementorBean
+	java:app/stateful-failover/TimeoutIncrementorBean
+	java:module/TimeoutIncrementorBean
+
+[0m[0m12:29:38,052 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'SimpleIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/SimpleIncrementorBean
+	java:app/stateful-failover/SimpleIncrementorBean
+	java:module/SimpleIncrementorBean
+
+[0m[0m12:29:38,053 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'JDBCResourceManagerConnectionFactoryIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean
+	java:app/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean
+	java:module/JDBCResourceManagerConnectionFactoryIncrementorBean
+
+[0m[0m12:29:38,053 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TimerIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/TimerIncrementorBean
+	java:app/stateful-failover/TimerIncrementorBean
+	java:module/TimerIncrementorBean
+
+[0m[0m12:29:38,054 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersistenceIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/PersistenceIncrementorBean
+	java:app/stateful-failover/PersistenceIncrementorBean
+	java:module/PersistenceIncrementorBean
+
+[0m[0m12:29:38,054 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'NestedIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/NestedIncrementorBean
+	java:app/stateful-failover/NestedIncrementorBean
+	java:module/NestedIncrementorBean
+
+[0m[0m12:29:38,056 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'NestedBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested
+	java:app/stateful-failover/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested
+	java:module/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested
+	ejb:/stateful-failover/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested?stateful
+	java:global/stateful-failover/NestedBean
+	java:app/stateful-failover/NestedBean
+	java:module/NestedBean
+
+[0m[0m12:29:38,056 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PassivationIncapableIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/PassivationIncapableIncrementorBean
+	java:app/stateful-failover/PassivationIncapableIncrementorBean
+	java:module/PassivationIncapableIncrementorBean
+
+[0m[0m12:29:38,056 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'JMSResourceManagerConnectionFactoryIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean
+	java:app/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean
+	java:module/JMSResourceManagerConnectionFactoryIncrementorBean
+
+[0m[0m12:29:38,538 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 3.1.1 (Final)
+[0m[33m12:29:38,594 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-1) WFLYCLWEBUT0005: No distributable session management provider found for stateful-failover.war; using legacy provider based on <replication-config/>
+[0m[0m12:29:38,777 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:38,778 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:38,782 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 7) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:29:39,033 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 16) WFLYCLINF0002: Started stateful-failover.war cache from web container
+[0m[0m12:29:39,775 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 16) WFLYCLINF0002: Started stateful-failover.war/infinispan cache from ejb container
+[0m[33m12:29:40,672 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:29:40,687 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[0m12:29:40,743 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 16) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:42,251 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 16) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[0m[33m12:29:42,262 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 16) HHH000431: Unable to determine H2 database version, certain features may not work
+[0m[33m12:29:42,678 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:29:42,689 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[0m12:29:42,742 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 16) Envers integration enabled? : true
+[0m[33m12:29:43,978 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 16) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[33m12:29:44,033 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 16) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[33m12:29:44,041 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 16) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[33m12:29:44,043 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 16) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[0m12:29:44,192 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 16) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@43c498a6'
+[0m[33m12:29:44,754 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:29:44,756 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:29:46,875 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[33m12:29:46,893 WARN  [org.apache.activemq.artemis.core.client] (activemq-discovery-group-thread-dg-group1) AMQ212034: There are more than one servers on the network broadcasting the same node id. You will see this message exactly once (per node) if a node is restarted, in which case it can be safely ignored. But if it is logged continuously it means you really do have more than one node on the same network active concurrently with the same node id. This could occur if you have a backup node active at the same time as its live node. nodeID=c5c50cb9-8b84-11e9-af56-000c29ee3ea0
+[0m[0m12:29:48,967 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 7) WFLYUT0021: Registered web context: '/stateful-failover' for server 'default-server'
+[0m[0m12:29:48,996 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "stateful-failover.war" (runtime-name : "stateful-failover.war")
+[0m[0m12:29:49,164 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/b6/15ea5f1674dd071c03f12715c7184a0872882e/content
+[0m[0m12:29:49,169 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "stateful-failover.war" (runtime-name: "stateful-failover.war")
+[0m[0m12:29:49,312 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for test
+[0m[0m12:29:49,363 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:49,464 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 81) HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+[0m[0m12:29:49,490 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment stateful-failover.war
+[0m[0m12:29:49,552 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 81) HHH000412: Hibernate Core {5.3.10.Final}
+[0m[0m12:29:49,552 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:29:49,553 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 81) HHH000206: hibernate.properties not found
+[0m[0m12:29:49,838 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 81) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[0m[0m12:29:49,885 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TimeoutIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/TimeoutIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/TimeoutIncrementorBean
+	java:app/stateful-failover/TimeoutIncrementorBean
+	java:module/TimeoutIncrementorBean
+
+[0m[0m12:29:49,885 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'SimpleIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/SimpleIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/SimpleIncrementorBean
+	java:app/stateful-failover/SimpleIncrementorBean
+	java:module/SimpleIncrementorBean
+
+[0m[0m12:29:49,885 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'JDBCResourceManagerConnectionFactoryIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean
+	java:app/stateful-failover/JDBCResourceManagerConnectionFactoryIncrementorBean
+	java:module/JDBCResourceManagerConnectionFactoryIncrementorBean
+
+[0m[0m12:29:49,885 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TimerIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/TimerIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/TimerIncrementorBean
+	java:app/stateful-failover/TimerIncrementorBean
+	java:module/TimerIncrementorBean
+
+[0m[0m12:29:49,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PersistenceIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/PersistenceIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/PersistenceIncrementorBean
+	java:app/stateful-failover/PersistenceIncrementorBean
+	java:module/PersistenceIncrementorBean
+
+[0m[0m12:29:49,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'NestedIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/NestedIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/NestedIncrementorBean
+	java:app/stateful-failover/NestedIncrementorBean
+	java:module/NestedIncrementorBean
+
+[0m[0m12:29:49,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'NestedBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested
+	java:app/stateful-failover/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested
+	java:module/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested
+	ejb:/stateful-failover/NestedBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Nested?stateful
+	java:global/stateful-failover/NestedBean
+	java:app/stateful-failover/NestedBean
+	java:module/NestedBean
+
+[0m[0m12:29:49,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PassivationIncapableIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/PassivationIncapableIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/PassivationIncapableIncrementorBean
+	java:app/stateful-failover/PassivationIncapableIncrementorBean
+	java:module/PassivationIncapableIncrementorBean
+
+[0m[0m12:29:49,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'JMSResourceManagerConnectionFactoryIncrementorBean' in deployment unit 'deployment "stateful-failover.war"' are as follows:
+
+	java:global/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:app/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	java:module/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor
+	ejb:/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean!org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.stateful.bean.Incrementor?stateful
+	java:global/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean
+	java:app/stateful-failover/JMSResourceManagerConnectionFactoryIncrementorBean
+	java:module/JMSResourceManagerConnectionFactoryIncrementorBean
+
+[0m[0m12:29:50,134 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.1 (Final)
+[0m[33m12:29:50,160 WARN  [org.wildfly.clustering.web.undertow] (MSC service thread 1-3) WFLYCLWEBUT0005: No distributable session management provider found for stateful-failover.war; using legacy provider based on <replication-config/>
+[0m[0m12:29:50,188 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:50,189 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m12:29:50,221 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 81) [Context=stateful-failover.war] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:29:50,223 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 83) [Context=default-server] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:29:50,244 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0002: Started default-server cache from web container
+[0m[0m12:29:50,254 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0002: Started stateful-failover.war cache from web container
+[0m[0m12:29:50,412 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 80) [Context=stateful-failover.war/infinispan] ISPN100002: Starting rebalance with members [node-0, node-1], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m12:29:50,472 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 80) WFLYCLINF0002: Started stateful-failover.war/infinispan cache from ejb container
+[0m[0m12:29:50,632 INFO  [org.infinispan.CLUSTER] (transport-thread--p15-t9) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:29:50,645 INFO  [org.infinispan.CLUSTER] (transport-thread--p15-t13) [Context=stateful-failover.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:29:50,687 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t2) [Context=stateful-failover.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:29:50,696 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t2) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:29:50,797 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t2) [Context=stateful-failover.war] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:29:50,799 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:29:50,812 INFO  [org.infinispan.CLUSTER] (transport-thread--p13-t8) [Context=stateful-failover.war/infinispan] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m12:29:50,847 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:50,965 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=stateful-failover.war/infinispan] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m12:29:50,985 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=stateful-failover.war/infinispan] ISPN100010: Finished rebalance with members [node-0, node-1], topology id 5
+[0m[0m12:29:51,188 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 81) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[0m[33m12:29:51,193 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 81) HHH000431: Unable to determine H2 database version, certain features may not work
+[0m[0m12:29:51,256 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 81) Envers integration enabled? : true
+[0m[33m12:29:51,459 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 81) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[33m12:29:51,460 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 81) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[33m12:29:51,460 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 81) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[33m12:29:51,460 WARN  [org.infinispan.hibernate.cache.v53.InfinispanRegionFactory] (ServerService Thread Pool -- 81) HHH025030: Transactional caches are not supported. The configuration option will be ignored; please unset.
+[0m[0m12:29:51,523 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 81) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@bfbfc92'
+[0m[0m12:29:52,354 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/stateful-failover' for server 'default-server'
+[0m[0m12:29:52,477 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "stateful-failover.war" (runtime-name : "stateful-failover.war")
+[0mIn this test file ATTest functionality is proven.
+Jun 10, 2019 12:29:52 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:29:52 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+[0m12:29:52,596 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0022: Unregistered web context: '/stateful-failover' from server 'default-server'
+[0m[0m12:29:52,680 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 36) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:52,680 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 36) ISPN000030: Passivated 0 entries in 0 milliseconds
+[0m[0m12:29:52,682 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=stateful-failover.war] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:52,706 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 15) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:52,707 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 15) ISPN000030: Passivated 0 entries in 0 milliseconds
+[0m[0m12:29:52,709 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=stateful-failover.war/infinispan] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:52,741 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 36) WFLYCLINF0003: Stopped stateful-failover.war cache from web container
+[0m[0m12:29:52,769 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 15) WFLYCLINF0003: Stopped stateful-failover.war/infinispan cache from ejb container
+[0m[0m12:29:52,809 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 15) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:52,810 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 15) HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[0m[0m12:29:52,816 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 15) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@608c9667
+[0m[0m12:29:52,822 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 15) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:52,951 INFO  [org.infinispan.CLUSTER] (remote-thread--p11-t4) [Context=default-server] ISPN100008: Updating cache members list [node-1], topology id 6
+[0m[0m12:29:52,957 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 36) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:52,966 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment stateful-failover.war (runtime-name: stateful-failover.war) in 434ms
+[0m[0m12:29:53,005 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-0/standalone/data/content/be/74fb7263bb5af3c89ad366279cbe71d5bfb124/content
+[0m[0m12:29:53,010 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "stateful-failover.war" (runtime-name: "stateful-failover.war")
+[0m[0m12:29:53,021 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0022: Unregistered web context: '/stateful-failover' from server 'default-server'
+[0m[0m12:29:53,036 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 90) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:53,036 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 91) ISPN000029: Passivating all entries to disk
+[0m[0m12:29:53,038 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 91) ISPN000030: Passivated 0 entries in 1 milliseconds
+[0m[0m12:29:53,039 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 90) ISPN000030: Passivated 0 entries in 2 milliseconds
+[0m[0m12:29:53,066 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0003: Stopped stateful-failover.war/infinispan cache from ejb container
+[0m[0m12:29:53,067 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 91) WFLYCLINF0003: Stopped stateful-failover.war cache from web container
+[0m[0m12:29:53,086 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:53,087 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 91) HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[0m[0m12:29:53,094 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 91) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@7be73f7f
+[0m[0m12:29:53,119 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'stateful-failover.war#test'
+[0m[0m12:29:53,157 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 91) WFLYCLINF0003: Stopped default-server cache from web container
+[0m[0m12:29:53,182 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment stateful-failover.war (runtime-name: stateful-failover.war) in 162ms
+[0m[0m12:29:53,233 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/wildfly-SYNC-tcp-1/standalone/data/content/b6/15ea5f1674dd071c03f12715c7184a0872882e/content
+[0m[0m12:29:53,234 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "stateful-failover.war" (runtime-name: "stateful-failover.war")
+[0m

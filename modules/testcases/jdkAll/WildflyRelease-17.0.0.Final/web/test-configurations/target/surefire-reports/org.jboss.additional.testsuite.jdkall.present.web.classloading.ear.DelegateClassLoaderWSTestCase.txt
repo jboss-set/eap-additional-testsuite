@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.web.classloading.ear.DelegateClassLoaderWSTestCase
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.553 s - in org.jboss.additional.testsuite.jdkall.present.web.classloading.ear.DelegateClassLoaderWSTestCase

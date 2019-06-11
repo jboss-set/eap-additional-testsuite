@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.elytron.rolemappers.ConstantRoleMapperTestCase
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.249 s - in org.jboss.additional.testsuite.jdkall.present.elytron.rolemappers.ConstantRoleMapperTestCase

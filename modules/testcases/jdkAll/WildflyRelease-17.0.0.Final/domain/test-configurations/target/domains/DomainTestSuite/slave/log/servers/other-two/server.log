@@ -1,0 +1,381 @@
+2019-06-10 12:30:33,414 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-06-10 12:30:34,202 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+2019-06-10 12:30:34,212 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-06-10 12:30:34,584 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+2019-06-10 12:30:34,963 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.7.2.Final
+2019-06-10 12:30:34,978 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.7.2.Final
+2019-06-10 12:30:35,179 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.12.Final
+2019-06-10 12:30:35,975 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.9.1.Final
+2019-06-10 12:30:38,792 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 14) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-06-10 12:30:39,145 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 29) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-06-10 12:30:39,153 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 35) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.19
+2019-06-10 12:30:39,214 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 34) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-06-10 12:30:39,219 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 39) WFLYSEC0002: Activating Security Subsystem
+2019-06-10 12:30:39,249 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.21.Final starting
+2019-06-10 12:30:39,247 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 37) WFLYNAM0001: Activating Naming Subsystem
+2019-06-10 12:30:39,230 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-06-10 12:30:39,218 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 40) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-06-10 12:30:39,246 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/welcome-content' with options [directory-listing: 'true', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-06-10 12:30:39,332 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 52) WFLYWS0002: Activating WebServices Extension
+2019-06-10 12:30:39,337 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+2019-06-10 12:30:39,438 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 48) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-06-10 12:30:39,445 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.7.0.Final
+2019-06-10 12:30:39,450 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-06-10 12:30:39,476 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-06-10 12:30:39,480 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-06-10 12:30:39,551 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 30) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2019-06-10 12:30:39,684 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2019-06-10 12:30:39,688 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2019-06-10 12:30:39,813 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8630
+2019-06-10 12:30:39,858 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 54) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final
+2019-06-10 12:30:39,899 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 54) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2019-06-10 12:30:40,032 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-4) ARJUNA032010: JBossTS Recovery Service (tag: 54b60) - JBoss Inc.
+2019-06-10 12:30:40,191 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-4) ARJUNA032013: Starting transaction recovery manager
+2019-06-10 12:30:40,234 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-7) ARJUNA032017: JBossTS Transaction Service (JTA version - tag: 54b60) - JBoss Inc.
+2019-06-10 12:30:40,302 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-06-10 12:30:40,452 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-06-10 12:30:40,668 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-06-10 12:30:40,669 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+12:30:40,805 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+12:30:40,824 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/activemq/journal,bindingsDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/activemq/bindings,largeMessagesDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/activemq/largemessages,pagingDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/activemq/paging)
+12:30:40,905 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+12:30:40,907 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+12:30:40,908 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+12:30:40,909 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+12:30:41,007 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 54) AMQ601138: User anonymous is getting notification info on target resource: null []
+12:30:41,009 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ224092: Despite disabled persistence, page files will be persisted.
+12:30:41,018 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+12:30:41,018 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+12:30:41,018 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+12:30:41,022 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+12:30:41,228 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221007: Server is now live
+12:30:41,229 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [default, nodeID=3b6208c9-8bb6-11e9-af21-000c29ee3ea0] 
+12:30:41,260 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 54) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+12:30:41,436 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0007: Registered connection factory java:/JmsXA
+12:30:41,455 WARN  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-3) IJ020017: Invalid archive: file://RaActivatoractivemq-ra
+12:30:41,516 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 59) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+12:30:41,644 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-3) AMQ151007: Resource adaptor started
+12:30:41,645 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-3) IJ020002: Deployed: file://RaActivatoractivemq-ra
+12:30:41,688 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+12:30:41,689 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+12:30:41,810 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+12:30:41,812 INFO  [com.arjuna.ats.jbossatx] (Controller Boot Thread) ARJUNA032035: Resuming transaction recovery manager
+12:30:41,824 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 9737ms - Started 250 of 484 services (319 services are lazy, passive or on-demand)
+12:30:43,383 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:45,827 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:46,946 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:47,250 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:47,341 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 97ms
+12:30:47,348 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:47,867 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:47,982 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:30:47,989 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/d6/cf724865174e6e1327dd6718d53cde89a09442/content
+12:30:48,310 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:48,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 59ms
+12:30:48,471 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:48,474 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/ce/ca252841f24a36ff0466bf40d295217a69b43f/content
+12:30:48,748 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:49,155 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:49,239 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:49,368 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:49,405 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 41ms
+12:30:49,408 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:49,925 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:49,981 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:30:49,982 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/c7/52df34028bf57e26528e5fc64dd059b77f4394/content
+12:30:50,243 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:50,263 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 21ms
+12:30:50,345 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:50,586 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:50,934 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:51,090 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:51,279 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:51,311 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 34ms
+12:30:51,313 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war.v2" (runtime-name: "test.war")
+12:30:51,637 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:51,722 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:30:52,164 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:52,197 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war.v2 (runtime-name: test.war) in 33ms
+12:30:52,238 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war.v2" (runtime-name: "test.war")
+12:30:52,239 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/b2/ea7f88bb3d2917eca0f851e6bb5718ba217f62/content
+12:30:52,484 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:52,675 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:52,818 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:52,942 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:52,951 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 8ms
+12:30:52,953 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war.v2" (runtime-name: "test.war")
+12:30:53,083 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:53,307 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:30:53,666 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/93/5ce1b18406cd813b8e9ac70e6ab6a0b270d728/content
+12:30:53,739 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:53,748 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war.v2 (runtime-name: test.war) in 10ms
+12:30:53,785 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war.v2" (runtime-name: "test.war")
+12:30:54,041 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:54,173 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:54,226 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:54,308 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:54,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 35ms
+12:30:54,379 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:54,381 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/93/5ce1b18406cd813b8e9ac70e6ab6a0b270d728/content
+12:30:54,542 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:54,815 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:54,908 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:55,087 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:55,096 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 11ms
+12:30:55,144 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:55,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:55,601 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:55,656 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:55,892 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:55,907 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 15ms
+12:30:55,938 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:55,940 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/3e/11860f34a9f60a12c66717b05c3cf2738bdf7e/content
+12:30:56,109 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:56,454 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:56,518 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:56,611 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:56,661 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 51ms
+12:30:56,663 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:57,341 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:57,562 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:30:57,859 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:57,876 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 30ms
+12:30:57,918 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:57,919 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/06/6e329e0df8af7fae71aa8d12de98a2d41ec123/content
+12:30:58,097 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:58,309 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:58,469 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:30:58,555 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:58,569 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 15ms
+12:30:58,575 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:30:58,851 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:30:58,922 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:30:58,922 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/41/c838cb3a6afd644fc7382c33b64a0bac5f67ff/content
+12:30:59,191 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:30:59,205 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 16ms
+12:30:59,244 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:30:59,245 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/d6/cf724865174e6e1327dd6718d53cde89a09442/content
+12:30:59,804 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test2" (runtime-name: "test2")
+12:31:00,188 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test2" (runtime-name : "test2")
+12:31:00,267 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test2 (runtime-name: test2) in 11ms
+12:31:00,300 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test2" (runtime-name: "test2")
+12:31:00,301 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/41/c838cb3a6afd644fc7382c33b64a0bac5f67ff/content
+12:31:00,933 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:01,190 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:01,236 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:01,388 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:01,406 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 27ms
+12:31:01,407 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war.v2" (runtime-name: "test.war")
+12:31:01,700 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:01,758 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:02,177 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:02,221 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war.v2 (runtime-name: test.war) in 50ms
+12:31:02,267 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war.v2" (runtime-name: "test.war")
+12:31:02,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:02,759 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:02,817 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:02,920 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:02,935 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 15ms
+12:31:02,940 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:03,095 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:03,206 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:03,424 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:03,436 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 13ms
+12:31:03,526 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:03,528 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 14) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/3e/bd3a993fecee3d0d138f60c813dd2d9ac7fbfb/content
+12:31:03,671 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:03,903 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:03,954 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:04,101 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:04,108 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 8ms
+12:31:04,144 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:04,145 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 14) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/3e/bd3a993fecee3d0d138f60c813dd2d9ac7fbfb/content
+12:31:04,357 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:04,607 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:04,672 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:04,728 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:04,749 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 22ms
+12:31:04,753 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:04,930 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:04,944 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0013: Redeployed "test.war"
+12:31:05,086 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:05,095 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 10ms
+12:31:05,133 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:05,134 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 14) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/6f/e74ce73bd172a08c8f9aa7122471df8da0ae3b/content
+12:31:05,263 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:05,464 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:05,494 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:05,559 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:05,571 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 12ms
+12:31:05,575 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:05,696 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:05,709 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0013: Redeployed "test.war"
+12:31:05,843 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:05,865 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 23ms
+12:31:05,887 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:06,027 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:06,222 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:06,248 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:06,308 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:06,333 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 27ms
+12:31:06,355 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 17) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:06,540 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 17) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/6f/e74ce73bd172a08c8f9aa7122471df8da0ae3b/content
+12:31:06,687 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:06,854 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:06,902 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:06,952 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:06,968 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 16ms
+12:31:07,022 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 17) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:07,310 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:07,497 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:07,530 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:07,603 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:07,633 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 30ms
+12:31:07,634 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:07,840 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:07,947 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 14) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:07,947 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 14) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/ff/6eb04409d6ddbc22abba3a1ddc88777e49a344/content
+12:31:08,131 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:08,146 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 15ms
+12:31:08,180 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:08,327 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:08,529 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:08,576 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:08,625 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:08,640 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 14ms
+12:31:08,644 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:08,832 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:08,884 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:09,062 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:09,075 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 14ms
+12:31:09,104 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:09,257 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:09,462 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:09,496 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:09,561 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:09,578 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 19ms
+12:31:09,580 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war.v2" (runtime-name: "test.war")
+12:31:09,756 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:09,775 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:09,985 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/fe/a6166c0ca0c17df7ce9bf207b49e19637ce76f/content
+12:31:10,031 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:10,063 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war.v2 (runtime-name: test.war) in 34ms
+12:31:10,103 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war.v2" (runtime-name: "test.war")
+12:31:10,320 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:10,493 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:10,536 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:10,651 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:10,675 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 24ms
+12:31:10,678 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war.v2" (runtime-name: "test.war")
+12:31:10,864 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:10,891 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:11,253 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/c8/202e81985825ee3d09e3d08523549c7f823518/content
+12:31:11,287 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:11,298 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war.v2 (runtime-name: test.war) in 12ms
+12:31:11,364 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war.v2" (runtime-name: "test.war")
+12:31:11,364 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/c8/202e81985825ee3d09e3d08523549c7f823518/content
+12:31:11,571 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:11,911 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:11,939 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:12,070 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:12,082 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 13ms
+12:31:12,129 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:12,130 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/d6/cf724865174e6e1327dd6718d53cde89a09442/content
+12:31:12,258 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:12,437 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:12,503 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:12,574 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:12,584 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 11ms
+12:31:12,587 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:12,744 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:12,808 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:12,985 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:12,998 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 14ms
+12:31:13,033 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:13,176 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:13,389 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:13,428 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:13,638 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:13,662 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 25ms
+12:31:13,684 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:13,831 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test1.war")
+12:31:14,003 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test1' for server 'default-server'
+12:31:14,034 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test1.war")
+12:31:14,105 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test1' from server 'default-server'
+12:31:14,110 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test.war (runtime-name: test1.war) in 6ms
+12:31:14,136 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test1.war")
+12:31:14,137 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/91/a8b32b5c304da31f9d2c5ba5477276a5a19f7b/content
+12:31:14,279 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:14,427 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:14,479 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:14,533 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:14,546 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 13ms
+12:31:14,547 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:14,649 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:14,657 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0013: Redeployed "test.war"
+12:31:14,796 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:14,803 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 7ms
+12:31:14,841 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:14,986 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:15,195 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:15,224 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:15,278 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:15,304 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 26ms
+12:31:15,310 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:15,484 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:15,566 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:15,567 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/87/2a7d33b934fd8b7e3da5d565440aee68c6a9e5/content
+12:31:15,729 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:15,740 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 11ms
+12:31:15,771 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:15,772 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/d6/cf724865174e6e1327dd6718d53cde89a09442/content
+12:31:15,947 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:16,134 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:16,157 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:16,200 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:16,207 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 7ms
+12:31:16,230 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:16,503 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:16,618 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:16,695 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:16,762 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:16,773 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 11ms
+12:31:16,776 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "test.war.v2" (runtime-name: "test.war")
+12:31:16,920 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:16,974 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "test.war" with deployment "test.war"
+12:31:17,280 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:17,286 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war.v2 (runtime-name: test.war) in 8ms
+12:31:17,305 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war.v2" (runtime-name: "test.war")
+12:31:17,514 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+12:31:17,671 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+12:31:17,719 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+12:31:17,866 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+12:31:17,879 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 13ms
+12:31:17,904 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+12:31:17,905 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/DomainTestSuite/slave/data/servers/other-two/content/d6/cf724865174e6e1327dd6718d53cde89a09442/content
+12:31:20,619 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "env-test.war" (runtime-name: "env-test.war")
+12:31:20,861 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/env-test' for server 'default-server'
+12:31:20,954 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "env-test.war" (runtime-name : "env-test.war")
+12:31:21,413 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+12:31:21,419 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+12:31:21,421 INFO  [com.arjuna.ats.jbossatx] (Thread-1) ARJUNA032034: Suspending transaction recovery manager
+12:31:21,422 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+12:31:21,424 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+12:31:21,425 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+12:31:21,425 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+12:31:21,450 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/env-test' from server 'default-server'
+12:31:21,485 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+12:31:21,488 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000002: Initiating mod_cluster shutdown
+12:31:21,491 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 62) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+12:31:21,494 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 14) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+12:31:21,508 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+12:31:21,510 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment env-test.war (runtime-name: env-test.war) in 30ms
+12:31:21,514 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+12:31:21,517 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 8) AMQ151003: resource adaptor stopped
+12:31:21,520 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-6) ARJUNA032018: Destroying TransactionManagerService
+12:31:21,524 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-2) ARJUNA032014: Stopping transaction recovery manager
+12:31:21,676 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 8) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [3b6208c9-8bb6-11e9-af21-000c29ee3ea0] stopped, uptime 40.890 seconds
+12:31:21,680 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+12:31:21,682 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8630
+12:31:21,683 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.21.Final stopping
+12:31:21,767 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 281ms

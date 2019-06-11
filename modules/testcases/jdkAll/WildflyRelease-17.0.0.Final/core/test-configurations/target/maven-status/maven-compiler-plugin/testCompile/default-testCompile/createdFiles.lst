@@ -1,0 +1,8 @@
+org/jboss/additional/testsuite/jdkall/present/core/marshalling/MarshallingTestCase$SerializableWithNonSerializableChildWithNoPublicConstructor.class
+org/jboss/additional/testsuite/jdkall/present/core/marshalling/MarshallingTestCase$TestNotSerializableNoDefaultConstructorInterface.class
+org/jboss/additional/testsuite/jdkall/present/core/marshalling/Bar.class
+org/jboss/additional/testsuite/jdkall/present/core/jca/DatasourcesActiveCountTestCase.class
+org/jboss/additional/testsuite/jdkall/present/core/deployment/ZipSlipTestCase.class
+org/jboss/additional/testsuite/jdkall/present/core/marshalling/Foo.class
+org/jboss/additional/testsuite/jdkall/present/core/marshalling/MarshallingTestCase.class
+org/jboss/additional/testsuite/jdkall/present/core/marshalling/MarshallingTestCase$TestNotSerializableNoDefaultConstructor.class

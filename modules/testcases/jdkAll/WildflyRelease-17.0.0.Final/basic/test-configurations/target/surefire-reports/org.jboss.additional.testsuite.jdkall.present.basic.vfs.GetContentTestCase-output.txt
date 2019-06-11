@@ -1,0 +1,25 @@
+[0m14:05:25,946 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/0f/53a46c346578650b0629f206990807d1da0668/content
+[0m[0m14:05:25,954 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "getContentTestCase.war" (runtime-name: "getContentTestCase.war")
+[0m[33m14:05:26,193 WARN  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0013: Deployment getContentTestCase.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m14:05:26,221 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 29) WFLYUT0021: Registered web context: '/getContentTestCase' for server 'default-server'
+[0m[0m14:05:26,237 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "getContentTestCase.war" (runtime-name : "getContentTestCase.war")
+[0m[0m14:05:26,352 INFO  [org.jboss.arquillian.testenricher.cdi.container.BeanManagerProducer] (default task-2) BeanManager not found.
+[0m[0m14:05:26,422 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/getContentTestCase' from server 'default-server'
+[0m[0m14:05:26,495 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment getContentTestCase.war (runtime-name: getContentTestCase.war) in 85ms
+[0m[0m14:05:26,513 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/0f/53a46c346578650b0629f206990807d1da0668/content
+[0m[0m14:05:26,513 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "getContentTestCase.war" (runtime-name: "getContentTestCase.war")
+[0m[0m14:05:26,530 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+[0m[0m14:05:26,537 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m14:05:26,538 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m14:05:26,565 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m14:05:26,587 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m14:05:26,595 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m14:05:26,603 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m14:05:26,607 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m14:05:26,608 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+[0m[0m14:05:26,608 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m14:05:26,613 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m14:05:26,621 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m14:05:26,644 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m14:05:26,671 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 100ms
+[0m

@@ -1,0 +1,17 @@
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/BeanValidationTestResource$ResultBuilder.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/BeanValidationTestResource$MyBean.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/GreetingService.class
+org/jboss/additional/testsuite/jdkall/present/basic/ws/Handler.class
+org/jboss/additional/testsuite/jdkall/present/basic/ws/MessageContextTestCase.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/custom/MyOtherBean.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/BeanValidationTestResource$NestedBeanWithoutConstraints.class
+org/jboss/additional/testsuite/jdkall/present/basic/vfs/GetContentTestCase.class
+org/jboss/additional/testsuite/jdkall/present/basic/BasicTest.class
+org/jboss/additional/testsuite/jdkall/present/basic/testBeanValidation/JaxbBeanValidationTestCase.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/BeanValidationTestResource$1.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/BeanValidationTestResource.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/custom/MyCustomConstraint.class
+org/jboss/additional/testsuite/jdkall/present/basic/ws/ContainsKeyService.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/custom/MyCustomConstraint$Validator.class
+org/jboss/additional/testsuite/jdkall/present/basic/ws/ContainsKeyServiceImpl.class
+org/jboss/additional/testsuite/jdkall/present/basic/beanvalidation/BeanValidationApplication.class

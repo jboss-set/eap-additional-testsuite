@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.web.servlet.headers.CookieHeaderServletTestCase
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.645 s - in org.jboss.additional.testsuite.jdkall.present.web.servlet.headers.CookieHeaderServletTestCase

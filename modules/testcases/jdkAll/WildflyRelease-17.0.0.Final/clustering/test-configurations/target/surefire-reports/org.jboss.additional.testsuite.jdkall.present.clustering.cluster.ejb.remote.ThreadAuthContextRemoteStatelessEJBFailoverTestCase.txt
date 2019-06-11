@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.ThreadAuthContextRemoteStatelessEJBFailoverTestCase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.552 s - in org.jboss.additional.testsuite.jdkall.present.clustering.cluster.ejb.remote.ThreadAuthContextRemoteStatelessEJBFailoverTestCase

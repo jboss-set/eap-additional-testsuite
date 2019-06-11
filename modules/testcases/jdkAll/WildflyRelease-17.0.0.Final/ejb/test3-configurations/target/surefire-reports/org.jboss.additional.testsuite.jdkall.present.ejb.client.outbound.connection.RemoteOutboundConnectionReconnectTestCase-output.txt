@@ -1,0 +1,724 @@
+log4j:WARN No appenders could be found for logger (org.jboss.logging).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Jun 10, 2019 12:39:51 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:39:51 PM org.jboss.logmanager.JBossLoggerFinder getLogger
+ERROR: The LogManager accessed before the "java.util.logging.manager" system property was set to "org.jboss.logmanager.LogManager". Results may be unexpected.
+Jun 10, 2019 12:39:51 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/../../../../../servers/wildfly/build/target/jbossas1, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-0, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration, -c=standalone.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:39:52,820 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:39:53,424 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:39:53,435 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:39:53,630 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:39:55,257 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[0m12:39:56,216 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:39:56,291 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:39:56,369 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:39:56,390 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.7.2.Final
+[0m[0m12:39:56,400 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:39:56,509 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.12.Final
+[0m[0m12:39:56,545 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 44) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:39:56,580 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:39:56,634 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 59) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:39:56,652 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:39:56,612 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:39:56,598 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:39:56,634 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 37) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[33m12:39:56,631 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:39:56,678 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[0m12:39:56,681 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 43) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:39:56,684 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+[0m[0m12:39:56,684 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:39:56,689 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m12:39:56,793 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:39:56,938 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[33m12:39:56,987 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 61) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:39:57,160 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:39:57,160 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:39:57,210 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:39:57,296 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+[0m[0m12:39:57,305 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+[0m[0m12:39:57,546 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m12:39:57,765 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[0m12:39:57,779 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+[0m[33m12:39:57,872 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:39:57,888 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/deployments
+[0m[0m12:39:57,936 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:39:57,984 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[0m12:39:58,157 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:39:58,356 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:39:58,388 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m12:39:58,388 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m12:39:58,388 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 6440ms - Started 301 of 527 services (328 services are lazy, passive or on-demand)
+[0m[0m12:39:58,825 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/data/content/64/0edcc146e307af32306803ff9cfcc059265ae8/content
+[0m[0m12:39:58,861 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "server-two-module.jar" (runtime-name: "server-two-module.jar")
+[0m[0m12:39:59,208 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment server-two-module.jar
+[0m[0m12:39:59,280 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:39:59,461 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'EchoOnServerTwo' in deployment unit 'deployment "server-two-module.jar"' are as follows:
+
+	java:global/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-two-module/EchoOnServerTwo
+	java:app/server-two-module/EchoOnServerTwo
+	java:module/EchoOnServerTwo
+
+[0m[0m12:39:59,656 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 3.1.1 (Final)
+[0m[0m12:39:59,892 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:40:00,272 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:40:00,847 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "server-two-module.jar" (runtime-name : "server-two-module.jar")
+[0mJun 10, 2019 12:40:01 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:40:01 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/../../../../../servers/wildfly/build/target/jbossas2, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-1, -Djboss.socket.binding.port-offset=100, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/configuration, -c=standalone.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:40:01,759 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:40:02,332 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:40:02,343 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:40:02,550 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:40:04,223 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[0m12:40:05,060 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:05,126 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'username' in the resource at address '/subsystem=remoting/remote-outbound-connection=remote-ejb-connection' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:05,127 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=remoting/remote-outbound-connection=remote-ejb-connection' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:05,127 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'protocol' in the resource at address '/subsystem=remoting/remote-outbound-connection=remote-ejb-connection' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:05,139 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:05,224 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:40:05,253 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.2.Final
+[0m[0m12:40:05,263 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:40:05,356 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 44) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:40:05,385 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:40:05,405 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 59) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:40:05,407 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.12.Final
+[0m[0m12:40:05,398 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:40:05,407 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:40:05,453 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:40:05,564 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 43) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:40:05,579 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+[0m[33m12:40:05,582 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:40:05,636 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[0m12:40:05,691 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[33m12:40:05,760 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 61) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:40:05,789 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 37) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m12:40:05,836 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m12:40:05,840 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+[0m[0m12:40:05,905 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m12:40:06,016 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:40:06,019 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:40:06,019 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:40:06,095 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+[0m[0m12:40:06,097 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+[0m[0m12:40:06,327 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8180
+[0m[0m12:40:06,582 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:06,689 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:06,766 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m12:40:06,792 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:40:06,836 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/deployments
+[0m[0m12:40:06,923 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8543
+[0m[0m12:40:07,007 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:40:07,123 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:40:07,140 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+[0m[0m12:40:07,141 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+[0m[0m12:40:07,141 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 5848ms - Started 305 of 531 services (330 services are lazy, passive or on-demand)
+[0m[0m12:40:07,345 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/data/content/74/c5fd106f2946552d7275ad9994fa85f412ecd1/content
+[0m[0m12:40:07,370 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "server-one-module.jar" (runtime-name: "server-one-module.jar")
+[0m[0m12:40:07,784 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment server-one-module.jar
+[0m[0m12:40:07,874 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:40:08,075 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'EchoOnServerOne' in deployment unit 'deployment "server-one-module.jar"' are as follows:
+
+	java:global/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-one-module/EchoOnServerOne
+	java:app/server-one-module/EchoOnServerOne
+	java:module/EchoOnServerOne
+
+[0m[0m12:40:08,076 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'IndependentBean' in deployment unit 'deployment "server-one-module.jar"' are as follows:
+
+	java:global/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-one-module/IndependentBean
+	java:app/server-one-module/IndependentBean
+	java:module/IndependentBean
+
+[0m[0m12:40:08,363 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 3.1.1 (Final)
+[0m[0m12:40:08,564 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:40:09,032 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:40:09,716 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "server-one-module.jar" (runtime-name : "server-one-module.jar")
+[0m[0m12:40:10,569 INFO  [org.wildfly.naming] (default task-1) WildFly Naming version 1.0.10.Final
+[0m[0m12:40:10,583 INFO  [org.jboss.ejb.client] (default task-1) JBoss EJB Client version 4.0.18.Final
+[0mJun 10, 2019 12:40:11 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController stop
+INFO: Manual stopping of a server instance
+[0m12:40:11,218 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:40:11,221 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:11,224 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:40:11,274 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:40:11,287 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+[0m[0m12:40:11,353 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:11,363 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:40:11,378 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:40:11,453 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:40:11,454 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:40:11,455 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:40:11,458 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:40:11,452 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment server-two-module.jar (runtime-name: server-two-module.jar) in 213ms
+[0m[0m12:40:11,462 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:40:11,499 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 261ms
+[0m[31m12:40:11,886 ERROR [org.jboss.as.ejb3.invocation] (default task-2) WFLYEJB0034: EJB Invocation failed on component EchoOnServerOne for method public abstract java.lang.String org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho.echo(java.lang.String): javax.ejb.NoSuchEJBException: EJBCLIENT000079: Unable to discover destination for request for EJB StatelessEJBLocator for "/server-two-module/EchoOnServerTwo", view is interface org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho, affinity is None
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:607)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBClientInterceptor.handleInvocationResult(RemotingEJBClientInterceptor.java:56)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.TransactionPostDiscoveryInterceptor.handleInvocationResult(TransactionPostDiscoveryInterceptor.java:148)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.handleInvocationResult(DiscoveryEJBClientInterceptor.java:124)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.NamingEJBClientInterceptor.handleInvocationResult(NamingEJBClientInterceptor.java:85)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.TransactionInterceptor.handleInvocationResult(TransactionInterceptor.java:212)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.awaitResponse(EJBClientInvocationContext.java:963)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:191)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:125)
+	at deployment.server-one-module.jar//com.sun.proxy.$Proxy55.echo(Unknown Source)
+	at deployment.server-one-module.jar//org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.EchoOnServerOne.echo(EchoOnServerOne.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:79)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:89)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:102)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.jpa@17.0.0.Final//org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:237)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:362)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:144)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@3.1.1.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.deployment.processors.EjbSuspendInterceptor.processInvocation(EjbSuspendInterceptor.java:57)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:618)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAsFunctionEx(SecurityIdentity.java:406)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.invokeWithIdentity(AssociationImpl.java:591)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.invokeMethod(AssociationImpl.java:572)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.lambda$receiveInvocationRequest$0(AssociationImpl.java:205)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	Suppressed: java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+		at org.jboss.xnio.nio@3.7.2.Final//org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+		at org.jboss.xnio.nio@3.7.2.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+		at ...asynchronous invocation...(Unknown Source)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:587)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:553)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.ConnectionInfo$None.getConnection(ConnectionInfo.java:82)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.ConnectionInfo.getConnection(ConnectionInfo.java:55)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.doGetConnection(EndpointImpl.java:499)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.getConnectedIdentity(EndpointImpl.java:445)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.UncloseableEndpoint.getConnectedIdentity(UncloseableEndpoint.java:52)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider.getConnectedIdentityUsingClusterEffective(RemotingEJBDiscoveryProvider.java:344)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider$DiscoveryAttempt.lambda$connectAndDiscover$1(RemotingEJBDiscoveryProvider.java:430)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider$DiscoveryAttempt.connectAndDiscover(RemotingEJBDiscoveryProvider.java:430)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider.discover(RemotingEJBDiscoveryProvider.java:175)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemoteEJBDiscoveryConfigurator.lambda$configure$0(RemoteEJBDiscoveryConfigurator.java:42)
+		at org.wildfly.discovery@1.2.0.Final//org.wildfly.discovery.impl.AggregateDiscoveryProvider.discover(AggregateDiscoveryProvider.java:58)
+		at org.wildfly.discovery@1.2.0.Final//org.wildfly.discovery.Discovery.discover(Discovery.java:122)
+		at org.wildfly.discovery@1.2.0.Final//org.wildfly.discovery.Discovery.discover(Discovery.java:93)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.discover(DiscoveryEJBClientInterceptor.java:282)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.doAnyDiscovery(DiscoveryEJBClientInterceptor.java:437)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.executeDiscovery(DiscoveryEJBClientInterceptor.java:362)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.handleInvocation(DiscoveryEJBClientInterceptor.java:104)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:506)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.NamingEJBClientInterceptor.handleInvocation(NamingEJBClientInterceptor.java:67)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:506)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.TransactionInterceptor.handleInvocation(TransactionInterceptor.java:205)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:506)
+		at org.wildfly.common@1.5.1.Final//org.wildfly.common.context.Contextual.runExConsumer(Contextual.java:203)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequestInitial(EJBClientInvocationContext.java:333)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:187)
+		... 71 more
+
+[0mJun 10, 2019 12:40:11 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:40:12 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/../../../../../servers/wildfly/build/target/jbossas1, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-0, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration, -c=standalone.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:40:12,622 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:40:13,212 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:40:13,234 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:40:13,430 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:40:14,988 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[0m12:40:15,956 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:16,014 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:16,142 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:40:16,159 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.7.2.Final
+[0m[0m12:40:16,169 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:40:16,370 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:40:16,419 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.12.Final
+[0m[0m12:40:16,429 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 44) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[33m12:40:16,434 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:40:16,437 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:40:16,456 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:40:16,467 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:40:16,499 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:40:16,553 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:40:16,624 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[0m12:40:16,622 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:40:16,697 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:40:16,708 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+[0m[0m12:40:16,718 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m12:40:16,743 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 37) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[33m12:40:16,862 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 61) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:40:16,879 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:40:16,879 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:40:16,921 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m12:40:17,013 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:40:17,070 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+[0m[0m12:40:17,081 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+[0m[0m12:40:17,207 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m12:40:17,395 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:17,492 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:17,589 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m12:40:17,637 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:40:17,644 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/deployments
+[0m[0m12:40:17,653 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "server-two-module.jar" (runtime-name: "server-two-module.jar")
+[0m[0m12:40:17,815 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[0m12:40:18,091 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:40:18,425 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment server-two-module.jar
+[0m[0m12:40:18,568 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:40:18,761 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'EchoOnServerTwo' in deployment unit 'deployment "server-two-module.jar"' are as follows:
+
+	java:global/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-two-module/EchoOnServerTwo
+	java:app/server-two-module/EchoOnServerTwo
+	java:module/EchoOnServerTwo
+
+[0m[0m12:40:19,044 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 3.1.1 (Final)
+[0m[0m12:40:19,198 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:40:19,724 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:40:20,331 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "server-two-module.jar" (runtime-name : "server-two-module.jar")
+[0m[0m12:40:20,405 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:40:20,408 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m12:40:20,409 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m12:40:20,409 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 8267ms - Started 430 of 617 services (331 services are lazy, passive or on-demand)
+[0m[0m12:40:20,996 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment server-one-module.jar (runtime-name: server-one-module.jar) in 108ms
+[0m[0m12:40:21,032 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/data/content/74/c5fd106f2946552d7275ad9994fa85f412ecd1/content
+[0m[0m12:40:21,033 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "server-one-module.jar" (runtime-name: "server-one-module.jar")
+[0mJun 10, 2019 12:40:21 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController stop
+INFO: Manual stopping of a server instance
+[0m12:40:21,046 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+[0m[0m12:40:21,049 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:21,050 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:40:21,099 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:40:21,100 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:21,116 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:40:21,120 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+[0m[0m12:40:21,123 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:40:21,125 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8543
+[0m[0m12:40:21,137 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:40:21,140 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8180
+[0m[0m12:40:21,141 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:40:21,134 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 29) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:40:21,178 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 113ms
+[0m[0m12:40:21,661 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment server-two-module.jar (runtime-name: server-two-module.jar) in 81ms
+[0m[0m12:40:21,722 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/data/content/64/0edcc146e307af32306803ff9cfcc059265ae8/content
+[0m[0m12:40:21,723 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "server-two-module.jar" (runtime-name: "server-two-module.jar")
+[0mJun 10, 2019 12:40:21 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController stop
+INFO: Manual stopping of a server instance
+[0m12:40:21,740 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:40:21,743 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:21,743 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:40:21,750 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:21,802 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:40:21,806 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:40:21,827 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+[0m[0m12:40:21,831 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:40:21,845 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:40:21,852 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 12) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:40:21,863 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:40:21,864 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:40:21,866 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:40:21,932 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 171ms
+[0mJun 10, 2019 12:40:22 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:40:22 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/../../../../../servers/wildfly/build/target/jbossas2, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-1, -Djboss.socket.binding.port-offset=100, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/configuration, -c=standalone.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:40:23,018 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:40:23,668 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:40:23,681 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:40:23,878 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:40:25,350 INFO  [org.wildfly.security] (ServerService Thread Pool -- 23) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[0m12:40:26,145 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:26,201 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 7) WFLYCTL0028: Attribute 'username' in the resource at address '/subsystem=remoting/remote-outbound-connection=remote-ejb-connection' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:26,201 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 7) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=remoting/remote-outbound-connection=remote-ejb-connection' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:26,201 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 7) WFLYCTL0028: Attribute 'protocol' in the resource at address '/subsystem=remoting/remote-outbound-connection=remote-ejb-connection' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:26,252 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:26,341 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:40:26,365 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.2.Final
+[0m[0m12:40:26,378 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:40:26,480 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:40:26,508 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.12.Final
+[0m[0m12:40:26,483 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:40:26,530 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:40:26,529 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:40:26,584 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:40:26,530 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[33m12:40:26,524 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:40:26,582 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 44) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:40:26,588 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m12:40:26,613 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:40:26,661 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+[0m[0m12:40:26,671 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m12:40:26,730 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[0m12:40:26,840 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 37) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m12:40:26,872 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[33m12:40:26,920 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 61) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:40:27,134 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+[0m[0m12:40:27,180 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+[0m[0m12:40:27,124 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:40:27,181 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:40:27,182 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:40:27,324 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8180
+[0m[0m12:40:27,528 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:27,664 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:27,750 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m12:40:27,763 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:40:27,793 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/deployments
+[0m[0m12:40:27,869 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8543
+[0m[0m12:40:27,940 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:40:28,099 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:40:28,107 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+[0m[0m12:40:28,107 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+[0m[0m12:40:28,107 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 5670ms - Started 305 of 531 services (330 services are lazy, passive or on-demand)
+[0m[0m12:40:28,272 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/data/content/58/ac5f064540c48475b829dfcaa19716cc03a30d/content
+[0m[0m12:40:28,320 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "server-one-module.jar" (runtime-name: "server-one-module.jar")
+[0m[0m12:40:28,764 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment server-one-module.jar
+[0m[0m12:40:28,897 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:40:29,282 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'EchoOnServerOne' in deployment unit 'deployment "server-one-module.jar"' are as follows:
+
+	java:global/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-one-module/EchoOnServerOne!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-one-module/EchoOnServerOne
+	java:app/server-one-module/EchoOnServerOne
+	java:module/EchoOnServerOne
+
+[0m[0m12:40:29,283 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'IndependentBean' in deployment unit 'deployment "server-one-module.jar"' are as follows:
+
+	java:global/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-one-module/IndependentBean!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-one-module/IndependentBean
+	java:app/server-one-module/IndependentBean
+	java:module/IndependentBean
+
+[0m[0m12:40:29,609 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.1 (Final)
+[0m[0m12:40:29,654 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:40:30,080 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:40:30,768 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "server-one-module.jar" (runtime-name : "server-one-module.jar")
+[0m[0m12:40:31,183 INFO  [org.wildfly.naming] (default task-1) WildFly Naming version 1.0.10.Final
+[0m[0m12:40:31,205 INFO  [org.jboss.ejb.client] (default task-1) JBoss EJB Client version 4.0.18.Final
+[0m[31m12:40:31,321 ERROR [org.jboss.as.ejb3.invocation] (default task-1) WFLYEJB0034: EJB Invocation failed on component EchoOnServerOne for method public abstract java.lang.String org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho.echo(java.lang.String): javax.ejb.NoSuchEJBException: EJBCLIENT000079: Unable to discover destination for request for EJB StatelessEJBLocator for "/server-two-module/EchoOnServerTwo", view is interface org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho, affinity is None
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:607)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBClientInterceptor.handleInvocationResult(RemotingEJBClientInterceptor.java:56)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.TransactionPostDiscoveryInterceptor.handleInvocationResult(TransactionPostDiscoveryInterceptor.java:148)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.handleInvocationResult(DiscoveryEJBClientInterceptor.java:124)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.NamingEJBClientInterceptor.handleInvocationResult(NamingEJBClientInterceptor.java:85)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.TransactionInterceptor.handleInvocationResult(TransactionInterceptor.java:212)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:609)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:543)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.awaitResponse(EJBClientInvocationContext.java:963)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:191)
+	at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:125)
+	at deployment.server-one-module.jar//com.sun.proxy.$Proxy55.echo(Unknown Source)
+	at deployment.server-one-module.jar//org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.EchoOnServerOne.echo(EchoOnServerOne.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:79)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:89)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:102)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.jpa@17.0.0.Final//org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:237)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:362)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:144)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+	at org.jboss.weld.core@3.1.1.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.as.weld.common@17.0.0.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.deployment.processors.EjbSuspendInterceptor.processInvocation(EjbSuspendInterceptor.java:57)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:618)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+	at org.jboss.invocation@1.5.2.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+	at org.jboss.as.ee@17.0.0.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.wildfly.security.elytron-private@1.9.1.Final//org.wildfly.security.auth.server.SecurityIdentity.runAsFunctionEx(SecurityIdentity.java:406)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.invokeWithIdentity(AssociationImpl.java:591)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.invokeMethod(AssociationImpl.java:572)
+	at org.jboss.as.ejb3@17.0.0.Final//org.jboss.as.ejb3.remote.AssociationImpl.lambda$receiveInvocationRequest$0(AssociationImpl.java:205)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	Suppressed: java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+		at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+		at org.jboss.xnio.nio@3.7.2.Final//org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:327)
+		at org.jboss.xnio.nio@3.7.2.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
+		at ...asynchronous invocation...(Unknown Source)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:587)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:553)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.ConnectionInfo$None.getConnection(ConnectionInfo.java:82)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.ConnectionInfo.getConnection(ConnectionInfo.java:55)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.doGetConnection(EndpointImpl.java:499)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.EndpointImpl.getConnectedIdentity(EndpointImpl.java:445)
+		at org.jboss.remoting@5.0.12.Final//org.jboss.remoting3.UncloseableEndpoint.getConnectedIdentity(UncloseableEndpoint.java:52)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider.getConnectedIdentityUsingClusterEffective(RemotingEJBDiscoveryProvider.java:344)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider$DiscoveryAttempt.lambda$connectAndDiscover$1(RemotingEJBDiscoveryProvider.java:430)
+		at java.base/java.security.AccessController.doPrivileged(Native Method)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider$DiscoveryAttempt.connectAndDiscover(RemotingEJBDiscoveryProvider.java:430)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemotingEJBDiscoveryProvider.discover(RemotingEJBDiscoveryProvider.java:175)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.protocol.remote.RemoteEJBDiscoveryConfigurator.lambda$configure$0(RemoteEJBDiscoveryConfigurator.java:42)
+		at org.wildfly.discovery@1.2.0.Final//org.wildfly.discovery.impl.AggregateDiscoveryProvider.discover(AggregateDiscoveryProvider.java:58)
+		at org.wildfly.discovery@1.2.0.Final//org.wildfly.discovery.Discovery.discover(Discovery.java:122)
+		at org.wildfly.discovery@1.2.0.Final//org.wildfly.discovery.Discovery.discover(Discovery.java:93)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.discover(DiscoveryEJBClientInterceptor.java:282)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.doAnyDiscovery(DiscoveryEJBClientInterceptor.java:437)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.executeDiscovery(DiscoveryEJBClientInterceptor.java:362)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.DiscoveryEJBClientInterceptor.handleInvocation(DiscoveryEJBClientInterceptor.java:104)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:506)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.NamingEJBClientInterceptor.handleInvocation(NamingEJBClientInterceptor.java:67)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:506)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.TransactionInterceptor.handleInvocation(TransactionInterceptor.java:205)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequest(EJBClientInvocationContext.java:506)
+		at org.wildfly.common@1.5.1.Final//org.wildfly.common.context.Contextual.runExConsumer(Contextual.java:203)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBClientInvocationContext.sendRequestInitial(EJBClientInvocationContext.java:333)
+		at org.jboss.ejb-client@4.0.18.Final//org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:187)
+		... 71 more
+
+[0mJun 10, 2019 12:40:31 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController start
+INFO: Manual starting of a server instance
+Jun 10, 2019 12:40:31 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFO: Starting container with: [/usr/lib/jvm/java-11-openjdk-amd64/bin/java, -D[Standalone], -Djboss.inst=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test3-configurations/../../../../../servers/wildfly/build/target/jbossas1, -Dtest.bind.address=127.0.0.1, -Djboss.node.name=node-0, -Xms64m, -Xmx512m, -XX:MaxPermSize=256m, -Djava.net.preferIPv4Stack=true, -Djboss.modules.system.pkgs=org.jboss.byteman, -Djava.awt.headless=true, -ea, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1, --add-exports=java.base/sun.nio.ch=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED, --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED, -Dorg.jboss.boot.log.file=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/log/server.log, -Dlogging.configuration=file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration/logging.properties, -jar, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/jboss-modules.jar, -mp, /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/modules, org.jboss.as.standalone, -Djboss.home.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1, -Djboss.server.base.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone, -Djboss.server.log.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/log, -Djboss.server.config.dir=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration, -c=standalone.xml]
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+[0m12:40:32,091 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+[0m[0m12:40:32,687 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+[0m[0m12:40:32,698 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+[0m[0m12:40:32,884 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+[0m[0m12:40:34,734 INFO  [org.wildfly.security] (ServerService Thread Pool -- 25) ELY00001: WildFly Elytron version 1.9.1.Final
+[0m[0m12:40:35,858 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:35,937 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m12:40:36,041 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m12:40:36,076 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.2.Final
+[0m[0m12:40:36,085 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.2.Final
+[0m[0m12:40:36,219 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.12.Final
+[0m[0m12:40:36,234 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 37) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m12:40:36,280 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m12:40:36,347 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m12:40:36,296 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.7.0.Final
+[0m[0m12:40:36,313 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+[0m[0m12:40:36,394 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+[0m[0m12:40:36,342 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m12:40:36,338 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m12:40:36,389 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+[0m[0m12:40:36,406 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+[0m[0m12:40:36,419 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[33m12:40:36,397 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m12:40:36,444 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m12:40:36,445 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 44) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:40:36,458 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.21.Final starting
+[0m[33m12:40:36,631 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 61) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+[0m[0m12:40:36,965 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+[0m[0m12:40:36,968 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+[0m[0m12:40:36,956 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m12:40:37,007 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+[0m[0m12:40:37,006 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+[0m[0m12:40:37,153 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+[0m[0m12:40:37,388 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:37,501 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:37,512 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[33m12:40:37,570 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m12:40:37,589 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/deployments
+[0m[0m12:40:37,673 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+[0m[0m12:40:37,766 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+[0m[0m12:40:37,889 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m12:40:37,899 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m12:40:37,899 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[0m12:40:37,900 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 6326ms - Started 301 of 527 services (328 services are lazy, passive or on-demand)
+[0m[0m12:40:38,136 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/data/content/1d/7e21dc34a12b7ec1d915ea82f43d051243f067/content
+[0m[0m12:40:38,165 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "server-two-module.jar" (runtime-name: "server-two-module.jar")
+[0m[0m12:40:38,509 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment server-two-module.jar
+[0m[0m12:40:38,586 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 6.0.16.Final
+[0m[0m12:40:38,733 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'EchoOnServerTwo' in deployment unit 'deployment "server-two-module.jar"' are as follows:
+
+	java:global/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:app/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:jboss/exported/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	ejb:/server-two-module/EchoOnServerTwo!org.jboss.additional.testsuite.jdkall.present.ejb.client.outbound.connection.RemoteEcho
+	java:global/server-two-module/EchoOnServerTwo
+	java:app/server-two-module/EchoOnServerTwo
+	java:module/EchoOnServerTwo
+
+[0m[0m12:40:38,939 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.1 (Final)
+[0m[0m12:40:39,073 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+[0m[0m12:40:39,475 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:40:40,063 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "server-two-module.jar" (runtime-name : "server-two-module.jar")
+[0m[0m12:40:40,828 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment server-one-module.jar (runtime-name: server-one-module.jar) in 88ms
+[0m[0m12:40:40,860 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas2/standalone/data/content/58/ac5f064540c48475b829dfcaa19716cc03a30d/content
+[0m[0m12:40:40,861 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "server-one-module.jar" (runtime-name: "server-one-module.jar")
+[0mJun 10, 2019 12:40:40 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController stop
+INFO: Manual stopping of a server instance
+[0m12:40:40,877 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0272: Suspending server
+[0m[0m12:40:40,879 INFO  [org.jboss.as.ejb3] (management-handler-thread - 3) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:40,880 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:40:40,908 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:40:40,923 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+[0m[0m12:40:40,924 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:40,937 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:40:40,945 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:40:40,950 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8543
+[0m[0m12:40:40,958 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:40:40,964 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:40:40,968 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8180
+[0m[0m12:40:40,969 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:40:41,039 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 153ms
+[0m[0m12:40:41,607 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment server-two-module.jar (runtime-name: server-two-module.jar) in 70ms
+[0m[0m12:40:41,637 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas1/standalone/data/content/1d/7e21dc34a12b7ec1d915ea82f43d051243f067/content
+[0m[0m12:40:41,638 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "server-two-module.jar" (runtime-name: "server-two-module.jar")
+[0mJun 10, 2019 12:40:41 PM org.jboss.arquillian.container.test.impl.client.container.ClientContainerController stop
+INFO: Manual stopping of a server instance
+[0m12:40:41,649 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:40:41,660 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:40:41,661 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:40:41,668 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:40:41,743 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:40:41,746 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:40:41,748 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:40:41,760 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:40:41,753 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+[0m[0m12:40:41,785 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:40:41,785 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:40:41,786 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:40:41,787 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:40:41,827 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 96ms
+[0m

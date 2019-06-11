@@ -1,0 +1,44 @@
+[0m12:39:40,159 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/f5/a7aae8fdf81c9e9b7137453251f5cde32f5009/content
+[0m[0m12:39:40,172 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+[0m[0m12:39:40,380 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment test.war
+[0m[0m12:39:40,400 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'CounterBean' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/CounterBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateful.RemoteCounter
+	java:app/test/CounterBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateful.RemoteCounter
+	java:module/CounterBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateful.RemoteCounter
+	java:jboss/exported/test/CounterBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateful.RemoteCounter
+	ejb:/test/CounterBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateful.RemoteCounter?stateful
+	java:global/test/CounterBean
+	java:app/test/CounterBean
+	java:module/CounterBean
+
+[0m[0m12:39:40,402 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'CalculatorBean' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/CalculatorBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.RemoteCalculator
+	java:app/test/CalculatorBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.RemoteCalculator
+	java:module/CalculatorBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.RemoteCalculator
+	java:jboss/exported/test/CalculatorBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.RemoteCalculator
+	ejb:/test/CalculatorBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.RemoteCalculator
+	java:global/test/CalculatorBean
+	java:app/test/CalculatorBean
+	java:module/CalculatorBean
+
+[0m[0m12:39:40,402 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'HelloBean' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/HelloBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.HelloBeanRemote
+	java:app/test/HelloBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.HelloBeanRemote
+	java:module/HelloBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.HelloBeanRemote
+	java:jboss/exported/test/HelloBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.HelloBeanRemote
+	ejb:/test/HelloBean!org.jboss.additional.testsuite.jdkall.present.ejb.remote.stateless.HelloBeanRemote
+	java:global/test/HelloBean
+	java:app/test/HelloBean
+	java:module/HelloBean
+
+[0m[0m12:39:40,461 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) WFLYCLINF0002: Started client-mappings cache from ejb container
+[0m[0m12:39:41,017 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+[0m[0m12:39:41,032 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+[0m[0m12:39:41,722 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+[0m[0m12:39:41,826 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 103ms
+[0m[0m12:39:41,842 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/f5/a7aae8fdf81c9e9b7137453251f5cde32f5009/content
+[0m[0m12:39:41,843 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+[0m

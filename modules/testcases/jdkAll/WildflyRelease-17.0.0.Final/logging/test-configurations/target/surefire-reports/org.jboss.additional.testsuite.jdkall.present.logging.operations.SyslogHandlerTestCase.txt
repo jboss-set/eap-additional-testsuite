@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.additional.testsuite.jdkall.present.logging.operations.SyslogHandlerTestCase
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.98 s - in org.jboss.additional.testsuite.jdkall.present.logging.operations.SyslogHandlerTestCase

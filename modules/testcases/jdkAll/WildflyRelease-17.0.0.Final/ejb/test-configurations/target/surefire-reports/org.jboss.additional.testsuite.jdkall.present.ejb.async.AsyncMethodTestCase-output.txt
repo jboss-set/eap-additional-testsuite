@@ -1,0 +1,103 @@
+[0m12:39:42,370 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/d9/1425984248958ee20fba40c5cd5c195d60b180/content
+[0m[0m12:39:42,373 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+[0m[0m12:39:42,580 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment test.war
+[0m[0m12:39:42,600 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncSingleton' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncSingleton
+	java:app/test/AsyncSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncSingleton
+	java:module/AsyncSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncSingleton
+	ejb:/test/AsyncSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncSingleton
+	java:global/test/AsyncSingleton
+	java:app/test/AsyncSingleton
+	java:module/AsyncSingleton
+
+[0m[0m12:39:42,601 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncStateful' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncStateful!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncStateful
+	java:app/test/AsyncStateful!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncStateful
+	java:module/AsyncStateful!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncStateful
+	ejb:/test/AsyncStateful!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncStateful?stateful
+	java:global/test/AsyncStateful
+	java:app/test/AsyncStateful
+	java:module/AsyncStateful
+
+[0m[0m12:39:42,601 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncBeanRemote' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncBeanRemote!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanRemoteInterface
+	java:app/test/AsyncBeanRemote!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanRemoteInterface
+	java:module/AsyncBeanRemote!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanRemoteInterface
+	java:jboss/exported/test/AsyncBeanRemote!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanRemoteInterface
+	ejb:/test/AsyncBeanRemote!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanRemoteInterface
+	java:global/test/AsyncBeanRemote
+	java:app/test/AsyncBeanRemote
+	java:module/AsyncBeanRemote
+
+[0m[0m12:39:42,601 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncBeanSynchronizeSingleton' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncBeanSynchronizeSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanSynchronizeSingletonRemote
+	java:app/test/AsyncBeanSynchronizeSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanSynchronizeSingletonRemote
+	java:module/AsyncBeanSynchronizeSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanSynchronizeSingletonRemote
+	java:jboss/exported/test/AsyncBeanSynchronizeSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanSynchronizeSingletonRemote
+	ejb:/test/AsyncBeanSynchronizeSingleton!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanSynchronizeSingletonRemote
+	java:global/test/AsyncBeanSynchronizeSingleton
+	java:app/test/AsyncBeanSynchronizeSingleton
+	java:module/AsyncBeanSynchronizeSingleton
+
+[0m[0m12:39:42,602 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncChildBean' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncChildBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncChildBean
+	java:app/test/AsyncChildBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncChildBean
+	java:module/AsyncChildBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncChildBean
+	ejb:/test/AsyncChildBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncChildBean
+	java:global/test/AsyncChildBean
+	java:app/test/AsyncChildBean
+	java:module/AsyncChildBean
+
+[0m[0m12:39:42,602 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncBeanDescriptor' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncBeanDescriptor!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanDescriptor
+	java:app/test/AsyncBeanDescriptor!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanDescriptor
+	java:module/AsyncBeanDescriptor!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanDescriptor
+	ejb:/test/AsyncBeanDescriptor!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanDescriptor
+	java:global/test/AsyncBeanDescriptor
+	java:app/test/AsyncBeanDescriptor
+	java:module/AsyncBeanDescriptor
+
+[0m[0m12:39:42,602 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'AsyncBean' in deployment unit 'deployment "test.war"' are as follows:
+
+	java:global/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBean
+	java:app/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBean
+	java:module/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBean
+	ejb:/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBean
+	java:global/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanCancelRemoteInterface
+	java:app/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanCancelRemoteInterface
+	java:module/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanCancelRemoteInterface
+	java:jboss/exported/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanCancelRemoteInterface
+	ejb:/test/AsyncBean!org.jboss.additional.testsuite.jdkall.present.ejb.async.AsyncBeanCancelRemoteInterface
+
+[0mWARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jboss.invocation.proxy.AbstractProxyFactory$1 (jar:file:/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/modules/system/layers/base/org/jboss/invocation/main/jboss-invocation-1.5.2.Final.jar!/) to method java.lang.Object.clone()
+WARNING: Please consider reporting this to the maintainers of org.jboss.invocation.proxy.AbstractProxyFactory$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[0m12:39:43,075 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+[0m[0m12:39:43,089 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+[0m[0m12:39:43,132 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 27) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+[0m[0m12:39:43,177 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 50ms
+[0m[0m12:39:43,194 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/d9/1425984248958ee20fba40c5cd5c195d60b180/content
+[0m[0m12:39:43,195 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+[0m[0m12:39:43,208 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+[0m[0m12:39:43,210 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m12:39:43,219 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m12:39:43,263 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m12:39:43,262 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m12:39:43,281 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+[0m[0m12:39:43,282 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m12:39:43,285 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 29) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+[0m[0m12:39:43,329 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+[0m[0m12:39:43,329 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+[0m[0m12:39:43,330 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+[0m[0m12:39:43,331 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+[0m[0m12:39:43,331 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.0.21.Final stopping
+[0m[0m12:39:43,362 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 122ms
+[0m

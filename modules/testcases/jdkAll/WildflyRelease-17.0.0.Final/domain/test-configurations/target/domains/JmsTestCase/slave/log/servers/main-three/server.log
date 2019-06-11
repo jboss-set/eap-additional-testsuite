@@ -1,0 +1,230 @@
+2019-06-10 12:31:47,542 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-06-10 12:31:48,076 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.7.Final
+2019-06-10 12:31:48,086 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-06-10 12:31:48,364 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) starting
+2019-06-10 12:31:48,624 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.7.2.Final
+2019-06-10 12:31:48,635 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.7.2.Final
+2019-06-10 12:31:48,680 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.12.Final
+2019-06-10 12:31:49,260 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.9.1.Final
+2019-06-10 12:31:52,551 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 14) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-06-10 12:31:52,895 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 29) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-06-10 12:31:53,096 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 37) WFLYNAM0001: Activating Naming Subsystem
+2019-06-10 12:31:53,102 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 35) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.19
+2019-06-10 12:31:53,158 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 34) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-06-10 12:31:53,100 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 52) WFLYWS0002: Activating WebServices Extension
+2019-06-10 12:31:53,102 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 40) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-06-10 12:31:53,255 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.7.0.Final
+2019-06-10 12:31:53,514 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 39) WFLYSEC0002: Activating Security Subsystem
+2019-06-10 12:31:53,571 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0014: Creating file handler for path '/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/welcome-content' with options [directory-listing: 'true', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-06-10 12:31:53,600 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-06-10 12:31:53,636 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.0.21.Final starting
+2019-06-10 12:31:53,661 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.16.Final)
+2019-06-10 12:31:53,666 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-06-10 12:31:53,688 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-06-10 12:31:53,807 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 48) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-06-10 12:31:53,818 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 30) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2019-06-10 12:31:53,835 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-06-10 12:31:53,995 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2019-06-10 12:31:54,006 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2019-06-10 12:31:54,343 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8430
+2019-06-10 12:31:54,349 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 54) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final
+2019-06-10 12:31:54,429 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 54) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2019-06-10 12:31:54,490 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-3) ARJUNA032010: JBossTS Recovery Service (tag: 54b60) - JBoss Inc.
+2019-06-10 12:31:54,691 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-3) ARJUNA032013: Starting transaction recovery manager
+2019-06-10 12:31:54,735 INFO  [com.arjuna.ats.jbossatx] (MSC service thread 1-4) ARJUNA032017: JBossTS Transaction Service (JTA version - tag: 54b60) - JBoss Inc.
+2019-06-10 12:31:54,895 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2019-06-10 12:31:55,068 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-06-10 12:31:55,227 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+2019-06-10 12:31:55,230 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-06-10 12:31:55,499 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.2) 
+2019-06-10 12:31:55,582 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/activemq/journal,bindingsDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/activemq/bindings,largeMessagesDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/activemq/largemessages,pagingDirectory=/home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/activemq/paging)
+2019-06-10 12:31:55,682 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-06-10 12:31:55,684 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-06-10 12:31:55,685 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-06-10 12:31:55,686 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-06-10 12:31:55,786 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 54) AMQ601138: User anonymous is getting notification info on target resource: null []
+2019-06-10 12:31:55,788 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ224092: Despite disabled persistence, page files will be persisted.
+2019-06-10 12:31:55,833 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-06-10 12:31:55,833 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-06-10 12:31:55,833 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-06-10 12:31:55,833 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-06-10 12:31:56,134 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221007: Server is now live
+2019-06-10 12:31:56,149 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 54) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.8.1 [default, nodeID=67ee25db-8bb6-11e9-ae7e-000c29ee3ea0] 
+2019-06-10 12:31:56,457 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0007: Registered connection factory java:/JmsXA
+2019-06-10 12:31:56,491 WARN  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-6) IJ020017: Invalid archive: file://RaActivatoractivemq-ra
+2019-06-10 12:31:56,794 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 59) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2019-06-10 12:31:56,802 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 55) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-06-10 12:31:57,075 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-6) AMQ151007: Resource adaptor started
+2019-06-10 12:31:57,075 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-6) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2019-06-10 12:31:57,082 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2019-06-10 12:31:57,095 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2019-06-10 12:31:57,419 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-06-10 12:31:57,436 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) started in 10585ms - Started 267 of 561 services (395 services are lazy, passive or on-demand)
+2019-06-10 12:32:04,120 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 8) AMQ601002: User anonymous is getting queue names on target resource: Address [name=jms.topic.testJmsTopic, id=0, routingTypes={MULTICAST}, autoCreated=false] [with parameters: []]
+2019-06-10 12:32:04,120 INFO  [org.apache.activemq.audit.base] (ServerService Thread Pool -- 8) AMQ601002: User anonymous is getting queue names on target resource: Address [name=jms.topic.testJmsTopic, id=0, routingTypes={MULTICAST}, autoCreated=false] [with parameters: []]
+2019-06-10 12:32:04,835 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:06,754 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.14.Final
+2019-06-10 12:32:07,559 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 12) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-06-10 12:32:07,781 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:07,874 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "SimpleServlet.war" (runtime-name : "SimpleServlet.war")
+2019-06-10 12:32:08,564 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:08,733 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment SimpleServlet.war (runtime-name: SimpleServlet.war) in 177ms
+2019-06-10 12:32:08,738 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:09,187 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:09,433 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "SimpleServlet.war" with deployment "SimpleServlet.war"
+2019-06-10 12:32:09,441 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/d0/7dace2f97df614d9eb78a9af7487cef05380a3/content
+2019-06-10 12:32:09,796 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:09,898 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment SimpleServlet.war (runtime-name: SimpleServlet.war) in 102ms
+2019-06-10 12:32:09,977 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/d6/d2cf9e698aebf9a7277fc6b5d7aa397ad4aae7/content
+2019-06-10 12:32:09,977 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:10,311 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:10,768 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:10,813 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "SimpleServlet.war" (runtime-name : "SimpleServlet.war")
+2019-06-10 12:32:10,975 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:11,002 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment SimpleServlet.war (runtime-name: SimpleServlet.war) in 32ms
+2019-06-10 12:32:11,006 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:11,258 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 14) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:11,345 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0016: Replaced deployment "SimpleServlet.war" with deployment "SimpleServlet.war"
+2019-06-10 12:32:11,346 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/43/8666b14d8c0fd0db6b804910cd99dd6a10c382/content
+2019-06-10 12:32:11,627 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:11,656 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment SimpleServlet.war (runtime-name: SimpleServlet.war) in 40ms
+2019-06-10 12:32:11,742 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/a8/a4d91154a9733a4849d4ab344e79434efa30f5/content
+2019-06-10 12:32:11,743 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:12,002 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:12,536 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:12,641 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "SimpleServlet.war" (runtime-name : "SimpleServlet.war")
+2019-06-10 12:32:12,817 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:12,851 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment SimpleServlet.war (runtime-name: SimpleServlet.war) in 35ms
+2019-06-10 12:32:12,884 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/a8/a4d91154a9733a4849d4ab344e79434efa30f5/content
+2019-06-10 12:32:12,884 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "SimpleServlet.war" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:39,581 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:39,895 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/RolloutPlanTestCase' for server 'default-server'
+2019-06-10 12:32:42,090 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "RolloutPlanTestCase.war" (runtime-name : "RolloutPlanTestCase.war")
+2019-06-10 12:32:42,472 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/RolloutPlanTestCase' from server 'default-server'
+2019-06-10 12:32:42,534 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment RolloutPlanTestCase.war (runtime-name: RolloutPlanTestCase.war) in 65ms
+2019-06-10 12:32:42,926 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/c4/349784196b8d4e0102ed4fb2d0c16dca70bbe1/content
+2019-06-10 12:32:42,927 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:44,329 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:44,512 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/RolloutPlanTestCase' for server 'default-server'
+2019-06-10 12:32:44,576 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "RolloutPlanTestCase.war" (runtime-name : "RolloutPlanTestCase.war")
+2019-06-10 12:32:44,958 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0022: Unregistered web context: '/RolloutPlanTestCase' from server 'default-server'
+2019-06-10 12:32:44,980 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment RolloutPlanTestCase.war (runtime-name: RolloutPlanTestCase.war) in 23ms
+2019-06-10 12:32:45,050 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/c4/349784196b8d4e0102ed4fb2d0c16dca70bbe1/content
+2019-06-10 12:32:45,050 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:45,324 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:45,718 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/RolloutPlanTestCase' for server 'default-server'
+2019-06-10 12:32:46,016 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "RolloutPlanTestCase.war" (runtime-name : "RolloutPlanTestCase.war")
+2019-06-10 12:32:46,577 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener maxFailOnePlan listening on 127.0.0.1:8431
+2019-06-10 12:32:46,736 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener maxFailOnePlan suspending
+2019-06-10 12:32:46,746 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener maxFailOnePlan stopped, was bound to 127.0.0.1:8431
+2019-06-10 12:32:46,975 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service org.wildfly.undertow.listener.maxFailOnePlan: org.jboss.msc.service.StartException in service org.wildfly.undertow.listener.maxFailOnePlan: Address already in use localhost/127.0.0.1:8431
+	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:209)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1737)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1699)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1557)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2019-06-10 12:32:46,979 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 8) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "maxFailOnePlan")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"org.wildfly.undertow.listener.maxFailOnePlan" => "Address already in use localhost/127.0.0.1:8431"}}
+2019-06-10 12:32:47,416 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/RolloutPlanTestCase' from server 'default-server'
+2019-06-10 12:32:47,444 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment RolloutPlanTestCase.war (runtime-name: RolloutPlanTestCase.war) in 29ms
+2019-06-10 12:32:47,532 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/c4/349784196b8d4e0102ed4fb2d0c16dca70bbe1/content
+2019-06-10 12:32:47,532 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:47,924 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:48,397 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/RolloutPlanTestCase' for server 'default-server'
+2019-06-10 12:32:48,640 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "RolloutPlanTestCase.war" (runtime-name : "RolloutPlanTestCase.war")
+2019-06-10 12:32:49,054 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener maxFailPercPlan listening on 127.0.0.1:8431
+2019-06-10 12:32:49,265 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener maxFailPercPlan suspending
+2019-06-10 12:32:49,266 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener maxFailPercPlan stopped, was bound to 127.0.0.1:8431
+2019-06-10 12:32:49,489 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service org.wildfly.undertow.listener.maxFailPercPlan: org.jboss.msc.service.StartException in service org.wildfly.undertow.listener.maxFailPercPlan: Address already in use localhost/127.0.0.1:8431
+	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:209)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1737)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1699)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1557)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2019-06-10 12:32:49,496 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 8) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "maxFailPercPlan")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"org.wildfly.undertow.listener.maxFailPercPlan" => "Address already in use localhost/127.0.0.1:8431"}}
+2019-06-10 12:32:49,893 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0022: Unregistered web context: '/RolloutPlanTestCase' from server 'default-server'
+2019-06-10 12:32:49,921 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment RolloutPlanTestCase.war (runtime-name: RolloutPlanTestCase.war) in 30ms
+2019-06-10 12:32:49,993 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/c4/349784196b8d4e0102ed4fb2d0c16dca70bbe1/content
+2019-06-10 12:32:49,993 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:50,258 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:50,762 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/RolloutPlanTestCase' for server 'default-server'
+2019-06-10 12:32:51,032 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "RolloutPlanTestCase.war" (runtime-name : "RolloutPlanTestCase.war")
+2019-06-10 12:32:51,554 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service org.wildfly.undertow.listener.groupsRollbackPlan: org.jboss.msc.service.StartException in service org.wildfly.undertow.listener.groupsRollbackPlan: Address already in use localhost/127.0.0.1:8431
+	at org.wildfly.extension.undertow@17.0.0.Final//org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:209)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1737)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1699)
+	at org.jboss.msc@1.4.7.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1557)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2019-06-10 12:32:51,555 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 8) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "groupsRollbackPlan")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"org.wildfly.undertow.listener.groupsRollbackPlan" => "Address already in use localhost/127.0.0.1:8431"}}
+2019-06-10 12:32:51,914 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0022: Unregistered web context: '/RolloutPlanTestCase' from server 'default-server'
+2019-06-10 12:32:51,935 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment RolloutPlanTestCase.war (runtime-name: RolloutPlanTestCase.war) in 22ms
+2019-06-10 12:32:52,004 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 8) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/c4/349784196b8d4e0102ed4fb2d0c16dca70bbe1/content
+2019-06-10 12:32:52,004 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0009: Undeployed "RolloutPlanTestCase.war" (runtime-name: "RolloutPlanTestCase.war")
+2019-06-10 12:32:54,654 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "simple1" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:55,036 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:55,426 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "simple1" (runtime-name : "SimpleServlet.war")
+2019-06-10 12:32:55,822 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:55,845 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment simple1 (runtime-name: SimpleServlet.war) in 23ms
+2019-06-10 12:32:55,890 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 63) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/8b/ae71e0b1a521053f48b0bed7b0e4f90d91efa2/content
+2019-06-10 12:32:55,891 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 63) WFLYSRV0009: Undeployed "simple1" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:56,101 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "simple1" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:56,350 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:56,435 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 63) WFLYSRV0010: Deployed "simple1" (runtime-name : "SimpleServlet.war")
+2019-06-10 12:32:57,108 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:57,126 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment simple1 (runtime-name: SimpleServlet.war) in 18ms
+2019-06-10 12:32:57,201 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 63) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/8b/ae71e0b1a521053f48b0bed7b0e4f90d91efa2/content
+2019-06-10 12:32:57,201 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 63) WFLYSRV0009: Undeployed "simple1" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:57,562 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "simple1" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:57,739 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/SimpleServlet' for server 'default-server'
+2019-06-10 12:32:57,884 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 63) WFLYSRV0010: Deployed "simple1" (runtime-name : "SimpleServlet.war")
+2019-06-10 12:32:58,488 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0022: Unregistered web context: '/SimpleServlet' from server 'default-server'
+2019-06-10 12:32:58,500 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment simple1 (runtime-name: SimpleServlet.war) in 13ms
+2019-06-10 12:32:58,529 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 63) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/domain/test-configurations/target/domains/JmsTestCase/slave/data/servers/main-three/content/53/ae2b1d5db433a20d7d24975a732612b72100ee/content
+2019-06-10 12:32:58,529 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 63) WFLYSRV0009: Undeployed "simple1" (runtime-name: "SimpleServlet.war")
+2019-06-10 12:32:58,901 WARN  [org.jboss.as.connector.subsystems.datasources.AbstractDataSourceService$AS7DataSourceDeployer] (MSC service thread 1-7) IJ020016: Missing <recovery> element. XA recovery disabled for: java:jboss/datasources/TestXADS
+2019-06-10 12:32:58,905 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/TestXADS]
+2019-06-10 12:32:59,370 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/TestDS_h2]
+2019-06-10 12:33:00,849 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2019-06-10 12:33:00,875 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-06-10 12:33:00,875 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/TestDS_h2]
+2019-06-10 12:33:00,876 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2019-06-10 12:33:00,876 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-06-10 12:33:00,876 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/TestXADS]
+2019-06-10 12:33:00,877 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 63) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-06-10 12:33:00,879 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2019-06-10 12:33:00,899 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2019-06-10 12:33:00,899 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 63) MODCLUSTER000002: Initiating mod_cluster shutdown
+2019-06-10 12:33:00,889 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-06-10 12:33:00,930 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-06-10 12:33:01,013 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 62) AMQ151003: resource adaptor stopped
+2019-06-10 12:33:01,152 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 62) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.8.1 [67ee25db-8bb6-11e9-ae7e-000c29ee3ea0] stopped, uptime 1 minute
+2019-06-10 12:33:01,158 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2019-06-10 12:33:01,162 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8430
+2019-06-10 12:33:01,163 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.21.Final stopping
+2019-06-10 12:33:01,238 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 17.0.0.Final (WildFly Core 9.0.1.Final) stopped in 382ms

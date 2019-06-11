@@ -1,0 +1,19 @@
+[0m12:34:52,078 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/5c9fa30088e4f6eb6a3d443735a152862870b1/content
+[0m[0m12:34:52,081 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "test.war" (runtime-name: "test.war")
+[0m[33m12:34:52,635 WARN  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0013: Deployment test.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m12:34:52,761 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/test' for server 'default-server'
+[0m[0m12:34:52,795 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "test.war" (runtime-name : "test.war")
+[0m[0m12:34:53,038 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener test-http-listener listening on 127.0.0.1:8181
+[0m[0m12:34:53,231 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener test-http-listener suspending
+[0m[0m12:34:53,235 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener test-http-listener stopped, was bound to 127.0.0.1:8181
+[0m[0m12:34:54,387 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener test-ajp-listener listening on 127.0.0.1:8181
+[0m[0m12:34:54,453 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener test-ajp-listener suspending
+[0m[0m12:34:54,454 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener test-ajp-listener stopped, was bound to 127.0.0.1:8181
+[0m[0m12:34:54,840 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener test-http-listener listening on 127.0.0.1:8181
+[0m[0m12:34:54,887 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener test-http-listener suspending
+[0m[0m12:34:54,888 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener test-http-listener stopped, was bound to 127.0.0.1:8181
+[0m[0m12:34:59,939 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/test' from server 'default-server'
+[0m[0m12:34:59,994 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment test.war (runtime-name: test.war) in 56ms
+[0m[0m12:35:00,006 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/45/5c9fa30088e4f6eb6a3d443735a152862870b1/content
+[0m[0m12:35:00,007 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "test.war" (runtime-name: "test.war")
+[0m
