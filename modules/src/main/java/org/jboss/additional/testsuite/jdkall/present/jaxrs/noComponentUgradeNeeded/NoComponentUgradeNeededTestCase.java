@@ -40,7 +40,7 @@ import org.junit.runner.RunWith;
  * @author Stuart Douglas
  */
 @RunWith(Arquillian.class)
-//@eapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#11.0.0"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/jaxrs/src/main/java"})
 public class NoComponentUgradeNeededTestCase {
 
     @Deployment

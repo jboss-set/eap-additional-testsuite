@@ -1,9 +1,0 @@
-[0m12:27:52,301 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/eb/e32b0e4f461bad26dc0b091005c3313d923cce/content
-[0m[0m12:27:52,308 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "jaxrsnoap.war" (runtime-name: "jaxrsnoap.war")
-[0m[0m12:27:52,477 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0021: Registered web context: '/jaxrsnoap' for server 'default-server'
-[0m[0m12:27:52,495 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "jaxrsnoap.war" (runtime-name : "jaxrsnoap.war")
-[0m[0m12:27:52,693 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 29) WFLYUT0022: Unregistered web context: '/jaxrsnoap' from server 'default-server'
-[0m[0m12:27:52,737 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment jaxrsnoap.war (runtime-name: jaxrsnoap.war) in 45ms
-[0m[0m12:27:52,768 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/loukas/Desktop/server/wildfly/EAT/eap-additional-testsuite/modules/servers/wildfly/build/target/jbossas/standalone/data/content/eb/e32b0e4f461bad26dc0b091005c3313d923cce/content
-[0m[0m12:27:52,769 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "jaxrsnoap.war" (runtime-name: "jaxrsnoap.war")
-[0m

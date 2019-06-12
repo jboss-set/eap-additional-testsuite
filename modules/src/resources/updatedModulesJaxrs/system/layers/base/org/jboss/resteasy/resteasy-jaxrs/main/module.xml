@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
   ~ JBoss, Home of Professional Open Source.
   ~ Copyright 2010, Red Hat, Inc., and individual contributors
@@ -21,12 +20,12 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-
-<module xmlns="urn:jboss:module:1.5" name="org.jboss.resteasy.resteasy-jaxrs">
+<module name="org.jboss.resteasy.resteasy-jaxrs" xmlns="urn:jboss:module:1.7">
 
     <resources>
-        <resource-root path="resteasy-jaxrs-3.0.23.Final.jar"/>
-        <resource-root path="resteasy-client-3.0.23.Final.jar"/>
+        <resource-root path="resteasy-jaxrs-3.7.0.Final.jar"/>
+        <resource-root path="resteasy-client-3.7.0.Final.jar"/>
+        <resource-root path="resteasy-client-microprofile-3.7.0.Final.jar"/>
     </resources>
 
     <dependencies>
@@ -38,13 +37,16 @@
         <module name="javax.xml.bind.api"/>
         <module name="javax.ws.rs.api"/>
         <module name="org.apache.commons.io"/>
-        <module name="org.apache.commons.codec" />
+        <module name="org.apache.commons.codec"/>
         <module name="org.apache.httpcomponents"/>
         <module name="org.apache.log4j"/>
         <module name="org.hibernate.validator" optional="true" services="import"/>
-        <module name="org.slf4j" />
+        <module name="org.slf4j"/>
         <module name="javax.servlet.api"/>
-        <module name="org.jboss.resteasy.resteasy-validator-provider-11" optional="true" services="export" export="true"/>
+        <module name="org.jboss.resteasy.resteasy-validator-provider" optional="true" services="export" export="true"/>
         <module name="org.jboss.logging"/>
+        <module name="org.reactivestreams"/>
+        <module name="org.eclipse.microprofile.restclient"/>
+        <module name="org.eclipse.microprofile.config.api"/>
     </dependencies>
 </module>
