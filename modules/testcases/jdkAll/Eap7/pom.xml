@@ -385,6 +385,19 @@
         </profile>
 
         <profile>
+            <id>remotingActivate</id>
+            <activation>
+                <property>
+                    <name>module</name>
+                    <value>remoting</value>
+                </property>
+            </activation>
+            <modules>
+                <module>remoting</module>
+            </modules>
+        </profile>
+
+        <profile>
             <id>securityActivate</id>
             <activation>
                 <property>
@@ -469,6 +482,7 @@
 		<module>logging</module>
 		<module>management</module>
 		<module>messaging</module>
+                <module>remoting</module>
 		<module>security</module>
 		<module>server</module>
 		<module>web</module>
