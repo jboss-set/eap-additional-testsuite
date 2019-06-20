@@ -8,6 +8,8 @@ readonly SMODE=${2}
 readonly NAME_PREFIX=${NAME_PREFIX:-'jboss-eap'}
 readonly SETTINGS_XML=${SETTINGS_XML:-"$(pwd)/settings.xml"}
 
+readonly MAVEN_CACHE_SERVER=${MAVEN_CACHE_SERVER:-$(hostname)}
+
 set -u
 
 usage() {
@@ -77,6 +79,10 @@ fi
 
 if [ -e "${SETTINGS_XML}" ]; then
   readonly SETTINGS_XML_OPTION="-s ${SETTINGS_XML}"
+   # see https://projects.engineering.redhat.com/browse/SET-126
+  sed -i  "${SETTINGS_XML}" \
+      -e "s;MAVEN_CACHE_SERVER;${MAVEN_CACHE_SERVER};"
+
 else
   readonly SETTINGS_XML_OPTION=''
 fi

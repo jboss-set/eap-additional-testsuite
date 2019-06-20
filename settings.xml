@@ -23,28 +23,28 @@ under the License.
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <mirrors>
     <mirror>
-      <id>thunder.maven.central.cache</id>
+      <id>MAVEN_CACHE_SERVER.maven.central.cache</id>
       <mirrorOf>central</mirrorOf>
       <name>Thunder Maven Central Cache</name>
-      <url>https://thunder/maven</url>
+      <url>https://MAVEN_CACHE_SERVER/maven</url>
     </mirror>
     <mirror>
-      <id>thunder.jboss-eap-7.1-product-repository</id>
+      <id>MAVEN_CACHE_SERVER.jboss-eap-7.1-product-repository</id>
       <mirrorOf>jboss-eap-7.1-product-repository</mirrorOf>
       <name>Thunder Product EAP Cache</name>
-      <url>https://thunder/eap-7.1/</url>
+      <url>https://MAVEN_CACHE_SERVER/eap-7.1/</url>
     </mirror>
     <mirror>
-      <id>thunder.jboss-eap-7.0-product-repository</id>
+      <id>MAVEN_CACHE_SERVER.jboss-eap-7.0-product-repository</id>
       <mirrorOf>jboss-product-repository</mirrorOf>
       <name>Thunder Product EAP 7.0 Cache</name>
-      <url>https://thunder/eap-7.0</url>
+      <url>https://MAVEN_CACHE_SERVER/eap-7.0</url>
     </mirror>
     <mirror>
-      <id>thunder.jboss.org.cache</id>
+      <id>MAVEN_CACHE_SERVER.jboss.org.cache</id>
       <mirrorOf>jboss-public-repository-group</mirrorOf>
       <name>Thunder JBoss Public Repositories Cache</name>
-      <url>https://thunder/jboss</url>
+      <url>https://MAVEN_CACHE_SERVER/jboss</url>
     </mirror>
   </mirrors>
 </settings>
