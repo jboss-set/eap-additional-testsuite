@@ -44,6 +44,15 @@ Testing EAP or Wildfly with specific JDK version
 4. Build and run the additional testsuite activating the EAP or WILDFLY specific jdk version profile (-Deap-jdk8, -Dwildfly-jdk8).
 
 
+Using HTTPS
+-----------
+After changing from HTTP to HTTPS, the maven repositories for Eap may not host a valid public SSL certificate, which will lead to maven failed to build the project. There are 3 options to fix that if it happens:
+
+1. Specify the -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true in the maven build command line to bypass the SSL certificates check (This is suitable for local workstation case)
+2. Specify -Dmaven.repository.protocol=http to switch back to HTTP
+3. Import the server certificate into your local trusted store.
+
+
 ADVANTAGES 
 ----------
 1. Writing the tests once and testing against infinite number of Application Servers.
