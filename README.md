@@ -27,6 +27,7 @@ Testing EAP
 1. Make sure that JBOSS_FOLDER environment variable is set with the path to your JBOSS EAP directory.
 2. Make sure that JBOSS_VERSION environment variable is set with the version of JBOSS EAP Server.
 3. Build and run the additional testsuite activating the EAP profile (-Deap).
+4. If you want to use http add -Dmaven.repository.protocol=http (Section : Using HTTPS below)
 
 
 Testing Wildfly
@@ -34,6 +35,7 @@ Testing Wildfly
 1. Make sure that JBOSS_FOLDER environment variable is set with the path to your WILDFLY directory.
 2. Make sure that JBOSS_VERSION environment variable is set with the version of WILDFLY Server.
 3. Build and run the additional testsuite activating the WILDFLY profile (-Dwildfly).
+4. If you want to use http add -Dmaven.repository.protocol=http (Section : Using HTTPS below)
 
 
 Testing EAP or Wildfly with specific JDK version
@@ -42,6 +44,7 @@ Testing EAP or Wildfly with specific JDK version
 2. Make sure that JBOSS_VERSION environment variable is set with the version of JBOSS EAP OR WILDFLY Server.
 3. Make sure that JAVA_HOME is pointing to the jdk of desired version.
 4. Build and run the additional testsuite activating the EAP or WILDFLY specific jdk version profile (-Deap-jdk8, -Dwildfly-jdk8).
+5. If you want to use http add -Dmaven.repository.protocol=http (Section : Using HTTPS below)
 
 
 Using HTTPS
