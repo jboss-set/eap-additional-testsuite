@@ -109,4 +109,4 @@ fi
 # Run EAT
 #
 echo "Runing EAT on JBoss server: ${JBOSS_FOLDER}"
-mvn clean install -D${JBOSS_VERSION_CODE} -Dstandalone -Dmaven.repo.local=${LOCAL_REPO_DIR} ${SETTINGS_XML_OPTION}
+mvn clean install -D${JBOSS_VERSION_CODE} -Dstandalone -Dmaven.repo.local=${LOCAL_REPO_DIR} ${SETTINGS_XML_OPTION} -Dmaven.repository.protocol=http
