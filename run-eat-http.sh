@@ -129,4 +129,4 @@ export MAVEN_OPTS="${MAVEN_OPTS} -Xmx1024m -Xms512m -XX:MaxPermSize=256m"
 # Run EAT
 #
 echo "Runing EAT on JBoss server: ${JBOSS_FOLDER}"
-mvn clean install -D${JBOSS_VERSION_CODE} ${SMODE_CONFIG} ${SETTINGS_XML_OPTION} ${MAVEN_LOCAL_REPOSITORY_OPTION} -Dmaven.repository.protocol=http
+mvn clean install -D${JBOSS_VERSION_CODE} ${SMODE_CONFIG} ${SETTINGS_XML_OPTION} ${MAVEN_LOCAL_REPOSITORY_OPTION} -Dmaven.repository.protocol=http -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
