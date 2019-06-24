@@ -916,7 +916,7 @@
 		<repository>
             <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -947,7 +947,7 @@
 		<pluginRepository>
             <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -991,7 +991,7 @@
 		<repository>
 		    <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1022,7 +1022,7 @@
 		<pluginRepository>
 		    <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1127,7 +1127,7 @@
                 <repository>
 		    <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1158,7 +1158,7 @@
                 <pluginRepository>
 		    <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1188,7 +1188,7 @@
 		<repository>
 		    <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1219,7 +1219,7 @@
 		<pluginRepository>
 		    <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1263,7 +1263,7 @@
 		<repository>
             <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
@@ -1294,7 +1294,7 @@
 		<pluginRepository>
             <id>jboss-eap-7.2-product-repository</id>
 		    <name>JBoss Product Repository</name>
-		    <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven/</url>
+		    <url>https://download.devel.redhat.com/brewroot/repos/jb-eap-7.2-maven-build/latest/maven</url>
 		    <layout>default</layout>
 		    <releases>
 		        <enabled>true</enabled>
