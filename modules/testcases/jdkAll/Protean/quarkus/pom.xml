@@ -176,6 +176,48 @@
             </modules>
         </profile>
 
+        <profile>
+            <id>releases12</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.16.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases13</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.16.1</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases14</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.17.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
     </profiles>
 
 </project>
