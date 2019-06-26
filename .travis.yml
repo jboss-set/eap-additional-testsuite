@@ -21,4 +21,4 @@ script:
   - export JBOSS_FOLDER=$PWD
   - export JBOSS_VERSION=17.0.0.Final
   - cd ../..
-  - mvn clean install -Dwildfly-release-17.0.0.Final -Dwildfly-release-17.0.0.Final-jdk8 -Dstandalone -Dmaven.repository.protocol=http
+  - mvn clean install -Dwildfly-release-17.0.0.Final -Dwildfly-release-17.0.0.Final-jdk8 -Dstandalone -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.repository.protocol=http
