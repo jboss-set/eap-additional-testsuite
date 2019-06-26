@@ -38,15 +38,15 @@ ENV GLIBC_VERSION=2.27-r0
 
 RUN dnf -y install gcc && dnf -y install zlib-devel && dnf -y install glibc-devel.i686 glibc.i686
 
-ENV GRAAL_VERSION 1.0.0-rc15
+ENV GRAAL_VERSION 19.0.2
 ENV GRAAL_HOME /usr/lib/jvm/vm-$GRAAL_VERSION
 ENV PATH $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION/bin:$PATH
 
-RUN mkdir -p $GRAAL_HOME &&  wget --no-check-certificate -O $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar.gz https://github.com/oracle/graal/releases/download/vm-$GRAAL_VERSION/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar.gz
+RUN mkdir -p $GRAAL_HOME &&  wget --no-check-certificate https://www.dropbox.com/s/n0q7ek0xbma6nel/graal.tar?dl=0 -O $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar 
 
 
-RUN tar xzf $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar.gz -C $GRAAL_HOME \
-     && rm "$GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar.gz"
+RUN tar xvf $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar -C $GRAAL_HOME \
+     && rm "$GRAAL_HOME/graalvm-ce-$GRAAL_VERSION-linux-amd64.tar"
 
 ENV GRAALVM_HOME $GRAAL_HOME/graalvm-ce-$GRAAL_VERSION
 

@@ -33,7 +33,7 @@ ENV MAVEN_HOME /usr/share/maven
 
 ENV PATH=$PATH:/usr/share/maven/bin/
 
-RUN mkdir eap6 && cd eap6 && git clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/jbossas/jboss-eap.git --branch 6.4.x && cd jboss-eap && ls -la && mvn clean install && export JBOSS_VERSION=$(ls -d build/target/jboss-as-* | sed -e 's/^.*jboss-as-//' | head -1) && export JBOSS_FOLDER="$(pwd)/${JBOSS_CODE}/build/target/jboss-as-${JBOSS_VERSION}" && mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git master && cd master && mvn clean install -Deap64x -Dstandalone
+RUN mkdir eap6 && cd eap6 && git clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/jbossas/jboss-eap.git --branch 6.4.x && cd jboss-eap && ls -la && mvn clean install -Dmaven.repository.protocol=http && export JBOSS_VERSION=$(ls -d build/target/jboss-as-* | sed -e 's/^.*jboss-as-//' | head -1) && export JBOSS_FOLDER="$(pwd)/${JBOSS_CODE}/build/target/jboss-as-${JBOSS_VERSION}" && mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git master && cd master && mvn clean install -Deap64x -Dstandalone -Dmaven.repository.protocol=http
 
 
 
