@@ -56,12 +56,10 @@ public class JMXRemotingMemoryLeakTestCase {
 
         // Do an initial GC to get a baseline free memory.
         System.gc();
-        long initialBytesFree = Runtime.getRuntime().freeMemory();
-        long halfInitialBytesFree = (long) (initialBytesFree  / 2);
-        log.info(new Date() + " | begin with bytes free: " + initialBytesFree);
 
         JMXConnector client = JMXConnectorFactory.newJMXConnector(url, null);
-        while (i <= 80000) {
+        long initialBytesFree = Runtime.getRuntime().freeMemory();
+        while (i <= 3000) {
             assertEquals(0, nonNull);
             JMXConnector connector = null;
             try {
@@ -87,8 +85,16 @@ public class JMXRemotingMemoryLeakTestCase {
                 long bytesFree = Runtime.getRuntime().freeMemory();
                 log.info(new Date() + " | tried " + i + " | returned non-null " + nonNull
                         + " | exception thrown closing " + exceptionThrownClosing + " bytes Free= " + bytesFree);
-                if (bytesFree < halfInitialBytesFree) {
-                    fail("Half of the memory is gone, even after full garbage collecting.");
+                if (((long)initialBytesFree)-((long)bytesFree) > 2000000) {
+                    Thread.sleep(100);
+                    System.gc();
+                    bytesFree = Runtime.getRuntime().freeMemory();
+                    if (((long)initialBytesFree)-((long)bytesFree) > 2000000)
+                        fail(((long)initialBytesFree)-((long)bytesFree) + " bytes of the memory is gone, even after full garbage collecting.");
+                    else
+                        initialBytesFree = Runtime.getRuntime().freeMemory();
+                }else{
+                    initialBytesFree = Runtime.getRuntime().freeMemory();
                 }
             }
         }
