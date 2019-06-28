@@ -32,6 +32,7 @@ import static org.junit.Assert.fail;
 public class JMXRemotingMemoryLeakTestCase {
 
     private final Logger log = Logger.getLogger(JMXRemotingMemoryLeakTestCase.class);
+    private final long bytesLim = 2500000;
 
     @ContainerResource
     private ManagementClient managementClient;
@@ -85,11 +86,11 @@ public class JMXRemotingMemoryLeakTestCase {
                 long bytesFree = Runtime.getRuntime().freeMemory();
                 log.info(new Date() + " | tried " + i + " | returned non-null " + nonNull
                         + " | exception thrown closing " + exceptionThrownClosing + " bytes Free= " + bytesFree);
-                if (((long)initialBytesFree)-((long)bytesFree) > 2000000) {
+                if (((long)initialBytesFree)-((long)bytesFree) > bytesLim) {
                     Thread.sleep(1000);
                     System.gc();
                     bytesFree = Runtime.getRuntime().freeMemory();
-                    if (((long)initialBytesFree)-((long)bytesFree) > 2000000)
+                    if (((long)initialBytesFree)-((long)bytesFree) > bytesLim)
                         fail(((long)initialBytesFree)-((long)bytesFree) + " bytes of the memory is gone, even after full garbage collecting.");
                     else
                         initialBytesFree = Runtime.getRuntime().freeMemory();
