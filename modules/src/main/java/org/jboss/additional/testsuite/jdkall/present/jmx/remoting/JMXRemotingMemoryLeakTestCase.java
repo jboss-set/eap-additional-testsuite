@@ -86,7 +86,7 @@ public class JMXRemotingMemoryLeakTestCase {
                 log.info(new Date() + " | tried " + i + " | returned non-null " + nonNull
                         + " | exception thrown closing " + exceptionThrownClosing + " bytes Free= " + bytesFree);
                 if (((long)initialBytesFree)-((long)bytesFree) > 2000000) {
-                    Thread.sleep(100);
+                    Thread.sleep(1000);
                     System.gc();
                     bytesFree = Runtime.getRuntime().freeMemory();
                     if (((long)initialBytesFree)-((long)bytesFree) > 2000000)
