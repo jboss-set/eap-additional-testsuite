@@ -25,7 +25,7 @@ ENV MAVEN_HOME /usr/share/maven
 
 ENV PATH=$PATH:/usr/share/maven/bin/
 
-RUN mkdir eap7 && cd eap7 && git clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/jbossas/jboss-eap7.git --branch 7.2.x && cd jboss-eap7 && ls -la && mvn clean install -Dmaven.repository.protocol=http && JBOSS_VERSION="$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')" && export JBOSS_VERSION=$JBOSS_VERSION && JBOSS_FOLDER="$(pwd)/dist/target/jboss-eap-7.2" && export JBOSS_FOLDER=$JBOSS_FOLDER && mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git master && cd master && mvn clean install -Deap72x -Dstandalone -Dmaven.repository.protocol=http
+RUN mkdir eap7 && cd eap7 && git clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/jbossas/jboss-eap7.git --branch 7.2.x && cd jboss-eap7 && ls -la && sed -i 's/${maven.repository.product.url}/http:\/\/download.devel.redhat.com\/brewroot\/repos\/jb-eap-7.2-maven-build\/latest\/maven/g' ./pom.xml && sed -i 's/${maven.repository.protocol}/http/g' ./pom.xml && mvn clean install -Dmaven.repository.protocol=http && JBOSS_VERSION="$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')" && export JBOSS_VERSION=$JBOSS_VERSION && JBOSS_FOLDER="$(pwd)/dist/target/jboss-eap-7.2" && export JBOSS_FOLDER=$JBOSS_FOLDER && mkdir EAT && cd EAT && git clone https://github.com/jboss-set/eap-additional-testsuite.git master && cd master && mvn clean install -Deap72x -Dstandalone -Dmaven.repository.protocol=http
 
 
 
