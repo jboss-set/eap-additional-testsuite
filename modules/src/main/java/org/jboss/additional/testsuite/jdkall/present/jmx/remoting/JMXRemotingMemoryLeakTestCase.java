@@ -33,6 +33,7 @@ public class JMXRemotingMemoryLeakTestCase {
 
     private final Logger log = Logger.getLogger(JMXRemotingMemoryLeakTestCase.class);
     private final long bytesLim = 2500000;
+    private final int GCNUM = 5;
 
     @ContainerResource
     private ManagementClient managementClient;
@@ -58,13 +59,13 @@ public class JMXRemotingMemoryLeakTestCase {
         // Do an initial GC to get a baseline free memory.
         System.gc();
 
-        JMXConnector client = JMXConnectorFactory.newJMXConnector(url, null);
+     //   JMXConnector connector = JMXConnectorFactory.newJMXConnector(url, null);
         long initialBytesFree = Runtime.getRuntime().freeMemory();
         while (i <= 3000) {
-            assertEquals(0, nonNull);
             JMXConnector connector = null;
+            assertEquals(0, nonNull);
             try {
-                client.connect();
+                connector = JMXConnectorFactory.connect(url);
             } catch (Exception e) {
                 if (i == 0) {
                     e.printStackTrace();
@@ -84,11 +85,20 @@ public class JMXRemotingMemoryLeakTestCase {
                 System.gc();
 
                 long bytesFree = Runtime.getRuntime().freeMemory();
-                log.info(new Date() + " | tried " + i + " | returned non-null " + nonNull
+                System.out.println("initialBytesFree : " + initialBytesFree + " bytesFree : " + bytesFree + " diff : " + (((long)initialBytesFree)-((long)bytesFree)));
+                System.out.println(new Date() + " | tried " + i + " | returned non-null " + nonNull
                         + " | exception thrown closing " + exceptionThrownClosing + " bytes Free= " + bytesFree);
                 if (((long)initialBytesFree)-((long)bytesFree) > bytesLim) {
-                    Thread.sleep(100);
+                    Thread.sleep(1000);
                     bytesFree = Runtime.getRuntime().freeMemory();
+                    System.out.println("initialBytesFree : " + initialBytesFree + " bytesFree : " + bytesFree + " diff : " + (((long)initialBytesFree)-((long)bytesFree)));
+                    int num=0;
+                    while (((long)initialBytesFree)-((long)bytesFree) > bytesLim && num<GCNUM) {
+                        System.gc();
+                        Thread.sleep(1000);
+                        bytesFree = Runtime.getRuntime().freeMemory();
+                        num++;
+                    }
                     if (((long)initialBytesFree)-((long)bytesFree) > bytesLim)
                         fail(((long)initialBytesFree)-((long)bytesFree) + " bytes of the memory is gone, even after full garbage collecting.");
                     else
