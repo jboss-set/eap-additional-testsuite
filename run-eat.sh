@@ -129,6 +129,5 @@ export MAVEN_OPTS="${MAVEN_OPTS} -Xmx1024m -Xms512m -XX:MaxPermSize=256m"
 #
 # Run EAT
 #
-echo "Runing EAT on JBoss server: ${JBOSS_FOLDER}  ${EAT_EXTRA_OPTS}"
+echo "Runing EAT on JBoss server: ${JBOSS_FOLDER} - using extra opts: ${EAT_EXTRA_OPTS}"
 mvn clean install -D${JBOSS_VERSION_CODE} ${SMODE_CONFIG} ${SETTINGS_XML_OPTION} ${MAVEN_LOCAL_REPOSITORY_OPTION} ${EAT_EXTRA_OPTS}
-
