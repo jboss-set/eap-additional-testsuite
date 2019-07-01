@@ -34,9 +34,29 @@ public class JMXRemotingMemoryLeakTestCase {
     private final Logger log = Logger.getLogger(JMXRemotingMemoryLeakTestCase.class);
     private final long bytesLim = 2500000;
     private final int GCNUM = 5;
+    // This test fails intermittently, so artificially repeating
+    // the test increases the odd of running into the issue
+    private final int NB_REPEAT_TEST = 1;
+    private static final String REPEAT_TEST_PROPERTY_NAME = "eat.remoting.jmx.remote.memoryleak.test.repeat";
 
     @ContainerResource
     private ManagementClient managementClient;
+
+    public JMXRemotingMemoryLeakTestCase() {
+        NB_REPEAT_TEST = retrievePropertyValueIfSet(System.getProperty(REPEAT_TEST_PROPERTY_NAME));
+    }
+
+    private int retrievePropertyValueIfSet(String property) {
+        return ! "".equals(property) ? convertPropertyValueToInt(property) : NB_REPEAT_TEST;
+	}
+
+	private int convertPropertyValueToInt(String property) {
+        try {
+            return Integer.valueOf(property);
+        } catch ( NumberFormatException e) {
+            throw new IllegalArgumentException("Property " + REPEAT_TEST_PROPERTY_NAME + " required a valid integer:"+ property);
+        }
+    }
 
     @Deployment
     public static Archive<?> getDeployment() {
@@ -47,6 +67,11 @@ public class JMXRemotingMemoryLeakTestCase {
 
     @Test
     public void testJMXRemotingMemoryLeak() throws Exception {
+        for ( int i = 0; i < NB_REPEAT_TEST ; i++ )
+            runTestCase();
+    }
+
+    public void runTestCase() throws Exception {
         final String address = managementClient.getMgmtAddress() + ":1234";
         String jmxUrl = "service:jmx:remote+http://" + address;
         log.info("Using jboss jmx remoting url: " + jmxUrl);
