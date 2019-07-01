@@ -6,7 +6,7 @@ readonly JBOSS_VERSION_CODE=${1}
 readonly SMODE=${2}
 
 readonly NAME_PREFIX=${NAME_PREFIX:-'jboss-eap'}
-readonly SETTINGS_XML=${SETTINGS_XML:-"$(pwd)/settings.xml"}
+readonly SETTINGS_XML=${SETTINGS_XML-"$(pwd)/settings.xml"}
 
 readonly MAVEN_CACHE_SERVER=${MAVEN_CACHE_SERVER:-$(hostname)}
 
@@ -26,7 +26,7 @@ usage() {
   echo '- JBOSS_VERSION, set the version used for labelling jar dependencies associate to the AS version.'
   echo '- NAME_PREFIX, default to 'jboss-eap' if not specified.'
   echo '- MAVEN_LOCAL_REPOSITORY, path to a local mave repository to use for dependencies.'
-  echo '- SETTINGS_XML, path to custom settings.xml, default to ./settings.xml'
+  echo '- SETTINGS_XML, path to custom settings.xml, default to ./settings.xml; Ignored if set to an empty value'
 }
 
 assertJBossASVersion() {
