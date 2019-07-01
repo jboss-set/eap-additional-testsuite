@@ -36,7 +36,7 @@ public class JMXRemotingMemoryLeakTestCase {
     private final int GCNUM = 5;
     // This test fails intermittently, so artificially repeating
     // the test increases the odd of running into the issue
-    private final int NB_REPEAT_TEST = 1;
+    private int NB_REPEAT_TEST = 1;
     private static final String REPEAT_TEST_PROPERTY_NAME = "eat.remoting.jmx.remote.memoryleak.test.repeat";
 
     @ContainerResource
