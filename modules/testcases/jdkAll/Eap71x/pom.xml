@@ -131,6 +131,11 @@
 		    <artifactId>axis2-transport-jms</artifactId>
 		    <version>1.7.9</version>
 		</dependency>
+                <dependency>
+        	    <groupId>org.jboss.resteasy</groupId>
+      		    <artifactId>resteasy-jackson-provider</artifactId>
+        	    <version>3.8.0.Final</version>
+    		</dependency>
             </dependencies>
         </profile>
 
@@ -250,6 +255,11 @@
 		    <artifactId>axis2-transport-jms</artifactId>
 		    <version>1.7.9</version>
 		</dependency>
+		<dependency>
+        	    <groupId>org.jboss.resteasy</groupId>
+      		    <artifactId>resteasy-jackson-provider</artifactId>
+        	    <version>3.8.0.Final</version>
+    		</dependency>
             </dependencies>
         </profile>
 
