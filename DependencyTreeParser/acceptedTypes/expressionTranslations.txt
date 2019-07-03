@@ -6,3 +6,4 @@ createRemoveOperation;LocalMethods
 keyset;Set
 iterator;Iterator
 getProperties;Properties
+getRuntime;Runtime

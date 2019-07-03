@@ -17,3 +17,4 @@ Properties;put
 JsonMappingException;startsWith
 Iterator;next
 InitialDeploymentPlanBuilder;undeploy
+Runtime;freeMemory
