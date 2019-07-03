@@ -6,7 +6,7 @@ readonly JBOSS_VERSION_CODE=${1}
 readonly SMODE=${2}
 
 readonly NAME_PREFIX=${NAME_PREFIX:-'jboss-eap'}
-readonly SETTINGS_XML=${SETTINGS_XML:-"$(pwd)/settings.xml"}
+readonly SETTINGS_XML=${SETTINGS_XML-"$(pwd)/settings.xml"}
 
 readonly MAVEN_CACHE_SERVER=${MAVEN_CACHE_SERVER:-$(hostname)}
 
