@@ -19,9 +19,19 @@
     <name>eap7 additional testsuite: remoting</name>
 
             
-    <modules>
-        <module>test-configurations</module>
-    </modules>
+    <profile>
+            <id>jdk8</id>
+            <activation>
+                <property>
+                    <name>jdk8</name>
+                    <value>true</value>
+                </property>
+            </activation>
+
+            <modules>
+		<module>test-configurations</module>
+	    </modules>
+    </profile> 
 
     <build>
         <plugins>  
