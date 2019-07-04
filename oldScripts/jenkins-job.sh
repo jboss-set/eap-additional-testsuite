@@ -19,6 +19,7 @@ if [ -z "${JBOSS_VERSION_CODE}" ]; then
 fi
 
 export MAVEN_OPTS="-Xmx1024m -Xms512m -XX:MaxPermSize=256m"
+
 # remove previous build
 rm -r -f eap*
 
