@@ -32,8 +32,8 @@ import static org.junit.Assert.fail;
 public class JMXRemotingMemoryLeakTestCase {
 
     private final Logger log = Logger.getLogger(JMXRemotingMemoryLeakTestCase.class);
-    private final long bytesLim = 5000000;
-    private final int GCNUM = 5;
+    private final long bytesLim = Integer.parseInt(System.getProperty("BYTESLYM","7000000"));
+    private final int GCNUM = Integer.parseInt(System.getProperty("GCNUM","10"));
 
     @ContainerResource
     private ManagementClient managementClient;
