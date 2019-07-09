@@ -39,7 +39,8 @@
 		        <goals>
 		            <goal>test</goal>
 		        </goals>
-		        <configuration>         
+		        <configuration>    
+                            <argLine>-XX:GCTimeRatio=0</argLine>     
                             <systemPropertyVariables>
 		                <jboss.dist>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.dist>
 		                <jboss.home>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.home>
