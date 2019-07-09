@@ -214,7 +214,7 @@ public class SecurityDeserializationTestCase {
 
     }
 
-    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#17.0.0.Final","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.3","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.3","modules/testcases/jdkAll/Eap7/security/src/main/java#7.3.0.CD17"})
+    @ATTest({"modules/testcases/jdkAll/Wildfly/security/src/main/java#17.0.0.Final","modules/testcases/jdkAll/Eap72x-Proposed/security/src/main/java#7.2.4","modules/testcases/jdkAll/Eap72x/security/src/main/java#7.2.4","modules/testcases/jdkAll/Eap7/security/src/main/java#7.3.0.CD17"})
     public void testSecuirtyDatabind9() throws Exception {
 
         final String JSON = aposToQuotes(
