@@ -39,8 +39,9 @@
 		        <goals>
 		            <goal>test</goal>
 		        </goals>
-		        <configuration>  
-                            <argLine>-XX:GCTimeRatio=0</argLine>       
+
+		        <configuration>
+                            <argLine>-XX:GCTimeRatio=0 -XX:MaxGCPauseMillis=1 -XX:+ExplicitGCInvokesConcurrent</argLine>         
 		            <!-- Tests to execute. -->
 		            <includes>
 		                <include>org/jboss/additional/testsuite/jdkall/present/jmx/remoting/**/*TestCase.java</include>

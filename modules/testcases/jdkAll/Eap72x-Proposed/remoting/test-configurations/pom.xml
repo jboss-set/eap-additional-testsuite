@@ -40,7 +40,7 @@
 		            <goal>test</goal>
 		        </goals>
 		        <configuration>    
-                            <argLine>-XX:GCTimeRatio=0</argLine>     
+                            <argLine>-XX:GCTimeRatio=0 -XX:MaxGCPauseMillis=1 -XX:+ExplicitGCInvokesConcurrent</argLine>        
                             <systemPropertyVariables>
 		                <jboss.dist>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.dist>
 		                <jboss.home>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.home>
