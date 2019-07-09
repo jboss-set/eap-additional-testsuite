@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     *  ΙΔΕΑ : THE JBOSS TESTSUITE TO DEVELOP TESTS AGAINST INFINITE NUMBER OF JBOSS SERVERS
+    -->
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>eap72x-proposed-additional-testsuite-remoting</artifactId>
+        <version>1.0.3.Final</version>
+    </parent>
+
+    <artifactId>eap72x-proposed-additional-testsuite-remoting-configuration2</artifactId>
+    <name>eap7 additional testsuite: remoting : configuration2</name>
+            
+    <properties>
+        <jboss.modules.dir>${basedir}/../../../../..</jboss.modules.dir>
+    </properties>
+        
+    <build>
+
+        <!--
+	    Surefire test executions
+	 -->
+	 <plugins>  
+		            
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+
+		<executions>
+	            <execution>
+		        <id>default-test</id>
+		        <phase>test</phase>
+		        <goals>
+		            <goal>test</goal>
+		        </goals>
+		        <configuration>    
+                            <systemPropertyVariables>
+		                <jboss.dist>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.dist>
+		                <jboss.home>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.home>
+		                <module.path>${jboss.modules.dir}/servers/eap7/build/target/jbossas/modules</module.path>
+		                <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
+		            </systemPropertyVariables>
+		            <!-- Tests to execute. -->
+		            <includes>
+                                <include>org/jboss/additional/testsuite/jdkall/present/jmx/remoting/**/*TestCase.java</include>
+		                <include>org/jboss/additional/testsuite/jdkall/present/remoting/**/*TestCase.java</include>
+		            </includes> 
+		        </configuration>
+		    </execution>
+		</executions>
+
+                <configuration>
+                    <!-- Prevent test and server output appearing in console. -->
+                    <redirectTestOutputToFile>${testLogToFile}</redirectTestOutputToFile>
+                    <failIfNoTests>false</failIfNoTests>
+
+                    <!-- Arquillian's config files. -->
+                    <additionalClasspathElements combine.children="append">
+                        <additionalClasspathElement>${jboss.modules.dir}/src/config/arqEap7</additionalClasspathElement>
+                    </additionalClasspathElements>
+
+                </configuration>
+	    </plugin>
+
+            <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-antrun-plugin</artifactId>
+	        <executions>
+	            <execution>
+	                <id>copy-deployments</id>
+	                <phase>process-test-resources</phase>
+	                <goals>
+	                    <goal>run</goal>
+	                </goals>
+	                <configuration>
+	                    <target>
+                                <ant antfile="${jboss.modules.dir}/src/test/scripts/clean-deployments.xml">
+	                            <property name="serverDir" value="/${jboss.modules.dir}/servers" />
+	                            <target name="clean-deployments"/>
+	                        </ant>
+	                    </target>
+	                </configuration>
+	            </execution>
+	        </executions>
+	    </plugin>
+
+        </plugins>
+    </build>
+
+</project>

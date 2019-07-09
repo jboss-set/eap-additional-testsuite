@@ -29,6 +29,20 @@
             </activation>
 
             <modules>
+		<module>test-configurations2</module>
+	    </modules>
+        </profile> 
+
+        <profile>
+            <id>jdkover8</id>
+            <activation>
+                <property>
+                    <name>jdkover8</name>
+                    <value>true</value>
+                </property>
+            </activation>
+
+            <modules>
 		<module>test-configurations</module>
 	    </modules>
         </profile> 
