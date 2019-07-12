@@ -60,7 +60,7 @@ public class JMXRemotingMemoryLeakTestCase {
         System.gc();
 
      //   JMXConnector connector = JMXConnectorFactory.newJMXConnector(url, null);
-        long initialBytesFree = Runtime.getRuntime().freeMemory();
+        long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         while (i <= 3000) {
             JMXConnector connector = null;
             assertEquals(0, nonNull);
@@ -83,28 +83,29 @@ public class JMXRemotingMemoryLeakTestCase {
             if (i % 1000 == 0) {
                 // Do a full GC before measuring again
                 System.gc();
+                Thread.sleep(1000);
 
-                long bytesFree = Runtime.getRuntime().freeMemory();
-                System.out.println("initialBytesFree : " + initialBytesFree + " bytesFree : " + bytesFree + " diff : " + (((long)initialBytesFree)-((long)bytesFree)));
+                long usedMemory2 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+                System.out.println("usedMemory : " + usedMemory + " usedMemory2 : " + usedMemory2 + " diff : " + (((long)usedMemory2)-((long)usedMemory)));
                 System.out.println(new Date() + " | tried " + i + " | returned non-null " + nonNull
-                        + " | exception thrown closing " + exceptionThrownClosing + " bytes Free= " + bytesFree);
-                if (((long)initialBytesFree)-((long)bytesFree) > bytesLim) {
+                        + " | exception thrown closing " + exceptionThrownClosing);
+                if (((long)usedMemory2)-((long)usedMemory) > bytesLim) {
                     Thread.sleep(1000);
-                    bytesFree = Runtime.getRuntime().freeMemory();
-                    System.out.println("initialBytesFree : " + initialBytesFree + " bytesFree : " + bytesFree + " diff : " + (((long)initialBytesFree)-((long)bytesFree)));
+                    usedMemory2 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+                    System.out.println("usedMemory : " + usedMemory + " usedMemory2 : " + usedMemory2 + " diff : " + (((long)usedMemory2)-((long)usedMemory)));
                     int num=0;
-                    while (((long)initialBytesFree)-((long)bytesFree) > bytesLim && num<GCNUM) {
+                    while (((long)usedMemory2)-((long)usedMemory) > bytesLim && num<GCNUM) {
                         System.gc();
                         Thread.sleep(1000);
-                        bytesFree = Runtime.getRuntime().freeMemory();
+                        usedMemory2 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
                         num++;
                     }
-                    if (((long)initialBytesFree)-((long)bytesFree) > bytesLim)
-                        fail(((long)initialBytesFree)-((long)bytesFree) + " bytes of the memory is gone, even after full garbage collecting.");
+                    if (((long)usedMemory2)-((long)usedMemory) > bytesLim)
+                        fail(((long)usedMemory2)-((long)usedMemory) + " bytes of the memory is not gone, even after full garbage collecting.");
                     else
-                        initialBytesFree = Runtime.getRuntime().freeMemory();
+                        usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
                 }else{
-                    initialBytesFree = Runtime.getRuntime().freeMemory();
+                    usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
                 }
             }
         }
