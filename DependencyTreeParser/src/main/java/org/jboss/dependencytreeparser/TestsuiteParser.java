@@ -17,6 +17,7 @@ import org.eclipse.jdt.core.dom.Block;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.ConstructorInvocation;
+import org.eclipse.jdt.core.dom.EnumConstantDeclaration;
 import org.eclipse.jdt.core.dom.Expression;
 import org.eclipse.jdt.core.dom.FieldDeclaration;
 import org.eclipse.jdt.core.dom.ImportDeclaration;
@@ -122,6 +123,7 @@ public class TestsuiteParser {
         imports.clear();
         ASTParser parser = ASTParser.newParser(AST.JLS3);
         parser.setSource(readFileToString(str).toCharArray());
+    
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
         final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
@@ -181,6 +183,23 @@ public class TestsuiteParser {
                         type = null;
                     }
                 } while (type != null);
+
+                return false;
+            }
+            
+            public boolean visit(EnumConstantDeclaration node) {
+                String type = node.getName().toString();
+                System.out.println("ccccc : " + type);
+                List<String> constants = node.arguments();
+                System.out.println("ccccc : " + type + "." + constants.toString());
+
+                for(String f : constants) {
+                    System.out.println("ccccc : " + type + "." + f);
+                    declarations.put(type + "." + f, type);
+                    if (!node.modifiers().toString().contains("private")) {
+                        fields.put(type + "." + f, type);
+                    }
+                }
 
                 return false;
             }
@@ -603,6 +622,7 @@ public class TestsuiteParser {
 
                     MethodInfo mInfo = new MethodInfo();
                     mInfo.expression = node.getExpression() != null ? node.getExpression().toString() : "";
+                    mInfo.initialexpression = mInfo.expression;
                     mInfo.methodName = node.getName().toString();
 
                     boolean methodUnResolved = false;
@@ -639,14 +659,20 @@ public class TestsuiteParser {
                     }
 
                     List params = node.arguments();
+                //    System.out.println("params : " + params);
                     for (Object s : params) {
                         boolean resolved = true;
                         String arg = ((Expression) s).toString();
-                        if (arg.contains("[") && !arg.contains("\"")) {
+                        mInfo.initialparams.add(arg);
+                        if (arg.contains("[") && arg.indexOf("]")==arg.length()-1 && !arg.contains("\"")) {
                             arg = arg.substring(0, arg.indexOf("["));
                         }
+                        if(arg.startsWith("this."))
+                                arg = arg.replaceFirst("this.", "");
                         if (arg.startsWith("\"") && arg.endsWith("\"")) {
                             arg = "String";
+                        } else if(arg.startsWith("(")) {
+                            arg = arg.substring(1, arg.indexOf(")"));
                         } else if (arg.startsWith("\'") && arg.endsWith("\'")) {
                             arg = "Character";
                         } else if (arg.contains("+") && arg.contains("\"")) {
@@ -657,7 +683,7 @@ public class TestsuiteParser {
                             arg = bDeclarations.get(arg);
                         } else if (arg.equals("true") || arg.equals("false")) {
                             arg = "Boolean";
-                        } else if (arg.contains("==") || arg.contains(">") || arg.contains("<") || arg.contains("!=") || arg.contains(">=") || arg.contains("<=")) {
+                        } else if (arg.contains("==") || arg.contains(">") || arg.contains("<") || arg.contains("!=") || arg.contains(">=") || arg.contains("<=") || arg.contains("||")) {
                             arg = "Boolean";
                         } else if (arg.contains("TimeUnit.SECONDS")) {
                             arg = "Numeric";
@@ -665,11 +691,11 @@ public class TestsuiteParser {
                             arg = arg.replaceAll(".class", "");
                         } else if (arg.startsWith("new ")) {
                             arg = arg.replaceAll("new ", "");
-                            if (arg.contains("(")) {
+                        /*    if (arg.contains("(")) {
                                 arg = arg.substring(0, arg.indexOf("("));
                             } else if (arg.contains("[")) {
                                 arg = arg.substring(0, arg.indexOf("["));
-                            }
+                            }*/
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
                         } else if (arg.contains("-") || arg.contains("+") || arg.contains("*")) {
@@ -678,8 +704,10 @@ public class TestsuiteParser {
                             arg = "String";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).startsWith(".is")) {
                             arg = "Boolean";
-                        } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).startsWith(".contains")) {
-                            arg = "Boolean";
+                        } else if (arg.contains(".contains(") ) {
+                            arg = arg.substring(0,arg.lastIndexOf("("));
+                            if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).startsWith(".contains(")) 
+                                arg = "Boolean";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).contains("Int")) {
                             arg = "Integer";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).contains("Double")) {
@@ -703,6 +731,7 @@ public class TestsuiteParser {
 
                     }
 
+                //    System.out.println("Invocation : " + node.getExpression() + " " + mInfo.expression +  " " + mInfo.methodName + " " + mInfo.params);
                     methodInvocations.add(mInfo);
 
                     return true;
@@ -776,6 +805,8 @@ class MethodInfo {
 
     public String methodName = "";
     public String expression = "";
+    public String initialexpression = "";
     public ArrayList<String> params = new ArrayList<>();
+    public ArrayList<String> initialparams = new ArrayList<>();
     public ArrayList<Boolean> isResolvedParam = new ArrayList<>();
 }
