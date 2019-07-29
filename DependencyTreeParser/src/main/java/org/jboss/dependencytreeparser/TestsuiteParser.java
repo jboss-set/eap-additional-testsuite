@@ -669,6 +669,8 @@ public class TestsuiteParser {
                         }
                         if(arg.startsWith("this."))
                                 arg = arg.replaceFirst("this.", "");
+                        if(arg.startsWith("class "))
+                                arg = arg.replaceFirst("class ", "");
                         if (arg.startsWith("\"") && arg.endsWith("\"")) {
                             arg = "String";
                         } else if(arg.startsWith("(")) {
@@ -691,11 +693,11 @@ public class TestsuiteParser {
                             arg = arg.replaceAll(".class", "");
                         } else if (arg.startsWith("new ")) {
                             arg = arg.replaceAll("new ", "");
-                        /*    if (arg.contains("(")) {
+                            if (arg.contains("(")) {
                                 arg = arg.substring(0, arg.indexOf("("));
                             } else if (arg.contains("[")) {
-                                arg = arg.substring(0, arg.indexOf("["));
-                            }*/
+                                arg = arg.substring(0, arg.indexOf("[]")+2);
+                            }
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
                         } else if (arg.contains("-") || arg.contains("+") || arg.contains("*")) {
@@ -704,7 +706,7 @@ public class TestsuiteParser {
                             arg = "String";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).startsWith(".is")) {
                             arg = "Boolean";
-                        } else if (arg.contains(".contains(") ) {
+                        } else if (arg.contains(".contains") ) {
                             arg = arg.substring(0,arg.lastIndexOf("("));
                             if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).startsWith(".contains(")) 
                                 arg = "Boolean";

@@ -1267,8 +1267,15 @@ public class DependencyTree {
                       //      param = param.substring(0,param.indexOf("("));
                      //   if(param.contains("["))
                       //      param = param.substring(0,param.indexOf("["));
-                        if ((availableImportFields.containsKey(param) || availableFields.contains(param) || classLibraries.contains(param) || acceptedMethods.contains(param) || param == null || param.equals("this")) && !methodInfo.isResolvedParam.get(m)) {
+                        if ((availableImportFields.containsKey(param) || availableFields.contains(param) || lfields.get(param)!=null || classLibraries.contains(param) || acceptedMethods.contains(param) || param == null || param.equals("this")) && !methodInfo.isResolvedParam.get(m)) {
                             methodInfo.isResolvedParam.set(m, Boolean.TRUE);
+                            methodInfo.params.set(m, param);
+                            if(param == null || param.equals("this"))
+                                methodInfo.params.set(m, "Object");
+                            else if(lfields.keySet().contains(param)) {
+                                System.out.println("eee0 " + lfields.get(param));
+                                methodInfo.params.set(m, lfields.get(param));
+                            }
                         }
                         
                         if(methodInfo.isResolvedParam.get(m).equals(false) && !acceptedMethods.contains(methodInfo.methodName)){
@@ -1285,8 +1292,16 @@ public class DependencyTree {
                                 param = param.substring(0,param.indexOf("("));
                             if(param.contains("."))
                                 param = param.substring(param.lastIndexOf(".")+1);
-                            if(acceptedMethods.contains(param))
+                            methodInfo.params.set(pnum, param);
+                            if(lfields.keySet().contains(param)) 
+                                methodInfo.params.set(m, lfields.get(param));
+                            if(acceptedMethods.contains(param)) {
                                 methodInfo.isResolvedParam.set(pnum,true);
+                                if(rMethods.get(param)!=null){
+                                    System.out.println("eee " + rMethods.get(param));
+                                    methodInfo.params.set(pnum, rMethods.get(param));
+                                }
+                            }
                             if((methodInfo.params.get(pnum).contains(".") && TypesR.contains(methodInfo.params.get(pnum).substring(methodInfo.params.get(pnum).indexOf(".")+1))) || TypesR.contains(methodInfo.params.get(pnum)) || acceptParams.keySet().contains(methodInfo.params.get(pnum))) 
                                 methodInfo.isResolvedParam.set(pnum,true);
                         }
@@ -1355,8 +1370,10 @@ public class DependencyTree {
                 int nn = 0;
                 for(MethodInfo mi : methodNamesAccepted) {
                     if(mi.isResolvedParam.contains(false)) {
-                        System.out.println("mmm : " + mi.methodName + " " + mi.params + " " + mi.isResolvedParam + " " + methodNamesAccepted.size());
+                        System.out.println("mmm : " + mi.methodName + " " + mi.params + " " + mi.isResolvedParam);
                         nn++;
+                    }else{
+                        System.out.println("rrr : " + mi.methodName + " " + mi.params + " " + mi.isResolvedParam);
                     }
                 }
                 
