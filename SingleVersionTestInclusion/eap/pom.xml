@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     *  ΙΔΕΑ : THE JBOSS TESTSUITE TO DEVELOP TESTS AGAINST INFINITE NUMBER OF JBOSS SERVERS
+    -->
+
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>31</version>
+        <relativePath></relativePath>
+    </parent>
+
+    <groupId>org.jboss</groupId>
+    <artifactId>eap-additional-testsuite-single-version</artifactId>
+    <version>1.0.3.Final</version>
+
+    <name>eap additional testsuite: additional testsuite for eap single version tests</name>
+
+    <properties>
+        <standaloneConfiguration>${basedir}/configs/serverconfigs/standalone.xml</standaloneConfiguration>
+        <JBOSS_VERSION>JBOSS_VERSION</JBOSS_VERSION>
+        <JBOSS_FOLDER>JBOSS_FOLDER</JBOSS_FOLDER>
+    </properties>
+        
+    <build>
+
+        <!--
+	    Surefire test executions
+	 -->
+	 <plugins> 
+	            
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+
+                <configuration>
+                    <failIfNoTests>true</failIfNoTests>
+
+                    <!-- Arquillian's config files. -->
+                    <additionalClasspathElements combine.children="append">
+                        <additionalClasspathElement>${basedir}/configs/arqEap7</additionalClasspathElement>
+                    </additionalClasspathElements>
+
+                </configuration>
+
+		<executions>
+	            <execution>
+		        <id>default-test</id>
+		        <phase>test</phase>
+		        <goals>
+		            <goal>test</goal>
+		        </goals>
+		        <configuration>         
+		            <!-- Tests to execute. -->
+		            <includes>
+		                <include>org/server/test/**/*Test.java</include>
+		                <include>org/server/test/**/*TestCase.java</include>
+		            </includes> 
+
+                            <systemPropertyVariables>
+		                <!-- This gets resolved at the test-configuration submodule level -->
+		                <jboss.home>${JBOSS_FOLDER}</jboss.home>
+		            </systemPropertyVariables>
+		        </configuration>
+		    </execution>
+		</executions>
+	    </plugin>
+
+		            
+            <!-- Build the server configuration -->
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-antrun-plugin</artifactId>
+	        <executions>
+                    <execution>
+	                <id>build-basic-config-check</id>
+	                <phase>generate-resources</phase>
+	                <goals>
+	                    <goal>run</goal>
+	                </goals>
+	                <configuration>
+	                    <target>
+                                <delete failonerror="false">
+				     <fileset dir="${JBOSS_FOLDER}/standalone/deployments" includes="*" />
+				</delete>
+	                        <copy file="${standaloneConfiguration}" todir="${JBOSS_FOLDER}/standalone/configuration" overwrite="true" />
+	                    </target>
+	                </configuration>
+	            </execution>
+	        </executions>
+	    </plugin>
+
+        </plugins>
+	
+    </build>
+
+            <dependencyManagement>    
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jboss.eap</groupId>
+                        <artifactId>jboss-eap-parent</artifactId>
+                        <type>pom</type>
+                        <version>${JBOSS_VERSION}</version>
+                        <scope>import</scope>
+                    </dependency>
+                </dependencies>
+            </dependencyManagement>
+
+            <dependencies>
+                <dependency>
+                    <groupId>org.wildfly.arquillian</groupId>
+                    <artifactId>wildfly-arquillian-container-managed</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.shrinkwrap</groupId>
+                    <artifactId>shrinkwrap-api</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.eap</groupId>
+                    <artifactId>wildfly-testsuite-shared</artifactId>
+                    <scope>compile</scope>
+                    <exclusions>
+		        <exclusion>
+		            <groupId>org.apache.cxf</groupId>
+		            <artifactId>cxf-rt-management</artifactId>
+		        </exclusion>
+		    </exclusions>
+                </dependency>
+                <dependency>
+                    <groupId>org.wildfly.core</groupId>
+                    <artifactId>wildfly-core-testsuite-shared</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.arquillian.junit</groupId>
+                    <artifactId>arquillian-junit-container</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+               
+            </dependencies>
+
+</project>
