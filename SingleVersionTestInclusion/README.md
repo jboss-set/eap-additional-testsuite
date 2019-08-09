@@ -6,7 +6,9 @@ For those who would like to add a test in Eap Additional Testsuite, quickly, in 
 1. cd SingleVersionTestInclusion
 2. Go to eap or wildfly directory depending where you would like to add the testcase
 3. Replace JBOSS_FOLDER and JBOSS_VERSION in the properties of the pom.xml file with the server dist directory and the version of the server equivalently (e.g. For wildfly server set JBOSS_FOLDER to the path of wildfly/dist/target/wildfly-18.0.0.Beta1-SNAPSHOT' and JBOSS_VERSION to version 18.0.0.Beta1-SNAPSHOT in the pom.xml. Similarly for eap server.)
-4. mvn clean install
+4. Add the needed additional dependencies at the dependency section of the pom.xml file.
+5. Add the test.
+6. mvn clean install
 
 
 # License 
