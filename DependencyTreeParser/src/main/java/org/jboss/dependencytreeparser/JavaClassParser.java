@@ -37,7 +37,7 @@ public class JavaClassParser {
 
     static HashMap<String, ArrayList<String>> testLibraries = new HashMap<>();
     static HashMap<String, HashSet<String>> internalPackagesAndClasses = new HashMap<>();
-    static HashMap<String, HashMap<String, String[]>> internalClassMethods = new HashMap<>();
+    static HashMap<String, HashMap<String, ArrayList<String[]>>> internalClassMethods = new HashMap<>();
     static HashMap<String, HashMap<String, String>> internalClassFields = new HashMap<>();
     static HashMap<String, ArrayList<String>> internalClasses = new HashMap<>();
     static HashMap<String, ParsedTests> testData = new HashMap<String, ParsedTests>();
@@ -80,7 +80,7 @@ public class JavaClassParser {
         return internalPackagesAndClasses;
     }
 
-    public static HashMap<String, HashMap<String, String[]>> getInternalClassMethods() {
+    public static HashMap<String, HashMap<String, ArrayList<String[]>>> getInternalClassMethods() {
         return internalClassMethods;
     }
 
@@ -103,7 +103,7 @@ public class JavaClassParser {
             cu = JavaParser.parse(in);
 
             if (internalClassMethods.get(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", "")) == null) {
-                internalClassMethods.put(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", ""), new HashMap<String, String[]>());
+                internalClassMethods.put(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", ""), new HashMap<String, ArrayList<String[]>>());
             }
 
             NodeList<TypeDeclaration<?>> types = cu.getTypes();
@@ -112,26 +112,42 @@ public class JavaClassParser {
                 for (BodyDeclaration<?> member : members) {
                     if (member instanceof MethodDeclaration) {
                         MethodDeclaration method = (MethodDeclaration) member;
-                        HashMap<String, String[]> arg = internalClassMethods.get(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", ""));
+                        HashMap<String, ArrayList<String[]>> arg = internalClassMethods.get(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", ""));
+                     //   System.out.println("yyy " + method.getParameters().size() + " " + method.getParameters());
                         String[] params = new String[method.getParameters().size()];
 
                         for (int i = 0; i < method.getParameters().size(); i++) {
                             params[i] = method.getParameters().get(i).getTypeAsString();
                         }
 
-                        arg.put(method.getName().toString(), params);
-                        arg.put(method.getName().toString() + "_Return_Type", new String[]{method.getTypeAsString()});
+                        if(!arg.keySet().contains(method.getName().toString())) {
+                            ArrayList<String[]> paramArrayList = new ArrayList<>();
+                            paramArrayList.add(params);
+                            arg.put(method.getName().toString(), paramArrayList);
+                            ArrayList<String[]> paramRTArrayList = new ArrayList<>();
+                            paramRTArrayList.add(new String[]{method.getTypeAsString()});
+                            arg.put(method.getName().toString() + "_Return_Type", paramRTArrayList);
+                        }else {
+                            arg.get(method.getName().toString()).add(params);
+                            arg.get(method.getName().toString() + "_Return_Type").add(new String[]{method.getTypeAsString()});
+                        }
+                       
                     }
                     if (member instanceof ConstructorDeclaration) {
                         ConstructorDeclaration construct = (ConstructorDeclaration) member;
-                        HashMap<String, String[]> arg = internalClassMethods.get(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", ""));
+                        HashMap<String, ArrayList<String[]>> arg = internalClassMethods.get(fd.packageName.replaceAll("/", ".") + "." + fd.fileName.replaceAll("\\.java", ""));
                         String[] params = new String[construct.getParameters().size()];
 
                         for (int i = 0; i < construct.getParameters().size(); i++) {
                             params[i] = construct.getParameters().get(i).getTypeAsString();
                         }
 
-                        ((HashMap<String, String[]>) arg).put(construct.getName().toString() + "_Constructor", params);
+                        if(!arg.keySet().contains(construct.getName().toString() + "_Constructor")) {
+                            ArrayList<String[]> paramCTArrayList = new ArrayList<>();
+                            paramCTArrayList.add(params);
+                            arg.put(construct.getName().toString() + "_Constructor", paramCTArrayList);
+                        }else {
+                            arg.get(construct.getName().toString() + "_Constructor").add(params);                        }
                     }
                 }
             }

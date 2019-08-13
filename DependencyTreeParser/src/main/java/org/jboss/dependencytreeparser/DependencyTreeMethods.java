@@ -297,8 +297,8 @@ public class DependencyTreeMethods {
         }
     }
 
-    public static HashMap<String, HashMap<String, String[]>> listMethods() {
-        HashMap<String, HashMap<String, String[]>> classMethods = new HashMap<>();
+    public static HashMap<String, HashMap<String, ArrayList<String[]>>> listMethods() {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> classMethods = new HashMap<>();
 
         try {
             String repoPath = System.getProperty("MavenRepoPath");
@@ -315,8 +315,8 @@ public class DependencyTreeMethods {
         }
     }
 
-    public static HashMap<String, HashMap<String, String[]>> listUsedMethods(HashSet<String> usedLibraries, HashMap<String, String> packages) {
-        HashMap<String, HashMap<String, String[]>> usedMethods = new HashMap<>();
+    public static HashMap<String, HashMap<String, ArrayList<String[]>>> listUsedMethods(HashSet<String> usedLibraries, HashMap<String, String> packages) {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> usedMethods = new HashMap<>();
 
         try {
 
@@ -330,8 +330,8 @@ public class DependencyTreeMethods {
         }
     }
 
-    public static HashMap<String, HashMap<String, String[]>> listUsedMethods2(String usedLibrary, HashMap<String, String> packages) {
-        HashMap<String, HashMap<String, String[]>> usedMethods = new HashMap<>();
+    public static HashMap<String, HashMap<String, ArrayList<String[]>>> listUsedMethods2(String usedLibrary, HashMap<String, String> packages) {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> usedMethods = new HashMap<>();
 
         try {
 
@@ -354,8 +354,8 @@ public class DependencyTreeMethods {
         }
     }
 
-    public static HashMap<String, HashMap<String, String[]>> listUsedTestMethods(HashSet<String> usedLibraries, String path) {
-        HashMap<String, HashMap<String, String[]>> usedMethods = new HashMap<>();
+    public static HashMap<String, HashMap<String, ArrayList<String[]>>> listUsedTestMethods(HashSet<String> usedLibraries, String path) {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> usedMethods = new HashMap<>();
 
         try {
 
@@ -645,8 +645,8 @@ public class DependencyTreeMethods {
         }
     }
 
-    private static HashMap<String, HashMap<String, String[]>> listClassMethods2(String path) {
-        HashMap<String, HashMap<String, String[]>> classMethods = new HashMap<>();
+    private static HashMap<String, HashMap<String, ArrayList<String[]>>> listClassMethods2(String path) {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> classMethods = new HashMap<>();
 
         try {
             if (path != null) {
@@ -713,15 +713,15 @@ public class DependencyTreeMethods {
         return classes;
     }
 
-    private static HashMap<String, HashMap<String, String[]>> getParsedJarMethods(String file) {
-        HashMap<String, HashMap<String, String[]>> classMethods = new HashMap<>();
+    private static HashMap<String, HashMap<String, ArrayList<String[]>>> getParsedJarMethods(String file) {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> classMethods = new HashMap<>();
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
             String line = br.readLine();
             String className = "";
-            HashMap<String, String[]> methods = null;
+            HashMap<String, ArrayList<String[]>> methods = null;
 
             boolean record = false;
             while (line != null) {
@@ -732,7 +732,7 @@ public class DependencyTreeMethods {
                 String[] extensions2 = null;
                 String template = "";
                 if (record && !line.contains("private ") && !line.contains("}") && !line.contains("class ") && !line.contains("interface ")) {
-                    if (line.contains(")")) {
+                    if (line.contains(")") && !line.contains("()")) {
                         line = line.substring(0, line.lastIndexOf(")"));
                         params = line.substring(line.indexOf("(") + 1).split(", ");
                         line = line.substring(0, line.indexOf("("));
@@ -742,8 +742,17 @@ public class DependencyTreeMethods {
                         line = line.replaceAll(";", "");
                     }
                     methodName = line.substring(line.lastIndexOf(" ") + 1);
-                    methods.put(methodName, params);
+                    if(!methods.keySet().contains(methodName)) {
+                        ArrayList<String[]> paramArrayList = new ArrayList<>();
+                        paramArrayList.add(params);
+                        methods.put(methodName, paramArrayList);
+                    }else
+                        methods.get(methodName).add(params);
+                    
 
+                    if(methodName.equals("addClasses"))
+                        System.out.println("kkk : " + methodName + " " + Arrays.toString(params));
+                    
                     returnType = line.substring(0, line.lastIndexOf(methodName));
 
                     if (returnType.contains("<")) {
@@ -763,7 +772,12 @@ public class DependencyTreeMethods {
                         returnType = template;
                     }
 
-                    methods.put(methodName + "_Return_Type", new String[]{returnType});
+                    if(!methods.keySet().contains(methodName + "_Return_Type")) {
+                        ArrayList<String[]> paramArrayList = new ArrayList<>();
+                        paramArrayList.add(new String[]{returnType});
+                        methods.put(methodName + "_Return_Type", paramArrayList);
+                    }else
+                        methods.get(methodName + "_Return_Type").add(new String[]{returnType});
 
                 }
 
@@ -822,11 +836,28 @@ public class DependencyTreeMethods {
                     if (extensions != null && extensions2 != null) {
                         String[] both = Arrays.copyOf(extensions, extensions.length + extensions2.length);
                         System.arraycopy(extensions2, 0, both, extensions.length, extensions2.length);
-                        methods.put(className + "_Extensions", both);
+                        if(!methods.keySet().contains(className + "_Extensions")) {
+                            ArrayList<String[]> paramArrayList = new ArrayList<>();
+                            paramArrayList.add(both);
+                            methods.put(className + "_Extensions", paramArrayList);
+                        }else
+                            methods.get(className + "_Extensions").add(both);
+                    
                     } else if (extensions != null) {
-                        methods.put(className + "_Extensions", extensions);
+                        if(!methods.keySet().contains(className + "_Extensions")) {
+                            ArrayList<String[]> paramArrayList = new ArrayList<>();
+                            paramArrayList.add(extensions);
+                            methods.put(className + "_Extensions", paramArrayList);
+                        }else
+                            methods.get(className + "_Extensions").add(extensions);
+                       
                     } else if (extensions2 != null) {
-                        methods.put(className + "_Extensions", extensions2);
+                        if(!methods.keySet().contains(className + "_Extensions")) {
+                            ArrayList<String[]> paramArrayList = new ArrayList<>();
+                            paramArrayList.add(extensions2);
+                            methods.put(className + "_Extensions", paramArrayList);
+                        }else
+                            methods.get(className + "_Extensions").add(extensions2);
                     }
                 } else if (line.contains("}")) {
                     record = false;
@@ -905,8 +936,8 @@ public class DependencyTreeMethods {
         }
     }
 
-    private static HashMap<String, HashMap<String, String[]>> listUsedClassMethods(String path, String lib) {
-        HashMap<String, HashMap<String, String[]>> classMethods = new HashMap<>();
+    private static HashMap<String, HashMap<String, ArrayList<String[]>>> listUsedClassMethods(String path, String lib) {
+        HashMap<String, HashMap<String, ArrayList<String[]>>> classMethods = new HashMap<>();
 
         try {
             if (path != null) {
@@ -931,7 +962,7 @@ public class DependencyTreeMethods {
                         try {
                             Class clas = cl.loadClass(name);
 
-                            HashMap<String, String[]> allMethods = new HashMap<>();
+                            HashMap<String, ArrayList<String[]>> allMethods = new HashMap<>();
 
                             for (Class<?> c = clas; c != null; c = c.getSuperclass()) {
 
@@ -940,13 +971,24 @@ public class DependencyTreeMethods {
                                     if (!Modifier.toString(method.getModifiers()).contains("private")) {
 
                                         String[] params = new String[method.getParameterTypes().length];
+                                        
                                         int j = 0;
                                         for (Class cc : method.getParameterTypes()) {
                                             params[j] = cc.toString();
                                             j++;
                                         }
-                                        allMethods.put(method.getName(), params);
-                                        allMethods.put(method.getName() + "_Return_Type", new String[]{method.getReturnType().toString()});
+                                        if(!allMethods.keySet().contains(method.getName())) {
+                                            ArrayList<String[]> paramArrayList = new ArrayList<>();
+                                            paramArrayList.add(params);
+                                            allMethods.put(method.getName(), paramArrayList);
+                                            ArrayList<String[]> paramRTArrayList = new ArrayList<>();
+                                            paramRTArrayList.add(new String[]{method.getReturnType().toString()});
+                                            allMethods.put(method.getName() + "_Return_Type", paramRTArrayList);
+                                        }else {
+                                            allMethods.get(method.getName()).add(params);
+                                            allMethods.get(method.getName() + "_Return_Type").add(new String[]{method.getReturnType().toString()});
+                                        }
+                                       
                                     }
                                 }
                             }

@@ -135,48 +135,16 @@ public class SourceParser {
                     }
 
                     List params = node.parameters();
+                    ArrayList<String> types = new ArrayList<>();
+                //    System.out.println("params : " + params.toString());
                     for (Object s : params) {
                         String type = ((SingleVariableDeclaration) s).getType().toString();
 
-                        ArrayList<String> types0 = new ArrayList<>();
-
-                        String type2 = null;
-                        do {
-                            if (type.contains("[")) {
-                                type = type.replaceAll("\\[\\]", "");
-                                if (type.contains("[")) {
-                                    type = type.substring(0, type.indexOf("["));
-                                }
-                            } else if (type.contains("<")) {
-                                String type3 = type;
-                                type = type.substring(0, type.indexOf("<"));
-                                if (type3.substring(type3.indexOf("<") + 1).startsWith("<>") || type3.substring(type.indexOf("<") + 1).startsWith("<T>")) {
-                                    type2 = null;
-                                } else if (type3.indexOf("<") >= 0 && type3.indexOf(">") >= 0 && type3.indexOf("<") < type3.indexOf(">")) {
-                                    type2 = type3.substring(type3.indexOf("<") + 1, type3.lastIndexOf(">"));
-                                    if (type2.contains(",")) {
-                                        if (type2.substring(0, type2.indexOf(",")).contains("<")) {
-                                            types0.add(type2);
-                                        } else {
-                                            types0.add(type2.substring(0, type2.indexOf(",")));
-                                            types0.add(type2.substring(type2.indexOf(",") + 1));
-                                        }
-                                    } else {
-                                        types0.add(type2);
-                                    }
-                                }
-
-                            }
-
-                            types.addAll(Arrays.asList(type.split(" extends ")));
-                            if (types0.size() != 0) {
-                                type = types0.remove(0);
-                            } else {
-                                type = null;
-                            }
-                        } while (type != null);
+                        types.add(type);
 
                     }
+                    
+                //    System.out.println("sourceTypes : " + types.toString());
 
                     mf.paramTypes = types;
 
@@ -223,7 +191,7 @@ public class SourceParser {
 
         String name;
         String returnType;
-        HashSet<String> paramTypes;
+        ArrayList<String> paramTypes;
     }
 
 }
