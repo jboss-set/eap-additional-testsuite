@@ -237,7 +237,7 @@ FUTURE DEVELOPMENT
 7. The servers could build only the modules related to the proposed modification changes.
 8. Make it more user friendly (for whoever is not familiar with its usage), using a pre-entry step, by adding a testcase, as usual, to a single-version server pre-testsuite. Then the test case will be added in the Eap-Additional-Testsuite sources for multiversion usage.
 9. Create a subcategory for a collection of components.
-10. Show how it can test multi-versioned software with multiple components that are dynamically updated in real time. 
+10. Show how it can test multi-versioned software with multiple components that are dynamically updated in real time using component chains. 
 11. NEXT GENERATION AT STRUCTURES : The tests/methods (that may use features/dependencies from a provisioning tool/dependency-feature analyzer) should be independent modules that will have dependencies (metadata could be used) on libraries and other methods (which may also use some features/dependencies from the provisioning tool/dependency-feature analyzer and which could have their own dependencies). The tool should compose the appropriate test cases and distribute them to the appropriate subcategories in accordance with the available features/dependencies. The dependencies could also be defined automatically when using a dependency-feature analyzer. This way the annotations for enabling the tests could be automated (and become non mandatory in some cases).
 
 
