@@ -26,16 +26,18 @@ Testing EAP
 -----------
 1. Make sure that JBOSS_FOLDER environment variable is set with the path to your JBOSS EAP directory.
 2. Make sure that JBOSS_VERSION environment variable is set with the version of JBOSS EAP Server.
-3. Build and run the additional testsuite activating the EAP profile and disabling snapshots (-Deap -Dstandalone -DDISABLE_SNAPSHOT_VERSIONS=true).
+3. Build and run the additional testsuite activating the EAP profile (-Deap -Dstandalone).
 4. If you want to use http add -Dmaven.repository.protocol=http (Section : Using HTTPS below)
+5. If you would like/need to disable snapshot versions add -DDISABLE_SNAPSHOT_VERSIONS=true
 
 
 Testing Wildfly
 ---------------
 1. Make sure that JBOSS_FOLDER environment variable is set with the path to your WILDFLY directory.
 2. Make sure that JBOSS_VERSION environment variable is set with the version of WILDFLY Server.
-3. Build and run the additional testsuite activating the WILDFLY profile and disabling snapthots (-Dwildfly -Dstandalone -DDISABLE_SNAPSHOT_VERSIONS=true).
+3. Build and run the additional testsuite activating the WILDFLY profile (-Dwildfly -Dstandalone).
 4. If you want to use http add -Dmaven.repository.protocol=http (Section : Using HTTPS below)
+5. If you would like/need to disable snapshot versions add -DDISABLE_SNAPSHOT_VERSIONS=true
 
 
 Testing EAP or Wildfly with specific JDK version
@@ -45,6 +47,7 @@ Testing EAP or Wildfly with specific JDK version
 3. Make sure that JAVA_HOME is pointing to the jdk of desired version.
 4. Build and run the additional testsuite activating the EAP or WILDFLY specific jdk version profile (-Deap-jdk8, -Dwildfly-jdk8).
 5. If you want to use http add -Dmaven.repository.protocol=http (Section : Using HTTPS below)
+6. If you would like/need to disable snapshot versions add -DDISABLE_SNAPSHOT_VERSIONS=true
 
 
 Using HTTPS
