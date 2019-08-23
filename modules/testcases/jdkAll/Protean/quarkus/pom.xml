@@ -274,6 +274,34 @@
             </modules>
         </profile>
 
+        <profile>
+            <id>releases19</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.21.0</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>releases20</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.21.1</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
     </profiles>
 
 </project>
