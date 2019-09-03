@@ -26,7 +26,13 @@ ENV MAVEN_HOME /usr/share/maven
 
 ENV PATH=$PATH:/usr/share/maven/bin/
 
-RUN mkdir fasterxml && cd fasterxml && git clone https://github.com/panossot/jackson-databind.git -b simulation master && cd master && mvn clean install -DskipTests && FXML_VERSION="2.9.9.3.1" && export FXML_VERSION=$FXML_VERSION && echo $FXML_VERSION && mkdir wildfly && cd wildfly && git clone https://github.com/panossot/wildfly.git -b simulation master && cd master && chmod 777 ./pom.xml && ls -la  && sed -i "s/<version.com.fasterxml.jackson.databind>2.9.9.3/<version.com.fasterxml.jackson.databind>$FXML_VERSION/g" ./pom.xml && mvn clean install -DskipTests && tmp=$(ls -d $(pwd)/dist/target/wildfly-* | sed -e '/.jar/d') && JBOSS_VERSION=$(basename "${tmp}" | sed -e 's/wildfly-//' | sed -e 's/-for-validation//') && export JBOSS_VERSION=$JBOSS_VERSION && JBOSS_FOLDER="$(pwd)/dist/target/wildfly-${JBOSS_VERSION}" && export JBOSS_FOLDER=$JBOSS_FOLDER  && mkdir EAT && cd EAT && git clone https://github.com/panossot/eap-additional-testsuite.git -b simulation master && cd master && mvn clean install -Dwildfly -Dstandalone -DJBOSS_VERSION=$JBOSS_VERSION -DJBOSS_FOLDER=$JBOSS_FOLDER
+RUN mkdir fasterxml && cd fasterxml && git clone https://github.com/panossot/jackson-databind.git -b simulation master && cd master && mvn clean install -DskipTests \
+&& FXML_VERSION="$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')" && export FXML_VERSION=$(echo ${FXML_VERSION} | awk -F" " '{print $NF}') && echo $FXML_VERSION \
+&& mkdir wildfly && cd wildfly && git clone https://github.com/panossot/wildfly.git -b simulation master && cd master \
+&& ls -la  && sed -i "s/<version.com.fasterxml.jackson.databind>2.9.9.3/<version.com.fasterxml.jackson.databind>$FXML_VERSION/g" ./pom.xml \
+&& mvn clean install -DskipTests \
+&& tmp=$(ls -d $(pwd)/dist/target/wildfly-* | sed -e '/.jar/d') && JBOSS_VERSION=$(basename "${tmp}" | sed -e 's/wildfly-//' | sed -e 's/-for-validation//') && export JBOSS_VERSION=$JBOSS_VERSION && JBOSS_FOLDER="$(pwd)/dist/target/wildfly-${JBOSS_VERSION}" && export JBOSS_FOLDER=$JBOSS_FOLDER  \
+&& mkdir EAT && cd EAT && git clone https://github.com/panossot/eap-additional-testsuite.git -b simulation master && cd master && mvn clean install -Dwildfly -Dstandalone -DJBOSS_VERSION=$JBOSS_VERSION -DJBOSS_FOLDER=$JBOSS_FOLDER
 
 
 
