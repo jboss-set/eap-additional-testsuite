@@ -180,16 +180,41 @@ public class DependencyTree {
                     //    System.out.println("yyy " + p + " " + keyName + " " + mdinfo2.name + " " + params.length + " " + Arrays.toString(params));
                         mp = new HashMap<>();
                         paramArrayList.add(params);
-                        mp.put(mdinfo2.name, paramArrayList);
-                        methodParams.put(mdinfo2.name, paramArrayList);
+                        
+                        if(mp.get(mdinfo2.name)==null) {
+                            mp.put(mdinfo2.name, paramArrayList);
+                        }else {
+                            if(!mp.get(mdinfo2.name).contains(params))
+                                mp.get(mdinfo2.name).add(params);
+                        }
+                        if(methodParams.get(mdinfo2.name)==null) {
+                            methodParams.put(mdinfo2.name, paramArrayList);
+                        }else {
+                            if(!methodParams.get(mdinfo2.name).contains(params))
+                                methodParams.get(mdinfo2.name).add(params);
+                        }
+                        
                         ArrayList<String[]> paramRTArrayList = new ArrayList<>();
                         paramRTArrayList.add(new String[]{mdinfo2.returnType});
-                        mp.put(mdinfo2.name + "_Return_Type", paramRTArrayList);
-                        methodParams.put(mdinfo2.name + "_Return_Type", paramRTArrayList);
+                        if(mp.get(mdinfo2.name + "_Return_Type")==null) {
+                            mp.put(mdinfo2.name + "_Return_Type", paramRTArrayList);
+                        }else {
+                            if(!mp.get(mdinfo2.name + "_Return_Type").contains(new String[]{mdinfo2.returnType}))
+                                mp.get(mdinfo2.name + "_Return_Type").add(new String[]{mdinfo2.returnType});
+                        }
+                        if(methodParams.get(mdinfo2.name + "_Return_Type")==null) {
+                            methodParams.put(mdinfo2.name + "_Return_Type", paramArrayList);
+                        }else {
+                            if(!methodParams.get(mdinfo2.name + "_Return_Type").contains(new String[]{mdinfo2.returnType}))
+                                methodParams.get(mdinfo2.name + "_Return_Type").add(new String[]{mdinfo2.returnType});
+                        }
                     }else {
                         mp = methodsTest2.get(mdinfo2.name);
-                        mp.get(mdinfo2.name).add(params);
-                        mp.get(mdinfo2.name + "_Return_Type").add(new String[]{mdinfo2.returnType});
+                        if(!mp.get(mdinfo2.name).contains(params))
+                            mp.get(mdinfo2.name).add(params);
+                       
+                        if(!mp.get(mdinfo2.name + "_Return_Type").contains(new String[]{mdinfo2.returnType}))
+                            mp.get(mdinfo2.name + "_Return_Type").add(new String[]{mdinfo2.returnType});
                         methodParams.get(mdinfo2.name).add(params);
                         methodParams.get(mdinfo2.name + "_Return_Type").add(new String[]{mdinfo2.returnType});
                     }
@@ -205,6 +230,22 @@ public class DependencyTree {
                 //    }
 
             }
+            
+            for (String s : methods.keySet()) {
+                    if (methods.get(s) != null) {
+                        for (String m : methods.get(s).keySet()) {
+                            if(methodParams.get(m)==null) {
+                                methodParams.put(m, methods.get(s).get(m));
+                            } else {
+                                for(int w=0; w<methods.get(s).get(m).size(); w++) {
+                                    if(!methodParams.get(m).contains(methods.get(s).get(m).get(w)))
+                                        methodParams.get(m).add(methods.get(s).get(m).get(w));
+                                }
+                            }
+                        }
+                    }
+                }
+            
             for (String key : testData.keySet()) {
                 ParsedTests ps = testData.get(key);
                 //     System.out.println("Class : " + key.toString() + " extends " + ps.extension);
@@ -493,6 +534,12 @@ public class DependencyTree {
                             if (methods2.get(s) != null) {
                                 if (!methods2.get(s).keySet().contains(m)) {
                                     methods2.get(s).put(m, methods.get(s).get(m));
+                                }else{
+                                    for(int  w=0; w< methods.get(s).get(m).size(); w++) {
+                                        if(!methods2.get(s).get(m).contains(methods.get(s).get(m).get(w)))
+                                            methods2.get(s).get(m).add(methods.get(s).get(m).get(w));
+                                       
+                                    }
                                 }
                             } else {
                                 methods2.put(s, methods.get(s));
@@ -676,13 +723,14 @@ public class DependencyTree {
                                             acceptedMethods.add(methodInfo.methodName);
                                             methodNamesAccepted.add(methodInfo);
                                        //     if(methods2.get(s).get(meth)!=null) {
-                                                if(methodParams.get(methodInfo.methodName)==null)
-                                                        methodParams.put(methodInfo.methodName, methods2.get(s).get(meth));
-                                                    else {
-                                                        methodParams.get(methodInfo.methodName).addAll(methods2.get(s).get(meth));
-                                                        HashSet<String[]> set = new HashSet<String[]>(methodParams.get(methodInfo.methodName));
-                                                        methodParams.put(methodInfo.methodName, new ArrayList<String[]>(set));
+                                                if(methodParams.get(methodInfo.methodName)==null) {
+                                                    methodParams.put(methodInfo.methodName, methods2.get(s).get(meth));
+                                                } else {
+                                                    for(int w=0; w<methods2.get(s).get(meth).size(); w++) {
+                                                        if(!methodParams.get(methodInfo.methodName).contains(methods2.get(s).get(meth).get(w)))
+                                                            methodParams.get(methodInfo.methodName).add(methods2.get(s).get(meth).get(w));
                                                     }
+                                                }
                                        //     }
                                             
                                             if(methods2.get(s) != null && methods2.get(s).get(meth + "_Return_Type") != null) {
@@ -1166,13 +1214,14 @@ public class DependencyTree {
                                             methodNamesAccepted.add(methodInfo);
                                          //   if(methods2.get(c).get(methodInfo.methodName)!=null) {
                                                 if ((methods2.get(c).keySet().contains(methodInfo.methodName))) {
-                                                    if(methodParams.get(methodInfo.methodName)==null)
-                                                            methodParams.put(methodInfo.methodName, methods2.get(c).get(methodInfo.methodName));
-                                                        else {
-                                                            methodParams.get(methodInfo.methodName).addAll(methods2.get(c).get(methodInfo.methodName));
-                                                            HashSet<String[]> set = new HashSet<String[]>(methodParams.get(methodInfo.methodName));
-                                                            methodParams.put(methodInfo.methodName, new ArrayList<String[]>(set));
+                                                    if(methodParams.get(methodInfo.methodName)==null) {
+                                                        methodParams.put(methodInfo.methodName, methods2.get(c).get(methodInfo.methodName));
+                                                    } else {
+                                                        for(int w=0; w<methods2.get(c).get(methodInfo.methodName).size(); w++) {
+                                                            if(!methodParams.get(methodInfo.methodName).contains(methods2.get(c).get(methodInfo.methodName).get(w)))
+                                                                methodParams.get(methodInfo.methodName).add(methods2.get(c).get(methodInfo.methodName).get(w));
                                                         }
+                                                    }
                                                 }
                                          //   }
                                                 
@@ -1231,12 +1280,13 @@ public class DependencyTree {
                                                 methodNamesAccepted.add(methodInfo);
                                              //   if(methods2.get(c)!=null && methods2.get(c).get(methodInfo.methodName)!=null) {
                                                     if ((methods.get(c).keySet().contains(methodInfo.methodName))){
-                                                        if(methodParams.get(methodInfo.methodName)==null)
+                                                        if(methodParams.get(methodInfo.methodName)==null) {
                                                             methodParams.put(methodInfo.methodName, methods.get(c).get(methodInfo.methodName));
-                                                        else {
-                                                            methodParams.get(methodInfo.methodName).addAll(methods.get(c).get(methodInfo.methodName));
-                                                            HashSet<String[]> set = new HashSet<String[]>(methodParams.get(methodInfo.methodName));
-                                                            methodParams.put(methodInfo.methodName, new ArrayList<String[]>(set));
+                                                        } else {
+                                                            for(int w=0; w<methods.get(c).get(methodInfo.methodName).size(); w++) {
+                                                                if(!methodParams.get(methodInfo.methodName).contains(methods.get(c).get(methodInfo.methodName).get(w)))
+                                                                    methodParams.get(methodInfo.methodName).add(methods.get(c).get(methodInfo.methodName).get(w));
+                                                            }
                                                         }
                                                     }
                                             //    }
@@ -1275,16 +1325,18 @@ public class DependencyTree {
                                 if (meth.equals(methodInfo.methodName)) {
                                     acceptedMethods.add(methodInfo.methodName);
                                     methodNamesAccepted.add(methodInfo);
-                                //    if(localMethods.get(s).get(methodInfo.methodName)!=null) {
-                                        if(methodParams.get(methodInfo.methodName)==null)
-                                            methodParams.put(methodInfo.methodName, localMethods.get(s).get(methodInfo.methodName));
-                                        else {
-                                            methodParams.get(methodInfo.methodName).addAll(localMethods.get(s).get(methodInfo.methodName));
-                                            HashSet<String[]> set = new HashSet<String[]>(methodParams.get(methodInfo.methodName));
-                                            methodParams.put(methodInfo.methodName, new ArrayList<String[]>(set));
+
+                                    if(methodParams.get(methodInfo.methodName)==null) {
+                                        methodParams.put(methodInfo.methodName, localMethods.get(s).get(methodInfo.methodName));
+                                    } else {
+                                        for(int w=0; w<localMethods.get(s).get(methodInfo.methodName).size(); w++) {
+                                            if(!methodParams.get(methodInfo.methodName).contains(localMethods.get(s).get(methodInfo.methodName).get(w)))
+                                                methodParams.get(methodInfo.methodName).add(localMethods.get(s).get(methodInfo.methodName).get(w));
                                         }
-                                //    }
-                                    //    rMethods.put(methodInfo.methodName, localMethods.get(s).get(meth+"_Return_Type")[0].toString());
+                                    }
+                                    
+                                   
+                   
                                 }
                             }
                         }
@@ -1490,12 +1542,13 @@ public class DependencyTree {
                                         resolved = true;
                                     }else if(methodParams.get(mi.methodName)!=null) {
                                         for(int i=0; i<methodParams.get(mi.methodName).size(); i++) {
-                                            if(mi.methodName.equals("addClasses"))
-                                                System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)));
+                                            if(mi.methodName.equals("asInt") || mi.methodName.equals("getDomainClient") || mi.methodName.equals("createDomainClient") || mi.methodName.equals("resolvePlaceHolders"))
+                                                System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)) + " " + mi.params);
                                             if(methodParams.get(mi.methodName).get(i)!=null) {
-                                                if((methodParams.get(mi.methodName).get(i).length == mi.params.size()) || (methodParams.get(mi.methodName).get(i).length==0 && mi.params==null)){
+                                                if((methodParams.get(mi.methodName).get(i).length == mi.params.size()) || ((methodParams.get(mi.methodName).get(i).length==0) && (mi.params==null || mi.params.size()==0))){
                                                     resolved = true;
                                                     resolusionSeq = i;
+                                                    System.out.println("h : " + methodParams.get(mi.methodName).get(i).length + " " + mi.params.size() + " " + mi.params);
                                                     break;
                                                 }else if(methodParams.get(mi.methodName).get(i).length!=0){
                                                     if(methodParams.get(mi.methodName).get(i)[methodParams.get(mi.methodName).get(i).length-1].contains("...") && (methodParams.get(mi.methodName).get(i).length <= mi.params.size()+1)){
@@ -1504,6 +1557,10 @@ public class DependencyTree {
                                                         break;
                                                     }
                                                 }
+                                            }else if(mi.params==null || mi.params.size()==0) {
+                                                resolved = true;
+                                                resolusionSeq = i;
+                                                break;
                                             }
                                         }
                                     }

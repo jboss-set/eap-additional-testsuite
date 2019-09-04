@@ -140,6 +140,9 @@ public class SourceParser {
                     for (Object s : params) {
                         String type = ((SingleVariableDeclaration) s).getType().toString();
 
+                        if(type.startsWith("class "))
+                            type = type.replaceFirst("class ", "");
+                        
                         types.add(type);
 
                     }

@@ -746,12 +746,8 @@ public class DependencyTreeMethods {
                         ArrayList<String[]> paramArrayList = new ArrayList<>();
                         paramArrayList.add(params);
                         methods.put(methodName, paramArrayList);
-                    }else
+                    }else if(!methods.get(methodName).contains(params))
                         methods.get(methodName).add(params);
-                    
-
-                    if(methodName.equals("addClasses"))
-                        System.out.println("kkk : " + methodName + " " + Arrays.toString(params));
                     
                     returnType = line.substring(0, line.lastIndexOf(methodName));
 
