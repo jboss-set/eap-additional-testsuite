@@ -495,7 +495,7 @@ public class TestsuiteParser {
                             arg = "String";
                         } else if (arg.startsWith("\'") && arg.endsWith("\'")) {
                             arg = "Character";
-                        } else if (arg.contains("+") && arg.contains("\"")) {
+                        } else if (arg.contains("+") && (arg.contains("\"") || arg.contains("\'"))) {
                             arg = "String";
                         } else if (arg.contains("instanceof")) {
                             arg = arg.substring(arg.indexOf("instanceof") + 11);
@@ -518,7 +518,7 @@ public class TestsuiteParser {
                             }
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
-                        } else if (arg.contains("-") || arg.contains("+") || arg.contains("*")) {
+                        } else if ((arg.contains("-") || arg.contains("+") || arg.contains("*")) && !arg.contains("\"") && !arg.contains("NAME") ) {
                             arg = "Numeric";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).contains("String")) {
                             arg = "String";
@@ -565,7 +565,7 @@ public class TestsuiteParser {
                             arg = "String";
                         } else if (arg.startsWith("\'") && arg.endsWith("\'")) {
                             arg = "Character";
-                        } else if (arg.contains("+") && arg.contains("\"")) {
+                        } else if (arg.contains("+") && (arg.contains("\"") || arg.contains("\'"))) {
                             arg = "String";
                         } else if (arg.contains("instanceof")) {
                             arg = arg.substring(arg.indexOf("instanceof") + 11);
@@ -588,7 +588,7 @@ public class TestsuiteParser {
                             }
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
-                        } else if (arg.contains("-") || arg.contains("+") || arg.contains("*")) {
+                        } else if ((arg.contains("-") || arg.contains("+") || arg.contains("*")) && !arg.contains("\"") && !arg.contains("NAME")) {
                             arg = "Numeric";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).contains("String")) {
                             arg = "String";
@@ -625,6 +625,7 @@ public class TestsuiteParser {
                     mInfo.initialexpression = mInfo.expression;
                     mInfo.methodName = node.getName().toString();
 
+                    System.out.println("ccc " + mInfo.initialexpression + " " + mInfo.methodName);
                     boolean methodUnResolved = false;
 
                     if (node.getExpression() != null) {
@@ -661,6 +662,7 @@ public class TestsuiteParser {
                     List params = node.arguments();
                 //    System.out.println("params : " + params);
                     for (Object s : params) {
+                        System.out.println("param " + s);
                         boolean resolved = true;
                         String arg = ((Expression) s).toString();
                         mInfo.initialparams.add(arg);
@@ -677,12 +679,14 @@ public class TestsuiteParser {
                             arg = arg.substring(1, arg.indexOf(")"));
                         } else if (arg.startsWith("\'") && arg.endsWith("\'")) {
                             arg = "Character";
-                        } else if (arg.contains("+") && arg.contains("\"")) {
+                        } else if (arg.contains("+") && (arg.contains("\"") || arg.contains("\'"))) {
                             arg = "String";
                         } else if (arg.contains("instanceof")) {
                             arg = arg.substring(arg.indexOf("instanceof") + 11);
                         } else if (bDeclarations.containsKey(arg)) {
                             arg = bDeclarations.get(arg);
+                            if(arg.contains("["))
+                                arg=arg.substring(0,arg.indexOf("["));
                         } else if (arg.equals("true") || arg.equals("false")) {
                             arg = "Boolean";
                         } else if (arg.contains("==") || arg.contains(">") || arg.contains("<") || arg.contains("!=") || arg.contains(">=") || arg.contains("<=") || arg.contains("||")) {
@@ -700,7 +704,7 @@ public class TestsuiteParser {
                             }
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
-                        } else if (arg.contains("-") || arg.contains("+") || arg.contains("*")) {
+                        } else if ((arg.contains("-") || arg.contains("+") || arg.contains("*")) && !arg.contains("\"") && !arg.contains("NAME")) {
                             arg = "Numeric";
                         } else if (arg.contains(".") && arg.substring(arg.lastIndexOf(".")).contains("String")) {
                             arg = "String";
@@ -729,6 +733,7 @@ public class TestsuiteParser {
                         }
 
                         mInfo.params.add(arg);
+                        System.out.println("arg " + arg);
                         mInfo.isResolvedParam.add(resolved);
 
                     }

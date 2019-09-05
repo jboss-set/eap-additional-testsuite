@@ -1542,14 +1542,73 @@ public class DependencyTree {
                                         resolved = true;
                                     }else if(methodParams.get(mi.methodName)!=null) {
                                         for(int i=0; i<methodParams.get(mi.methodName).size(); i++) {
-                                            if(mi.methodName.equals("asInt") || mi.methodName.equals("getDomainClient") || mi.methodName.equals("createDomainClient") || mi.methodName.equals("resolvePlaceHolders"))
                                                 System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)) + " " + mi.params);
                                             if(methodParams.get(mi.methodName).get(i)!=null) {
                                                 if((methodParams.get(mi.methodName).get(i).length == mi.params.size()) || ((methodParams.get(mi.methodName).get(i).length==0) && (mi.params==null || mi.params.size()==0))){
-                                                    resolved = true;
-                                                    resolusionSeq = i;
-                                                    System.out.println("h : " + methodParams.get(mi.methodName).get(i).length + " " + mi.params.size() + " " + mi.params);
-                                                    break;
+                                                    if(methodParams.get(mi.methodName).get(i).length == mi.params.size()){
+                                                        boolean match = true;
+                                                        for(int q=0; q<mi.params.size();q++) {
+                                                            String testParam = mi.params.get(q);
+                                                            
+                                                            if(testParam.contains("."))
+                                                                testParam = testParam.substring(testParam.lastIndexOf(".")+1);
+                                                            
+                                                            if(testParam.contains("("))
+                                                                testParam = testParam.substring(0,testParam.lastIndexOf("("));
+                                                                
+                                                            String processParam = methodParams.get(mi.methodName).get(i)[q];
+                                                            processParam.replaceAll("\\.\\.\\.", "");
+                                                            
+                                                            if(processParam.contains("<"))
+                                                                processParam = processParam.substring(0,processParam.lastIndexOf("<"));
+                                                            
+                                                            if(processParam.contains("."))
+                                                                processParam = processParam.substring(processParam.lastIndexOf(".")+1);
+                                                            
+                                                            if(processParam.contains("<"))
+                                                                processParam = processParam.substring(0,processParam.lastIndexOf("<"));
+                                                            
+                                                            if(processParam.compareTo("boolean")==0 && testParam.compareTo("Boolean")==0){
+                                                                processParam="Boolean";
+                                                            }else if(processParam.compareTo("int")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("Integer")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("double")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("Double")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("float")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("Float")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("long")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }else if(processParam.compareTo("Long")==0 && testParam.compareTo("Numeric")==0){
+                                                                processParam="Numeric";
+                                                            }
+                                                            
+                                                            System.out.println("ppp : " + processParam + " " + testParam);
+                                                            
+                                                            if(testParam.endsWith("Name"))
+                                                                testParam="String";
+                                                            
+                                                            if(testParam.compareTo(processParam)!=0 && testParam.compareTo("Object")!=0 && processParam.compareTo("Object")!=0 && processParam.compareTo("Class")!=0)
+                                                                match=false;
+                                                            
+                                                            if(testParam.endsWith(processParam))
+                                                                match=true;
+                                                        }
+                                                        if(match) {
+                                                            resolved = true;
+                                                            resolusionSeq = i;
+                                                            System.out.println("h : " + methodParams.get(mi.methodName).get(i).length + " " + mi.params.size() + " " + mi.params);
+                                                            break;
+                                                        }
+                                                    }else{
+                                                        resolved = true;
+                                                        resolusionSeq = i;
+                                                    }
                                                 }else if(methodParams.get(mi.methodName).get(i).length!=0){
                                                     if(methodParams.get(mi.methodName).get(i)[methodParams.get(mi.methodName).get(i).length-1].contains("...") && (methodParams.get(mi.methodName).get(i).length <= mi.params.size()+1)){
                                                         resolved = true;
@@ -1567,7 +1626,7 @@ public class DependencyTree {
                                     
                                     if(!resolved) {
                                         if((methodParams.get(mi.methodName).size()!=0 && methodParams.get(mi.methodName)!=null))
-                                            System.out.println("xxx : " + mi.methodName + " " + mi.params + " " + Arrays.toString(methodParams.get(mi.methodName).get(resolusionSeq)) + " " + mi.isResolvedParam + " " + resolusionSeq + " " + methodParams.get(mi.methodName).size() + " " + methodParams.get(mi.methodName).get(resolusionSeq).length + " " + mi.params.size());
+                                            System.out.println("xxx : " + mi.methodName + " " + mi.params + " " + Arrays.toString(methodParams.get(mi.methodName).get(resolusionSeq)) + " " + mi.isResolvedParam);
                                         else
                                             System.out.println("xxx2 : " + mi.methodName + " " + mi.params  + " " + mi.isResolvedParam);
                                         mm++;
