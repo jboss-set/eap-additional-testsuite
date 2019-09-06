@@ -189,12 +189,12 @@ public class TestsuiteParser {
             
             public boolean visit(EnumConstantDeclaration node) {
                 String type = node.getName().toString();
-                System.out.println("ccccc : " + type);
+            //    System.out.println("ccccc : " + type);
                 List<String> constants = node.arguments();
-                System.out.println("ccccc : " + type + "." + constants.toString());
+            //    System.out.println("ccccc : " + type + "." + constants.toString());
 
                 for(String f : constants) {
-                    System.out.println("ccccc : " + type + "." + f);
+            //        System.out.println("ccccc : " + type + "." + f);
                     declarations.put(type + "." + f, type);
                     if (!node.modifiers().toString().contains("private")) {
                         fields.put(type + "." + f, type);
@@ -583,8 +583,6 @@ public class TestsuiteParser {
                             arg = arg.replaceAll("new ", "");
                             if (arg.contains("(")) {
                                 arg = arg.substring(0, arg.indexOf("("));
-                            } else if (arg.contains("[")) {
-                                arg = arg.substring(0, arg.indexOf("["));
                             }
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
@@ -625,7 +623,7 @@ public class TestsuiteParser {
                     mInfo.initialexpression = mInfo.expression;
                     mInfo.methodName = node.getName().toString();
 
-                    System.out.println("ccc " + mInfo.initialexpression + " " + mInfo.methodName);
+                //    System.out.println("ccc " + mInfo.initialexpression + " " + mInfo.methodName);
                     boolean methodUnResolved = false;
 
                     if (node.getExpression() != null) {
@@ -662,11 +660,17 @@ public class TestsuiteParser {
                     List params = node.arguments();
                 //    System.out.println("params : " + params);
                     for (Object s : params) {
-                        System.out.println("param " + s);
+                    //    System.out.println("param " + s);
                         boolean resolved = true;
+                        boolean isMatrix = false;
+                        boolean noMatrix = false;
                         String arg = ((Expression) s).toString();
                         mInfo.initialparams.add(arg);
                         if (arg.contains("[") && arg.indexOf("]")==arg.length()-1 && !arg.contains("\"")) {
+                            if(arg.endsWith("[]")) {
+                                isMatrix = true;
+                            }else
+                                noMatrix=true;
                             arg = arg.substring(0, arg.indexOf("["));
                         }
                         if(arg.startsWith("this."))
@@ -675,7 +679,9 @@ public class TestsuiteParser {
                                 arg = arg.replaceFirst("class ", "");
                         if (arg.startsWith("\"") && arg.endsWith("\"")) {
                             arg = "String";
-                        } else if(arg.startsWith("(")) {
+                        } else if (arg.endsWith("toString()")) {
+                            arg = "String";
+                        }else if(arg.startsWith("(")) {
                             arg = arg.substring(1, arg.indexOf(")"));
                         } else if (arg.startsWith("\'") && arg.endsWith("\'")) {
                             arg = "Character";
@@ -685,7 +691,7 @@ public class TestsuiteParser {
                             arg = arg.substring(arg.indexOf("instanceof") + 11);
                         } else if (bDeclarations.containsKey(arg)) {
                             arg = bDeclarations.get(arg);
-                            if(arg.contains("["))
+                            if(arg.contains("[") && noMatrix)
                                 arg=arg.substring(0,arg.indexOf("["));
                         } else if (arg.equals("true") || arg.equals("false")) {
                             arg = "Boolean";
@@ -698,9 +704,10 @@ public class TestsuiteParser {
                         } else if (arg.startsWith("new ")) {
                             arg = arg.replaceAll("new ", "");
                             if (arg.contains("(")) {
-                                arg = arg.substring(0, arg.indexOf("("));
-                            } else if (arg.contains("[")) {
-                                arg = arg.substring(0, arg.indexOf("[]")+2);
+                                arg = arg.substring(0, arg.lastIndexOf("("));
+                            }
+                            if (arg.contains("{")) {
+                                arg = arg.substring(0, arg.indexOf("{"));
                             }
                         } else if (NumberUtils.isNumber(arg)) {
                             arg = "Numeric";
@@ -732,8 +739,10 @@ public class TestsuiteParser {
                             }
                         }
 
+                        if(isMatrix)
+                            arg=arg+"[]";
                         mInfo.params.add(arg);
-                        System.out.println("arg " + arg);
+                    //    System.out.println("arg " + arg);
                         mInfo.isResolvedParam.add(resolved);
 
                     }

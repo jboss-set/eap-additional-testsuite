@@ -32,6 +32,8 @@ public class DependencyTree {
             HashSet<String> paths = DependencyTreeMethods.getSourceClasses();
             HashMap<String, String> packageClasses = new HashMap<>();
             HashSet<String> preAcceptedMethodNames = new HashSet<>();
+            ArrayList<String> preAcceptedParamMethodNames = new ArrayList<>();
+            HashMap<String, String> paramTranslations = new HashMap<>();
             HashMap<String, ArrayList<String[]>> methodParams = new HashMap<>();
             HashSet<MethodInfo> methodNamesAccepted = new HashSet();
 
@@ -140,6 +142,15 @@ public class DependencyTree {
                 expMethodMap.put(str.substring(0, str.indexOf(";")), str.substring(str.indexOf(";") + 1));
             }
 
+            preAcceptedParamMethodNames = TestsuiteParser.readAcceptedTypesFromFile(System.getProperty("AcceptedTypesFilePath") + "/" + "paramMethods.txt");
+            ArrayList<String> paramTranslationsList = TestsuiteParser.readAcceptedTypesFromFile(System.getProperty("AcceptedTypesFilePath") + "/" + "paramTypeTranslations.txt");
+
+            for (String str : paramTranslationsList) {
+                if (paramTranslations.get(str.substring(0, str.indexOf(";"))) == null) {
+                    paramTranslations.put(str.substring(0, str.indexOf(";")), str.substring(str.indexOf(";") + 1));
+                } 
+            }
+            
             ArrayList<String> acceptedMethodsSet = TestsuiteParser.readAcceptedTypesFromFile(System.getProperty("AcceptedTypesFilePath") + "/" + "methodInclusion.txt");
             HashMap<String, ArrayList<String>> acceptedMethodMap = new HashMap<>();
 
@@ -489,9 +500,9 @@ public class DependencyTree {
                 HashMap<String, HashMap<String, ArrayList<String[]>>> methods2 = new HashMap<String, HashMap<String, ArrayList<String[]>>>();
                 //     methodsTest.putAll(DependencyTreeMethods.listUsedMethods2(ps.packageName, packages));
                 for (String kk : methodsTest.keySet()) {
-                    if (!kk.contains("security")) {
+                //    if (!kk.contains("security")) {
                         methods2.putIfAbsent(kk, methodsTest.get(kk));
-                    }
+                //    }
                 }
                 
                 HashMap<String, String> acceptParams = new HashMap<>();
@@ -1530,11 +1541,11 @@ public class DependencyTree {
                 int rr = 0;
                 for(MethodInfo mi : methodNamesAccepted) {
                     if(mi.isResolvedParam.contains(false)) {
-                        System.out.println("mmm : " + mi.methodName + " " + mi.params + " " + mi.isResolvedParam);
+                    //    System.out.println("mmm : " + mi.methodName + " " + mi.params + " " + mi.isResolvedParam);
                         nn++;
                     }else{
                         if(mi.params!=null)
-                            if(!preAcceptedMethodNames.contains(mi.methodName)  && !acceptedMethods2.contains(mi.methodName)) {
+                            if(!preAcceptedMethodNames.contains(mi.methodName)  && !acceptedMethods2.contains(mi.methodName) && !preAcceptedParamMethodNames.contains(mi.methodName)) {
                                 if(methodParams.containsKey(mi.methodName)) {
                                     boolean resolved = false;
                                     int resolusionSeq = 0;
@@ -1542,22 +1553,34 @@ public class DependencyTree {
                                         resolved = true;
                                     }else if(methodParams.get(mi.methodName)!=null) {
                                         for(int i=0; i<methodParams.get(mi.methodName).size(); i++) {
-                                                System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)) + " " + mi.params);
+                                             //   System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)) + " " + mi.params);
                                             if(methodParams.get(mi.methodName).get(i)!=null) {
                                                 if((methodParams.get(mi.methodName).get(i).length == mi.params.size()) || ((methodParams.get(mi.methodName).get(i).length==0) && (mi.params==null || mi.params.size()==0))){
                                                     if(methodParams.get(mi.methodName).get(i).length == mi.params.size()){
                                                         boolean match = true;
+                                                        boolean varargs = false;
                                                         for(int q=0; q<mi.params.size();q++) {
                                                             String testParam = mi.params.get(q);
                                                             
-                                                            if(testParam.contains("."))
+                                                            if(testParam.endsWith("build"))
+                                                                testParam = testParam.substring(0,testParam.indexOf("."));
+                                                            
+                                                            if(testParam.startsWith("ShrinkWrap.create")){
+                                                                testParam = "Archive";
+                                                            }
+                                                            
+                                                            while(testParam.contains("."))
                                                                 testParam = testParam.substring(testParam.lastIndexOf(".")+1);
                                                             
-                                                            if(testParam.contains("("))
-                                                                testParam = testParam.substring(0,testParam.lastIndexOf("("));
+                                                            while(testParam.contains("("))
+                                                                testParam = testParam.substring(0,testParam.indexOf("("));
                                                                 
                                                             String processParam = methodParams.get(mi.methodName).get(i)[q];
-                                                            processParam.replaceAll("\\.\\.\\.", "");
+                                                            
+                                                            if(processParam.contains("...")){
+                                                                processParam.replaceAll("\\.\\.\\.", "");
+                                                                varargs=true;
+                                                            }
                                                             
                                                             if(processParam.contains("<"))
                                                                 processParam = processParam.substring(0,processParam.lastIndexOf("<"));
@@ -1570,6 +1593,14 @@ public class DependencyTree {
                                                             
                                                             if(processParam.compareTo("boolean")==0 && testParam.compareTo("Boolean")==0){
                                                                 processParam="Boolean";
+                                                            } else if(processParam.compareTo("int")==0 && testParam.compareTo("Integer")==0){
+                                                                processParam="Integer";
+                                                            }else if(processParam.compareTo("double")==0 && testParam.compareTo("Double")==0){
+                                                                processParam="Double";
+                                                            }else if(processParam.compareTo("float")==0 && testParam.compareTo("Float")==0){
+                                                                processParam="Float";
+                                                            }else if(processParam.compareTo("long")==0 && testParam.compareTo("Long")==0){
+                                                                processParam="Long";
                                                             }else if(processParam.compareTo("int")==0 && testParam.compareTo("Numeric")==0){
                                                                 processParam="Numeric";
                                                             }else if(processParam.compareTo("Integer")==0 && testParam.compareTo("Numeric")==0){
@@ -1588,16 +1619,28 @@ public class DependencyTree {
                                                                 processParam="Numeric";
                                                             }
                                                             
-                                                            System.out.println("ppp : " + processParam + " " + testParam);
+                                                       //     System.out.println("ppp : " + processParam + " " + testParam);
                                                             
                                                             if(testParam.endsWith("Name"))
                                                                 testParam="String";
                                                             
-                                                            if(testParam.compareTo(processParam)!=0 && testParam.compareTo("Object")!=0 && processParam.compareTo("Object")!=0 && processParam.compareTo("Class")!=0)
+                                                            if(paramTranslations.containsKey(testParam) && paramTranslations.get(testParam).compareTo(processParam)==0){
+                                                                match=true;
+                                                            } else if(testParam.compareTo(processParam)!=0 && testParam.compareTo("Object")!=0 && processParam.compareTo("Object")!=0 && processParam.compareTo("Class")!=0)
                                                                 match=false;
+                                                            else if(testParam.compareTo(processParam)!=0 && varargs) {
+                                                       //         System.out.println("vvv " + String.format(processParam+"[]") + " " + testParam);
+                                                                if(String.format(processParam+"[]").compareTo(testParam)==0){
+                                                                    match=true;
+                                                                }
+                                                            }
                                                             
                                                             if(testParam.endsWith(processParam))
                                                                 match=true;
+                                                            
+                                                            if(mi.params.get(q).compareTo(methodParams.get(mi.methodName).get(i)[q])==0)
+                                                                match=true;
+                                                                
                                                         }
                                                         if(match) {
                                                             resolved = true;
@@ -1605,7 +1648,7 @@ public class DependencyTree {
                                                             System.out.println("h : " + methodParams.get(mi.methodName).get(i).length + " " + mi.params.size() + " " + mi.params);
                                                             break;
                                                         }
-                                                    }else{
+                                                    }else if((methodParams.get(mi.methodName).get(i).length==0) && (mi.params==null || mi.params.size()==0)){
                                                         resolved = true;
                                                         resolusionSeq = i;
                                                     }
