@@ -168,6 +168,11 @@
 		    <groupId>io.undertow</groupId>
 		    <artifactId>undertow-websockets-jsr</artifactId>
 		</dependency>
+                <dependency>
+		    <groupId>io.netty</groupId>
+		    <artifactId>netty-all</artifactId>
+		    <version>5.0.0.Alpha2</version>
+		</dependency>
             </dependencies>
         </profile>
 
@@ -318,6 +323,11 @@
 		<dependency>
 		    <groupId>io.undertow</groupId>
 		    <artifactId>undertow-websockets-jsr</artifactId>
+		</dependency>
+                <dependency>
+		    <groupId>io.netty</groupId>
+		    <artifactId>netty-all</artifactId>
+		    <version>5.0.0.Alpha2</version>
 		</dependency>
             </dependencies>
         </profile>
