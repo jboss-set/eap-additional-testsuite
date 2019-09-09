@@ -1569,7 +1569,10 @@ public class DependencyTree {
                                                                 testParam = "Archive";
                                                             }
                                                             
-                                                            while(testParam.contains("."))
+                                                            if(testParam.contains("("))
+                                                                testParam = testParam.substring(0,testParam.lastIndexOf("("));
+                                                            
+                                                            if(testParam.contains("."))
                                                                 testParam = testParam.substring(testParam.lastIndexOf(".")+1);
                                                             
                                                             while(testParam.contains("("))
@@ -1645,7 +1648,7 @@ public class DependencyTree {
                                                         if(match) {
                                                             resolved = true;
                                                             resolusionSeq = i;
-                                                            System.out.println("h : " + methodParams.get(mi.methodName).get(i).length + " " + mi.params.size() + " " + mi.params);
+                                                        //    System.out.println("h : " + methodParams.get(mi.methodName).get(i).length + " " + mi.params.size() + " " + mi.params);
                                                             break;
                                                         }
                                                     }else if((methodParams.get(mi.methodName).get(i).length==0) && (mi.params==null || mi.params.size()==0)){
@@ -1674,10 +1677,10 @@ public class DependencyTree {
                                             System.out.println("xxx2 : " + mi.methodName + " " + mi.params  + " " + mi.isResolvedParam);
                                         mm++;
                                     }else if(resolved) {
-                                         if((methodParams.get(mi.methodName).size()!=0 && methodParams.get(mi.methodName)!=null))
-                                            System.out.println("rrr : " + mi.methodName + " " + mi.params + " " + Arrays.toString(methodParams.get(mi.methodName).get(resolusionSeq)) + " " + mi.isResolvedParam);
-                                        else
-                                            System.out.println("rrr2 : " + mi.methodName + " " + mi.params  + " " + mi.isResolvedParam);
+                                    //     if((methodParams.get(mi.methodName).size()!=0 && methodParams.get(mi.methodName)!=null))
+                                    //        System.out.println("rrr : " + mi.methodName + " " + mi.params + " " + Arrays.toString(methodParams.get(mi.methodName).get(resolusionSeq)) + " " + mi.isResolvedParam);
+                                    //    else
+                                    //        System.out.println("rrr2 : " + mi.methodName + " " + mi.params  + " " + mi.isResolvedParam);
                                         rr++;
                                     }
                                 }
@@ -1686,8 +1689,8 @@ public class DependencyTree {
                     }
                 }
                 
-                System.out.println("mm : " + mm);
-                System.out.println("rr : " + rr);
+                System.out.println("Methods with Params not resolved : " + mm);
+                System.out.println("Methods with Params resolvecd rr : " + rr);
 
             //     System.out.println("\n\n\nInternal Classes and Methods : ");
             //    HashMap<String,HashMap<String,String[]>> localMethods = JavaClassParser.getInternalClassMethods();
