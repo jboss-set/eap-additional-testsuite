@@ -1690,7 +1690,7 @@ public class DependencyTree {
                 }
                 
                 System.out.println("Methods with Params not resolved : " + mm);
-                System.out.println("Methods with Params resolvecd rr : " + rr);
+                System.out.println("Methods with Params resolved : " + rr);
 
             //     System.out.println("\n\n\nInternal Classes and Methods : ");
             //    HashMap<String,HashMap<String,String[]>> localMethods = JavaClassParser.getInternalClassMethods();

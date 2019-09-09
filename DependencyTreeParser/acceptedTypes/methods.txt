@@ -2,6 +2,7 @@ fail
 assertTrue
 assertFalse
 assertEquals
+assertThat
 getClass
 wait
 notify
@@ -11,3 +12,17 @@ parseDouble
 toString
 iterator
 keySet
+cast
+setOut
+valueOf
+toLowerCase
+replace
+getData
+getBytes
+put
+format
+equals
+withApplicationDomains
+
+
+
