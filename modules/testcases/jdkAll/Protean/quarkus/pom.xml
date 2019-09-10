@@ -302,6 +302,20 @@
             </modules>
         </profile>
 
+        <profile>
+            <id>releases21</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>0.21.2</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
+
     </profiles>
 
 </project>
