@@ -32,7 +32,7 @@ mkdir eap7 && cd eap7 && git clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@git
 cd master && ls -la && sed -i "s/<version.com.fasterxml.jackson.databind>2.9.9.3-redhat-00001/<version.com.fasterxml.jackson.databind>$FXML_VERSION/g" ./pom.xml && \
 mvn clean install -Dmaven.repository.protocol=http -DskipTests && \
 JBOSS_VERSION="$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev '(^\[|Download\w+:)')" && export JBOSS_VERSION=$JBOSS_VERSION && JBOSS_FOLDER="$(pwd)/dist/target/jboss-eap-7.2" && export JBOSS_FOLDER=$JBOSS_FOLDER && \
-mkdir EAT && cd EAT && git clone https://github.com/panossot/eap-additional-testsuite.git -b simulation master && cd master && mvn clean install -Deap72x -Dstandalone -Dmaven.repository.protocol=http
+mkdir EAT && cd EAT && git clone https://github.com/panossot/eap-additional-testsuite.git -b simulation master && cd master && mvn clean install -Deap72x -Dstandalone -DdSources -Dmaven.repository.protocol=http
 
 
 
