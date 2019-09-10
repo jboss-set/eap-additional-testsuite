@@ -215,6 +215,11 @@ If any assistance is needed to add a new test in Eap Additional Testsuite, pleas
 2. https://github.com/jboss-set/eap-additional-testsuite/tree/master/modules/src/main/java/org/jboss/additional/testsuite/jdk8/IwantToAddAnewTest
 
 
+ADD A SINGLE VERSION TEST WHICH WILL BE TESTED FOR MULTIPLE VERSIONS
+--------------------------------------------------------------------
+For people not familiar with EAT, they can add a single version test (as usual) here : https://github.com/jboss-set/eap-additional-testsuite/tree/master/SingleVersionTestInclusion , commenting where this should be included (servers, server-versions, etc). Then this test will be added to the right places to be distributed for the specific server versions.
+
+
 HOW TO MERGE TESTS FROM REMOTE TESTSUITES
 -----------------------------------------
 1. Set the GITHUB_REPO environment variable with the url of the remote testsuite repo (e.g. export GITHUB_REPO=https://github.com/panossot/RemoteTestRepo.git).
