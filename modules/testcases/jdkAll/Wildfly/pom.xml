@@ -175,10 +175,6 @@
 		    <artifactId>jsr181-api</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>javax.validation</groupId>
-		    <artifactId>validation-api</artifactId>
-		</dependency>
-		<dependency>
 		    <groupId>log4j</groupId>
 		    <artifactId>log4j</artifactId>
 		</dependency>
@@ -576,10 +572,6 @@
 		<dependency>
 		    <groupId>javax.jws</groupId>
 		    <artifactId>jsr181-api</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>javax.validation</groupId>
-		    <artifactId>validation-api</artifactId>
 		</dependency>
 		<dependency>
 		    <groupId>log4j</groupId>
