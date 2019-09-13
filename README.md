@@ -217,7 +217,19 @@ If any assistance is needed to add a new test in Eap Additional Testsuite, pleas
 
 ADD A SINGLE VERSION TEST WHICH WILL BE TESTED FOR MULTIPLE VERSIONS
 --------------------------------------------------------------------
-For people not familiar with EAT, they can add a single version test (as usual) here : https://github.com/jboss-set/eap-additional-testsuite/tree/master/SingleVersionTestInclusion , commenting where this should be included (servers, server-versions, etc). Then this test will be added to the right places to be distributed for the specific server versions.
+For people not familiar with EAT, they can add a single version test (as usual) here : https://github.com/jboss-set/eap-additional-testsuite/tree/master/SingleVersionTestInclusion , commenting where this should be included (servers, server-versions, etc). 
+e.g.
+
+/**
+* @author author_name
+* @EATSERVERS : Wildfly,Eap72x,Eap72x-Proposed
+* @EATSERVERMODULE : basic
+* @EATLOWERLIMITVERSIONS : 18.0.0, 7.2.3, 7.2.3
+* @EATUPPERLIMITVERSIONS : 18.0.0, 7.2.4, 7.2.4
+
+*/
+
+Then this test can be added to the right places to be distributed for the specific server versions.
 
 
 HOW TO MERGE TESTS FROM REMOTE TESTSUITES
