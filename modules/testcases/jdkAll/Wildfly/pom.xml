@@ -167,10 +167,6 @@
 		    <artifactId>jbossws-cxf-client</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>javax.activation</groupId>
-		    <artifactId>activation</artifactId>
-		</dependency>
-		<dependency>
 		    <groupId>javax.jws</groupId>
 		    <artifactId>jsr181-api</artifactId>
 		</dependency>
@@ -560,10 +556,6 @@
                 <dependency>
 		    <groupId>org.jboss.ws.cxf</groupId>
 		    <artifactId>jbossws-cxf-client</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>javax.activation</groupId>
-		    <artifactId>activation</artifactId>
 		</dependency>
 		<dependency>
 		    <groupId>javax.jws</groupId>
