@@ -1,7 +1,8 @@
 #!/bin/bash
-rm -R ThorntailAT
-rm -R Thorntail1
-rm -R Thorntail2
+rm -Rf ThorntailAT
+rm -Rf Thorntail1
+rm -Rf Thorntail2
+rm -Rf RemoteTests
 
 git clone https://github.com/panossot/ThorntailAT.git
 
@@ -10,6 +11,8 @@ git clone https://github.com/panossot/remoteReposAT.git Thorntail1  --branch Tho
 cp -R ./Thorntail1/org ./ThorntailAT/modules/src/test/java/present
 git clone https://github.com/panossot/remoteReposAT.git Thorntail2  --branch Thorntail2
 cp -R ./Thorntail2/org ./ThorntailAT/modules/src/test/java/present
+git clone https://github.com/panossot/remoteReposAT.git RemoteTests  --branch master
+cp -R ./RemoteTests/src/test/java/org ./ThorntailAT/modules/src/test/java/present
 ######################################
 
 cd ThorntailAT
