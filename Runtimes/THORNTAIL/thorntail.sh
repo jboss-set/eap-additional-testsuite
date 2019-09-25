@@ -14,8 +14,8 @@ git clone https://github.com/panossot/remoteReposAT.git Thorntail2  --branch Tho
 cp -R ./Thorntail2/org ./ThorntailAT/modules/src/test/java/present
 git clone https://github.com/panossot/remoteReposAT.git Thorntail3  --branch Thorntail3
 cp -R ./Thorntail3/src/test/java/org ./ThorntailAT/modules/src/test/java/present
-#git clone https://github.com/panossot/remoteReposAT.git RemoteTests  --branch master
-#cp -R ./RemoteTests/src/test/java/org ./ThorntailAT/modules/src/test/java/present
+git clone https://github.com/panossot/remoteReposAT.git RemoteTests  --branch master
+cp -R ./RemoteTests/src/test/java/org ./ThorntailAT/modules/src/test/java/present
 ######################################
 
 cd ThorntailAT
