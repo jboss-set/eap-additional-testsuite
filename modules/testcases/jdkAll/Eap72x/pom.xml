@@ -173,6 +173,18 @@
 		    <artifactId>netty-all</artifactId>
 		    <version>5.0.0.Alpha2</version>
 		</dependency>
+                <dependency>
+		    <groupId>org.easytesting</groupId>
+		    <artifactId>fest-assert</artifactId>
+		    <version>1.4</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>fluent-hc</artifactId>
+		    <version>4.5.4</version>
+		    <scope>test</scope>
+		</dependency>
             </dependencies>
         </profile>
 
@@ -328,6 +340,18 @@
 		    <groupId>io.netty</groupId>
 		    <artifactId>netty-all</artifactId>
 		    <version>5.0.0.Alpha2</version>
+		</dependency>
+                <dependency>
+		    <groupId>org.easytesting</groupId>
+		    <artifactId>fest-assert</artifactId>
+		    <version>1.4</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>fluent-hc</artifactId>
+		    <version>4.5.4</version>
+		    <scope>test</scope>
 		</dependency>
             </dependencies>
         </profile>

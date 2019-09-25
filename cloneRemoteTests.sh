@@ -12,7 +12,7 @@ if [ -z "$SUBDIR" ]; then
     exit 1
 fi
 
-rm -R remoteSrc
+rm -Rf remoteSrc
 mkdir remoteSrc
 cd remoteSrc
 # echo "========= " . $GITHUB_REPO . " " . $SUBDIR

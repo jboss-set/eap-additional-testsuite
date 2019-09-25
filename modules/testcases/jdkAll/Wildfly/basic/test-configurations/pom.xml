@@ -58,6 +58,7 @@
 		            <includes>
 		                <include>org/jboss/additional/testsuite/jdkall/present/basic/**/*Test.java</include>
 		                <include>org/jboss/additional/testsuite/jdkall/present/basic/**/*TestCase.java</include>
+                                <include>org/remote/tests/**/*Test.java</include> 
 		            </includes> 
 		        </configuration>
 		    </execution>
