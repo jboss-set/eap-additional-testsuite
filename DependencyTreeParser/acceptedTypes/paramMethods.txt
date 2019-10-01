@@ -4,3 +4,5 @@ fromJSONStream
 resolvePlaceHolders
 connectController
 establishTopology
+createOperation
+exportTo

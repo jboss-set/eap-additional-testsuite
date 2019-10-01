@@ -1553,7 +1553,7 @@ public class DependencyTree {
                                         resolved = true;
                                     }else if(methodParams.get(mi.methodName)!=null) {
                                         for(int i=0; i<methodParams.get(mi.methodName).size(); i++) {
-                                             //   System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)) + " " + mi.params);
+                                          //  System.out.println("aaa : " + mi.methodName + " " + Arrays.toString(methodParams.get(mi.methodName).get(i)) + " " + mi.params);
                                             if(methodParams.get(mi.methodName).get(i)!=null) {
                                                 if((methodParams.get(mi.methodName).get(i).length == mi.params.size()) || ((methodParams.get(mi.methodName).get(i).length==0) && (mi.params==null || mi.params.size()==0))){
                                                     if(methodParams.get(mi.methodName).get(i).length == mi.params.size()){
@@ -1629,20 +1629,20 @@ public class DependencyTree {
                                                             
                                                             if(paramTranslations.containsKey(testParam) && paramTranslations.get(testParam).compareTo(processParam)==0){
                                                                 match=true;
+                                                            } else if(testParam.compareTo(processParam)!=0 && varargs && (String.format(processParam+"[]").compareTo(testParam)==0)) {
+                                                                match=true;
                                                             } else if(testParam.compareTo(processParam)!=0 && testParam.compareTo("Object")!=0 && processParam.compareTo("Object")!=0 && processParam.compareTo("Class")!=0)
                                                                 match=false;
-                                                            else if(testParam.compareTo(processParam)!=0 && varargs) {
-                                                       //         System.out.println("vvv " + String.format(processParam+"[]") + " " + testParam);
-                                                                if(String.format(processParam+"[]").compareTo(testParam)==0){
-                                                                    match=true;
-                                                                }
-                                                            }
+                                                            
                                                             
                                                             if(testParam.endsWith(processParam))
                                                                 match=true;
                                                             
                                                             if(mi.params.get(q).compareTo(methodParams.get(mi.methodName).get(i)[q])==0)
                                                                 match=true;
+                                                            
+                                                            if(!match)
+                                                                break;
                                                                 
                                                         }
                                                         if(match) {
