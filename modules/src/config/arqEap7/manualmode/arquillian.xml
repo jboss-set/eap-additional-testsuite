@@ -6,7 +6,7 @@
 		<container qualifier="default-jbossas" mode="custom" managed="false">
 			<configuration>
 				<property name="jbossHome">${basedir}/../../../../../servers/eap7/build/target/jbossas</property>
-				<property name="javaVmArguments">-Djboss.inst=${basedir}/../../../../../servers/eap7/build/target/jbossas -Dtest.bind.address=${node0:127.0.0.1} -Djboss.node.name=node-0 -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true</property>
+				<property name="javaVmArguments">-Djboss.inst=${basedir}/../../../../../servers/eap7/build/target/jbossas -Dtest.bind.address=${node0:127.0.0.1} -Djboss.node.name=node-0 -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dpassword=mySecretPwd</property>
 				<property name="serverConfig">${jboss.server.config.file.name:standalone.xml}</property>
 				<property name="allowConnectingToRunningServer">false</property>
 				<property name="managementAddress">${node0:127.0.0.1}</property>
