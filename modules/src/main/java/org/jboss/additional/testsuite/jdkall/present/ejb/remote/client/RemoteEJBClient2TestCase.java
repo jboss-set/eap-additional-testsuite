@@ -72,6 +72,7 @@ public class RemoteEJBClient2TestCase {
     private static void invokeStatelessBean() throws Exception {
         Properties env = new Properties();
 	env.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+        env.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
 	Context ctx = new InitialContext(env);
 
    	UserTransaction utx = null;
