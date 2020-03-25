@@ -305,6 +305,11 @@
 		    <artifactId>commons-dbcp</artifactId>
 		    <version>1.4</version>
 		</dependency>
+                <dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.16</version>
+		</dependency>
             </dependencies>
         </profile>
 
@@ -592,6 +597,11 @@
 		    <groupId>commons-dbcp</groupId>
 		    <artifactId>commons-dbcp</artifactId>
 		    <version>1.4</version>
+		</dependency>
+                <dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.16</version>
 		</dependency>
             </dependencies>
         </profile>
