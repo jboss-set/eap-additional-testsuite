@@ -443,6 +443,11 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
+                <dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.5</version>
+		</dependency>
             </dependencies>
 
         </profile>
@@ -870,6 +875,11 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
+                <dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.5</version>
+		</dependency>
             </dependencies>
 
         </profile>
