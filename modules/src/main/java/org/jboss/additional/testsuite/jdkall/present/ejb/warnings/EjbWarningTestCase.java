@@ -17,8 +17,10 @@ import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.jboss.arquillian.container.test.api.RunAsClient;
 
 @RunWith(Arquillian.class)
+@RunAsClient
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#20.0.0.Beta1", "modules/testcases/jdkAll/Eap72x/ejb/src/main/java#7.2.9", "modules/testcases/jdkAll/Eap72x-Proposed/ejb/main/java#7.2.9","modules/testcases/jdkAll/Eap7/ejb/src/main/java#7.3.2"})
 public class EjbWarningTestCase {
 
@@ -32,7 +34,6 @@ public class EjbWarningTestCase {
     public static Archive<?> deploy() {
         JavaArchive jar = ShrinkWrap.create(JavaArchive.class, ARCHIVE_NAME + ".jar");
         jar.addClasses(EjbWarningTestCase.class, Hello.class, HelloBean.class, HelloBean2.class);
-        jar.addClasses(org.apache.commons.io.IOUtils.class, org.apache.commons.io.output.StringBuilderWriter.class, org.apache.commons.io.output.ByteArrayOutputStream.class, org.apache.commons.io.Charsets.class);
 
         return jar;
     }
