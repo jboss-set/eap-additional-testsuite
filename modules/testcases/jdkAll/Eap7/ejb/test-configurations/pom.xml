@@ -65,6 +65,7 @@
 		            </excludes>
 
                             <systemPropertyVariables>
+                                <server.dir>${jboss.modules.dir}/servers/eap7/build/target/jbossas</server.dir>
 				<jboss.home>${jboss.modules.dir}/servers/eap7/build/target/jbossas</jboss.home>
 			    </systemPropertyVariables>
 			</configuration>

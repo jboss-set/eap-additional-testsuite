@@ -46,6 +46,10 @@
                         <additionalClasspathElement>${jboss.modules.dir}/src/config/arqWildfly</additionalClasspathElement>
                     </additionalClasspathElements>
 
+                    <systemPropertyVariables>
+                        <server.dir>${jboss.modules.dir}/servers/wildfly/build/target/jbossas</server.dir>
+                    </systemPropertyVariables>
+
                 </configuration>
 
 		<executions>

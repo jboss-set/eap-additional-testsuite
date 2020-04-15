@@ -1,14 +1,15 @@
 package org.jboss.additional.testsuite.jdkall.present.ejb.warnings;
 
 import java.io.File;
-import java.io.FileInputStream;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.LinkedList;
+import java.util.List;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 
 
 import javax.ejb.EJB;
-import javax.ejb.EJBException;
-import org.apache.commons.io.IOUtils;
-import static org.junit.Assert.fail;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.Archive;
@@ -18,6 +19,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.jboss.arquillian.container.test.api.RunAsClient;
+
 
 @RunWith(Arquillian.class)
 @RunAsClient
@@ -40,15 +42,25 @@ public class EjbWarningTestCase {
 
     @Test
     public void checkWarning() throws Exception {
-        String path = new File("").getAbsolutePath();
-
-        FileInputStream inputStream = new FileInputStream(path + "/" + serverLogPath);
-        try {
-            String everything = IOUtils.toString(inputStream);
-            assertTrue("Interface view could be implemented at a EJB session bean ...", everything.contains("WARN : Interface view could be implemented at the EJB Session Bean ..."));
-        } finally {
-            inputStream.close();
+        List<String> logfile = new LinkedList<>();
+        
+        final String logDir = System.getProperty("server.dir")+"/standalone/log";
+        if (logDir == null) {
+            throw new RuntimeException("Could not resolve jboss.server.log.dir");
         }
+        final java.nio.file.Path logFile = Paths.get(logDir, "server.log");
+        if (!Files.notExists(logFile)) {
+            logfile = Files.readAllLines(logFile, StandardCharsets.UTF_8);
+        }
+
+        boolean warnExists=false;
+        for(String l : logfile) {
+            if(l.contains("[WARN] Potentional Interface view not exposed...")) {
+                warnExists=true;
+                break;
+            }
+        }
+        assertTrue("Interface view could be implemented at an EJB session bean ... Warning not logged...", warnExists);
     }
     
 }
