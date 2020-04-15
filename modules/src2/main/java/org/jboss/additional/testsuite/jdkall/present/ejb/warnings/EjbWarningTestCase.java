@@ -55,7 +55,7 @@ public class EjbWarningTestCase {
 
         boolean warnExists=false;
         for(String l : logfile) {
-            if(l.contains("[WARN] Potentional Interface view not exposed...")) {
+            if(l.contains("Potential Interface view not exposed...")) {
                 warnExists=true;
                 break;
             }
