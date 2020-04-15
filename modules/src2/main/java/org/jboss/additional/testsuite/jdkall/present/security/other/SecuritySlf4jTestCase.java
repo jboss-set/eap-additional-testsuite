@@ -36,7 +36,9 @@ public class SecuritySlf4jTestCase {
             Assert.fail("EventData constructor should throw a SecurityException.");
         } catch(SecurityException e){
             // this is expected
-        }
+        } catch(org.slf4j.ext.EventException ex){
+            // this could also happen
+	}
 
     }
     

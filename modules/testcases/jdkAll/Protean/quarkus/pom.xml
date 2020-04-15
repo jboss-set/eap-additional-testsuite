@@ -679,6 +679,20 @@
                 <module>quark</module>
             </modules>
         </profile>
+
+        <profile>
+            <id>releases48</id>
+            <activation>
+                <property>
+                    <name>JBOSS_VERSION</name>
+                    <value>1.3.2.Final</value>
+                </property>
+            </activation>
+    
+            <modules>
+                <module>quark</module>
+            </modules>
+        </profile>
     </profiles>
 
 </project>

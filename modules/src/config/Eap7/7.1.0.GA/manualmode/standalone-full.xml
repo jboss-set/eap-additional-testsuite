@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/manualmode/src/test/config/standaloneEap7#7.3.0","modules/testcases/jdkAll/Eap72x/manualmode/src/test/config/standaloneEap7#7.2.0","modules/testcases/jdkAll/Eap72x-Proposed/manualmode/src/test/config/standaloneEap7#7.2.0","modules/testcases/jdkAll/Eap71x/manualmode/src/test/config/standaloneEap7#7.1.0.GA*7.1.20.GA","modules/testcases/jdkAll/Eap71x-Proposed/manualmode/src/test/config/standaloneEap7#7.1.0.GA*7.1.20.GA"}) -->
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap7/manualmode/src/test/config/standaloneEap7#7.3.0.GA","modules/testcases/jdkAll/Eap72x/manualmode/src/test/config/standaloneEap7#7.2.0","modules/testcases/jdkAll/Eap72x-Proposed/manualmode/src/test/config/standaloneEap7#7.2.0","modules/testcases/jdkAll/Eap71x/manualmode/src/test/config/standaloneEap7#7.1.0.GA*7.1.20.GA","modules/testcases/jdkAll/Eap71x-Proposed/manualmode/src/test/config/standaloneEap7#7.1.0.GA*7.1.20.GA"}) -->
 <server xmlns="urn:jboss:domain:5.0">
     <extensions>
         <extension module="org.jboss.as.clustering.infinispan"/>
