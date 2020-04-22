@@ -1,4 +1,4 @@
-package org.jboss.additional.testsuite.jdkall.present.ejb.warnings;
+package org.jboss.additional.testsuite.jdkall.present.ejb.info;
 
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
 import javax.ejb.Local;

@@ -1,4 +1,4 @@
-package org.jboss.additional.testsuite.jdkall.present.ejb.warnings;
+package org.jboss.additional.testsuite.jdkall.present.ejb.info;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
@@ -24,24 +24,23 @@ import org.jboss.arquillian.container.test.api.RunAsClient;
 @RunWith(Arquillian.class)
 @RunAsClient
 @EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/src/main/java#20.0.0.Beta1", "modules/testcases/jdkAll/Eap72x/ejb/src/main/java#7.2.9", "modules/testcases/jdkAll/Eap72x-Proposed/ejb/main/java#7.2.9","modules/testcases/jdkAll/Eap7/ejb/src/main/java#7.3.2"})
-public class EjbWarningTestCase {
+public class EjbInfoTestCase {
 
     @EJB
     Hello bean;
 
-    private static final String ARCHIVE_NAME = "EjbWarningTestCase";
-     private final String serverLogPath = "target/surefire-reports/org.jboss.additional.testsuite.jdkall.present.ejb.warnings.EjbWarningTestCase-output.txt";
+    private static final String ARCHIVE_NAME = "EjbInfoTestCase";
 
     @Deployment
     public static Archive<?> deploy() {
         JavaArchive jar = ShrinkWrap.create(JavaArchive.class, ARCHIVE_NAME + ".jar");
-        jar.addClasses(EjbWarningTestCase.class, Hello.class, HelloBean.class, HelloBean2.class);
+        jar.addClasses(EjbInfoTestCase.class, Hello.class, HelloBean.class, HelloBean2.class);
 
         return jar;
     }
 
     @Test
-    public void checkWarning() throws Exception {
+    public void checkPotentialInterfaceExposureInfo() throws Exception {
         List<String> logfile = new LinkedList<>();
         
         final String logDir = System.getProperty("server.dir")+"/standalone/log";
@@ -53,14 +52,14 @@ public class EjbWarningTestCase {
             logfile = Files.readAllLines(logFile, StandardCharsets.UTF_8);
         }
 
-        boolean warnExists=false;
+        boolean infoExists=false;
         for(String l : logfile) {
             if(l.contains("Potential Interface view not exposed...")) {
-                warnExists=true;
+                infoExists=true;
                 break;
             }
         }
-        assertTrue("Interface view could be implemented at an EJB session bean ... Warning not logged...", warnExists);
+        assertTrue("Interface view could be implemented at an EJB session bean ... Info not logged...", infoExists);
     }
     
 }
