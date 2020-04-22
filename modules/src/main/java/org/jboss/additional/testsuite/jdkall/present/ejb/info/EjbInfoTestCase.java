@@ -54,7 +54,7 @@ public class EjbInfoTestCase {
 
         boolean infoExists=false;
         for(String l : logfile) {
-            if(l.contains("Potential Interface view not exposed...")) {
+            if(l.contains("SessionBean org.jboss.additional.testsuite.jdkall.present.ejb.info.HelloBean2 does not expose potential Interface view...")) {
                 infoExists=true;
                 break;
             }
