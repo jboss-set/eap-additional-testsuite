@@ -34,13 +34,40 @@ public class EjbInfoTestCase {
     @Deployment
     public static Archive<?> deploy() {
         JavaArchive jar = ShrinkWrap.create(JavaArchive.class, ARCHIVE_NAME + ".jar");
-        jar.addClasses(EjbInfoTestCase.class, Hello.class, HelloBean.class, HelloBean2.class);
+        jar.addClasses(EjbInfoTestCase.class, Hello.class, Hello3.class, Hello4.class, HelloBean.class, HelloBean2.class, HelloBean3.class, HelloBean4.class);
 
         return jar;
     }
 
     @Test
     public void checkPotentialInterfaceExposureInfo() throws Exception {
+        List<String> logfile = serverLog();
+
+        boolean infoExists=false;
+        for(String l : logfile) {
+            if(l.contains("SessionBean org.jboss.additional.testsuite.jdkall.present.ejb.info.HelloBean2 does not expose potential Interface view...")) {
+                infoExists=true;
+                break;
+            }
+        }
+        assertTrue("Interface view could be implemented at an EJB session bean ... Info not logged...", infoExists);
+    }
+
+    @Test
+    public void checkPotentialInterfaceExposureInfo2() throws Exception {
+        List<String> logfile = serverLog();
+
+        boolean infoExists=false;
+        for(String l : logfile) {
+            if(l.contains("SessionBean org.jboss.additional.testsuite.jdkall.present.ejb.info.HelloBean3 does not expose potential Interface view...")) {
+                infoExists=true;
+                break;
+            }
+        }
+        assertTrue("Interface view could be implemented at an EJB session bean ... Info not logged...", infoExists);
+    }
+
+    private List<String> serverLog() throws Exception {
         List<String> logfile = new LinkedList<>();
         
         final String logDir = System.getProperty("server.dir")+"/standalone/log";
@@ -52,14 +79,7 @@ public class EjbInfoTestCase {
             logfile = Files.readAllLines(logFile, StandardCharsets.UTF_8);
         }
 
-        boolean infoExists=false;
-        for(String l : logfile) {
-            if(l.contains("SessionBean org.jboss.additional.testsuite.jdkall.present.ejb.info.HelloBean2 does not expose potential Interface view...")) {
-                infoExists=true;
-                break;
-            }
-        }
-        assertTrue("Interface view could be implemented at an EJB session bean ... Info not logged...", infoExists);
+        return logfile;
     }
     
 }
