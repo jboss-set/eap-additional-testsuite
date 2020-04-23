@@ -32,6 +32,7 @@ import org.jboss.arquillian.test.api.ArquillianResource;
 import org.jboss.as.test.integration.common.HttpRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import org.apache.aries.transaction.jms.internal.XaPooledConnectionFactory;
 import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
@@ -79,7 +80,7 @@ public class JaxbProviderDeserializationSecurityCheckTestCase {
                        org.springframework.jacksontest.BogusApplicationContext.class, org.springframework.jacksontest.AbstractApplicationContext.class,
                        org.apache.ibatis.datasource.jndi.JndiDataSourceFactory.class, org.hibernate.jmx.StatisticsService.class,
                        TestMapperResolver.class,com.mchange.v2.c3p0.jacksonTest.ComboPooledDataSource.class, org.apache.openjpa.ee.JNDIManagedRuntime.class,
-                       org.apache.openjpa.ee.ManagedRuntime.class,org.apache.openjpa.ee.AbstractManagedRuntime.class);
+                       org.apache.openjpa.ee.ManagedRuntime.class,org.apache.openjpa.ee.AbstractManagedRuntime.class, org.apache.aries.transaction.jms.internal.XaPooledConnectionFactory.class);
         war.addPackage(org.apache.openjpa.util.GeneralException.class.getPackage());
         war.addPackage(org.apache.openjpa.lib.util.Localizer.class.getPackage());
         return war;
@@ -167,6 +168,18 @@ public class JaxbProviderDeserializationSecurityCheckTestCase {
 
         try{
             JndiDataSourceFactory jaxbModel = new ObjectMapper().configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false).readValue(result, JndiDataSourceFactory.class);
+            Assert.fail("Should prevente json deserialization because of security reasons.");
+        }catch(JsonMappingException e){
+            Assert.assertTrue("Should prevente json deserialization because of security reasons.", e.getMessage().contains("Illegal type"));
+        }
+    }
+
+    @ATTest({"modules/testcases/jdkAll/Wildfly/jaxrs/src/main/java#20.0.0.Beta1","modules/testcases/jdkAll/Eap72x/jaxrs/src/main/java#7.2.9","modules/testcases/jdkAll/Eap72x-Proposed/jaxrs/src/main/java#7.2.9","modules/testcases/jdkAll/Eap7/jaxrs/src/main/java#7.3.2"})
+    public void testXaPooledConnectionFactoryService() throws Exception{
+        String result = performCall("rest/jaxb/xapooledconnectionfactory");
+
+        try{
+            XaPooledConnectionFactory jaxbModel = new ObjectMapper().configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false).readValue(result, XaPooledConnectionFactory.class);
             Assert.fail("Should prevente json deserialization because of security reasons.");
         }catch(JsonMappingException e){
             Assert.assertTrue("Should prevente json deserialization because of security reasons.", e.getMessage().contains("Illegal type"));
