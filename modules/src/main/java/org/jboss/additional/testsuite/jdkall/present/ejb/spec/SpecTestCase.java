@@ -40,7 +40,7 @@ public class SpecTestCase {
         FileInputStream inputStream = new FileInputStream(path + "../" + serverLogPath);
         try {
             String everything = IOUtils.toString(inputStream);
-            assertFalse("SessionBeans should have only one of the following types : (Stateful, Stateless, Singleton) defined once", everything.contains("SessionBeans should have only one of the following types : Stateful, Stateless, Singleton"));
+            assertFalse("SessionBeans should have only one of the following types : Stateful, Stateless, Singleton", everything.contains("SessionBeans should have only one of the following types : Stateful, Stateless, Singleton"));
         } finally {
             inputStream.close();
         }
