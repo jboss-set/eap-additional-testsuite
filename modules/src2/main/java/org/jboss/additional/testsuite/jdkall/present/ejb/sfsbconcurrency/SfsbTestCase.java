@@ -35,7 +35,6 @@ public class SfsbTestCase {
         try {
             bean3.test();
         }catch(Exception e) {
-            System.out.println("+++++++ " + e.getMessage());
             assertTrue("There should be an ejb concurrency exception ...", !e.getMessage().contains("Could not instantiate a proxy for a session bean:  Session bean [class org.jboss.additional.testsuite.jdkall.present.ejb.sfsbconcurrency.SFBean2 with qualifiers [@Any @Default]"));
         }
     }
