@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jun 12 09:59:34 CEST 2019
+resteasy-jaxrs-3.7.0.Final.jar>=
+resteasy-jaxrs-3.7.0.Final-sources.jar>=
+resteasy-jaxrs-3.7.0.Final.jar>jboss-public-repository-group=
+resteasy-jaxrs-3.7.0.Final.pom>jboss-public-repository-group=
+resteasy-jaxrs-3.7.0.Final.pom>=

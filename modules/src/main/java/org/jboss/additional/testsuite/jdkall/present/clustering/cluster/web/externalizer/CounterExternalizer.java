@@ -33,7 +33,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  * {@link Externalizer} for {@link Counter}.
  * @author Paul Ferraro
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/clustering/src/main/java","modules/testcases/jdkAll/Eap70x/clustering/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/clustering/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap70x/clustering/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/clustering/src/main/java"})
 public class CounterExternalizer implements Externalizer<Counter> {
 
     @Override

@@ -15,7 +15,7 @@ import org.junit.Test;
  *
  * For this test the server should be started manually using -Dfail param ...
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/manualserver/src/main/java", "modules/testcases/jdkAll/Eap72x/manualserver/src/main/java", "modules/testcases/jdkAll/Eap72x-Proposed/manualserver/src/main/java", "modules/testcases/jdkAll/Eap7/manualserver/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/manualserver/src/main/java","modules/testcases/jdkAll/WildflyRelease-20.0.0.Final/manualserver/src/main/java", "modules/testcases/jdkAll/Eap72x/manualserver/src/main/java", "modules/testcases/jdkAll/Eap72x-Proposed/manualserver/src/main/java", "modules/testcases/jdkAll/Eap7/manualserver/src/main/java"})
 public class StartupEJBServletManualTest {
 
     @Test

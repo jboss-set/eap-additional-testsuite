@@ -1,0 +1,17 @@
+<!--@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Wildfly/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap71x/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap71x-Proposed/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap72x/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap72x-Proposed/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap70x/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap70x-Proposed/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap7/web/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap7.1.0.Beta/web/test-configurations/src/test/resources/META-INF"}) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>ImageServerImpl</servlet-name>
+        <servlet-class>org.jboss.additional.testsuite.jdkall.present.web.mtom.ImageServerImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImageServerImpl</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

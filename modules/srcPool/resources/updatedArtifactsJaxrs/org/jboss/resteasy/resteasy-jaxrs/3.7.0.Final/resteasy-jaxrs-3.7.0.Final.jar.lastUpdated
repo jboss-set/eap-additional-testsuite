@@ -1,0 +1,13 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jun 10 14:27:15 CEST 2019
+https\://maven.repository.redhat.com/earlyaccess/all/.error=
+@default-eap64-repository-https\://download.devel.redhat.com/brewroot/repos/jb-common-6.4-build/latest/maven/.lastUpdated=1560169632986
+https\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1560169631835
+@default-jboss-product-repository-https\://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/.lastUpdated=1560169630746
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.lastUpdated=1560169631312
+https\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1560169630090
+https\://download.devel.redhat.com/brewroot/repos/jb-common-6.4-build/latest/maven/.error=Could not transfer artifact org.jboss.resteasy\:resteasy-jaxrs\:jar\:3.7.0.Final from/to eap64-repository (https\://download.devel.redhat.com/brewroot/repos/jb-common-6.4-build/latest/maven/)\: sun.security.validator.ValidatorException\: PKIX path building failed\: sun.security.provider.certpath.SunCertPathBuilderException\: unable to find valid certification path to requested target
+https\://maven.repository.redhat.com/techpreview/all/.error=
+https\://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/.error=Could not transfer artifact org.jboss.resteasy\:resteasy-jaxrs\:jar\:3.7.0.Final from/to jboss-product-repository (https\://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.0-rhel-7-maven-build/latest/maven/)\: sun.security.validator.ValidatorException\: PKIX path building failed\: sun.security.provider.certpath.SunCertPathBuilderException\: unable to find valid certification path to requested target
+https\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1560169635833
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.error=

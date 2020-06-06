@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Aug 29 12:16:16 CEST 2016
+wildfly-server-2.0.10.Final.jar>=
+wildfly-server-2.0.10.Final.jar>central=
+wildfly-server-2.0.10.Final.pom>central=
+wildfly-server-2.0.10.Final.pom>=
+wildfly-server-2.0.10.Final-sources.jar>=

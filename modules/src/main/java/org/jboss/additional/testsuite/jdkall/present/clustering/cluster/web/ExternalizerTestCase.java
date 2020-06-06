@@ -59,7 +59,7 @@ import org.jboss.logging.Logger;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-10.1.0.Final/clustering/src/main/java","modules/testcases/jdkAll/Eap70x/clustering/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/clustering/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/Eap70x/clustering/src/main/java","modules/testcases/jdkAll/Eap70x-Proposed/clustering/src/main/java"})
 public class ExternalizerTestCase extends ClusterAbstractTestCase {
     private static final String DEPLOYMENT_NAME = "externalizer.war";
     protected static final Logger log = Logger.getLogger(ExternalizerTestCase.class);

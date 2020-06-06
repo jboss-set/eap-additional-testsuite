@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/Wildfly/ejb/test-configurations/src/test/resources","modules/testcases/jdkAll/Eap7/ejb/test-configurations/src/test/resources#7.3.0*7.3.9"}) -->
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd"
+         version="3.0">
+
+    <enterprise-beans>
+        <session>
+            <ejb-name>Test1</ejb-name>
+            <ejb-class>org.jboss.additional.testsuite.jdkall.present.ejb.spec.TestEjb</ejb-class>
+            <session-type>Stateful</session-type>
+        </session>
+    </enterprise-beans>
+
+</ejb-jar>

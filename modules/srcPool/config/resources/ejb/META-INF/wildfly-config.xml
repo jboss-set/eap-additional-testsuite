@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/ejb/test-configurations/src/test/resources/META-INF#13.0.0","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Wildfly/ejb/test-configurations/src/test/resources/META-INF#13.0.0","modules/testcases/jdkAll/Eap72x/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap72x-Proposed/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap71x/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap71x-Proposed/ejb/test-configurations/src/test/resources/META-INF","modules/testcases/jdkAll/Eap7/ejb/test-configurations/src/test/resources/META-INF"}) -->
+
+<configuration>
+    <jboss-ejb-client xmlns="urn:jboss:wildfly-client-ejb:3.0">
+        <connections>
+            <connection uri="remote+http://${node0:localhost}:8080"/>
+        </connections>
+    </jboss-ejb-client>
+</configuration>

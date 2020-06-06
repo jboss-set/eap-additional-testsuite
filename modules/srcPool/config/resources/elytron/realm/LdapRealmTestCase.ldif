@@ -1,0 +1,53 @@
+# @EapAdditionalTestsuite({"modules/testcases/jdkAll/WildflyRelease-13.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/WildflyRelease-17.0.0.Final/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Wildfly/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Eap71x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Eap71x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Eap72x/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Eap72x-Proposed/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Eap7/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm","modules/testcases/jdkAll/Eap7.1.0.Beta/elytron/test-configurations/src/test/resources/org/jboss/additional/testsuite/jdkall/present/elytron/realm"}) 
+
+dn: ou=People,dc=jboss,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: People
+
+dn: uid=userWithMoreRoles,ou=People,dc=jboss,dc=org
+objectclass: top
+objectclass: person
+objectClass: inetOrgPerson
+uid: userWithMoreRoles
+cn: User With More Roles
+sn: More Roles
+userPassword: Password1
+
+dn: uid=userWithOneRole,ou=People,dc=jboss,dc=org
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+cn: User With One Role
+sn: One Role
+uid: userWithOneRole
+userPassword: Password1
+
+dn: uid=userWithoutRole,ou=People,dc=jboss,dc=org
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+cn: User Without Role
+sn: Without Role
+uid: userWithoutRole
+userPassword: Password1
+
+dn: ou=Roles,dc=jboss,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: Roles
+
+dn: cn=JBossAdmin,ou=Roles,dc=jboss,dc=org
+objectClass: top
+objectClass: groupOfNames
+cn: JBossAdmin
+description: the JBossAdmin group
+member: uid=userWithMoreRoles,ou=People,dc=jboss,dc=org
+member: uid=userWithOneRole,ou=People,dc=jboss,dc=org
+
+dn: cn=TheDuke,ou=Roles,dc=jboss,dc=org
+objectClass: groupOfNames
+objectClass: top
+cn: TheDuke
+description: the duke role
+member: uid=userWithMoreRoles,ou=People,dc=jboss,dc=org
