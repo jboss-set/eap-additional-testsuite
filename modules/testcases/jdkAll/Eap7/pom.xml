@@ -456,6 +456,11 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
+                <dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.16</version>
+		</dependency>
             </dependencies>
         </profile>
 
@@ -888,6 +893,11 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
+                <dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.16</version>
+		</dependency>
             </dependencies>
         </profile>
 

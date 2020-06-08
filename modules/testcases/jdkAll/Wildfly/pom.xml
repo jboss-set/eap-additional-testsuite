@@ -447,6 +447,11 @@
 		    <groupId>org.slf4j</groupId>
 		    <artifactId>slf4j-ext</artifactId>
 		    <version>1.7.25</version>
+                </dependency>
+                <dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.16</version>
 		</dependency>
             </dependencies>
 
@@ -879,6 +884,11 @@
 		    <groupId>org.slf4j</groupId>
 		    <artifactId>slf4j-ext</artifactId>
 		    <version>1.7.25</version>
+                </dependency>
+                <dependency>
+		    <groupId>org.apache.xbean</groupId>
+		    <artifactId>xbean-reflect</artifactId>
+		    <version>4.16</version>
 		</dependency>
             </dependencies>
 
