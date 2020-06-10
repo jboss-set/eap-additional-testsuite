@@ -5,10 +5,14 @@
 ## A PROJECT UNDER THE ΙΔΕΑ STATEMENT
 --------------------------------------
 
+## THIS REPO IS DIFFERED AS FAR AS DEV IS CONCERNED... 
+## PLEASE REFER TO : https://github.com/EAT-JBCOMMUNITY/EAT, https://github.com/panossot/EAT-1, https://github.com/panossot/EAT
+
+## ALL THE COMMITS ON THIS REPO SHOULD HAVE AN EQUIVALENT COMMIT AT ONE OF THE REPOS MENTIONED ABOVE ...
+
 An additional JBOSS testsuite in order to facilitate Qualtity Testing.
 
 Write your tests once and run them against any version of EAP and WILDFLY application server.
-
 
 
 In order to synchronize the dependency versions of eap-additional-testsuite with the component versions of the equivalent server you can run the additional-testsuite using -Dstandalone or -Dserver-integration property.
